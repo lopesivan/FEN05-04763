@@ -1,0 +1,144 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Evolution From Expert Systems to Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=1//-->
+<!--PAGES=005-008//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="001-005.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="008-009.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="LEFT"><A NAME="Heading3"></A><FONT COLOR="#000077">A. Knowledge Representation</FONT></H4>
+<P>There are many methods of <I>knowledge representation</I> and a thorough description of them is given in <I>The Handbook of Artificial Intelligence I</I>.<SUP><SMALL>5</SMALL></SUP> We intend to discuss those that have had a major initial impact upon expert system development. The three most popular knowledge representation schemes are rules, semantic networks, and frames.</P>
+<P>Under the heading of rule-based systems comes MYCIN which uses production rules as its knowledge representation scheme. The general form of a rule is shown in Figure 2.</P>
+<P><A NAME="Fig2"></A><A HREF="javascript:displayWindow('images/01-02.jpg',200,12)"><IMG SRC="images/01-02t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/01-02.jpg',200,12)"><FONT COLOR="#000077"><B>Figure 2</B></FONT></A>&nbsp;&nbsp;General form of a rule.</P>
+<P>Both the premise and the conclusion are normally given some truth value, often called a certainty. The premise is usually some restricted sequence of clauses connected by the connectives <B>and</B> or <B>or</B>. The connectives often serve as min and max operators, respectively. Often, rules are set up in some LISP functional format, or a Prolog Horn clause, or the premise may look like a fully parenthesized logical expression. The conclusion may be an action to be taken or a clause, to be added to working memory, which is in some other premise. An actual rule is shown in Figure 3.</P>
+<P><A NAME="Fig3"></A><A HREF="javascript:displayWindow('images/01-03.jpg',400,13)"><IMG SRC="images/01-03t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/01-03.jpg',400,13)"><FONT COLOR="#000077"><B>Figure 3</B></FONT></A>&nbsp;&nbsp;Example rule.</P>
+<P>The term <I>semantic networks</I> encompasses a class of knowledge representation formalisms. They are made up of nodes and arcs between them. The nodes usually represent objects, concepts, or situations in the domain. The arcs represent the relations between the particular type of node. A semantic network may be viewed as an acyclic weighted graph. The relational arcs often have weights, indicating the strength of the relation associated with them. The relations are typically not two-valued, but multivalued. CASNET<SUP><SMALL>36</SMALL></SUP> is an important example of an expert system which uses the semantic network knowledge representation formalism. Figure 4 shows the structure of a semantic net. In the figure the N<SUB>i</SUB>&#146;s stand for nodes, which could be disease states, for example. The weighted links between them determine how they relate under some appropriately defined relation. As an example, relation between disease states could be a causal one.</P>
+<P>A frame is a data structure used for representing a stereotyped situation. It is organized much like a semantic net in many cases. It can provide built-in inheritance properties. A frame is made up of a set of slots. Slots may contain procedures, data, or be pointers to other frames. We, therefore, may have nested frames. A frame system may be implemented in the context of an object-oriented knowledge representation scheme.<SUP><SMALL>22</SMALL></SUP> These systems, such as the common LISP object system, allow inheritance through the concept of super- and subclasses. Methods, which act as procedures, will define what actions may be taken when a slot relations are familiar to most. An n-ary relation is an n-tuple of objects. The relation holds with some truth value. A rule may be described as an implication relation, for example. Almost any piece of knowledge may be described as a relation, although it may require some sophistication to accomplish. Relations provide an extremely flexible scheme for knowledge representation. Prospector<SUP><SMALL>14</SMALL></SUP> has used relations to represent knowledge about prospecting for minerals. An example of a five-ary basketball team lineup relation is given in Figure 6. The first configuration given is the normal one for a team, the second is only occasionally used.</P>
+<P><A NAME="Fig4"></A><A HREF="javascript:displayWindow('images/01-04.jpg',300,276)"><IMG SRC="images/01-04t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/01-04.jpg',300,276)"><FONT COLOR="#000077"><B>Figure 4</B></FONT></A>&nbsp;&nbsp;Semantic net structure.</P>
+<P><A NAME="Fig5"></A><A HREF="javascript:displayWindow('images/01-05.jpg',350,315)"><IMG SRC="images/01-05t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/01-05.jpg',350,315)"><FONT COLOR="#000077"><B>Figure 5</B></FONT></A>&nbsp;&nbsp;Generic frame.</P>
+<P><A NAME="Fig6"></A><A HREF="javascript:displayWindow('images/01-06.jpg',250,30)"><IMG SRC="images/01-06t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/01-06.jpg',250,30)"><FONT COLOR="#000077"><B>Figure 6</B></FONT></A>&nbsp;&nbsp;Relation between types of player in a lineup.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading4"></A><FONT COLOR="#000077">B. The Inference Engine</FONT></H4>
+<P>The <I>inference engine</I> uses the knowledge in a particular representation to come to some expert conclusion or offer expert advice. It contains the system&#146;s general problem-solving knowledge. It is responsible for determining what piece of knowledge to use next and scheduling other necessary actions. It will take all actions indicated, as necessary, by a piece of knowledge which is found to be true, due to the current facts presented to the expert system.</P>
+<P>The inference engine is responsible for determining when to ask the user a question and when to search the knowledge base for the information. It must ensure that questioning is done in a concise logical manner. In most expert systems it must be responsible for dealing with imprecise and uncertain information.</P>
+<P>An inference engine makes use of a special type of expert system knowledge called <I>meta-knowledge</I>. Meta-knowledge is knowledge about the system knowledge. This may include such things as how best to utilize various knowledge chunks, which pieces of knowledge to use first, whether a piece of knowledge should be inferred or asked of the user, and when to stop processing. This knowledge may be in the knowledge base in the same representation as other knowledge; it is just used in a different manner.</P>
+<P>Inference engines operate primarily in one of two ways. They may be data driven, known as <I>forward chaining</I>, or they may work backward from conclusions, known as <I>backward chaining</I>. A forward chaining system begins with some data and moves down the inference chain until it reaches a final node, frame, or conclusion. A backward chaining system begins with some final node, frame, or conclusion and works backward until it finds a complete path of evidence for one of the stopping states. MYCIN is a backward chaining expert system. XCON<SUP><SMALL>25</SMALL></SUP> is a forward chaining expert system. There are some expert systems which use a combination of forward and backward chaining, such as SPERILL II.<SUP><SMALL>27</SMALL></SUP></P>
+<H4 ALIGN="LEFT"><A NAME="Heading5"></A><FONT COLOR="#000077">C. Knowledge Acquisition</FONT></H4>
+<P>We have discussed how knowledge may be represented in an expert system and how that knowledge may be used to infer some conclusions. The question that arises concerns the methodology of acquiring the knowledge. <I>Knowledge acquisition</I> is a bottleneck in expert system development. Typically, the knowledge engineer and the expert system developer must sit down with an expert, in many long sessions, and extract the expert&#146;s domain knowledge for use in the expert system.</P>
+<P>The knowledge engineer must have some understanding of the expert&#146;s area so that he can converse in the expert&#146;s lingo. The expert will often not be able to provide general problem-solving heuristics. Example problems often must be presented and the heuristics explicated in the process of the expert solving them. The initial heuristics gathered tend to be incomplete and often not quite correct. Therefore, the process of gathering knowledge is incremental and coincides with the development and testing of the expert system.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="001-005.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="008-009.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

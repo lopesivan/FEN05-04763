@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Role Approximate Reasoning in a Medical Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=11//-->
+<!--PAGES=163-167//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch10/160-162.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="167-172.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2 ALIGN="CENTER"><FONT COLOR="#000077"><I>Applications of Fuzzy Expert Systems</I></FONT></H2>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 11<BR>The Role of Approximate Reasoning in a Medical Expert System
+</FONT></H2>
+<P><I>D. L. Hudson and M. E. Cohen</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Partial Presence of Symptoms
+<DT>III.&nbsp;&nbsp;Unequal Contribution of Antecedents
+<DT>IV.&nbsp;&nbsp;Generalization of Binary Inference
+<DT>V.&nbsp;&nbsp;Approximate Reasoning
+<DT>VI.&nbsp;&nbsp;Conclusion
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>The first medical expert system, MYCIN,<SUP><SMALL>1</SMALL></SUP> was developed in 1975, shortly after the initial introduction of the expert system approach to decision making.<SUP><SMALL>2,3</SMALL></SUP> Since that time, expert systems have been a popular approach to medical problem solving. These systems include broad range projects such as INTERNIST,<SUP><SMALL>4,5</SMALL></SUP> which encompasses the entire field of internal medicine, as well as systems dealing with more specific medical problem domains.<SUP><SMALL>6-11</SMALL></SUP> A number of survey papers describing expert systems in medicine have also appeared in the literature.<SUP><SMALL>12-15</SMALL></SUP> The need for dealing with uncertain information was recognized even in the first of these systems.16 A number of expert systems have developed ad hoc techniques of dealing with uncertainty.<SUB><SMALL>1,17,18</SMALL></SUB></P>
+<P>In the same general time frame, the theoretical development of fuzzy logic techniques was proceeding, fueled by a desire to better represent the real world. This field was initiated by Zadeh in his 1965 paper.<SUP><SMALL>19</SMALL></SUP> Since that time, theoretical development,<SUP><SMALL>20-26</SMALL></SUP> as well as practical application<SUP><SMALL>27,28</SMALL></SUP> of fuzzy logic and fuzzy set theory, in general, has progressed rapidly and, in particular, its application to expert systems.<SUP><SMALL>29-34</SMALL></SUP> Fuzzy techniques have also been applied in a number of medical applications.<SUP><SMALL>35-37</SMALL></SUP></P>
+<P>The development of EMERGE, a rule-based medical expert system for the analysis of chest pain in the emergency room environment, was begun in 1979. EMERGE was designed to address some of the difficulties encountered in earlier expert systems, including machine dependence, time-consuming consultations, and difficulty in replacement of the knowledge base.<SUP><SMALL>38</SMALL></SUP> Earlier systems were written in LISP and generally run on large-scale main frame computers possessed by a few medical institutions. In addition, rule searching was generally done by either forward or backward chaining, which resulted in very time-consuming consultations. Although the systems gave high level expert advice, they were not used in practice for these reasons. In order to counter the difficulties of machine dependence, EMERGE was written in standard Pascal in a memory-efficient manner to allow its use on microcomputers which, at that time, were just becoming popular.<SUP><SMALL>39</SMALL></SUP> A hierarchical approach to rule searching was designed in order to speed the consultation process, a necessity in emergency situations. The knowledge base for EMERGE was derived from existing medical logic outlines known as criteria maps,<SUP><SMALL>40</SMALL></SUP> a portion of which is shown in Figure 1. These maps had been developed over a number of years in consultation with medical experts and exist, not only for chest pain, but for approximately 20 medical applications.<SUP><SMALL>41</SMALL></SUP> Conversion from one rule base to another was simplified since the overall structure of the maps was the same for all applications.</P>
+<P>The EMERGE system is arranged in a hierarchical structure, with questions contained in the highest level which pertain to symptoms with far-reaching consequences. It is denoted the level zero control flow. When a rule is substantiated in the level zero control flow, rapid focus of attention is achieved by transfer to a subcontrol flow which contains questions pertinent to that disorder. This structure permits rapid decision making and avoids asking unnecessary questions.</P>
+<P>The original version of EMERGE used certainty factors as an indication of the degree of seriousness of an illness.<SUP><SMALL>42</SMALL></SUP> These were computed from scoring trees which were developed for each independent finding. They were then combined by ad hoc rules to give an overall certainty factor for each patient consultation.<SUP><SMALL>43</SMALL></SUP></P>
+<P>Current work on the EMERGE system involves inclusion of more sophisticated techniques of approximate reasoning.<SUP><SMALL>44</SMALL></SUP> Three major areas have been revised. First, user input has been modified from simple <I>y</I>, <I>n</I>, or <I>?</I> responses to permit input of a value indicating degree of presence of symptoms. Second, the original production rule format has been modified to permit weighting of antecedents. Finally, the traditional and/or binary logic has been generalized to permit inferences of rules in the new format. These three areas are the topic of this chapter and are discussed, in turn, in the following sections.</P>
+<P><A NAME="Fig1"></A><A HREF="javascript:displayWindow('images/11-01.jpg',640,733)"><IMG SRC="images/11-01t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/11-01.jpg',640,733)"><FONT COLOR="#000077"><B>Figure 1</B></FONT></A>&nbsp;&nbsp;Portion of chest pain criteria map.<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch10/160-162.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="167-172.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

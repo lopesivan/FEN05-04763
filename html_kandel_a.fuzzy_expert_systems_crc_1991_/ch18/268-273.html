@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Expert System on a Chip: An Engine for Approximate Reasoning</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=18//-->
+<!--PAGES=268-273//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="267-268.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="273-274.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="LEFT"><A NAME="Heading17"></A><FONT COLOR="#000077">E. Chip Performance</FONT></H4>
+<P>Timing tests on fabricated chips indicate a 20.8 MHz (48 nsec cycle time) operating rate. With the current data format of 124 bits per rule, a single inference process takes 256 clock cycles. Thus, the engine can perform approximately 80,000 fuzzy logical inference per second (FLIPS), which is more than 40,000 times faster than the simulation conducted on VAX-11/785. The chip has a drastic speed advantage over the conventional approach. If the resolution of rules is doubled, the speed of the inference engine is halved. However, by assigning two data paths per rule, we can reduce the slowdown to a few clock cycles per inference.
+</P>
+<P><A NAME="Fig6"></A><A HREF="javascript:displayWindow('images/18-06.jpg',300,72)"><IMG SRC="images/18-06t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-06.jpg',300,72)"><FONT COLOR="#000077"><B>Figure 6</B></FONT></A>&nbsp;&nbsp;Serial minimum unit.</P>
+<P><A NAME="Fig7"></A><A HREF="javascript:displayWindow('images/18-07.jpg',250,472)"><IMG SRC="images/18-07t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-07.jpg',250,472)"><FONT COLOR="#000077"><B>Figure 7</B></FONT></A>&nbsp;&nbsp;Single data path of inference processor.</P>
+<H3><A NAME="Heading18"></A><FONT COLOR="#000077">VI. Extension and Integration</FONT></H3>
+<H4 ALIGN="LEFT"><A NAME="Heading19"></A><FONT COLOR="#000077">A. Rule Format</FONT></H4>
+<P>The advantage of the architecture is its simplicity which in turn makes this architecture easily extendable. Most important extensibility is to cope with the deferent format of rules. In the simplest case, we would like to increase or decrease the resolution of membership function. In the current format of the rule representation, we used 31 integers of four bits each. This can be modified with minor changes in the layout. For example, the number of elements in the universe of discourse (number of data points) can be increased to more than 31. It can be achieved with only a minor modification of the controller without any change in the inferencing part of the architecture. We can use higher resolution for digitization of membership function using more than four bits. We can achieve this by increasing the length of the shift register and modifying the controller. The number of rules can be increased by laying out more data paths and modifying the binary tree layout accordingly.
+</P>
+<P><A NAME="Fig8"></A><A HREF="javascript:displayWindow('images/18-08.jpg',400,288)"><IMG SRC="images/18-08t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-08.jpg',400,288)"><FONT COLOR="#000077"><B>Figure 8</B></FONT></A>&nbsp;&nbsp;Binary tree of maximum units.</P>
+<P><A NAME="Fig9"></A><A HREF="javascript:displayWindow('images/18-09.jpg',450,436)"><IMG SRC="images/18-09t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-09.jpg',450,436)"><FONT COLOR="#000077"><B>Figure 9</B></FONT></A>&nbsp;&nbsp;Mask layout of inference engine.</P>
+<P>We can also have more than one clause in the <I>if</I> part of the rule. The prototype chip has only one clause in the if-part of the rule and one clause (i.e., action) in the <I>then</I> part of the rule. As we have seen in an example of the cement kiln controller (Section II.B), rules often have more than one clause in the <I>if</I> part. Extension of the data path to handle multiple clauses is fairly straightforward. We can expect that multiple clauses are connected by the logical connective and. If clauses are connected by the logical connective <B>or</B>, we can divide a single rule to independent multiple rules. For each clause in a rule, we compute an &#945; value independently. A minimum of them are used for truncation of the <I>then</I> part of a rule. Each data path still consists of the same basic units. Figure 10 shows the architecture of a single data path for the four clause rule. We can compute the minimum of the &#945; values by a binary tree of serial minimum units.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading20"></A><FONT COLOR="#000077">B. Speed Up</FONT></H4>
+<P>We can speed up the throughput of the inference processor by a minor modification of the architecture. By introducing another shift register, we can make a pipelining processor. The antecedent (first level) and the conclusion (second level) are performed simultaneously. The second shift register should be introduced right after the current shift register. The first shift register is used to keep the running maximum for &#945;<SUB><SMALL>i</SMALL></SUB> in the processing of the antecedent. The second shift register keeps the computed &#945;<SUB><SMALL>i</SMALL></SUB> for processing of the conclusion part. The throughput of the processor is doubled by this pipelining.</P>
+<P>Another architectural possibility is the use of multiple data paths per rule. In this case, there is an area vs. speed trade off. For example, by assigning two data paths per rule, we can almost double the processing speed and a single clock cycle is absorbed by the overhead. We store each half of the rule independently. The corresponding half of the observation is loaded from two pins. In the first level and the second level of the processor, each half of the rule set and observations are processed almost independently. An extra maximum operation is necessary to combine the result of each half for &#945;<SUB><SMALL>i</SMALL></SUB> at the end of the first level. We now need two independent binary trees of the maximum units at the second level. The sketch of this architecture is shown in Figure 11.</P>
+<P>Notice that the execution of each rule is done independently by a single data path except in the last step of the second stage where the selection of the maximum elements is done. In order to cope with the large number of rules, a chip set can be designed in a rule-sliced manner. Each chip executes a subset of rules (for example, 32 rules per chip). A very large number of rules can be executed in parallel by cascading them. The selection of the final result can be done by designing a maximum number selector as an independent chip. For example, if we have a 32 input maximum number selector (see Figure 8), we can combine 1024 data paths using two layers of such selectors.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading21"></A><FONT COLOR="#000077">C. System Integration</FONT></H4>
+<P>We are designing an integrated system based on the VLSI fuzzy inference engine. In order to achieve general purpose interface, we use a single board computer as a host system. The fuzzy inference engine is integrated as a co-processor for approximate inference. The host processor communicates with a controller, a sensor, and a user. In order to make a rule set programmable, a ROM is replaced by a high speed static RAM. The overall configuration of the integrated system is shown in Figure 12.
+</P>
+<P><A NAME="Fig10"></A><A HREF="javascript:displayWindow('images/18-10.jpg',450,236)"><IMG SRC="images/18-10t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-10.jpg',450,236)"><FONT COLOR="#000077"><B>Figure 10</B></FONT></A>&nbsp;&nbsp;Four clauses in condition.</P>
+<P><A NAME="Fig11"></A><A HREF="javascript:displayWindow('images/18-11.jpg',300,638)"><IMG SRC="images/18-11t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-11.jpg',300,638)"><FONT COLOR="#000077"><B>Figure 11</B></FONT></A>&nbsp;&nbsp;Two data path for a single rule.</P>
+<P><A NAME="Fig12"></A><A HREF="javascript:displayWindow('images/18-12.jpg',300,400)"><IMG SRC="images/18-12t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-12.jpg',300,400)"><FONT COLOR="#000077"><B>Figure 12</B></FONT></A>&nbsp;&nbsp;Integrated system.</P>
+<H3><A NAME="Heading22"></A><FONT COLOR="#000077">VII. Conclusion</FONT></H3>
+<P>We have designed and fabricated a chip for a real-time approximate reasoning based on the &#147;max-min operation&#148; of fuzzy set theory. The architecture and chip design of this inference engine have been presented. An actual inference engine has been fabricated on a chip using custom CMOS technology. The VLSI design emphasizes simplicity, extensibility, and efficiency. Preliminary timing tests have been performed and indicate that the chip can perform approximately 80,000 fuzzy logical inferences per second, which is more than 40,000 times faster than conventional software approach. The potential applications of this inference engine for real-time use include decision making in the area of command and control, intelligent controllers, and intelligent robot systems (e.g., References 2 and 4).
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="267-268.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="273-274.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

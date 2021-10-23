@@ -1,0 +1,145 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:MILORD: A Fuzzy Expert Systems Shell</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=15//-->
+<!--PAGES=220-222//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="217-220.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="222-224.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+</P>
+<P>Based on this claim, the system conducts a dialogue with a domain expert eliciting relevant constructs and interactively detecting constructs poorly or ambiguously defined. Such constructs are fed back to the dialoguing expert for further refining. In this way, the expert is forced to investigate how he thinks about the problem at hand. This process builds up a repertory grid relating domain constructs with domain elements to which they apply. These relations are expressed by a contrastive set of linguistic labels, and are represented by possibility distributions, e.g., are of the form: E<SUB><SMALL>i</SMALL></SUB> is Q<SUP><SMALL>k</SMALL></SUP>j C<SUB><SMALL>i</SMALL></SUB>, where E<SUB><SMALL>i</SMALL></SUB> is an element, C<SUB><SMALL>j</SMALL></SUB> is a construct pole, and Q<SUP><SMALL>k</SMALL></SUP>j is the linguistic label relating them.</P>
+<P>In the second stage, a logical analysis of the repertory grid shows the implication strength between the constructs and this allows us to generate an initial set of fuzzy rules, forming an inference network. This network is then presented to the expert who points out his disagreements and enters a refining stage that uses several techniques of the personal construct theory (PCT). The elicitation dialogue is also based on the PCT and on recent implementations of psychological analysis systems.<SUP><SMALL>4,10,12</SMALL></SUP></P>
+<P>EAR produces a validated rule set for knowledge base building through the following three-stage cycle:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Interactive elicitation and analysis (EINA) is a program to assist in the conceptualization by building a repertory grid through a guided dialogue.
+<DD><B>2.</B>&nbsp;&nbsp;Subjective inference logical analysis (ALIS) is a program that generates a tentative rule-set represented as an inference network.
+<DD><B>3.</B>&nbsp;&nbsp;Inference validation and refining environment (EVR) is a program containing several techniques for disagreement resolution (laddering, concrete explanations, etc.). At this point if disagreement remains, it is possible to go back to point 1. If no disagreement remains, the cyclic process ends.
+</DL>
+<H4 ALIGN="LEFT"><A NAME="Heading13"></A><FONT COLOR="#000077">A. Elicitation</FONT></H4>
+<P>To enter the elicitation stage the expert must characterize the context with a minimal set of elements (i.e., cases, examples, diagnostics, etc.) pertaining to the domain of expertise. Next, the elicitation process builds up groups of elements according to their similarities and dissimilarities with respect to the constructs already present.
+</P>
+<P>The refining mode carries out two indistinguishability analyses: one over the domain elements and another over the already elicited constructs. Its main feature is that the interactive analysis is fed back to the expert in such a way that the incremental building of the repertory grid, and the validation/refinement of the repertory grid are the same process. Construct analysis shows the expert the most similar constructs, and he may point out his disagreements. If two constructs are similar, it means that they structure similarly the domain elements, and if they had to be more different than the domain context, they should be enlarged with new elements that are still missing. Therefore, the expert is asked to supply a concrete explanation of his disagreement, i.e., a counterexample embodied in a new element that will increase the construct distinction, as well as the representativeness of the domain context with regard to the real expertise domain.</P>
+<P>Element analysis shows the most similar elements and, if disagreement arises, the expert is requested to supply a new concrete explanation, i.e., a new construct that distinguishes these too-similar elements. Undue indistinguishability between elements reveals a poor discrimination power of the set of elicited constructs.</P>
+<P>By defining a new construct, the expert introduces a new distinction over the context elements in a process to build an opposite characterization of the set of domain elements for the task at hand. Both interaction modes form the incremental constructing process of the repertory grid. The set of fuzzy relations between domain elements and constructs constitutes the fuzzy repertory grid and the set of fuzzy predicates applying to a construct; for example, a type 2 fuzzy set constitutes the representation of the construct.<SUP><SMALL>11</SMALL></SUP></P>
+<H4 ALIGN="LEFT"><A NAME="Heading14"></A><FONT COLOR="#000077">B. Inference Analysis</FONT></H4>
+<P>In the second stage, ALIS elucidates the implicational relationship holding between constructs. As constructs are represented by type 2 fuzzy sets, we apply a type 2 semantic entailment (an extension of ordinary fuzzy set entailment) to model subjective inferences. The analysis outcome is an inference network, a digraph where nodes stand for construct poles and weighted arcs stand for implicational strength. The inference network is fed back to the expert for validation in the EVRI stage.
+</P>
+<H4 ALIGN="LEFT"><A NAME="Heading15"></A><FONT COLOR="#000077">C. Inference Validation and Refining Environment</FONT></H4>
+<P>This stage implements a set of techniques and aids for validation and refining founded in PCT. The EVRI environment is the turnover of the developmental EAR cycle, for it focuses on disagreement resolution. Expert disagreements about the inference network may arise for different reasons (ambiguous or polysemic constructs, insufficient elements characterization, domain context incompleteness), and they are handled in different ways:
+</P>
+<P><B>Counterexample proposal</B> &#151; Disagreement with a rule is justified by the expert stating a counterexample that is incorporated in the repertory grid as a new concrete explanation. As before, concrete explanation has a global repercussion and may modify other rules in addition to the intended one. Counterexamples may be new elements, in the case of lack of representativeness of the current context, or new constructs, in the case of insufficient element characterization.</P>
+<P><B>Revision of assignment values</B> &#151; The expert may have used different criteria in estimating the linguistic evaluations, applying constructs to elements, in a nonconsistent way. This is solved by editing the repertory grid to revise the assignment linguistic values.</P>
+<P><B>Revision of contrastive sets</B> &#151; Disagreements may also arise for inappropriate or poorly discriminating contrastive sets. Contrastive sets can then be drastically changed or augmented with new linguistic labels in order to achieve a finer discrimination over the domain. A revision of the linguistic values of the associated constructs is finally conducted.</P>
+<P><B>Laddering techniques</B> &#151; Concept ambiguity is resolved splitting a construct into two or more constructs by asking <I>how</I> and <I>why</I> questions. These new constructs are added to the repertory grid. <I>Why</I> questions lead to superordinate, more abstract constructs whereas <I>how</I> questions lead to subordinate, more concrete constructs.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="217-220.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="222-224.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

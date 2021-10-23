@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:On the Representation of Relational Production Rules in Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=4//-->
+<!--PAGES=055-058//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch03/053-054.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="058-061.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 4<BR>On the Representation of Relational Production Rules in Expert Systems
+</FONT></H2>
+<P><I>Ronald R. Yager</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Approximate Reasoning
+<DT>III.&nbsp;&nbsp;Relations in Production Rules
+<DT>IV.&nbsp;&nbsp;On the Structure of Relational Rules
+<DT>Acknowledgment
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>Rule-based expert systems have shown themselves to be a powerful framework for building knowledge systems.<SUP><SMALL>1</SMALL></SUP> The primary knowledge structure in these systems is the production rule which is typified by:<SUP><SMALL>2</SMALL></SUP> If the tracing pattern is asymmetric gamma and the gamma quantity is normal then the concentration of gammaglobulin is within the normal range.</P>
+<P>More formally, the structure of these rules is</P>
+<P ALIGN="CENTER">If V<SUB><SMALL>1</SMALL></SUB> is A<SUB><SMALL>1</SMALL></SUB> and V<SUB><SMALL>2</SMALL></SUB> is A<SUB><SMALL>2</SMALL></SUB> . . . and V<SUB><SMALL>n</SMALL></SUB> is A<SUB><SMALL>n</SMALL></SUB> then U is B</P>
+<P>The typical antecedent element in these rules consists of a variable V<SUB><SMALL>1</SMALL></SUB> and an established, or fixed value, A<SUB><SMALL>1</SMALL></SUB> which must be achieved in order for the rule to fire. We shall call the term V<SUB><SMALL>1</SMALL></SUB> is A<SUB><SMALL>1</SMALL></SUB> a fixed value antecedent condition.</P>
+<P>It appears that in trying to model some expert knowledge we may be faced with situations in which we have an antecedent element that requires some relationship between two or more variables be satisfied. That is, rather than simply requiring a variable to attain some established or fixed value, the success of the rule depends upon the attainment of some relationship between variables in the system. Examples of these kinds of situations are</P>
+<P ALIGN="CENTER">If <I>the outer pressure is about the same as the inner pressure</I></P>
+<P ALIGN="CENTER">then lower the heat</P>
+<P ALIGN="CENTER">If <I>V<SUB><SMALL>1</SMALL></SUB></I> is <I>2</I> &#215; <I>V<SUB><SMALL>2</SMALL></SUB></I> and V<SUB><SMALL>3</SMALL></SUB> is A then U is B</P>
+<P>In these examples the underlined portions exemplify the kinds of conditions which we have just mentioned. We shall call these types of conditions relational or variable antecedent elements.</P>
+<P>Yager<SUP><SMALL>3</SMALL></SUP> has shown the potential of the theory of approximate reasoning (AR) as a representational scheme for building expert systems. In particular he has indicated its power in dealing with partial matching as necessitated by imprecise values of the A<SUB><SMALL>i</SMALL></SUB>s as well as imprecision in knowledge about the V<SUB><SMALL>i</SMALL></SUB>&#146;s. He also indicated its ability to represent complex combining of antecedent conditions in particular cases in which we have to satisfy most of a collection of antecedent conditions. Gupta et al.<SUP><SMALL>4</SMALL></SUP>contains a number of applications of approximate reasoning to expert systems.</P>
+<P>In this paper we extend the usefulness of the AR approach by investigating its ability to handle situations in which the antecedent requires the satisfaction of some relationship between variables.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Approximate Reasoning</FONT></H3>
+<P>In this section we briefly review some aspects of the theory of approximate reasoning.<SUP><SMALL>3</SMALL></SUP></P>
+<P>Assume V is a variable which takes as its value an element in the set X, called the base set of V. A canonical statement is of the form:</P>
+<P ALIGN="CENTER">V is A</P>
+<P>where A is a fuzzy subset of X. The intent of this statement is to indicate that the value of V is an element of the set A. More formally, this statement induces a possibility distribution &#928;<SUB><SMALL>v</SMALL></SUB> on X so that:</P>
+<P ALIGN="CENTER">&#928;<SUB><SMALL>v</SMALL></SUB>(x) = A(x)</P>
+<P>In this statement &#928;<SUB><SMALL>v</SMALL></SUB>(x) indicates the possibility that V has assumed the value x.</P>
+<P>In the framework of the theory of approximate reasoning a production rule such as:</P>
+<P ALIGN="CENTER">If V is A then U is B</P>
+<P>where U has base set Y gets translated into a joint possibility distribution &#928;<SUB><SMALL>v,u</SMALL></SUB> on X &#215; Y so that:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-01d.jpg"></P>
+<P>An alternative translation of these production rules is
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-02d.jpg"></P>
+<P>A very lively literature exists discussing the relative merits of different interpretations.<SUP><SMALL>5</SMALL></SUP></P>
+<P>More generally, a rule:</P>
+<P ALIGN="CENTER">If V<SUB><SMALL>1</SMALL></SUB> is A<SUB><SMALL>1</SMALL></SUB> and V<SUB><SMALL>2</SMALL></SUB> is A<SUB><SMALL>2</SMALL></SUB> . . . V<SUB><SMALL>n</SMALL></SUB> is A<SUB><SMALL>n</SMALL></SUB> then U is B</P>
+<P>gets translated into a possibility distribution:</P>
+<P ALIGN="CENTER">&#928;<SUB><SMALL>v1,v2,v3, . . . vn,u</SMALL></SUB> on X<SUB><SMALL>1</SMALL></SUB> &#215; X<SUB><SMALL>2</SMALL></SUB> . . . &#215; X<SUB><SMALL>n</SMALL></SUB> &#215; Y</P>
+<P>so that:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-03d.jpg"></P>
+<P>Assume P<SUB><SMALL>1</SMALL></SUB>, . . . P<SUB><SMALL>q</SMALL></SUB> is a collection of propositions which get translated into the possibility distributions &#928;<SUB><SMALL>1</SMALL></SUB>, . . . &#928;<SUB><SMALL>q</SMALL></SUB>, respectively. The combined effect of all these propositions is a possibility distribution &#928; on the space Z, which is the cross product of base sets of all the variables appearing in the propositions, so that:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-04d.jpg"></P>
+<P>Assume V is a variable which appears in some of the propositions, and we are interested in using &#928;(z) to obtain the knowledge this system affords us about V. The process used to obtain this information is projection. In particular, if Z = Z<SUB><SMALL>1</SMALL></SUB> &#215; Z<SUB><SMALL>2</SMALL></SUB> &#215; . . . Z<SUB><SMALL>n</SMALL></SUB> and Z<SUB><SMALL>1</SMALL></SUB> is the base set of V, then our inferred value to V is</P>
+<P ALIGN="CENTER">V is F</P>
+<P>where for any z<SUB><SMALL>1</SMALL></SUB> &#8712; Z</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-05d.jpg"></P>
+<P>Assume we have a knowledge base consisting of:
+</P>
+<CENTER>
+<TABLE WIDTH="40%"><TR>
+<TD>P<SUB><SMALL>1</SMALL></SUB>: if V is A then U is B<BR>P<SUB><SMALL>2</SMALL></SUB>: V is D
+</TABLE>
+</CENTER>
+<P>P<SUB><SMALL>1</SMALL></SUB> translates into:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-06d.jpg"></P>
+<P>P<SUB><SMALL>2</SMALL></SUB> translates into &#928;<SUB><SMALL>2</SMALL></SUB>(x) = D(x)</P>
+<P>then:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-07d.jpg"></P>
+<P>In order to find the inferred value of U we get:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-08d.jpg"></P>
+<P>If D is normal, it has at least one element with membership one:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-09d.jpg"></P>
+<P>We shall denote:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-10d.jpg"></P>
+<P>thus,
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-11d.jpg"></P>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch03/053-054.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="058-061.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

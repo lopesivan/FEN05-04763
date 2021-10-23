@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fess: A Reusable Fuzzy Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=12//-->
+<!--PAGES=187-189//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="185-187.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="189-190.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>There are quite a few fuzzy implication operators. They each have different properties. The question arises about the best properties for a fuzzy implication operator. First, it must certainly match the classical implication operator at the crisp corners. All of them do this. There are two other properties that are important to an expert system inference. They involve the case when the certainty factor for an implication relation, <I>R<SUB><SMALL>i</SMALL></SUB></I>, is equal to one and when the values for the conclusion are obtained along the diagonal with the out of bounds region. In the first case it is desired that the value for the conclusion not be one except in the crisp case. In other cases it should be less than one. This property is provided by the Lukasiewicz implication operator. Along the diagonal, which for our purposes are the certainty, premise pairs (1,0), (0.9,0.1), (0.8,0.2), &#133;,(0,1), we would like the conclusion values to be nonzero in general. In fact, the conclusion certainties should be decreasing as the relation certainty increases. For example, when the premise value is 0.7 and the relation certainty is 0.3, we desire that our conclusion not be totally false. This property is provided by the Kleene-Dienes implication operator. This property is not, it should be noted, as important as the first one mentioned. The Gaines 43 and Modified Gaines 43<SUP><SMALL>4</SMALL></SUP> do have both these properties and, hence, are most useful as implication operators in fuzzy expert systems.</P>
+<P>The reasons that these properties are desirable is given in the following. In the first case, it is misleading to label a conclusion completely certain when the premise which is involved in its verification has a low degree of truth. Note that it is the case in classical logic that when the premise is false, and the overall certainty of the implication relation is true, that the conclusion may be considered completely true or false. Given the lack of supporting evidence we choose to represent it as completely false. The second property indicates that it is desired that some certainty exist in a conclusion, given a premise which has some positive degree of certainty and an implication relation with a positive certainty. That it should decrease with the decreasing certainty in the relation is required, since there is no justification for a conclusion with a higher certainty than the relation it is contained within.</P>
+<P>There is one other property which was found important in generating modus ponens. The lower bound must be taken for modus ponens generation. An expert system often must take a conservative approach in its reasoning, since this is the typical approach of experts. Therefore, we must know our lower bound from the function which we use to generate modus ponens.</P>
+<H3><A NAME="Heading6"></A><FONT COLOR="#000077">IV. Fess Evidence Combination</FONT></H3>
+<P>For an expert system which is intended to be used in different applications, the combination of evidence method must be easily changed. This is accomplished in the Fess system by having the combination method(s) confined to a specific code unit. New methods may be plugged in without affecting the rest of the system. This feature is one of the advantages provided by the language in which Fess was developed.
+</P>
+<P>Each conclusion in Fess is seen as consisting of two parts: the positive part, <I>X is Y</I>, and the negative part, <I>X is not Y</I>. Our certainty for a conclusion depends upon how much we believe in its component parts. A strong belief in the negative part with a small belief in the positive part of the conclusion will make us certain that the negative part of the conclusion may be considered true to some degree. For each conclusion the system maintains a measure of belief and a measure of disbelief in its conclusion frame. The measure of disbelief may be described as the measure of belief in the negative part of the conclusion or the negation of the conclusion.</P>
+<P>The accrual method of evidence combination is the most generally applicable of the various methods available.<SUP><SMALL>16</SMALL></SUP> It was chosen for the initial implementation of Fess. The method of calculating the belief and disbelief measures will be detailed in the following.</P>
+<P>For each conclusion, denoted by <I>C<SUB><SMALL>i</SMALL></SUB></I>, there will be some relation(s), denoted by <I>R<SUB><SMALL>j</SMALL></SUB></I>, which provide the evidence necessary to decide whether to believe the positive or negative parts of the conclusion, or that no decision can be made with the evidence. With each relation <I>R<SUB><SMALL>j</SMALL></SUB></I> there will be an associated certainty factor, denoted by <I>CF<SUB><SMALL>j</SMALL></SUB></I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>), which indicates the strength of the evidence about conclusion <I>C<SUB><SMALL>i</SMALL></SUB></I> provided by the relation. The certainty factors of the relations used on a conclusion <I>C<SUB><SMALL>i</SMALL></SUB></I> accrue to provide us with our measure of belief in the following manner.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading7"></A><FONT COLOR="#000077">A. Definition 1</FONT></H4>
+<P>The <B>measure of belief</B> in a conclusion <I>C<SUB><SMALL>i</SMALL></SUB></I> is</P>
+<P ALIGN="CENTER"><IMG SRC="images/12-02d.jpg"></P>
+<P>where <I>t</I> is the current number of relations that have been used to determine <I>C<SUB><SMALL>i</SMALL></SUB></I> and <I>MB</I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>,<I>t</I> &#45; 1) denotes the belief value before the current relation was used, <I>MB</I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>, &#45; 1) = 0.</P>
+<P>For convenience allow <I>MB</I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>) to denote the value for the measure of belief function at the current <I>t</I>, the number of relations used to determine the belief in the conclusion. The measure of disbelief is calculated in a corresponding manner shown as follows.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading8"></A><FONT COLOR="#000077">B. Definition 2</FONT></H4>
+<P>The measure of disbelief in a conclusion <I>C<SUB><SMALL>i</SMALL></SUB></I> is</P>
+<P ALIGN="CENTER"><IMG SRC="images/12-03d.jpg"></P>
+<P>where <I>t</I> is the current number of relations that have been used to determine <I>C<SUB><SMALL>i</SMALL></SUB></I> and <I>MD</I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>,<I>t</I> &#45; 1) denotes the belief value before the current relation was used, <I>MD</I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>, &#45; 1) = 0.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="185-187.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="189-190.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

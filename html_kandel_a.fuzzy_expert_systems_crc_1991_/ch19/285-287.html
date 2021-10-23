@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:A Probabilistic Logic for Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=19//-->
+<!--PAGES=285-287//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="283-285.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="287-288.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>First, let us discuss the consequences of <I>C</I><SUB><SMALL>3</SMALL></SUB>. The only two distinct suppliers which are family related are S1 and S2 (with probability .8). We shall check whether this constraint implies higher probability for some of the tuples in the relation SP. Using the conjunction derivation rule, we can compute the probability of &#966;, the left-hand side of <I>C</I><SUB><SMALL>3</SMALL></SUB>. Then we can use modus ponens to derive the probability of the right-hand side of <I>C</I><SUB><SMALL>3</SMALL></SUB>. Consequently, some of the probabilities are increased; in case the constraint implies a lower probability than was given, we retain the higher value. The following tuples probabilities of the relation SP are changed: &lt;s1, p1&gt; to .72. &lt;s2, p3&gt; to .36.</P>
+<P>A similar analysis for the consequences of <I>C</I><SUB><SMALL>4</SMALL></SUB> shows that in the relation S, the following tuples probability is reduced (since in this case the complement is the derived formula): &lt;s1, N.Y.&gt; to .44, &lt;s3, N.Y.&gt; to .44. Notice that although the probability of these tuples decreased, the probability of the other tuples (e.g., &lt;s1, N.O.&gt;) is not changed.</P>
+<P><B>Example 7:</B></P>
+<P>This example shows how a useful combination of PL and probability or belief theory may be achieved. We take Shafer&#146;s example, <I>The Burglary of the Sweetshop,</I> from Reference 14. The highlights of the case include some evidence that the thief is left-handed, and another evidence that the theft was an inside job. Using Shafer&#146;s theory we can compute the combined effect of the evidence against the single left-handed clerk LHC of the sweetshop. Assume now that the following additional information is available:</P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;If LHC is guilty then a new clerk must be hired (probability &#945;).
+<DD><B>&#149;</B>&nbsp;&nbsp;There is a shortage of clerks (probability 1).
+<DD><B>&#149;</B>&nbsp;&nbsp;If there is a shortage of clerks and a new clerk is hired, then salary of new clerk &gt; salary of previous clerk (probability &#946;).
+<DD><B>&#149;</B>&nbsp;&nbsp;The sweetshop, economically, just breaks even, and any additional expense will force its bankruptcy (probability 1).
+<DD><B>&#149;</B>&nbsp;&nbsp;Now conclude that the sweetshop will go bankrupt with probability &#945; &#183; &#946;.
+</DL>
+<H4 ALIGN="LEFT"><A NAME="Heading10"></A><FONT COLOR="#000077">C. Consistency, Soundness, and Completeness of PL</FONT></H4>
+<P>Whenever conclusions have to be derived using inferences (in the context of ES, for example), very important characteristics of the system are its soundness and completeness. In FOPC, a logical system is sound if, given any consistent set of formulas, only true formulas may be inferred. It is complete if, given a set of formulas &#915;, every formula logically implied by &#915; is derivable from &#915;. We have to translate these FOPC notions to the context of PL, in which a formula, rather than being true in a model, has a probability of being true.
+</P>
+<P>Let &#915; be a nonempty set of formulas. We define the probability of &#915; by <I>p</I><SUB><SMALL>&#915;</SMALL></SUB> = &#928;<SUB><SMALL><B>i</B></SMALL></SUB> <I>p</I><SUB><SMALL><I>i</I></SMALL></SUB> where <I>i</I> &#8712; <I>I</I>, I is an index set for &#915;, and <I>p</I><SUB><SMALL><I>i</I></SMALL></SUB> is the probability of satisfaction of the i<SUP><SMALL>th</SMALL></SUP> formula in &#915;. Obviously, for <I>p</I><SUB><SMALL>&#915;</SMALL></SUB> to be positive, only a finite number of formulas in &#915; may have probability &lt;1. An alternative definition is <I>p</I><SUB><SMALL>&#915;</SMALL></SUB> = <I>inf</I><SUB><SMALL><B>i</B></SMALL></SUB> <I>p</I><SUB><SMALL><I>i</I></SMALL></SUB>. Clearly, for each &#966; &#8712; &#915;, <I>p</I><SUB><SMALL>&#966;</SMALL></SUB> &ge; <I>p</I><SUB><SMALL>&#915;</SMALL></SUB>. In both cases FOPC satisfaction of &#915; is equivalent to having <I>p</I><SUB><SMALL>&#915;</SMALL></SUB> = 1.</P>
+<P>Let &#966; be a consequent of &#915;, and let &#915;&#8242; be <IMG SRC="images/19-52i.jpg">. Whichever of these definitions we adopt, the probability of &#915;&#8242; may be less than that of &#915;. To see why, consider first the <I>inf</I> definition. The derived formula probability is a product of other probabilities and so may have a probability less than the <I>inf</I>. The same phenomenon might occur even if we adopt the first definition. Consider for example &#915; = {&#966;, &#936;, &#966; &#8594; [&#966; &#8594; [&#936; &#8594; &#952;]]}. If all formulas in &#915; have probability <I>p</I>, than &#915; has probability <I>p</I><SUP><SMALL>3</SMALL></SUP> but &#952; has probability <I>p</I><SUP><SMALL>4</SMALL></SUP>, which is strictly less than <I>p</I><SUB><SMALL>&#915;</SMALL></SUB> when <I>p</I> &lt; 1. We conclude that both definitions are potentially valuable for the following discussion.</P>
+<P>To study consistency, let us consider first logical (semantic) implication:</P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;<B>Definition:</B> A set of formulas &#915; <I>logically implies</I> (or simply implies) a formula &#966;, denoted by &#915; <IMG SRC="images/19-53i.jpg"> &#966;, if in every model <I>p</I><SUB><SMALL>&#966;</SMALL></SUB> &ge; <I>p</I><SUB><SMALL>&#915;</SMALL></SUB>.
+<DD><B>&#149;</B>&nbsp;&nbsp;<B>Definition:</B> A set of formulas &#915; <I>logically implies to a degree</I> &#945; a formula &#966;, denoted by &#915; <IMG SRC="images/19-54i.jpg"> &#966;, if in every model <I>p</I><SUB><SMALL>&#966;</SMALL></SUB> &ge; &#945; &#183; <I>p</I><SUB><SMALL>&#915;</SMALL></SUB>.
+</DL>
+<P>A set of formulas &#915; in FOPC in consistent if we cannot derive from &#915; both a formula &#966; and <I>not</I> &#966;. This concept can be generalized to PL in more than one way. A starting point is to require that PL consistency be compatible with FOPC consistency whenever all the probabilities are 1. This number (1) may be interpreted as the difference between the probability of satisfaction of a derived formula and that of its complement.</P>
+<P>Let &#916;<SUB><SMALL>&#915;</SMALL></SUB> be the set of formulas derivable from &#915;:</P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;<B>Definition:</B> &#915; is <I>consistent to a degree</I> &#945; if <IMG SRC="images/19-55i.jpg">. If we cannot derive &#966;s complement, we say that we derive at with probability &#8869;. For any &#945; define: &#945; &#45; &#8869; = &#945;.</DL>
+<P>Let us consider another approach to consistency. In FOPC, the consistency of &#915; is equivalent to having a model for &#915;. This can be translated in PL to having a positive probability for &#915;. Note that changes in probability are possible as derived formulas are added to &#915;, thus making the degree of consistency dependent on whether or not the consequences are added to the set (the first definition of consistency does not have this drawback).
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="283-285.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="287-288.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

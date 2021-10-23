@@ -1,0 +1,180 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:On the Design of a Fuzzy Intelligent Differential Equation Solver</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=14//-->
+<!--PAGES=205-208//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="203-205.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="208-212.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. The Architecture of FIDES</FONT></H3>
+<P>FIDES code is artificially intelligent since it understands the objects it reasons with. The relationship between the numerical and the symbolic codes is based on the need to interpret massive amounts of data. This is done by making the numerical code &#147;Smarter&#148; just by adding the symbolic interface, and thus we have a system where efficient symbolic code is replacing parts of the numerical code in order to achieve a higher level of performance.
+</P>
+<P><A NAME="Fig1"></A><A HREF="javascript:displayWindow('images/14-01.jpg',500,1352)"><IMG SRC="images/14-01t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/14-01.jpg',500,1352)"><FONT COLOR="#000077"><B>Figure 1</B></FONT></A>&nbsp;&nbsp;Present architecture of the system.</P>
+<P>Figure 1 shows the architecture of FIDES. The user interface runs at the moment on a SUN workstation. The expert system is written in LISP and runs on a VAX 11/780. The supercomputer CYBER 205 is used for the numerical computations. Hence, FIDES is a distributed system that runs on different machines with different operating systems and is certainly not a conventional expert system, at least not in the clerical sense.
+</P>
+<P>A small set of FIDES rules, which is given as follows, demonstrates in Figure 2 a first stage of subdivision of three different subpolygons that could participate in composing (along with other subpolygons) the original closed polygon. The four-sided polygon (Figure 2A) is divided into triangles which are transferred to another knowledge base for further investigation by FIDES. The long fuzzy rectangle (Figure 2B) is presented by an eight-sided polygon which will now be properly subdivided. The seven-sided polygon (Figure 2C) is replaced by four-sided and five-sided polygons. On each of these polygons further subdivision will be performed.</P>
+<P><A NAME="Fig2"></A><A HREF="javascript:displayWindow('images/14-02.jpg',500,125)"><IMG SRC="images/14-02t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/14-02.jpg',500,125)"><FONT COLOR="#000077"><B>Figure 2</B></FONT></A>&nbsp;&nbsp;Subdivision. (A) A concave four-sided polygon; (B) a long fuzzy rectangle; (C) a seven-sided polygon.</P>
+<TABLE WIDTH="100%">
+<TR>
+<TD WIDTH="15%">Rule 1.
+<TD>If the object has three sides, then the object is triangle.
+<TR>
+<TD>Rule 2.
+<TD>If the object has four sides, then the object is four-sided.
+<TR>
+<TD VALIGN="TOP">Rule 3.
+<TD>If the object is four-sided and the object has all angles equal to 1.57, then the object is rectangle.
+<TR>
+<TD VALIGN="TOP">Rule 4.
+<TD>If the object is rectangle and the object has largeratio, then the object is narrowrec.
+<TR>
+<TD VALIGN="TOP">Rule 5.
+<TD>If the object is rectangle and the object has smallratio, then the object is standrec.
+<TR>
+<TD VALIGN="TOP">Rule 6.
+<TD>If the object has more than four sides, then the object is polygon.
+<TR>
+<TD VALIGN="TOP">Rule 7.
+<TD>If the object is four-sided and the angle is greater than 1.7, then the object is square.
+</TABLE>
+<H4 ALIGN="LEFT"><A NAME="Heading5"></A><FONT COLOR="#000077">A. The Fuzziness in FIDES</FONT></H4>
+<P>Any conclusion related to a given object (subpolygon) is naturally associated with a certainty factor &#945;, 0 &#8804; &#945; &#8804; 1. For example, consider the question whether a given four-sided polygon is a &#147;rectangle&#148;. We must first decide which subpolygons are perfect rectangles. One alternative is to define a four-sided subpolygon as a perfect rectangle if and only if each of its four angles is 90&#176;. We then propose a <I>rectangle fuzzy function</I>, i.e.:</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-06d.jpg"></P>
+<P>defined for <I>any</I> four-sided polygon <I>x</I> with angles &#966;<SUB><I>i</I></SUB>, 1 &#8804 <I>i</I> &#8804; 4. If &#966;<SUB><I>i</I></SUB> = <IMG SRC="images/14-02i.jpg">, 1 &#8804; <I>i</I> &#8804; 4, then <I>x</I> is a perfect rectangle. Otherwise, it is a rectangle with certainty &#945; = X<SUB><SMALL><I>R</I></SMALL></SUB>(<I>x</I>). We thus constructed a rectangle fuzzy set:</P>
+<P ALIGN="CENTER"><I>R</I> = {(<I>x,&#967;<SUB><SMALL><I>R</I></SMALL></SUB></I>(<I>x</I>)) | <I>x is a four-sided polygon</I>}</P>
+<P>Similarly we may define a &#147;narrow&#148; fuzzy set:</P>
+<P ALIGN="CENTER"><I>N</I> = {(<I>x,&#967;<SUB><SMALL><I>N</I></SMALL></SUB></I>(<I>x</I>)) | <I>x is a four-sided polygon</I>}</P>
+<P>whose general member is again any four-sided polygon. This time the grade of membership is given by &#967;<SUB><SMALL><I>N</I></SMALL></SUB>(<I>x</I>) &#151; a fuzzy function that determines just how narrow <I>x</I> is by calculating ratios of opposite sides of <I>x</I>. A four-sided polygon is considered <I>perfectly narrow</I> if the minimum of all these ratios exceeds a given threshold &#963; and &#967;<SUB><SMALL><I>N</I></SMALL></SUB>(<I>x</I>) is defined accordingly, i.e., &#967;<SUB><SMALL><I>N</I></SMALL></SUB>(<I>x</I>) = 1 for such objects.</P>
+<P>Now, let us try to determine whether a given four-sided object is a narrow rectangle. We define a third fuzzy set <I>NR</I> &#151; the intersection of <I>N</I> and <I>R</I>:</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-07d.jpg"></P>
+<P>where
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-08d.jpg"></P>
+<P>A perfect narrow rectangle must, therefore, be a four-sided polygon with four right angles whose large ratio of opposite sides exceeds the threshold &#963;.
+</P>
+<P>Thus, in general, each &#147;intermediate&#148; conclusion <I>CI</I> that <I>identifies</I> a given object is associated with a certainty factor &#945;. This factor is computed by a fuzzy function, whose parameters characterize the geometry of the object. The pair (<I>CI</I>,&#945;) is then transferred to the blackboard which is the logical part of the inference engine, provided that &#945; exceeds some threshold &#945;<SUB><SMALL>0</SMALL></SUB>. When the inference of the knowledge base is completed, the blackboard contains a sequence of pairs <IMG SRC="images/14-03i.jpg">.</P>
+<P>Let <I>CF</I> be a &#147;final&#148; conclusion which is fired by the sequence <IMG SRC="images/14-04i.jpg"> of intermediate conclusions with certainty factors <IMG SRC="images/14-05i.jpg"> (all of which are placed on the blackboard). Then, <I>CF</I> is placed on the blackboard with the certainty factor &#946;<SUB><SMALL><I>i</I></SMALL></SUB>, where:</P>
+<P ALIGN="CENTER">&#946;<SUB><SMALL><I>i</SMALL></I></SUB> = min{&#945;<SUB><SMALL><I>i</I>1</SMALL></SUB>,...,&#945;<SUB><SMALL><I>im</I></SUB></SMALL>}</P>
+<P>If the blackboard finally consists of the final pairs <IMG SRC="images/14-06i.jpg">, then the object is recognized with the certainty factor <I>CF<SUB><SMALL>1</SMALL></SUB></I> for which:</P>
+<P ALIGN="CENTER">&#946;<SUB><SMALL>l</SMALL></SUB> = max{&#946;<SUB><SMALL>1</SMALL></SUB>,...,&#946;<SUB><SMALL><I>k</I></SUB></SMALL>}</P>
+<P>For example, let a four-sided object be a <I>rectangle</I> with certainty factor 0.73, a <I>square</I> with certainty factor 0.62, and possess a <I>largeratio</I> with certainty factor 0.80. Then, the final conclusions are as follows:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;<I>Narrowrec</I> (a narrow rectangle) with certainty 0.73 = min{0.73, 0.80}
+<DD><B>2.</B>&nbsp;&nbsp;<I>Square</I> (a standard four-sided polygon) with certainty factor 0.62
+</DL>
+<P>The object is thus recognized as a narrowrec and is further subdivided as in Figure 3B. If we would simply exchange the certainty factors 0.73 and 0.62, the object would be recognized as a square and would be subdivided as in Figure 3A.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="203-205.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="208-212.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

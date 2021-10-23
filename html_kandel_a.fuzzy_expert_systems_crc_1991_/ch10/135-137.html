@@ -1,0 +1,144 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Associative Memory Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=10//-->
+<!--PAGES=135-137//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch09/132-134.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="137-138.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 10<BR>Fuzzy Associative Memory Systems
+</FONT></H2>
+<P><I>Bart Kosko</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction: Association Generalizes Conditioning
+<DT>II.&nbsp;&nbsp;Fuzzy Theory Review and New Foundations
+<DT>III.&nbsp;&nbsp;Fuzzy Eigenset Subset FAMs
+<DT>IV.&nbsp;&nbsp;Metrical FAMs That Minimize Fuzzy Entropy
+<DT>V.&nbsp;&nbsp;Combining Fuzzy Cognitive Map FAMs
+<DT>Acknowledgments
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction: Association Generalizes Conditioning</FONT></H3>
+<P>Association generalizes conditioning. When B is conditioned on A, B is associated with A. The association pair (A,B) then <I>recalls</I> B when presented with A:</P>
+<P ALIGN="CENTER">A &#8594; (A,B) &#8594; B</P>
+<P>Associative memories map data to data. Random access memories (RAMs) map addresses to data. Content addressable memories (CAMs) map data to addresses. Parallel distributed associative memories superimpose associated data on the same memory medium. RAMs are not parallel distributed; they are serial and local. Neural-network CAMs are parallel distributed.<SUP><SMALL>46</SMALL></SUP> Autoassociative<SUP><SMALL>32,33</SMALL></SUP> associative memories store patterns from the same vector space. A piece of a stored pattern recalls the entire pattern. More generally, heteroassociative memories store pairs of unrelated data: (A<SUB><SMALL>1</SMALL></SUB>,B<SUB><SMALL>1</SMALL></SUB>, . . . , (A<SUB><SMALL>m</SMALL></SUB>,B<SUB><SMALL>m</SMALL></SUB>), where A<SUB><SMALL>i</SMALL></SUB> is an n-vector and B<SUB><SMALL>i</SMALL></SUB> is a p-vector. The stored pair (A<SUB><SMALL>i</SMALL></SUB>,B<SUB><SMALL>i</SMALL></SUB>) behaves as a logical biconditional, or metarule: If A<SUB><SMALL>i</SMALL></SUB>, Then B<SUB><SMALL>i</SMALL></SUB>; If B<SUB><SMALL>i</SMALL></SUB>, Then A<SUB><SMALL>i</SMALL></SUB>.</P>
+<P>Association strength is a matter of degree, just as conditioning is a matter of degree. <I>Fuzzy association</I> is storing and recalling uncertain associations. The associations can be uncertain, or the associated patterns A and B can be uncertain, or both. The storage media are <I>fuzzy associative memories</I> (FAMs). Following we discuss several easy-to-construct FAMs, how they behave, and how the associative recall process in neural networks/associative memories often amounts to minimizing a fuzzy entropy.</P>
+<P>Modus ponens is a paradigm of associative memory. In propositional logic, modus ponens is the theorem that if A is true and the conditional A &#8594; B is true, then B is true. The pair (A,B) is stored by the conditional A &#8594; B, which serves as a type of memory. When an input or search key C is presented to the memory, B is recalled if, and only if, C = A. When the fuzzy truth values t(A), t(B), t(A &#8594; B) &#8712; [0,1], the conditional is a skeletal FAM. When the stored pair (A, B) is presented with the approximate datum A&#8242; &#8773; A, then B&#8242; &#8773; B is recalled. For example, if p = t(A &#8594; B) = min(1, 1 - t(A) + t(B)) &lt; 1, then t(B) = p + t(A) - 1. Hence t(B&#8242;) &#8773; t(B) if t(A&#8242;) &#8773; t(A).</P>
+<P>How are the associations (A<SUB><SMALL>i</SMALL></SUB>,B<SUB><SMALL>i</SMALL></SUB>) obtained? In expert-systems theory the corresponding conditionals are obtained by the <I>knowledge engineering process</I> by asking for them. In FAM theory, the pattern associations are obtained by the <I>association engineering process</I> by asking for them, by abstracting situation-response prototypes from historical data, or by autonomously growing them in adaptive learning networks.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Fuzzy Theory Review and New Foundations</FONT></H3>
+<P>We present a geometric interpretation of sets and fuzzy sets as points on or in unit hypercubes. A set A is a binary n-vector &#151; a <I>bit</I> vector. A = (1 0 1 1) is a set, or message. A set A is a point in the Boolean n-cube B<SUP><SMALL>n</SMALL></SUP> = {0,1}<SUP><SMALL>n</SMALL></SUP>, the set of all subsets of the space X = {x<SUB><SMALL>1</SMALL></SUB>, . . . , x<SUB><SMALL>n</SMALL></SUB>}. X has 2<SUP><SMALL>n</SMALL></SUP> subsets. A is equivalent to one of the 2<SUP><SMALL>n</SMALL></SUP>-many mappings m<SUB><SMALL>A</SMALL></SUB>: X &#8594; {0,1}; m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) is the <I>degree</I> of membership of the i<SUP><SMALL>th</SMALL></SUP> element x<SUB><SMALL>i</SMALL></SUB> in A. The numeral 0 indicates no membership; 1 indicates total membership. The space X is the unit vector (1, . . . , 1). The empty set &#248; is the null vector (0, . . . , 0). The <I>power set</I> of X, denoted 2<SUP><SMALL>X</SMALL></SUP>, is the set of all subsets of X: 2<SUP><SMALL>X</SMALL></SUP> = {A &#8712; B<SUP><SMALL>n</SMALL></SUP>: A &sub; X}. Hence, 2<SUP><SMALL>X</SMALL></SUP> = B<SUP><SMALL>n</SMALL></SUP>. In general, the power set of B, 2<SUP><SMALL>B</SMALL></SUP>, is the set B subsets. A is a <I>subset</I> of B if m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) &#8804; m<SUB><SMALL>B</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) for all i; equivalently, if x<SUB><SMALL>i</SMALL></SUB> &#8712; A implies x<SUB><SMALL>i</SMALL></SUB> &#8712; B. Hence 2<SUP><SMALL>B</SMALL></SUP> &sub; 2<SUP><SMALL>X</SMALL></SUP>, a subcollection of B<SUP><SMALL>n</SMALL></SUP>. The intersection A &#8745; B = {x: x &#8712; A and x &#8712; B}, the set of elements common to A and B; equivalently, m<SUB><SMALL>A &#8745; B</SMALL></SUB> = min(m<SUB><SMALL>A</SMALL></SUB>,m<SUB><SMALL>B</SMALL></SUB>). Dually, the union A &#8746; B is the set of elements in either A and B, or m<SUB><SMALL>A &#8746; B</SMALL></SUB> = max(m<SUB><SMALL>A</SMALL></SUB>,m<SUB><SMALL>B</SMALL></SUB>). The complement A<SUP><SMALL>c</SMALL></SUP> = X/A = {x: x &#8713; A}, all elements of X not in A; equivalently, m<SUB><SMALL>A</SMALL></SUB>c = 1 - m<SUB><SMALL>A</SMALL></SUB>. The <I>cardinality</I> or size of A is the number of elements in A. If A = (1 0 1 1), the cardinality of A is 3. If A is not finite &#151; if A can be put into a one-to-one mapping with a proper subset of itself &#151; then its cardinality is &#8734;. The <I>l</I><SUP><SMALL>p</SMALL></SUP> <I>distance</I> between sets A and B is the p<SUP><SMALL>th</SMALL></SUP> root of the sum of the p<SUP><SMALL>th</SMALL></SUP> absolute differences:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-01d.jpg"></P>
+<P>l<SUP><SMALL>1</SMALL></SUP>(A,B) = H(A,B) is Hamming distance, the number of vector slots in which the binary patterns A and B differ. If A = (1 0 1 1), then H(A, X) = 1.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch09/132-134.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="137-138.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

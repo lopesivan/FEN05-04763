@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Evolution From Expert Systems to Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=1//-->
+<!--PAGES=008-009//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="005-008.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="009-011.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>In order to develop an expert system, a willing and patient expert must be found for the knowledge acquisition process. The initial sessions with the expert will be an intense process of finding the relevant information and getting at it. Further sessions will be concerned with filling gaps in the system knowledge and correcting any errors that may have crept in. Incorrect knowledge is acquired due to the fact that the knowledge engineer must do a lot of interpretation and weeding out in acquiring the heuristics from the expert. Also, if several experts contribute knowledge, it is occasionally the case that they contradict one another to some degree. The knowledge engineer is responsible for weeding out the inconsistencies in the knowledge base.
+</P>
+<P>Some tools have been developed to automate the knowledge acquisition process, such as one based on Personal Construct Theory.<SUP><SMALL>8</SMALL></SUP> These tools are of limited utility, but show some future promise. More useful are the tools that aid the knowledge acquisition process, such as TEIRESIAS<SUP><SMALL>11</SMALL></SUP> which aids knowledge acquisition and refinement for the expert system building tool EMYCIN.<SUP><SMALL>34</SMALL></SUP> It checks phrasing of clauses in rules and for completeness in the rules, as well as for contradictions. SEEK<SUP><SMALL>28</SMALL></SUP> gives advice about rule refinement during the development of a diagnostic-type expert system. It will help refine rules represented in the EXPERT<SUP><SMALL>37</SMALL></SUP> language. EXPERT is an expert system building tool. Some of the commercial expert system shells have interfaces which aid knowledge acquisition, in a manner much like TEIRESIAS.</P>
+<H3><A NAME="Heading6"></A><FONT COLOR="#000077">II. Expert System Classification</FONT></H3>
+<P>Expert systems are commonly described in terms of their application domain, knowledge representation mechanism, inference methods, and special features. We examine them from a different angle. We classify them based on their usability. That is whether they are in common use solving everyday problems. An expert system may belong to class one, class two, or class three. We shall not comment on expert system building or developing tools, which are a separate kind of entity.
+</P>
+<H4 ALIGN="LEFT"><A NAME="Heading7"></A><FONT COLOR="#000077">A. Class One Systems</FONT></H4>
+<P>Definition: A class one expert system is in common use. It is commercially viable. It is a program that has earned acceptance by the user community.
+</P>
+<P>Let us examine some examples of class one expert systems. We look at three systems that were near the first to enter this class. Dendral, Macsyma, and R1 are the examples of this class. R1 has evolved into XCON.<SUP><SMALL>25</SMALL></SUP> Note that there are excellent examples of expert systems which have not made it to this class.</P>
+<P>The three class one examples perform mass spectrographic analysis, symbolic mathematical manipulation, and configuration of VAX 11/780 computer systems (XCON encompasses the whole VAX family of systems), respectively. Their domains are diverse. Note that none of these is a consultation system. Their interaction with the user is minimal. Each gives a concrete solution. It is rather straightforward and noncontroversial to determine the correctness of their solutions. They all have manageable and well-defined problem domains. A limited, focused domain currently is a characteristic of the more successful expert systems. Less knowledge is needed for a limited problem, and it is more easily verified than the knowledge base of a large domain. Experts were available for consultation on each system that has made it into class one.</P>
+<P>Dendral has been heavily used by scientists and has proven itself a viable tool. Since it was difficult to get expert chemists to explicate all their knowledge in Dendral domain of expertise, Meta-Dendral was developed. It is an expert system designed to form rules from empirical observation. Meta-Dendral has discovered several good heuristics for mass spectrographic analyses and itself qualifies as useful expert system.</P>
+<P>We will describe R1/XCON, in some detail, as it is one of the best examples of a class one system. This was the first major commercial expert system. XCON is a rule-based or production system. Match is used rather than generate-and-test as a problem-solving method. This means that rather than exploring several hypotheses until an acceptable one is found, it uses its knowledge of the task domain to generate a single acceptable solution.</P>
+<P>Two important domain independent lessons came out of the implementation of XCON. An expert system can perform a task by simply recognizing and taking the proper action at each step. Of course this implies that at each step one can determine whether an action is consistent with the acceptable performance of the task. They also found that it was quite easy to refine and extend system knowledge when the system was implemented as a production rule system.</P>
+<P>The problem-solving method of Match can be considered a weak search method. Its search space consists of all instantiations of the variables in the form. The form is the body of domain specific knowledge that defines acceptable sets of instantiations. The form will hold constraints for task satisfaction. A partial ordering on decisions must exist so that the application of an operator will affect only aspects of the solution that have not yet been determined. The subtask of placing modules on the unibus does require search which is done via generate-and-test with match used as a heuristic guide.</P>
+<P>The rules in the original working version of the R1 expert system were broken up into domain-specific and general rules. These two categories were further subdivided. The smallest set of rules covered computation (47 rules), while the largest set covered component association (156 rules). These are both examples of sets of domain-specific rules. Today XCON contains many more rules and much more sophistication.</P>
+<P>Now let us summarize the characteristics of problems that have class one expert system applications. These problems have a limited domain which is reasonably narrow. Experts are available and able to explicate their knowledge about solving problems in the domain. They have minimally imprecise input and output. It is straightforward to determine the correctness of their output. They have minimal interaction with the user. There are a large number of these systems now coming into use.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="005-008.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="009-011.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

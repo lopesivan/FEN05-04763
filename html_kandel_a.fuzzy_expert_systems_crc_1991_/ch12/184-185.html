@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fess: A Reusable Fuzzy Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=12//-->
+<!--PAGES=184-185//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="181-184.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="185-187.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>Implication relations are the primary relations used for the inference procedure. While other types of relations can be used within the system to perform inference, fuzzy implication relations were chosen for initial system validation. They are also very flexible relations which can be used for any application. A simple implication relation is shown in Figure 2.
+</P>
+<P>In addition to the implication relations, another important type of relation in Fess is called a factual relation. Factual relations may be gathered before the expert system is called upon to solve a problem, or they may be obtained by querying the system user. The factual relations are fuzzy relations, which are usually two-place. A two-place relation is one with two fields which are filled in to determine the value of the relation. Factual relations correspond to the clauses in the implication relations. They provide information about the truth of clauses and also the conclusions of the implication relations. Factual relations are denoted as R<SUB><SMALL>f</SMALL></SUB>(X,Y) &#8712; [0,1] for a fact:</P>
+<P ALIGN="CENTER">X is {quantifier} Y</P>
+<P>The quantifier is optional and the fact may be assigned a numerical truth value rather than quantified by linguistic descriptors. Actual facts may read:</P>
+<P ALIGN="CENTER">The sky is somewhat gray.<BR><B>OR</B><BR>The age is about 30.</P>
+<P>In the case of the second fact phrase the system will have a function associated with the term <I>about 30</I>. Given an age, the function will provide a fuzzy belief value about how well the age matches <I>about 30</I>. In the same way other imprecise statements may be handled by Fess.</P>
+<P>One important aspect of Fess is how it matches imprecise clauses with others which involve the same concept. Fess is able to determine the value of a clause if it has a fact which matches the clause in the phrase before the is and after it except for the optional quantifier(s). That is, if we are trying to determine the value of the clause, <I>X is quantifier</I><SUB><SMALL>1</SMALL></SUB> <I>Y</I>, and we know the value of the clause <I>X is quantifier</I><SUB><SMALL>2</SMALL></SUB> <I>Y</I> we can do a fuzzy match based on the quantifier to find the truth value for the unknown clause. When the quantifiers are the same, the solution is obvious. An example shows what happens when the quantifiers are different.</P>
+<P>Example 1 &#151; Let clause<SUB><SMALL>1</SMALL></SUB> &#8801; <I>the temperature is cold</I> be the clause whose value we wish to determine. Let clause<SUB><SMALL>2</SMALL></SUB> &#8801; <I>the temperature is almost cold</I> be known to be true with a value of 1.0. We now use the appropriate translation function, in this case &#956;<SUB><SMALL>truth</SMALL></SUB>(<I>C</I>) &#8592; &#956;<SUB><SMALL>almost</SMALL></SUB>(<I>C</I>) *0.9, to determine the value for clause<SUB><SMALL>1</SMALL></SUB>. In this case we apply &#956;<SUB><SMALL>almost</SMALL></SUB> to clause<SUB><SMALL>2</SMALL></SUB> to find &#956;<SUB><SMALL>truth</SMALL></SUB>(clause<SUB><SMALL>1</SMALL></SUB>) = 0.9. Note that our double left arrow operator is not symmetrical.</P>
+<P>The mechanism previously described provides a powerful and convenient method for quickly determining clause values without badgering the system user with what would be perceived as redundant questions. In the case that information has been previously put into the fact base, it allows flexibility of expression, making the system more user amiable.</P>
+<P>In a manner consistent with the Fess knowledge representation formalism, our factual relations are represented in frames. The factual frame consists of the type of the relation, name, actual fact, and a numerical truth value for the fact. These are called instance frames. These frames are created as facts come into the system. For each domain in which facts may occur, there is in variant frame created. These are created when the knowledge base is loaded since we can discern the domains of all clauses in implication relations at this time. The invariant frame consists of the type, domain, instance creation procedure, and possibly a link to a frame with which it shares properties.</P>
+<P>There are three important types of relations that involve the conclusions of implication relations. Each conclusion is involved in a relation with the names of the implication relations, if any, in which it is in the premise. A conclusion may be in no premise if it simply causes an action to be taken. These relations have a variable number of elements in them. Each conclusion is also in a relation with the implication relations which act upon it. Those relations serve to confirm or deny the conclusion. We actually have two relations in use here. One for the implication relations, which act to confirm the conclusion, and one for the implication relations, which act to confirm the opposite of the conclusion, thereby denying it. These relations may also be viewed as lists and are stored and manipulated as such. They look like the following:</P>
+<P ALIGN="CENTER"><I>R<SUB><SMALL>p</SMALL></SUB></I>(<I>c<SUB><SMALL>i</SMALL></SUB></I>, <I>name<SUB><SMALL>i</SMALL></SUB></I>,&#133;,<I>name<SUB><SMALL>j</SMALL></SUB></I>)</P>
+<P>The <I>p</I> denotes the relation with implication relations which act on the positive form of the conclusion <I>C<SUB><SMALL>i</SMALL></SUB></I>. It should be noted that a NIL name may exist, denoting a relation with value zero, or we may have only one item in the relation with the conclusion. The relation for the negative form of the conclusion <I>R<SUB><SMALL>n</SMALL></SUB></I> is viewed in the same manner. It will always be the case that one of <I>R<SUB><SMALL>p</SMALL></SUB></I> and <I>R<SUB><SMALL>n</SMALL></SUB></I> will be nonzero. The use of the conclusion relations will be fully discussed in the next section.</P>
+<P>The third important type of relation which involves conclusions is the contextual relation. This is a unary relation on each conclusion whose value is the context of the conclusion. By context, we mean whether it is used as a relation to start with in a forward chaining system, provides an intermediate result (the largest group), is a startstop relation for beginning operation in backward chaining mode, or represents a final conclusion, a problem solution. The context of the relations becomes evident in the process of knowledge acquisition. The expert needs only to be queried about those that are used to begin and end processing. All others are intermediate. The use of contexts for the implication relations allows the simple use of the system for diverse applications by keeping all information about the knowledge external to the inference and control sections of the system. It should be noted that these context relations provide a form of metaknowledge.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="181-184.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="185-187.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

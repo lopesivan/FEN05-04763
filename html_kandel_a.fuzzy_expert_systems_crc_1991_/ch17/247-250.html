@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Expert Systems for an Intelligent Computer-based Tutor</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=17//-->
+<!--PAGES=247-250//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="243-247.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="250-251.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>First, a relational representation is employed. The advantages of the relational model over other common data base representation techniques have been described by Tanimoto,<SUP><SMALL>26</SMALL></SUP> Rundensteiner,<SUP><SMALL>22</SMALL></SUP> and others. Unlike semantic nets, for example, when the size of a relational data base (RDB) increases, retrieval time does not increase, a significant issue in maintaining response times. Also, the RDB model is associated with a set of well-defined operators that permit extremely flexible data manipulation and facilitate both high-level retrieval and development of friendly query languages.</P>
+<P>Second, we have incorporated into our RDB an extension that allows for each student&#146;s model to contain fuzzy data entries. This permits the representation of incomplete, imprecise, and vague information about the student, as well as precise data. An example of an imprecise entry would be a notation indicating that the student <I>often</I>, but not <I>always</I>, performs as an expert on two-schema problems (somewhat of an expert). An example of a vague entry resulting from incomplete data would be a notation indicating that the student is <I>probably</I> an older student. Although such information, as obtained, is often inherently inexact and vague, it can provide valuable guidance for global planning decisions, such as the selection of lesson goals and problems.</P>
+<P><A NAME="Fig5"></A><A HREF="javascript:displayWindow('images/17-05.jpg',713,500)"><IMG SRC="images/17-05t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/17-05.jpg',713,500)"><FONT COLOR="#000077"><B>Figure 5</B></FONT></A>&nbsp;&nbsp;Expert solutions module solution tree for car problem.</P>
+<P><A NAME="Fig6"></A><A HREF="javascript:displayWindow('images/17-06.jpg',500,112)"><IMG SRC="images/17-06t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/17-06.jpg',500,112)"><FONT COLOR="#000077"><B>Figure 6</B></FONT></A>&nbsp;&nbsp;Possible domain values in a FRDB relation student. *Represents uncertainty; **represents a range of uncertainty.</P>
+<P>Our final enhancement to the fuzzy relational data base (FRDB) is a temporal extension, which addresses the issue of how to store information over time. This is accomplished by maintaining multiple tuples within each student relation, each tuple representing a holistic student evaluation at a different point in time. Historical data permits us to evaluate the student&#146;s development over the sequence of his sessions on an ITS. This is necessary for effective tutoring at the global level, because the student does not always have a consistent performance and a trend of behavior has to be developed over several sessions. A poor performance may represent a bad day and, thus, should not unduly bias selection of future instructional goals and problems. Storing information over time improves the global performance of the system as it enhances the system&#146;s understanding of the student and his behavior. It also makes a useful research tool, since it allows for comparison and analysis of student&#146;s performance changes. Thus, the actual effectiveness of the system as a tutor can be verified.
+</P>
+<H4 ALIGN="LEFT"><A NAME="Heading14"></A><FONT COLOR="#000077">B. Types of Data</FONT></H4>
+<P>A heterogeneous data representation with weakly typed data domains is used. The various types of values that can be assigned to an element are:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Domain attribute not applicable, i.e., null value
+<DD><B>2.</B>&nbsp;&nbsp;Linguistic value
+<DD><B>3.</B>&nbsp;&nbsp;Known interval
+<DD><B>4.</B>&nbsp;&nbsp;Member of a discrete set of values (all equally possible)
+<DD><B>5.</B>&nbsp;&nbsp;Value somewhat ambiguous, as only partial information known
+</DL>
+<P>The relation in Figure 6 demonstrates some of these choices. A review of existing ITSs reveals that, to date, the binary approach has been used to indicate whether a student does or does not have a particular characteristic. The advantages of a nonbinary representation are obvious. Consequently, the choice of a fuzzy approach is both a positive and necessary enhancement for the student record.
+</P>
+<P>An analysis of the kinds of information necessary in a SR supports the preceding five categories; however, no other existing ITS has this ability. The following examples illustrate typical items that may be stored. A teacher may want to store the information that a particular student is <I>very good</I> in type X problems but only <I>average</I> in type Y problems. Or, a teacher using the tutoring system might request a list of all first period students who are performing <I>very well</I> on two-schema problems but <I>below average</I> on three-schema problems. Also, our SR houses fuzzy linguistic information on the student&#146;s typical motivation level. It has been determined<SUP><SMALL>12</SMALL></SUP> that motivation is a significant component in a student&#146;s success or lack of it in word problems. Knowledge of the student&#146;s motivational level (from teacher input and system observation and inference) is used to determine the extent and type of tutoring offered.</P>
+<P>By incorporating temporal knowledge in our SR, the tutor can detect trends in the student as well as inconsistencies in performance. Knowledge of the student&#146;s level of expertise for solving particular problem types is used to individualize the tutoring. We are also incorporating information on executive level skills. For example, we wish to promote such executive level skills as self-monitoring and good memory management. These are a few specific examples of the types of information that can be stored in the system. In addition, the design of the SR allows the researcher to augment these with other student characteristics that are determined to be relevant by using linguistic codes, ranges, fuzzy possibilities, and incomplete data.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="243-247.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="250-251.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

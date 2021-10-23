@@ -1,0 +1,181 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:COMEX -- An Autonomous Fuzzy Expert System or Tactical Communications</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=20//-->
+<!--PAGES=297-300//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="293-297.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="300-303.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+</P>
+<H3><A NAME="Heading6"></A><FONT COLOR="#000077">III. The Internal Structure of the CONTROLLER</FONT></H3>
+<P>This section describes the internal structure of the CONTROLLER. The expert system employs three distinct knowledge bases and is divided into four main logical parts,8-27 as shown in Figure 9:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Blackboard
+<DD><B>2.</B>&nbsp;&nbsp;The inference engine
+<DD><B>3.</B>&nbsp;&nbsp;The question-answer program (QAP)
+<DD><B>4.</B>&nbsp;&nbsp;Communication channel for communicating with other modules
+</DL>
+<P>The blackboard is a global data structure (i.e., the contents of the blackboard is reachable from any part of the software) that stores intermediate results from the inference procedure and contains important information about the data. Before we describe the components of the blackboard, it is important to understand conceptually its function. Suppose we have a knowledge base containing two rules:
+</P>
+<P ALIGN="CENTER">if <I>a</I> then <I>b</I></P>
+<P ALIGN="CENTER">if <I>b</I> then <I>c</I></P>
+<P>and suppose that the user provides the system with the data <I>a</I>. First, since the user provides the data <I>a</I>, we put it on the blackboard. The blackboard now contains the truth sentence <I>a</I>. The inference engine starts to evaluate the knowledge base by matching the premise of each rule to the data placed on the blackboard. Since the premise of the first rule is matched against the data on the blackboard, the conclusion of that rule becomes true and is placed on the blackboard. Thus, the blackboard now will contain the data <I>a</I> and <I>b</I>. The inference engine matches the premise of the second rule against the blackboard (since the premise of the second rule is <I>b</I> and the blackboard contains <I>b</I>) so that the conclusion of the second rule, <I>c</I>, becomes true and is placed on the blackboard.</P>
+<P><A NAME="Fig9"></A><A HREF="javascript:displayWindow('images/20-09.jpg',500,283)"><IMG SRC="images/20-09t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/20-09.jpg',500,283)"><FONT COLOR="#000077"><B>Figure 9</B></FONT></A>&nbsp;&nbsp;The general structure of the CONTROLLER expert system.</P>
+<P>The blackboard plays a very important role in the inference process, since without storing the intermediate results on the blackboard the inference engine would not be able to perform its task. Each line on the blackboard contains:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Key words (to be described later)
+<DD><B>2.</B>&nbsp;&nbsp;Certainty factor (CF), which is used for the evaluation of the conclusion(s)<SUP><SMALL>23</SMALL></SUP>
+<DD><B>3.</B>&nbsp;&nbsp;Rule number (RN), which is the same as the number of the rule that was fired and its conclusion placed on the blackboard
+</DL>
+<P>The expert system described here uses production rules as a knowledge representation method.
+</P>
+<P>The general structure of a production rule is</P>
+<P ALIGN="CENTER"><IMG SRC="images/20-01d.jpg"></P>
+<P>where P is the premise of the rule and C is the conclusion. The general structure of P is (using the BNF notation):
+</P>
+<P ALIGN="CENTER">P :: = S |(P) |NOT P |S OR P |S AND P |</P>
+<P>S :: = An English phrase in the form: the A of [the] B is [not] [adjective] C. Where A, B, and C are key words. An example to S can be &#147;the range of VHF is 25 miles&#148;. In this case A = &#147;range&#148;, B = &#147;VHF&#148;, and C = &#147;25&#148;.</P>
+<P>The general structure of the knowledge base is</P>
+<P ALIGN="CENTER"><IMG SRC="images/20-02d.jpg"></P>
+<P>For example, some of the rules in KB1 are
+</P>
+<DL>
+<DD><B>120.</B>&nbsp;&nbsp;- - - - - -
+<DD><B>121.</B>&nbsp;&nbsp;If range of target is long and satellite is available then type of ltransmit is satellite.
+<DD><B>122.</B>&nbsp;&nbsp;If range of target is long and not satellite is available and HF is available then type of ltransmit is HF.
+<DD><B>123.</B>&nbsp;&nbsp;If range of target is short and satellite is available then type of stransmit is satellite.
+<DD><B>124.</B>&nbsp;&nbsp;If range of target is short and not satellite is available and VHF is available then type of stransmit is VHF.
+<DD><B>125.</B>&nbsp;&nbsp;If range of target is short and not satellite is available and not VHF is available and HF is available then type of stransmit is HF.
+<DD><B>126.</B>&nbsp;&nbsp;- - - - - - -
+</DL>
+<P>The knowledge base is associated with a special matrix called the bit matrix (BM). BM is an N by N matrix where N represents the number of rules in the knowledge base, so that:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/20-03d.jpg"></P>
+<P>and
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/20-04d.jpg"></P>
+<P>The bit matrix has three functions:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;It is used by the question-answer program (QAP) to trace the inference path when describing how a conclusion was reached.
+<DD><B>2.</B>&nbsp;&nbsp;It helps the inference engine to guide the user to reach a conclusion when the data which was provided by the user is insufficient.
+<DD><B>3.</B>&nbsp;&nbsp;As described in Equation (3), the BM can determine which rule is a concluding rule (i.e., a terminal) and which rule is an intermediate rule.
+</DL>
+<P>The bit matrix is created during the initial start-up procedure and updated when a new rule is inserted into the knowledge base or a rule is deleted from the knowledge base. As shown in Equation (2), an entry <I>BM</I>[<I>i,j</I>] accepts the value 1 if the conclusion of rule <I>i</I> can contribute to the firing of rule <I>j</I> and 0 otherwise. In other words, if the conclusion of rule <I>i</I> is similar to a clause in rule <I>j</I> then 1 is inserted in <I>BM</I>[<I>i,j</I>]. Thus, a matching process takes place to determine the similarity between the conclusion of rule <I>i</I> and a clause in rule <I>j</I>. As was stated earlier, each clause in a production rule is in the form:</P>
+<P ALIGN="CENTER">THE A of [the] B is [not] [adjective] C</P>
+<P>where A and B are key words and C is either a key word or a number or a range of numbers describing B.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="293-297.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="300-303.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

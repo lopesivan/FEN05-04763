@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Inferences With Inaccuracy and Uncertainty in Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=3//-->
+<!--PAGES=043-045//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch02/038-042.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="045-047.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 3<BR>Inferences with Inaccuracy and Uncertainty in Expert Systems
+</FONT></H2>
+<P><I>Bernadette Bouchon-Meunier</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Fuzzy Implications
+<DD>A.&nbsp;&nbsp;Fuzzy Inferences
+<DD>B.&nbsp;&nbsp;Definitions of the Main Fuzzy Implications
+<DD>C.&nbsp;&nbsp;Properties of the Implications in Crisp Situations
+
+<DL>
+<DD>1.&nbsp;&nbsp;Nonambiguous (Crisp) Premise &#147;X is A&#148;
+<DD>2.&nbsp;&nbsp;Nonambiguous (or Crisp) Conclusion &#147;X is B&#148;
+<DD>3.&nbsp;&nbsp;Crisp Values of the Antecedent &#147;X is A&#148; and the Consequent &#147;Y is B&#148; of the Rule
+
+</DL>
+<DD>D.&nbsp;&nbsp;Properties of the Fuzzy Implications for Fuzzy Situations
+<DT>III.&nbsp;&nbsp;Compatibility of Facts with the Premise of a Rule
+<DD>A.&nbsp;&nbsp;A&#8242; Is More Specific than A
+<DD>B.&nbsp;&nbsp;A&#8242; Is Less Specific than A
+<DD>C.&nbsp;&nbsp;A&#8242; Is Not Ambiguous
+<DD>D.&nbsp;&nbsp;Indetermination
+<DT>IV.&nbsp;&nbsp;Modifiers of the Attributes
+<DT>V.&nbsp;&nbsp;Conclusion
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>The data base of a knowledge-based system contains inaccuracies and uncertainties which are inherent in the description of the rules given by the expert. They are due to the difficulty of representing the facts involved in the antecedents and the consequents of the inference rules, which are expressed in most cases by ambiguous characterizations (such as a color or an age described as &#147;young&#148;), or by imprecise data, (for instance, a length described as &#147;approximately equal to 15 meters&#148;). Uncertainties appear, particularly when the expert is not certain of the validity of the rule in any cases. Another problem stems from the utilization of these rules when the observed facts are not identical with the condition expressed in their premises, but are not too different from them. In a process using classical logic, the rule would not work in this case, but the fact is sometimes so close to the characterization indicated in the premise of a rule that it seems interesting to obtain a deduced fact, even if we must restrict its validity through a coefficient of uncertainty. Let us consider the following example:
+</P>
+<P ALIGN="CENTER">Rule 1 (R1): IF the size of the object is small THEN the price is high.</P>
+<P>An ambiguity stems from the meaning of <I>small</I> and <I>high</I>, which may change from an expert to the other one and which is rather difficult to determine precisely, and from the fact that the size may be evaluated with an inaccuracy. Another linguistic problem comes from modifiers such as <I>rather</I> or <I>very</I> which can be introduced in such a way that the fact &#147;the size is rather small&#148;, for instance, will not be considered as sufficient to make the rule (R1) work directly. A coefficient of uncertainty comes from the doubt of the expert giving the rule about its validity.</P>
+<P>Various techniques allow us to cope with the uncertainties or inaccuracies inherent in the evidence. We can think of using the semantic meaning of the words by means of natural languages. We can also use nonmonotonic logic that allows us to make hypotheses and to infer conclusions from incomplete information. The particular case of modal logic takes into account expressions such as &#147;it is possible that the price is high&#148;, leading to noncertain, but plausible, conclusions. A coefficient may also be associated with the fact, expressing the certainty of the observer with regard to this evidence.</P>
+<P>A simple method for dealing with ambiguities in the knowledge base consists of splitting the information contained in the imprecise rule into several crisp ones, in order to decompose the possible cases summarized in the imprecise rule. For example, R1 can be replaced by several crisp rules, such as:</P>
+<DL>
+<DD>1. If the size is less than 1 cm, the price is more than 30 units.
+<DD>2. If the size is between 1 and 3 cm, the price is between 20 and 30 units.
+<DD>3. If the size is more than 3 cm, the price is less than 20 units.
+</DL>
+<P>It is obvious that such a splitting of the intervals of size and price is somewhat arbitrary and the conclusion which is deduced at the limit points of the intervals can be discussed. It is possible to attenuate these crisp transitions by using the description of linguistic variables.<SUP><SMALL>13</SMALL></SUP></P>
+<P>The only way to manage both uncertainties and inaccuracies is by the utilization of possibility theory and fuzzy logic. We introduce, in the next section, the main methods for managing uncertainties and inaccuracies in such a way, but this domain is very rich and research is intensive.<SUP><SMALL>7</SMALL></SUP></P>
+<P><A NAME="Fig1"></A><A HREF="javascript:displayWindow('images/03-01.jpg',400,127)"><IMG SRC="images/03-01t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/03-01.jpg',400,127)"><FONT COLOR="#000077"><B>Figure 1</B></FONT></A>&nbsp;&nbsp;</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Fuzzy Implications</FONT></H3>
+<H4 ALIGN="LEFT"><A NAME="Heading4"></A><FONT COLOR="#000077">A. Fuzzy Inferences</FONT></H4>
+<P>We consider propositions such as &#147;X is A&#148; or &#147;Y is B&#148;, where X and Y are linguistic variables (such as the size, the color, the temperature, the nature, ... of an object or an element) defined on given universes U<SUB><SMALL>X</SMALL></SUB> and U<SUB><SMALL>Y</SMALL></SUB>. A and B, respectively, are characterizations (for instance, short, blue, warm, mammalian, ...) of the variable X (and Y, respectively) represented by a fuzzy subset of U<SUB><SMALL>X</SMALL></SUB> (and U<SUB><SMALL>Y</SMALL></SUB>, respectively) with membership function f<SUB><SMALL>A</SMALL></SUB> (and f<SUB><SMALL>B</SMALL></SUB>, respectively) defined on U<SUB><SMALL>X</SMALL></SUB> (and U<SUB><SMALL>Y</SMALL></SUB>, respectively) and lying in [0,1], as indicated in Figure 1. The rules describe fuzzy relations between two such propositions, and they take the form &#147;if X is A then Y is B&#148;.</P>
+<P>In Boolean logic, propositions &#147;X is A&#148; and &#147;Y is B&#148; would be considered as false or true, depending on the value 0 or 1 associated with them, and the implication expressed in the rule would take the value corresponding to <IMG SRC="images/03-01i.jpg">(X is A) <IMG SRC="images/03-02i.jpg"> (Y is B).</P>
+<P>In the case of fuzzy logic, the propositions are considered satisfied with a degree f<SUB><SMALL>A</SMALL></SUB>(x) and f<SUB><SMALL>B</SMALL></SUB>(y) in every point x and y of the universes. They are not satisfied if the value is 0, completely satisfied if it equals 1, and intermediate values of satisfaction are possible. A possibility distribution can be associated with any X when characterized by A, by assigning to every element x of U<SUB><SMALL>X</SMALL></SUB> a degree of possibility <I>p</I><SUB><SMALL>X</SMALL></SUB>(x) equal to f<SUB><SMALL>A</SMALL></SUB>(x).<SUP><SMALL>14</SMALL></SUP></P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch02/038-042.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="045-047.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

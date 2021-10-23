@@ -1,0 +1,166 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Physiology of the Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=6//-->
+<!--PAGES=083-085//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="081-083.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="085-087.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>The simple architecture of expert systems includes a data base, a knowledge base, and an inference machine.<SUP><SMALL>7</SMALL></SUP> The data base contains an organized collection of permanent and specific data concerned with the particular problem to be solved. The knowledge base is the repository of a codified form of the knowledge about the problem. The inference machine controls and executes all reasoning over the data base and the knowledge base towards, achieving the defined goals.</P>
+<P>Recent discussions about the architecture of expert systems<SUP><SMALL>8,22,51</SMALL></SUP> have stressed the necessity to introduce descriptions at different levels of abstraction and to represent different kinds of knowledge in order to accurately model a knowledge domain.<SUP><SMALL>51</SMALL></SUP></P>
+<P>More attention has now been paid to provide systems with more structured organizations, by partitioning knowledge according to its use and by subdividing the reasoning process into steps.<SUP><SMALL>8,23</SMALL></SUP> This has stimulated the development of hybrid systems in which different formalisms coexist or are integrated together.<SUP><SMALL>1,11,22,23</SMALL></SUP> For instance, framelike formalism may be used for representing typical characteristics (prototypical knowledge) and properties of the entities to be modeled, whereas production rules may be selected in formalizing control knowledge.<SUP><SMALL>22,23,51</SMALL></SUP></P>
+<P>No matter what approach is to be used, the principle task of the knowledge engineer in the development of any expert system is to obtain and to represent the specialized knowledge to be processed by his particular system.</P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. Neural Nets</FONT></H3>
+<P>Animal behavior is accepted as dependent on the distribution that messages have inside the brain. Knowledge representation is obtained through association of neurons, and it is dependent on both the structure of this association as well as on individual properties of each neuron.<SUP><SMALL>40</SMALL></SUP> Neural nets are shaped and reshaped by many biological processes depending on how facts are associated.</P>
+<P>A neural net may be considered as a fuzzy graph or simplex having the strength of its arcs dependent on the strength of the coupling between the neurons they represent.<SUP><SMALL>6,40</SMALL></SUP> The behavior of individual neurons may be assumed equivalent to that of a fuzzy automaton having its family of state membership dependent on both the history of the received stimulation as well as on internal states.<SUP><SMALL>40,43</SMALL></SUP></P>
+<P>Briefly, any neuron N is assumed to be a fuzzy automaton:</P>
+<P ALIGN="CENTER">N = (S,SC, Q, <I>m</I>, <I>a</I>)</P>
+<P>to which S is the set of inputs or stimuli; SC is the set of outputs or classes of neural responses; Q is the set of neural states; <I>a</I> is the output function:</P>
+<P ALIGN="CENTER"><I>a</I>: S &#215; SC &#8594; [0,1]</P>
+<P>and <I>m</I> is the family of state membership (u(q,q)) matrices</P>
+<P ALIGN="CENTER"><IMG SRC="images/06-01d.jpg"></P>
+<P>That is to say, u(q,q) depends on:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;The time <I>j</I> the neuron is able to hold information &#151; The function u(<I>j</I>,t) controls the state transition depending on the relation between the neural memory and the time of the stimulus occurrence. States of high entropy are favored by repeated application of excitatory (inhibitory) stimuli during (outside) the retention period <I>j</I>.
+<DD><B>2.</B>&nbsp;&nbsp;The number of stimuli received in the retention time <I>j</I> &#151; States of high entropy are favored by frequent (infrequent) excitatory (inhibitory) stimuli.
+<DD><B>3.</B>&nbsp;&nbsp;The stimulus membership (u(s,s)) &#151; This function controls the state transition depending on the relations held by the stimuli. States of high entropy are favored by frequent paired stimuli.
+<DD><B>4.</B>&nbsp;&nbsp;The control (u(sc,sc)) exercised over the neuron by other neural structures.
+</DL>
+<P>Two neurons Na, Nj are functionally coupled if the output of one of them (i.e., Na) is the input to the other (i.e., Nj)
+</P>
+<P ALIGN="CENTER">Na = (SCa, SCj, Qj, <I>m</I>j, <I>a</I>j)</P>
+<P>The coupling (u (Na, Nj) between Na and Nj depends on the capacity Na have to trigger different responses on Nj. Because of this u(Na, Nj) is dependent on both the entropy h(SCa, j) transmitted from Na to Nj, as well as on the entropy (h(SCj)) of Nj:</P>
+<P ALIGN="CENTER"><IMG SRC="images/06-02d.jpg"></P>
+<P>The traffic of messages (c (Na, Nj)) between any pair of neurons Na,Nj is determined by the balance between inhibitory (I) and excitatory (E) actions exercised over them by the incoming messages:
+</P>
+<P ALIGN="CENTER">c (Na,Nj) = u (E,Nj) &#150; u (I,Nj)</P>
+<P>The neural nets NG are organized in the nervous systems (NS) depending on the neural coupling:</P>
+<P ALIGN="CENTER">NG = ({SCj}<SUB><SMALL>NS</SMALL></SUB>, {u (Na,NJ)}<SUB><SMALL>NS</SMALL></SUB>)</P>
+<P>The message distribution on these NGs are dependent on u(Na, Nj); that is to say on the message spreads in operational nets OG defined over NG:</P>
+<P ALIGN="CENTER">OG = ({SCj}<SUB><SMALL>NS</SMALL></SUB>, {c(Na,Nj)}<SUB><SMALL>NS</SMALL></SUB>)</P>
+<P>The coupling power of these nets are calculated as:</P>
+<P ALIGN="CENTER"><IMG SRC="images/06-03d.jpg"></P>
+<P>where M and m stand for the operations realized over parallel (p) and serial (s) pathways, respectively. M could be a max-operation, and m could be a min-operation as preconized by classical fuzzy set theory in the case of logic operators <B>or</B> and <B>and</B>, respectively. However, other functions are more likely to replace these max and min, in order to turn formalization closer to reality.<SUP><SMALL>17,22</SMALL></SUP></P>
+<P>The fuzzy grammars realized over such nets are fuzzy relation grammars, with productions of the type:</P>
+<P ALIGN="CENTER"><IMG SRC="images/06-04d.jpg"></P>
+<P>or
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/06-05d.jpg"></P>
+<P>where f(p) expresses the dependence on the context.
+</P>
+<P>Let FG denote NG and OG. The fuzzy languages L(FG) defined by these grammars are composed by productions of the type:</P>
+<P ALIGN="CENTER">L (FG) (n) = M ((p1) m (p2),&#133;,m (pk))</P>
+<P>M being taken over all derivation chains from the point basis to the node n.<SUP><SMALL>40</SMALL></SUP></P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="081-083.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="085-087.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

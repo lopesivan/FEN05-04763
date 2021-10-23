@@ -1,0 +1,150 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Reduction Procedures for Rule-Based Expert Systems as a Tool for Sutdies of Properties of Expert's Knowledge</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=5//-->
+<!--PAGES=069-071//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch04/064-068.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="071-074.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 5<BR>Reduction Procedures for Rule-based Expert Systems as a Tool for Studies of Properties of Expert&#146;s Knowledge
+</FONT></H2>
+<P><I>Antonio Di Nola<BR>Witold Pedrycz<BR>Salvatore Sessa</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Reduction Problem for Fuzzy Relation Equations
+<DT>III.&nbsp;&nbsp;Generalization of Production Rules
+<DT>IV.&nbsp;&nbsp;Reconstruction Problem
+<DT>V.&nbsp;&nbsp;An Illustrative Example
+<DT>VI.&nbsp;&nbsp;Conclusions
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>The actual state of the art in designing expert systems, viewed both from methodological as well as applicational points of view, indicates a rapid development of new techniques. It has been observed in new tools applied for knowledge representation schemes (various data and control structures), and in extensive streams of investigations on coping with imprecision being, however, in its infancy. Here we can easily report several approaches diverse in their nature.<SUP><SMALL>1,2</SMALL></SUP> Fuzzy sets are one among them and they are well suited for processing a linguistic form of information; for some examples, we refer again to Reference 1.</P>
+<P>Following the way in which fuzzy sets are discussed, we will present one of the problems which arises, while a knowledge base is arranged, and a useful and concise form of any query to a rule base, when a mode of forward reasoning is created.</P>
+<P>It is an evident fact that the process of knowledge acquisition structured in <I>if-then</I> statements (condition-action format) is an error prone one and it requires a lot of effort to reach a satisfactory status by introducing some modification mechanisms (e.g., conflict detecting).</P>
+<P>The actual tendency is to enlarge the size of the knowledge bases, in the sense of the number of the rules, as well as the number of subconditions forming the condition part of the rules. The possibility that an extra effort has to be made to improve properties of a collection of raw empirical data in the rules increases significantly.</P>
+<P>It is not surprising that any attempt to make the process of knowledge acquisition more efficient from a conceptual and a numerical point of view deserves special attention.</P>
+<P>On the other hand, too many subconditions of the condition part can influence a reduction of the user-friendly property of the expert system and impose a significant computational effort. Since the user is forced to feed the system with information dealing with every condition, this stage, if not well arranged, may lead to the user&#146;s conservative behavior. This fact strongly implies studying every subcondition part with respect to its importance for the knowledge base and with respect to its appropriate arrangement to increase the performance of the reasoning mechanisms.</P>
+<P>In this chapter we focus our attention on the rule-based expert systems in which the production rules:</P>
+<P ALIGN="CENTER">if A<SUB><SMALL>i</SMALL></SUB> then B<SUB><SMALL>i</SMALL></SUB></P>
+<P>i = 1,2,&#133;,N, contain a fuzzy condition, as well as a control (action part). Thus, Ai and Bi are represented as fuzzy relations (or fuzzy sets) in appropriate spaces, and the reasoning mechanism is realized with the use of fuzzy relation equations of the form:</P>
+<P ALIGN="CENTER"><IMG SRC="images/05-01d.jpg"></P>
+<P>i = 1,2,&#133;,N, where R is constituted by means of the facts contained in the rules. More precisely, R can be obtained by solving this set of fuzzy relation equations formed on the basis of facts collected in the rules. For more details, we refer to reference papers 3&#151;6.
+</P>
+<P>Now it is instructive to have a closer look at the rule-based expert systems working with fuzzy information. As usual, one deals with many subcondition variables on the basis of which the action is performed. Thus, any suitable relationship (given by R) between the condition parts and action parts forms a core (here a fuzzy relation) of the expert system. It means that in practice, for the reasoning stage, the values, fuzzy or nonfuzzy, of all the subconditions have to be provided to generate a hypothesis on the action realized.</P>
+<P>It happens, however, that certain subconditions are difficult to evaluate by the user and/or the reliability of this information is rather low. Therefore, it is reasonable to reduce the condition space by taking only a few subconditions (features) to form a condition subspace. These are the most &#147;significant&#146; ones considered for an action point of view. Nevertheless, such a procedure of reduction may lead to a slight modification of fuzzy actions, but it is an essential price to pay in order to neglect some subconditions. The main point, while the most irrelevant subconditions parts are eliminated, is to achieve a certain balance between imposed changes of the action parts and an achieved reasonable size of the condition space. Notice, however, that the fuzzy relation equation of the reasoning scheme should be modified with regard to the original one, where the entire original conditions space has been utilized. The problem, described here in a very concise form, will be called a reduction problem of the knowledge base.</P>
+<P>After the presentation of some underlying ideas, we will then formulate precisely the statement of the problem in terms of fuzzy relation equations and tackle it with suitable reduction techniques. A reconstruction problem will then be discussed to give an overall picture of how the information coming from the reduced knowledge base can be combined, bearing in mind the influence of different levels of difficulty to get reliable results. Moreover, we will present a way in which the fuzzy relation R may not be computed. The evaluation, however, as to whether the reduction is necessary, is realized on the basis of the same set of rules.</P>
+<P>An illustrative numerical example forms an additional clarification of the entire presentation. Despite the fact that the entire discussion will be realized in a framework of fuzzy sets, the reader interested in some general concepts shown here may follow the chapter replacing a concept of fuzzy sets and relations by crisp sets and relations. Fortunately, the results derived are also valid.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch04/064-068.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="071-074.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

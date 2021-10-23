@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:A Probabilistic Logic for Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=19//-->
+<!--PAGES=283-285//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="282-283.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="285-287.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="LEFT"><A NAME="Heading9"></A><FONT COLOR="#000077">B. Axioms and Derivation Rules in PL</FONT></H4>
+<P>The new derivation rule in PL is based on the idea that if formulas &#966; and &#936; are satisfied in a model with probability <I>p</I><SUB><SMALL>&#966;</SMALL></SUB> and <I>p</I><SUB><SMALL>&#936;</SMALL></SUB>, respectively, then their conjunction &#966; <IMG SRC="images/19-35i.jpg"> &#936; is satisfied with probability <I>p</I><SUB><SMALL>&#966;</SMALL></SUB> &#183; <I>p</I><SUB><SMALL>&#936;</SMALL></SUB>. Another rule which may be used in PL is substitution; since equivalent formulas have the same probability, they may be substituted for each other. In addition, we retain the derivation rules of FOPC (including both modus ponens and modus tollens, to accommodate forward and backward chaining).</P>
+<P>Let &#915; be a set {&lt;&#947;<SUB><SMALL>i</SMALL></SUB>,<I>p</I><SUB><SMALL>i</SMALL></SUB>&gt;} where &#947;<SUB><SMALL>i</SMALL></SUB> has probability <I>p</I><SUB><SMALL>i</SMALL></SUB> of being true. Note that we may abuse notation and refer to {&#947;<SUB><SMALL>i</SMALL></SUB>} as &#915;. Let C be a set of constraints, and AX a set of axioms (to be described).</P>
+<P><B>Derivation</B> (or <B>proof, deduction</B>) in PL of a formula &#966; with probability &alpha; (&ne; &#8869;) from &#915; and C is a finite sequence of tuples &lt;&#966;<SUB><SMALL>i</SMALL></SUB>,<I>p</I><SUB><SMALL>i</SMALL></SUB>, i = 1, . . . n, where <I>p</I><SUB><SMALL>i</SMALL></SUB> is the probability associated with <IMG SRC="images/19-36i.jpg"> or is obtained from prior tuples in the derivation using a derivation rule, and &lt;&#966;<SUB><SMALL>n</SMALL></SUB>,<I>p</I><SUB><SMALL>n</SMALL></SUB>&gt; = &lt;&#966;,&#945;&gt;. In addition, each formula in the sequence, except &#966;, is used in the derivation of a later formula. Note that what is derived is both a formula and its probability.</P>
+<P>Following are the axioms and derivation rules of PL. All the axioms have probability 1, which is omitted.</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;All tautologies of FOPC which involve only the implication, negation, and universal quantifier symbols
+<DD><B>2.</B>&nbsp;&nbsp;&#8704;<I>x</I>&#966;(<I>x</I>) &#8594; &#966;(<I>y</I>) where <I>y</I> is substitutable for <I>x</I> in &#966;
+<DD><B>3.</B>&nbsp;&nbsp;&#8704;<I>x</I> (&#966; &#8594; &#936;) &#8594; &#8704;<I>x</I>&#966; &#8594; &#8704;<I>x</I>&#936;)
+<DD><B>4.</B>&nbsp;&nbsp;&#966; &#8594; &#8704;<I>x</I>&#966; where <I>x</I> is not free in &#966;
+<DD><B>5.</B>&nbsp;&nbsp;<I>x</I> = <I>y</I> &#8594; (&#966; &#8594; &#936;) where &#966; is atomic and &#936; is obtained from &#966; by replacing <I>x</I> in zero or more (but not necessarily all) places by <I>y</I>
+</DL>
+<P><B>Derivation Rules</B></P>
+<TABLE WIDTH="100%"><TR>
+<TD WIDTH="8%">1.
+<TD WIDTH="25%"><B>Conjunction:</B>
+<TD WIDTH="67%"><IMG SRC="images/19-37i.jpg"><TR>
+<TD>2.
+<TD><B>Substitution:</B>
+<TD><IMG SRC="images/19-38i.jpg"><TR>
+<TD VALIGN="TOP">3.
+<TD><B>Modus ponens:</B>
+<TD><IMG SRC="images/19-39i.jpg"><TR>
+<TD VALIGN="TOP">4.
+<TD><B>Modus tollens:</B>
+<TD><IMG SRC="images/19-40i.jpg"><TR>
+<TD VALIGN="TOP">5.
+<TD><B>Transitivity of implication:</B>
+<TD><IMG SRC="images/19-41i.jpg"><TR>
+<TD>6.
+<TD><B>Resolution:</B>
+<TD><IMG SRC="images/19-42i.jpg"><TR>
+<TD VALIGN="TOP">7.
+<TD COLSPAN="2"><B>Specification:</B> Let x be a free variable in &#966;, and &#966;(a) be any substitution of a constant symbol a to x in &#966;. then: <IMG SRC="images/19-43i.jpg"></TABLE>
+<P><B>Remarks</B></P>
+<P>If all formulas in <IMG SRC="images/19-44i.jpg"> have probability values of either 0 or 1 corresponding to classical FOPC, the definition of derivation from &#915; in PL is equivalent to the FOPC notion of derivation from <IMG SRC="images/19-45i.jpg">. We get the following:</P>
+<P><B>Theorem:</B> A formula &#966; is derivable from a set of formulas &#915; in FOPC if &#966; is derivable with probability 1 in the corresponding PL in which all formulas in <IMG SRC="images/19-46i.jpg"> have probability 1. The proof is straightforward.</P>
+<P>In some cases, more than one derivation of a formula may exist. Each derivation may assign the formula a distinct probability, thus creating a conflict. This may cause inconsistency in operations and reduce the usefulness of a system utilizing PL. Conflict resolution may be achieved in several ways:</P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;Additional information may be used to resolve the conflict. Among such additional information, probabilities expressing the probability estimates correctness (and possibly also higher levels) may be included. The more reliable estimate may be given priority.
+<DD><B>&#149;</B>&nbsp;&nbsp;Compute the weighted average of the estimates over all possible derivations.
+<DD><B>&#149;</B>&nbsp;&nbsp;We can also take the maximal value of the probability of derived formula, since the independence assumption tends to lower probabilities.
+<DD><B>&#149;</B>&nbsp;&nbsp;Yet another approach may be to apply a relaxation process (similar to what is done in truth maintenance systems<SUP><SMALL>4</SMALL></SUP>).
+<DD><B>&#149;</B>&nbsp;&nbsp;In the context of nonmonotonic logic and semantic nets, it was suggested to give preference to the shortest derivation path. Touretzky<SUP><SMALL>15</SMALL></SUP> further suggests to &#147;minimize&#148; a theory T from which the conclusions are drawn by eliminating from T formulas which may be deduced from the rest of T.
+<DD><B>&#149;</B>&nbsp;&nbsp;When experience is gained with a specific theory, we may assign preference specific to the application and/or the theory.
+</DL>
+<P>We do not allow the inference of &lt; <IMG SRC="images/19-47i.jpg"> &#966;, 1 &#45; <I>p</I><SUB><SMALL>&#966;</SMALL></SUB> &gt; from &lt;&#966;,<I>p</I><SUB><SMALL>&#966;</SMALL></SUB>&gt;, since when coupled with some of the conflict resolution policies, this deduction might lead to <IMG SRC="images/19-48i.jpg">.</P>
+<P><B>Example 6: Consequences of Constraints</B></P>
+<P>Let &#915; include the set of atomic formulas satisfied in the model of Example 3 (the diagram). For each possible atomic formula not included in SP and F in Example 3, the probability of the formula is 0 (a closed-world-assumption for the relations SP and F).</P>
+<P>Let the constraints set C include</P>
+<DL>
+<DD><I>C</I><SUB><SMALL>1</SMALL></SUB>: &#8704;<I>xy</I> <I>F</I> (<I>x</I>,<I>y</I>) &#8596; <I>F</I> (<I>y,x</I>) (symmetry of F) &#151; probability 1
+<DD><I>C</I><SUB><SMALL>2</SMALL></SUB>: &#8704;<I>xy</I> <I>PS</I> (<I>x,y</I>) &#8596; <I>PS</I> (<I>y,x</I>) (symmetry of PS) &#151; probability 1
+<DD><I>C</I><SUB><SMALL>3</SMALL></SUB>: [<I>F</I> (<I>x,y</I>) <IMG SRC="images/19-49i.jpg"> <I>SP</I> (<I>x,z</I>)] &#8594; <I>SP</I> (<I>y,z</I>) (family members supply the same parts) &#151; probability .9
+<DD><I>C</I><SUB><SMALL>4</SMALL></SUB>: [<I>SP</I> (<I>x,y</I>) <IMG SRC="images/19-50i.jpg"> <I>P</I> (<I>y,blue</I>)] &#8594; <IMG SRC="images/19-51i.jpg"> <I>S</I> (<I>x,N.Y.</I>) (New Yorkers do not supply blue parts) &#151; probability .8
+</DL>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="282-283.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="285-287.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

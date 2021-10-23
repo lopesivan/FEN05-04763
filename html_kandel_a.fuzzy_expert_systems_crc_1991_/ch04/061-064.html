@@ -1,0 +1,220 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:On the Representation of Relational Production Rules in Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=4//-->
+<!--PAGES=061-064//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="058-061.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="064-068.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>We note the smaller Poss [R<SUP>-</SUP>/D <IMG SRC="images/04-01i.jpg"> E], the more specifically we know F. That is, the rule has fired to a higher degree the smaller Poss [R<SUP>-</SUP>/D <IMG SRC="images/04-02i.jpg"> E]. We further note that if R<SUB><SMALL>1</SMALL></SUB> &sub; R<SUB><SMALL>2</SMALL></SUB>, R<SUB><SMALL>1</SMALL></SUB>(x,y) &#8804; R<SUB><SMALL>2</SMALL></SUB>(x,y) for all x,y, then R<SUP>-</SUP><SUB><SMALL>1</SMALL></SUB> <IMG SRC="images/04-03i.jpg"> R<SUP>-</SUP><SUB><SMALL>2</SMALL></SUB> and, hence;</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-23d.jpg"></P>
+<P>Thus, we see that the larger the relationship R, the more the rules fired. We shall say R<SUB><SMALL>1</SMALL></SUB> is more tolerant than R<SUB><SMALL>2</SMALL></SUB> if R<SUB><SMALL>2</SMALL></SUB> &sub; R<SUB><SMALL>1</SMALL></SUB>. The most tolerant relationship is R = X &#215; Y. In this case R<SUP>-</SUP> = &#966; and the rule always fires perfectly. The least tolerant case consists of the situation in which:</P>
+<CENTER>
+<TABLE WIDTH="30%"><TR>
+<TD>R(x*,y*) = 1
+<TR>
+<TD>R(x,y)&nbsp;&nbsp;&nbsp; = 0
+</TABLE>
+</CENTER>
+<P>for all other. In this case, the rule perfectly fires only if V is {x*} and W is {y*}.
+</P>
+<P>While we have concentrated on the situation in which we are trying to capture V <B>R</B> W where R is a form of equals (&#147;close&#148;, &#147;nearly&#148;, etc.), we can also use the same ideas to capture any relationship of the form:</P>
+<P ALIGN="CENTER">f<SUB><SMALL>1</SMALL></SUB>(V) <B>R</B> f<SUB><SMALL>2</SMALL></SUB>(W)</P>
+<P>where f<SUB><SMALL>1</SMALL></SUB> and f<SUB><SMALL>2</SMALL></SUB> are any functions. An example of this would be a situation in which we require:</P>
+<P ALIGN="CENTER">3*V <B>close to</B> W<SUP><SMALL>2</SMALL></SUP> + 5</P>
+<P>In this case we would have (V,W) is R&#8242; where R&#8242; would reflect the degree of tolerance, as well as the structures of f<SUB><SMALL>1</SMALL></SUB> and f<SUB><SMALL>2</SMALL></SUB>.</P>
+<P>Again, assume we have the rule:</P>
+<P ALIGN="CENTER">If (V,W) is R then U is B</P>
+<P>and we have the knowledge:</P>
+<P ALIGN="CENTER">V is D and W is E</P>
+<P>This situation gives us the inference U is F where:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-24d.jpg"></P>
+<P>We shall say that the rule has fired to at least degree &#945; if:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-25d.jpg"></P>
+<P>We therefore see that a necessary and sufficient condition for the rule to fire to at least degree &#945; is that for each pair (x,y) &#8712; X &#215; Y
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-26d.jpg"></P>
+<P>One question we may ask is, given a value V is D, what are the allowable values for W, so that our rule fires to at least level &#945;?
+</P>
+<P>In order to answer this question we introduce a family of subsets on Y, one for each x, denoted U<SUB><SMALL>x</SMALL></SUB>, so that for each pair (x,y) U<SUB><SMALL>x</SMALL></SUB>(y) is the largest value of K for which:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-27d.jpg"></P>
+<P>Then any subset E of Y so that:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-28d.jpg"></P>
+<P>fires the rule to at least degree &#945;.
+</P>
+<P>We further note that if D(x) &#8804; 1 - &#945; , then U<SUB><SMALL>x</SMALL></SUB>(y) can be any value, and we still satisfy our requirement. Thus:</P>
+<P ALIGN="CENTER">U<SUB>x</SUB> = Y if D(x) &#8804; 1 - &#945;</P>
+<P>On the other hand, if D(x) &gt; 1 - &#945;, we then require that for each y:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-29d.jpg"></P>
+<P>In this case, if R(x,y) &#8805; &#945; then we have met the conditions regardless of the value of U<SUB><SMALL>x</SMALL></SUB>(y) and, thus, we can make U<SUB><SMALL>x</SMALL></SUB>(y) = 1. If R(x,y) &lt; &#945;, then we require that U<SUB><SMALL>x</SMALL></SUB>(y) &#8804; 1 - &#945;.</P>
+<P>Thus, for D(x) &#8805; 1 - &#945;:</P>
+<CENTER>
+<TABLE WIDTH="40%"><TR>
+<TD>U<SUB><SMALL>x</SUB></SMALL>(y) = 1&nbsp;&nbsp;&nbsp;if R(x,y) &#8805; &#945;<BR>U<SUB><SMALL>x</SUB></SMALL>(y) = 1 - &#945;if R(x,y) &lt; &#945;
+</TABLE>
+</CENTER>
+<P>Thus, the largest possible value for W for the rule to fire to degree &#945; is A, where:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-30d.jpg"></P>
+<P>Since we require E to be normal, it is possible that given a D it may be impossible to fire the rule. This situation occurs if for each y there exists some x &#8712; X where D(x) &gt; 1 - &#945; and R(x,y) &lt; &#945;. On the other hand, if there exists y &#8712; Y such that for all x &#8712; X either D(x) &#8804; 1 - &#945; or R(x,y) &#8805; &#945;, then we can always find a normal W to fire the rule.
+</P>
+<P>We further note that if D<SUB><SMALL>1</SMALL></SUB> &sub; D<SUB><SMALL>2</SMALL></SUB> then if A<SUB><SMALL>1</SMALL></SUB> and A<SUB><SMALL>2</SMALL></SUB> are the respective maximal values for W for firing to degree of at least &#945;, it follows that A<SUB><SMALL>2</SMALL></SUB> &sub; A<SUB><SMALL>1</SMALL></SUB>. Further, we easily show that if R<SUB><SMALL>1</SMALL></SUB> &sub; R<SUB><SMALL>2</SMALL></SUB> then under a value V is D, R<SUB><SMALL>2</SMALL></SUB> requires a less specific value for W.</P>
+<P>In the preceding situations we have assumed that the variable condition has occurred in the antecedent. In some cases this variable condition may occur in the consequent. Consider the situation in which we have the following rule:</P>
+<P ALIGN="CENTER">If V is A then U is R-related to W</P>
+<P>This translates to:</P>
+<P ALIGN="CENTER">If V is A then (U,W) is R</P>
+<P>where R is a relationship on Y &#215; Z. This translates to:</P>
+<P ALIGN="CENTER">H = A<SUP>-</SUP> &#8746; R</P>
+<P>Assume we have the data:</P>
+<CENTER>
+<TABLE WIDTH="10%"><TR>
+<TD>V is D<BR>W is E
+</TABLE>
+</CENTER>
+<P>and we are interested in finding F so that U is F.
+</P>
+<P>In this case:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-31d.jpg"></P>
+<H3><A NAME="Heading5"></A><FONT COLOR="#000077">IV. On the Structure of Relational Rules</FONT></H3>
+<P>In this section we look at the relationship between relational requirements and fixed requirements.
+</P>
+<P>Assume V, W, and U are three variables taking their values in the sets X, Y, and Z, respectively. Consider the fixed antecedent rule:</P>
+<P ALIGN="CENTER">If V is A and W is B then U is C</P>
+<P>where A, B, and C are normal fuzzy subsets of X, Y, and Z, respectively. This rule translates into:</P>
+<P ALIGN="CENTER">H<SUP><SMALL>1</SMALL></SUP> = A<SUP>-</SUP> &#8746; B<SUP>-</SUP> &#8746; C</P>
+<P>If we have the data:</P>
+<CENTER>
+<TABLE WIDTH="10%"><TR>
+<TD>V is D<BR>W is E
+</TABLE>
+</CENTER>
+<P>then we can infer U is F<SUB><SMALL>1</SMALL></SUB> where:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-32d.jpg"></P>
+<P>Consider a relational rule:
+</P>
+<P ALIGN="CENTER">If (V,W) is R then U is C</P>
+<P>where R is a relation on X &#215; Y. This induces</P>
+<P ALIGN="CENTER">H<SUB><SMALL>2</SMALL></SUB> = R<SUP>-</SUP> U C</P>
+<P>With the same data, V is D and W is E, we infer U is F<SUB><SMALL>2</SMALL></SUB> where:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-33d.jpg"></P>
+<P>Consider the situation when the relation R is defined by:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-34d.jpg"></P>
+<P>This is always possible since the only requirement on R is that it is normal. In this case:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-35d.jpg"></P>
+<P>and thus F<SUB><SMALL>2</SMALL></SUB>(z) = F<SUB><SMALL>1</SMALL></SUB>(z).</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="058-061.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="064-068.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

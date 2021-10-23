@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Associative Memory Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=10//-->
+<!--PAGES=156-160//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="155-156.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="160-162.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>A FCM connection matrix stands behind every FCM graph. These matrices are causal FAMs and can be easily manipulated. However, fuzzy knowledge is much easier to acquire FCM graphic form. This suggests a mathematical transform strategy: <I>transform FCM graphs to FCM matrices, combine the matrices, then inverse transform back to a combined FCM graph</I>. The key insight is that a FCM is a causal FAM. Then, the natural way to combine or superimpose the FCM matrices is simply to add them pointwise. Moreover, we can <I>gate</I><SUP><SMALL>16-19</SMALL></SUP> the i<SUP><SMALL>th</SMALL></SUP> FCM matrix F<SUB><SMALL>i</SMALL></SUB> with the weight w<SUB><SMALL>i</SMALL></SUB> simply by multiplying the matrix by w<SUB><SMALL>i</SMALL></SUB>, yielding w<SUB><SMALL>i</SMALL></SUB>F<SUB><SMALL>i</SMALL></SUB>. (Here we assume w<SUB><SMALL>i</SMALL></SUB> = 0 indicates no credibility and w<SUB><SMALL>i</SMALL></SUB> = 1 indicates maximum credibility.) Alternatively we can gate F<SUB><SMALL>i</SMALL></SUB> with w<SUB><SMALL>i</SMALL></SUB> by taking the pairwise minimum (t-norm) of w<SUB><SMALL>i</SMALL></SUB> with each element of F<SUB><SMALL>i</SMALL></SUB>. For simplicity we assume multiplicative gating.</P>
+<P><A NAME="Fig9"></A><A HREF="javascript:displayWindow('images/10-09.jpg',600,338)"><IMG SRC="images/10-09t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/10-09.jpg',600,338)"><FONT COLOR="#000077"><B>Figure 9</B></FONT></A>&nbsp;&nbsp;</P>
+<P>FCMs that differ in number or kind of concept nodes can still be combined by introducing <I>augmented connection matrices</I>. Intuitively, if only the i<SUP><SMALL>th</SMALL></SUP> expert discusses concept C, then C is a phantom node in the other FCMs, where it has no causal connectivity. Thus, it <I>is</I> represented in the other FCM matrices, except the C row and columns contain only values of 0. Specifically, suppose the total number (union) of nodes discussed by all the experts is n, which may be quite large with respect to the dimensions of a particular FCM matrix. Then we augment each FCM matrix F<SUB><SMALL>i</SMALL></SUB> to be an n-by-n matrix, perhaps quite sparse. We permute row and columns as necessary to bring them into mutual coincidence, labeling the row/column concepts 1 to n. Then the values of augmented F<SUB><SMALL>i</SMALL></SUB> can be combined by adding pointwise as shown in Figure 9.</P>
+<P>The combined FCM F naturally weights the knowledge of the experts. If only one expert out of k asserts a particular causal connection, then that connection can have a maximum magnitude of 1/k. If 50 experts out of 100, all equally weighted, assert that a causal connection between C<SUB><SMALL>i</SMALL></SUB> and C<SUB><SMALL>j</SMALL></SUB> has weight + 1 and the other 50 assert that it has weight -1, then no causal connection occurs between C<SUB><SMALL>i</SMALL></SUB> and C<SUB><SMALL>j</SMALL></SUB> &#151; f<SUB><SMALL>ij</SMALL></SUB> = e<SUB><SMALL>F</SMALL></SUB>(C<SUB><SMALL>i</SMALL></SUB>,C<SUB><SMALL>j</SMALL></SUB>) = 0 &#151; in the combined FCM F, and so on. We also note that if simple 0-thresholding is used in Equation 25, we can normalize F by either the combined weight with the maximum magnitude or by k to keep all f<SUB><SMALL>ij</SMALL></SUB> in [-1,1], though this is not necessary for FAM or for causal-interpretation purposes. In general, instead of normalizing by k, when credibility weights w<SUB><SMALL>1</SMALL></SUB>, . . . , w<SUB><SMALL>k</SMALL></SUB> are used, the <I>weight sum</I> W = w<SUB><SMALL>1</SMALL></SUB> + . . . w<SUB><SMALL>k</SMALL></SUB> should be used for normalization.</P>
+<P>Let us examine a simple example: four unweighted experts provide the FCMs as shown in Figure 10.</P>
+<P><A NAME="Fig10"></A><A HREF="javascript:displayWindow('images/10-10.jpg',400,438)"><IMG SRC="images/10-10t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/10-10.jpg',400,438)"><FONT COLOR="#000077"><B>Figure 10</B></FONT></A>&nbsp;&nbsp;</P>
+<P><A NAME="Fig11"></A><A HREF="javascript:displayWindow('images/10-11.jpg',500,243)"><IMG SRC="images/10-11t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/10-11.jpg',500,243)"><FONT COLOR="#000077"><B>Figure 11</B></FONT></A>&nbsp;&nbsp;</P>
+<P>For simplicity each edge is either - 1, 0, or + 1. There are six distinct concept nodes. Therefore, we can represent these FCMs in four 6-by-6 augmented connection matrices:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-34d.jpg"></P>
+<P>which combine to yield:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-35d.jpg"></P>
+<P>which <I>inverse transforms</I> to the FCM shown in Figure 11.</P>
+<P>Suppose we input the state vector S = (1 1 0 0 0 0) into F. Then S F = (-1 4 -3 0 4 -1) &#8594; (0 1 0 0 1 0) = S&#8242;. Then S&#8242; F = (0 1 -1 -1 2 -1) &#8594; (0 1 0 0 1 0) = S&#8242;. So input S stabilizes or resonates on S&#8242;. Similarly, the input patterns (1 1 1 1 1 1) and (0 0 0 0 1 1) evoke the resonant <I>hidden pattern</I> S&#8242;, which forms a dominant basin of attraction in the state space {0,1}<SUP><SMALL>6</SMALL></SUP> with energy E(S&#8242;) = -S&#8242; FST = -3. It is interesting to note how S&#8242; behaves in the original matrices F<SUB><SMALL>i</SMALL></SUB>. On F<SUB><SMALL>1</SMALL></SUB>, S&#8242; maps into the empty set (0 0 0 0 0 0). On F<SUB><SMALL>2</SMALL></SUB>, S&#8242; maps into (1 1 0 0 1 0), which has Hamming distance 1 from S&#8242;. On F<SUB><SMALL>3</SMALL></SUB>, S&#8242; maps into the limit cycle (0 0 1 0 0 0) &#8594; (0 0 0 0 0 1) &#8594; (1 0 0 0 0 0) &#8594; (0 1 0 0 0 0) &#8594; (0 0 1 0 0 0). On F<SUB><SMALL>4</SMALL></SUB>, S&#8242; maps into the limit cycle S&#8242; &#8594; (0 0 0 0 1 0) &#8594; (1 0 0 0 0 0) &#8594; S&#8242;.</P>
+<P>We briefly mention extensions of the FCM framework to learning networks. Here both edges and nodes are time-varying real functions. Node functions essentially sum sigmoid signal functions and combine passive decay, external input, and variable thresholds in forms similar to Equations 17 or 21. Learning occurs by modifying the causal edges in response to evidential changes. A combined FCM merely initiates a learning FCM, or periodically updates it. Two generic learning laws are the Hebbian<SUP><SMALL>20,23,33</SMALL></SUP> and <I>differential</I> Hebbian<SUP><SMALL>35,37,41</SMALL></SUP> learning laws:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-36d.jpg"></P>
+<P ALIGN="CENTER"><IMG SRC="images/10-37d.jpg"></P>
+<P>both of which usually contain many other similar terms. The classical Hebbian law, Equation 26, captures simple correlation or conjunctive learning. Though it abounds in neural models, it is unacceptable in causal models. For Equation 26 grows causal connections on the basis of <I>concomitant activation</I>. Consequently, if any two nodes are active in the network, Equation 26 inductively infers a causal connection between them. These causal connections are almost always spurious. Moreover, since the node functions C<SUB><SMALL>i</SMALL></SUB> and C<SUB><SMALL>j</SMALL></SUB> are nonnegative, Equation 26 implies that e<SUB><SMALL>ij</SMALL></SUB> exponentially increases to its maximum value, after which no learning occurs. The differential Hebbian law, Equation 27 was motivated by the causal descriptions of the empiricist philosophers<SUP><SMALL>35,41</SMALL></SUP> David Hume (&#147;constant conjunction of events&#148;) and John Stuart Mill (&#147;concomitant variation&#148;).</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="155-156.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="160-162.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

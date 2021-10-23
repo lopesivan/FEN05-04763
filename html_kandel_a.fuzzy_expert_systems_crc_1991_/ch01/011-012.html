@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Evolution From Expert Systems to Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=1//-->
+<!--PAGES=011-012//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="009-011.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="012-014.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>The knowledge of structural analysis keeps growing, and a structural analysis program is not immune to change. Other analysis programs that are easier to use limit the usability of this expert system. These problems have kept Sacon from becoming a widely available tool.
+</P>
+<P>In many class two expert systems it is difficult to determine whether a solution is correct. This is especially true of the medical expert systems in which even experts may disagree over treatment plans. Even an acceptable solution may not have the desired effect upon the patient, thus leaving a machine open to blame. Imprecision and uncertainty play an important part in these systems.</P>
+<P>In the future it is expected that many class two systems will become widely usable. The future is near for some of the smaller domain systems that do not deal heavily with the user. The acceptance may be some time in coming for medical expert systems. Consultation aid systems will move up faster.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading9"></A><FONT COLOR="#000077">C. Class Three Systems</FONT></H4>
+<P>Definition: A class three system is one that has not gained even limited acceptance by the appropriate user community. It is incapable of reaching true expert performance.
+</P>
+<P>While it might seem that expert systems in this class are dregs of technology, quite the opposite is true. Many have made great contributions to the advancement of expert system technology. This type of system should not be attempted by a commercial enterprise since it is doomed to a type of failure, usually because the problem tackled is too ambitious. Most systems in this class have been pushing at the frontiers of knowledge and have pushed them back.</P>
+<P>The Hearsay I, II<SUP><SMALL>16,30</SMALL></SUP> expert systems are the best examples of class three systems. They address the domain of speech understanding. Hearsay II is the second version of Hearsay I. An example of a very high level class three system is AM<SUP><SMALL>11</SMALL></SUP> which operates in the domain of elementary mathematical research.</P>
+<P>Hearsay I, II pioneered the concept of multiple cooperating knowledge sources. It uses a blackboard concept to provide for message passing among the knowledge sources. Hypotheses are posted on the blackboard. Each knowledge source (KS) may put a hypothesis on the blackboard. The hypotheses are placed on the blackboard so that all knowledge sources may have the opportunity to use them in their processing or modify them if necessary. In general, all knowledge sources will not make use of each hypothesis. The KS has knowledge about which hypotheses are useful for it and which are to be left alone. A KS has two major components: precondition and response frames. A precondition will provide the scheduler with a response frame, which is an estimate of the action that the KS will take. Preconditions are fired by the blackboard handler when certain primitive changes, that the precondition has specified, occur. The knowledge sources allow for knowledge separation into some reasonable set. They can be grouped together into modules in order to share code or data.</P>
+<P>At any time during a run of Hearsay there may be many pending tasks to execute. The tasks can be both invoked KSs and triggered preconditions. The tasks are prioritized by a scheduler. The scheduler selects the highest priority task for execution. The priority of any task is an estimate of the usefulness of that task in recognizing the utterance that is being processed. Some KSs called policy KSs can be used to impose global search strategies on the basic priority scheduling mechanism.</P>
+<P>Hearsay addresses a very large problem domain. It deals with unreliable data or knowledge. The problem is very complex. This is probably the largest and most difficult task yet undertaken by an expert system. The expert system can understand connected discourse from a 1000 word vocabulary. Its skill rivals that of a 10 year old. While this is impressive, it does not come very close to expert performance. In very limited domains, such as about the game of poker, the system can interpret over 90% of the utterances. This is still short of expert performance.</P>
+<P>The builders of Hearsay I, II still have difficulty with focus of control. Initially the knowledge sources were independent, but it was found that the cost was too high. Parallelism of KSs can be exploited with some modifications, and this might help the expert performance level. There were problems in adequately evaluating partial solutions. They had difficulty finding the combination of knowledge sources that would optimize system performance. Hearsay must reason under uncertainty, but its methods seem weak. They also had other difficulties to overcome. These difficulties probably led to some of the innovative problem-solving techniques introduced by the generations of Hearsay expert systems.</P>
+<P>AM is designed to carry on simple mathematics research. It starts with elementary ideas in set theory. It uses heuristics to generate new concepts by combination of ideas. It uses a worth function with values from 0 to 1000 for ideas. It has done an excellent job at rediscovering known concepts starting from its initial knowledge base. It has also discovered two concepts that were not previously known. Given these facts, why is AM a class three expert system?</P>
+<P>It has come across two concepts which, when observed and worked with by a mathematician, became sharp new ideas. However, AM is unable to prove the validity of a new claim the way an expert would. It cannot explain its discoveries in a satisfactory way. In general, it will not concentrate on a new discovery and build around it the way a true researcher would. This means it will not lay out the explicit groundwork from the old to the new and the reasons why a new conjecture is important.</P>
+<P>AM searches a space of possible conjectures that can be generated from elementary ideas. It chooses the most interesting conjectures and pursues that line of reasoning. Its control hierarchy is that of plan, generate, and test. Its main limitation is its inability to synthesize powerful new heuristics for the new concepts it defined. It is unable to build upon its discoveries the way a true researcher would. The methodology behind good research is unclear, which makes knowledge acquisition for this type of expert system very difficult. Also, the question of building intuition into an expert system is currently overwhelming. These problems make this type of expert system a difficult undertaking.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="009-011.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="012-014.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Expert Systems for an Intelligent Computer-based Tutor</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=17//-->
+<!--PAGES=239-240//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="237-239.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="240-243.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>Moreover, to the extent that computer tutors can be designed to surpass their human counterparts on certain critical variables known to affect performance, an even greater impact may be possible. As with most ITS projects, a major part of our development effort is a cognitively-based program of research, which aims to achieve detailed scientific understanding of the problem-solving process itself and how it evolves through tutorial interaction. Much of this knowledge is being programmed into the TAPS system, along with the capability of using this knowledge in designing instructional interventions. Few human tutors would understand students and learning situations at the detailed level of analysis being programmed into this system.
+</P>
+<P>Our approach is based on the identification of sets in problems and their interrelationships. These sets are grouped into relational schemas based on the relation that holds between them. For example, the following problem contains a 1-combine schema:</P>
+<DL>
+<DD>Rob has 3 marbles. Lisa has 2 marbles. How many do they have altogether?
+</DL>
+<P>The other types of schemas we are working with are <I>compare</I>, <I>change</I>, and <I>vary</I>. More complex problems are formed by chaining single schemas together (see Figures 3 and 4).</P>
+<P>Basically the system works as follows. It plans a lesson based on its extensive knowledge of the student and the goals it has for him. A set of initial problem templates are chosen and instantiated. The student begins to solve the problems and, if assistance is deemed necessary, a tutoring strategy is determined based on knowledge of the student and the planner&#146;s chosen approach. After each session the inference engine portion of the student record updates the data on the student. The system currently runs on a Xerox 1186 LISP machine.</P>
+<P>In the following we briefly discuss the planners, the interface, the problem generator, and the expert solutions module in order to provide the requisite background for the more detailed discussion of the student record and the intervention module (tutor) which are both represented as fuzzy expert systems (FES). Next, the necessary cooperation between these two FESs is described. The conclusions from this research are given in the last section.</P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. Plan-Based Architecture</FONT></H3>
+<H4 ALIGN="LEFT"><A NAME="Heading5"></A><FONT COLOR="#000077">A. Plan-Based Vs. Opportunistic Systems</FONT></H4>
+<P>The tutor is best characterized as a plan-based opportunistic system that provides practice and tutoring on the skills of expert performance in the arithmetic word-problem domain. In a recent extensive review of intelligent tutoring systems, Wenger<SUP><SMALL>27</SMALL></SUP> distinguished plan-based tutoring architectures from opportunistic teaching systems, noting that almost all extant intelligent tutors are based on opportunistic designs.<SUP><SMALL>27</SMALL></SUP> The basic philosophy of opportunistic tutoring is learn-by-doing.<SUP><SMALL>19,23</SMALL></SUP> Thus, all didactic intervention is triggered by circumstances that occur while a student is problem solving.</P>
+<P>Despite the power and appeal of opportunistic tutoring, the ITS movement can be criticized for its lack of attention to such matters as instructional design theory and curriculum structure. Park, Perez, and Seidel<SUP><SMALL>19</SMALL></SUP> note that developers of intelligent tutors have largely ignored task analysis, which attempts to identify instructional objectives and the pedagogically relevant relations among them. Peachey and McCalla<SUP><SMALL>20</SMALL></SUP> argue that a serious weakness of most intelligent tutors is their lack of a global curriculum plan. Wenger<SUP><SMALL>27</SMALL></SUP> calls for development of systems that constrain the range of student experiences with thoughtful curriculum planning. Clearly there is need for tutoring architectures that effectively combine the strengths of both instructional strategies, and this chapter addresses the issue.</P>
+<P>An early step in designing our tutor was to construct a model of the expert&#146;s knowledge, which delineates the knowledge components, or capabilities, that presumably are engaged during expert performance. Our model also describes the hierarchical interactions among model components, since some higher-order systems in the model are dependent upon prerequisite learning of other lower-order model components. An abbreviated version of the expert knowledge model resulting from our studies has been provided as Figure 1.</P>
+<P>Given this expert model, individual student models are expressed in terms of the knowledge components of the expert model. Assessment procedures have been developed to help determine which of the expert components are either missing from a student&#146;s model, or should be represented as being weak, or <I>buggy</I>. Common misconceptions may be associated with the domain, and if these can be identified through research, misconceptions also may appear in some student models.</P>
+<P>The aim of tutoring is conceived as the task of operating on the student knowledge model until it evolves into the expert knowledge model. The system tries to accomplish this by building an individualized plan with the instructional goals of adding missing knowledge components to the student model, strengthening existing ones, correcting buggy ones, or eliminating troublesome misconceptions. The structure of the expert knowledge model constrains the order in which these goals must be taught, since it specifies which lower-level components are required as prerequisites for higher-level learning and performance.</P>
+<P>Observational research by Leinhardt and Greeno<SUP><SMALL>14</SMALL></SUP> has shown that experienced master teachers employ hierarchical planning in accomplishing their goals. At the most global level, the teacher is guided by a master operational plan called an <I>agenda</I>. This agenda assembles and organizes goals and operators, and can be tuned and revised during instruction. At a less global level, master teachers also plan lessons. These are characterized in general terms as <I>action schemata</I>, which use various lower-order <I>routines</I>. Routines are <I>small, socially scripted pieces of behavior that are known by both teachers and students</I>, and that are shared by many classroom activities.</P>
+<P>We have designed our tutor to carry out three levels of instructional activity: planning an individual&#146;s route through a curriculum (the agenda), planning lessons (using action schemata and routines), and on-line tutorial intervention. At each of these instructional levels, data pertaining to student performance can be collected and made available for use by other levels.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="237-239.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="240-243.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

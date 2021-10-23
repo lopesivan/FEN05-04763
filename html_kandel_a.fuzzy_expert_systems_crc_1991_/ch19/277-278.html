@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:A Probabilistic Logic for Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=19//-->
+<!--PAGES=277-278//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="275-277.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="278-280.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>There have been previous attempts to combine probability and logic. Keisler<SUP><SMALL>10</SMALL></SUP> generalized the proportional calculus with probabilistic quantifiers. An important difference between his approach and ours lies in the adoption of the probability axioms (sum of probabilities is one, probability of a composite event is the sum of probabilities of components), which we do not consider to be in good correlation with the real world. A few other words (e.g., Hoover<SUP><SMALL>9</SMALL></SUP>) are based on Keisler.<SUP><SMALL>10</SMALL></SUP> Halpern and Rabin<SUP><SMALL>8</SMALL></SUP> discuss a logic of likelihood, which is the propositional calculus augmented with some modal operators (likelihood, necessity, and transitivity of likelihood). Their work is very interesting, but the focus is different from ours. Fuzzy logic, discussed by Zadeh<SUP><SMALL>17</SMALL></SUP> and others, is another generalization of logic in the presence of uncertainty. This methodology does not assume the probability axioms. In its initial stages it used to assume a continuum of numerical truth values (the interval [0,1]), but later versions resorted to symbolic truth values (true, somewhat true, very true), whose semantics are defined in terms of fuzzy numbers. Another deviation of fuzzy logic from the traditional spirit is the avoidance of syntactic derivations &#151; only a semantic derivation rule is adopted. Nilsson<SUP><SMALL>11</SMALL></SUP> describes a very interesting probabilistic logic. The proposed semantics is a probability distribution of possible consistent worlds. The formalism is restricted to a finite number of formulas and finite number of possible worlds, and only entailment is discussed among the connectives and quantifiers. Nilsson also discusses a few other issues (e.g., approximation of the probability of a derived formula).</P>
+<P>Section II of this chapter describes a formal logical system, based on the classical first order predicate calculus (FOPC), aiming at reasoning about the probability of correctness formulas in models. Each atomic fact is accompanied by a probability value that this fact is true. Facts can be combined using the connective &#147;and&#148; <IMG SRC="images/19-01i.jpg">, &#147;or&#148; <IMG SRC="images/19-02i.jpg">, &#147;not&#148; <IMG SRC="images/19-03i.jpg">, &#147;implication&#148; &#8594;, &#147;biconditional&#148; &#8596;, and the quantifiers &#147;exists&#148; &#8707; and &#147;for-all&#148; &#8704;. The probability of satisfaction of a combined formula can usually be computed using the probabilities of its components.</P>
+<P>Section III discusses the semantics, soundness, and completeness of PL. Our axiomatization of PL, together with the derivation rules, are compatible with FOPC. Consistency in PL is defined based on the notion of &#147;not being able to derive both a formula and its complement.&#148; Logical implication, soundness, and completeness of PL are also studied.</P>
+<P>This chapter is a summary of research which is expected to be continued in the future. Many possibilities for generalizations of the issues considered here exist, and the choices made here should be considered as representatives of the possibilities, rather than a best version.</P>
+<P>Familiarity with basic FOPC is assumed in the following section. The interested reader may consult any of the many texts on FOPC, e.g., Enderton.<SUP><SMALL>6</SMALL></SUP></P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. A Probability Logic PL</FONT></H3>
+<P>In this section we describe a formal system of probability logic. <I>Webster&#146;s New World Dictionary</I> defines <I>probable</I> as: &#147;likely to occur or to be so; that can reasonably be expected or believed on the basis of the available evidence, though not proved or certain.&#148; In what follows, the term &#147;probability&#148; will be used in this sense.</P>
+<P>As in any logical system, we use variable and constant symbols to describe object and/or properties/values. Atomic formulas describe simple sets, and compound formulas are used to model more complex phenomena. The probability of a formula denotes the likelihood that the formula is satisfied in a model.</P>
+<P>Two assumptions are characteristic of discrete probability systems:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;<IMG SRC="images/19-04i.jpg"><DD><B>2.</B>&nbsp;&nbsp;<IMG SRC="images/19-05i.jpg"></DL>
+<P>Assumption 1 implies that complete knowledge of all possibilities is available. Assumption 2 assumes that basic probabilities are assigned only to singleton sets (i.e., the probability of a set of events is the sum of the probability of its constituents). In the Dempster/Shafer theory, only Assumption 1 but not 2 is adopted. An objection to the first axiom is based on possible ignorance of some of the domain values. Objection to the second axiom is related to ignorance in another way &#151; we may know that a set of outcomes is possible with some probability without knowing the internal distribution of probabilities. We are reluctant to adopt either of these axioms as constraints on our model. The choice of axioms for a system seems to be a thorny point; we do not claim that our choice is <I>correct</I> in any sense. It should be left to the user who is responsible for an expert system to adopt a favorable axiom set. The choice of a different axiom set should be followed by an appropriate modification of derivation rules and of the definition of satisfaction.</P>
+<P>For simplicity, assume that the probabilistic characteristics of a fact (from the statistical point of view) are described by a single numerical value &#151; its probability (but consider Shafer<SUP><SMALL>14</SMALL></SUP> and others for an interval approach, and Cheeseman<SUP><SMALL>3</SMALL></SUP> for a description which consists of both a probability value and a standard deviation value).</P>
+<P>Our interpretation of the logical connectives and quantifiers correspond to the probabilistic approach which assumes independence between the truth values of formulas. One deviation that we make is not to assume that implication is functionally dependent on the truth of the components. What follows is the formal description of the logic, starting with the syntax.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="275-277.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="278-280.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

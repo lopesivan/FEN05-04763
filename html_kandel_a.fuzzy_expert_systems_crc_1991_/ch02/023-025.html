@@ -1,0 +1,223 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:General Purpose Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=2//-->
+<!--PAGES=023-025//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch01/019-022.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="025-028.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 2<BR>General Purpose Fuzzy Expert Systems
+</FONT></H2>
+<P><I>Mordechay Schneider<BR>Abraham Kandel</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;On Fuzzy Logic
+<DD>A.&nbsp;&nbsp;The Fuzzy Expected Value
+
+<DL>
+<DD>1.&nbsp;&nbsp;Example 1
+
+</DL>
+<DD>B.&nbsp;&nbsp;The Fuzzy Expected Interval
+
+<DL>
+<DD>1.&nbsp;&nbsp;Example 2
+
+</DL>
+<DT>III.&nbsp;&nbsp;The Fron-end Compiler
+<DD>A.&nbsp;&nbsp;Evaluation of Sentences of Type I
+
+<DL>
+<DD>1.&nbsp;&nbsp;Case 1
+<DD>2.&nbsp;&nbsp;Case 2
+<DD>3.&nbsp;&nbsp;Case 3
+<DD>4.&nbsp;&nbsp;Case 4
+<DD>5.&nbsp;&nbsp;Case 5
+<DD>6.&nbsp;&nbsp;Case 6
+<DD>7.&nbsp;&nbsp;Case 7
+
+</DL>
+<DD>B.&nbsp;&nbsp;Evaluation of Sentences of Type 2
+
+<DL>
+<DD>1.&nbsp;&nbsp;Example 3
+
+</DL>
+<DT>IV.&nbsp;&nbsp;The Inference Engine
+<DD>A.&nbsp;&nbsp;The Knowledge Base
+<DD>B.&nbsp;&nbsp;The Inference Procedure
+<DT>V.&nbsp;&nbsp;The Question-answer Program
+<DT>VI.&nbsp;&nbsp;Conclusion
+<DT>Appendix A
+<DT>Appendix B
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>The expert system we describe here can be logically divided into three main parts:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;The Front end Compiler (FC)
+<DD><B>2.</B>&nbsp;&nbsp;The Inference Engine (IE)
+<DD><B>3.</B>&nbsp;&nbsp;The Question-Answer Program (QAP)
+</DL>
+<P>The Front-End Compiler is a program that receives input data from the user, or any other connected software, and compiles it. During compilation the data is transformed into a format that is understandable to the inference engine. Following compilation the reformatted data is passed to the inference engine. The inference engine uses this data in conjunction with a knowledge base in the form of production rules.
+</P>
+<P>The QAP has only one function &#151; to trace a certain conclusion and show the user how this conclusion was reached (what rules and data participated in contributing to the drawing of that conclusion).</P>
+<P>To see how an expert system might be made fuzzy it is first necessary to understand the properties of fuzzy logic and fuzzy sets which are applicable here. This work is divided into four parts. First we explain the concepts of the fuzzy expected value and the fuzzy expected interval and their properties, and then we describe the fuzzy expert system.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. On Fuzzy Logic</FONT></H3>
+<P>Fuzzy logic was introduced by Zadeh<SUP><SMALL>1</SMALL></SUP> in 1965. The basic idea was to extend the classical logic (the Boolean logic) in order to relax the harsh constraint that everything that can be said about anything is either absolutely true or absolutely false. Zadeh suggests that it is possible to understand a statement as being 0.75 true (which could be interpreted as <I>not really true</I>) or 0.5 true (may be true), etc. The use of fuzzy numbers enable us to use fuzzy variables (which will be described in the next section). In 1978 a paper by Kandel and Byatt<SUP><SMALL>2</SMALL></SUP> described a new concept for fuzzy average called the Fuzzy Expected Value (FEV). A description of the fuzzy expected value follows.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading4"></A><FONT COLOR="#000077">A. The Fuzzy Expected Value</FONT></H4>
+<P>Let &#967;<SUB><SMALL>A</SMALL></SUB> by a B-measurable function such that &#967;<SUB><SMALL>A</SMALL></SUB>&#8712[0,1]. The fuzzy expected value (FEV) of &#967;<SUB><SMALL>A</SMALL></SUB> over the set A, with respect to the fuzzy measure  <IMG SRC="images/02-01i.jpg">, is defined as</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-01d.jpg"></P>
+<P>where &#958;<SUB><SMALL>T</SMALL></SUB> = {x|&#967;<SUB><SMALL>A</SMALL></SUB>(x)&#8805;T}.</P>
+<P>Now, &#956;{x|&#967;<SUB><SMALL>A</SMALL></SUB>(x)&#8805;T} = f<SUB><SMALL>A</SMALL></SUB>(T) is a function of the threshold T.<SUP><SMALL>3</SMALL></SUP> The function &#956; maps &#958; into the interval [0,1].</P>
+<P>The actual calculation of FEV(&#967;<SUB><SMALL>A</SMALL></SUB>) consists of finding the intersection of the curves T = f<SUB><SMALL>A</SMALL></SUB>(T), which will be at a value T = H, so that FEV(&#967;<SUB><SMALL>A</SMALL></SUB>) = H&#8712;[0,1].<SUP><SMALL>4</SMALL></SUP></P>
+<H4 ALIGN="CENTER"><A NAME="Heading5"></A><FONT COLOR="#000077">1. Example 1</FONT></H4>
+<P>Using the base variable <I>old</I>, assume a given population and a given subjective compatibility curve such that</P>
+<DL>
+<DD>10 people are 20 years old &#8594; &#967; = 0.20
+<DD>15 people are 30 years old &#8594; &#967; = 0.30
+<DD>25 people are 45 years old &#8594; &#967; = 0.45
+<DD>30 people are 55 years old &#8594; &#967; = 0.55
+<DD>20 people are 60 years old &#8594; &#967; = 0.60
+</DL>
+<P>As can be seen, we have five different thresholds (0.20, 0.30, 0.45, 0.55, 0.60). The first step in the process is to check how many people are above each threshold (in percentage terms). As can be seen, 100 people are above or equal to 0.2; 90 people are above or equal to 0.3; 75 people are above or equal to 0.45; 50 people are above or equal to 0.55 and 20 people are above or equal to 0.60.
+</P>
+<P>Pairing the data and rearranging it by increasing order of the measure of belief, &#967;s, we obtain the following five [&#967;,&#956;] pairs (see Equation 1):</P>
+<DL>
+<DD>(0.20, 1.00)
+<DD>(0.30, 0.90)
+<DD>(0.45, 0.75)
+<DD>(0.55, 0.50)
+<DD>(0.60, 0.20)
+</DL>
+<P>Now, the minimum value of each pair is
+</P>
+<DL>
+<DD>min(0.20, 1.00) = 0.20
+<DD>min(0.30, 0.90) = 0.30
+<DD>min(0.45, 0.75) = 0.45
+<DD>min(0.55, 0.50) = 0.50
+<DD>min(0.60, 0.20) = 0.20
+</DL>
+<P>and, therefore, following Equation 1, the FEV, which is the maximum of all these minima, is
+</P>
+<P ALIGN="CENTER">max(0.20, 0.30, 0.45, 0.50, 0.20) = 0.50</P>
+<P>Thus, the FEV is 0.50. From this result we can state that the fuzzy expected age is 50.</P>
+<P>Next, we discuss the properties of the fuzzy expected interval.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading6"></A><FONT COLOR="#000077">B. The Fuzzy Expected Interval</FONT></H4>
+<P>The Fuzzy Expected Interval (FEI) was designed to handle cases where the FEV is not applicable. The application of FEI becomes useful when the data provided by the user to the expert system is fuzzy or incomplete. The following example illustrates the idea.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch01/019-022.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="025-028.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

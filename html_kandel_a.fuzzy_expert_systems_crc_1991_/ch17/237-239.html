@@ -1,0 +1,167 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Expert Systems for an Intelligent Computer-based Tutor</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=17//-->
+<!--PAGES=237-239//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch16/235-236.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="239-240.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 17<BR>Fuzzy Expert Systems for an Intelligent Computer-based Tutor
+</FONT></H2>
+<P><I>Lois Wright Hawkes<BR>Sharon Derry<BR>Abraham Kandel</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Overview of Goals of TAPs
+<DT>III.&nbsp;&nbsp;Plan-Based Architecture
+<DT>A.&nbsp;&nbsp;Plan-Based Vs. Opportunistic Systems
+<DD>B.&nbsp;&nbsp;Curriculum Planner
+<DD>C.&nbsp;&nbsp;Lesson Planner
+<DD>D.&nbsp;&nbsp;Show Me Routine
+<DD>IV.&nbsp;&nbsp;The Interface
+<DT>V.&nbsp;&nbsp;Problem Generator
+<DT>VI.&nbsp;&nbsp;Expert Solutions Module
+<DT>VII.&nbsp;&nbsp;Student Record
+<DD>A.&nbsp;&nbsp;Fuzzy Temporal Relational Data Base
+<DD>B.&nbsp;&nbsp;Types of Data
+<DD>C.&nbsp;&nbsp;Student Record Fuzzy Expert System
+<DT>VIII.&nbsp;&nbsp;Intervention Module &#151; The Tutor
+<DD>A.&nbsp;&nbsp;Lower Level Errors
+<DD>B.&nbsp;&nbsp;Executive Skills Error Models
+<DT>IX.&nbsp;&nbsp;Cooperation Between SR and Tutor Fess
+<DT>X.&nbsp;&nbsp;Conclusions
+<DT>Appendix
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>Computers have had a long association with the field of education. Some of the earliest uses were strictly in administration, but this was soon expanded to include games, simulations, and programs to provide individualized instruction. The latter are referred to as computer-aided instruction (CAI). Although many of these were little more than page-turners, there are a few notable exceptions.<SUP><SMALL>18</SMALL></SUP> In an attempt to make such programs <I>intelligent</I>, artificial intelligence (AI) techniques were incorporated into the designs. The resulting programs are called intelligent CAI (ICAI) or intelligent tutoring systems (ITS), with the former term referring to whole courses and the latter to the instruction or practice of a particular skill. Such systems typically have three main components:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;The problem-solving expertise, or the knowledge the system is to convey to the student
+<DD><B>2.</B>&nbsp;&nbsp;The student model which houses the system knowledge concerning the student
+<DD><B>3.</B>&nbsp;&nbsp;The tutoring strategies
+</DL>
+<P>Even though most of the main subdivisions of Al must be used to develop such systems, ITSs are still distinct from other AI applications. The reason for this is best described by Clancey<SUP><SMALL>3</SMALL></SUP> when he states that ITSs</P>
+<P><SMALL>&#133; must integrate these [AI techniques] to</SMALL></P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;<SMALL>understand what another problem solver is doing by watching him perform a task (or looking at the results of his reasoning);</SMALL>
+<DD><B>&#149;</B>&nbsp;&nbsp;<SMALL>in particular, recognize or simulate human problem solving;</SMALL>
+<DD><B>&#149;</B>&nbsp;&nbsp;<SMALL>actively and systematically articulate problem-solving methods, not just passively respond to requests for information;</SMALL>
+<DD><B>&#149;</B>&nbsp;&nbsp;<SMALL>in particular, explain reasoning such that it is learned and mimicked, not just accepted as a justification.</SMALL>
+</DL>
+<P><SMALL>Of these criteria, the problem of interpreting a trace of human reasoning is what most directly distinguishes this research from other areas of AI. Student-modeling programs must deal with noisy data, shifting focus of attention, and goals or reasoning strategies that may be foreign to an ideal model of the world.</SMALL></P>
+<P>The inherent fuzziness of this task is obvious, however; to date, no other system but the one described here has incorporated fuzzy expert systems into the design. In the following we describe an ITS for training arithmetic problem-solving skills (TAPS), a system initially targeted to fourth to seventh grade children, but which is also applicable to adolescents and adults by simply changing the noun and verb lists of the problem templates. After giving an overview of TAPS and an outline of the other system components, the two fuzzy expert systems in the design will be described in detail, illustrating a powerful and unique application of this technology.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Overview of Goals of TAPS</FONT></H3>
+<P>TAPS, a curriculum centered around an intelligent tutoring system, is designed to substantially speed development of <I>expert</I> performance on complex verbal arithmetic word problems. Although work currently is focused on grades four through seven, we note that the problem-solving training provided by the system is appropriate also for older students and that the level of problem difficulty can easily be varied. Such problems frequently are encountered on tests that people take for educational and career advancement, and also represent a broad range of realistic daily situations in which people encounter basic mathematics. However, the most recent Presidential report on education (<I>A Nation in Crisis</I>) reveals that many students leave school without verbal problem-solving skills. Also, studies in our laboratory indicate that even typical college students can experience great difficulty with arithmetic word problems. Lack of this basic problem-solving ability also is evident within our military services.<SUP><SMALL>8</SMALL></SUP> (See <I>New York Times</I>, July, 1983.) Clearly we are dealing with a significant educational issue.</P>
+<P>Our work is attacking this educational problem on several fronts. First, through the application of artificial-intelligence technologies to microcomputer-based instruction, we aim to achieve a feasible means of offering quality one-on-one tutoring in problem solving to a large number of students. Individualized human tutoring is regarded by researchers as the most powerful teaching method available; its substantial impact on student performance is well documented.2 Unfortunately, the solution of offering each child an intelligent, trained human tutor is too costly for society to bear. Therefore, to the extent that artificial-intelligence methods can be applied to simulate important features of human tutorial interaction, substantial impact on performance should be realized through an affordable microcomputer technology.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch16/235-236.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="239-240.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

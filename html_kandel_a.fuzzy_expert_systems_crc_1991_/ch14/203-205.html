@@ -1,0 +1,163 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:On the Design of a Fuzzy Intelligent Differential Equation Solver</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=14//-->
+<!--PAGES=203-205//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch13/200-202.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="205-208.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 14<BR>On the Design of a Fuzzy Intelligent Differential Equation Solver
+</FONT></H2>
+<P><I>Menahem Friedman<BR>Abraham Kandel</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Formulation of the Problem
+<DT>III.&nbsp;&nbsp;The Architecture of FIDES
+<DD>A.&nbsp;&nbsp;The Fuzziness in FIDES
+<DT>IV.&nbsp;&nbsp;Examples
+<DD>A.&nbsp;&nbsp;A Boundary Value Problem over a Concave Polygon
+<DD>B.&nbsp;&nbsp;A Boundary Value Problem over a Domain with a Bottleneck
+<DD>C.&nbsp;&nbsp;A Complex Domain
+<DT>Acknowledgment
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>In this chapter we present a fuzzy (&#147;soft&#148;) expert system operating as a fuzzy intelligent differential equation solver (FIDES). The main purpose of this project is to furnish a finite element program users with an expert system that will release them from the necessity of providing the finite element triangular mesh by themselves. Creating such a mesh could be quite complicated and tiresome even for an expert, pending on the complexity of the problem domain of solution.
+</P>
+<P>Users with almost no knowledge of finite element theory and techniques are often prevented from using an intelligent finite element programming package, due to their unwillingness and occasionally inability to prepare and cope with a large and complex input data. Even an expert is not exactly thrilled having to manually form a finite element mesh for domains other than rectangular, circle, etc. In addition to spending their valuable time on putting the mesh together, users are quite often capable of inserting some subtle errors. Such errors in a large and complicated grid could backfire a little or a lot on the final solution. If that solution is luckily completely out of range, the error could (not easily) be spotted and removed. Otherwise, it could stay there forever, inflicting small but damaging deviations from the numerical solution.</P>
+<P>FIDES was developed in order to eliminate the necessity of creating the grid and to encourage engineers and scientists to consider a finite element approach more often, particularly when it is advantageous to their specific problems. It is also aimed at significantly saving on the user&#146;s time, even at the expense of somewhat adding to the computing costs. In the era of supercomputers such as CRAY YMP, it is the expert&#146;s time that should have a clear priority.</P>
+<P>FIDES users have to specify only the most essential basic data that uniquely define their problem. This involves interactively inserting the domain boundary &#151; given as an ordered list of points, the boundary conditions, and the differential equation coefficients. This relatively small set of &#945; numerical characters is necessary and sufficient for defining the problem. FIDES then provides a suitable finite element triangular mesh and sets a finite element package &#151; MANFEP<SUP><SMALL>1</SMALL></SUP> &#151; to work. The final result is a numerical solution to the user&#146;s problem. The system is based on the conceptual structure of fuzzy expert systems<SUP><SMALL>9</SUP></SMALL> which is closely related to the theory of fuzzy sets as developed by Zadeh.<SUP><SMALL>7</SMALL></SUP> For a detailed exposition of fuzzy set theory and its applications, the reader is referred to.<SUP><SMALL>5,6</SMALL></SUP></P>
+<P>MANFEP, which is a two-dimensional finite element programming package designed for solving second order self-adjoint elliptic partial differential equations, can treat linear and various types of nonlinear problems with any combination of Dirichlet, Neumann, and mixed boundary conditions. Its efficiency and applicability have been broadly demonstrated,<SUP><SMALL>2-4</SMALL></SUP> and the package is naturally a major component of FIDES.</P>
+<P>A detailed formulation of the problem is given in Section II. FIDES structure is discussed in Section III. and its applicability is demonstrated in Section IV.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Formulation of the Problem</FONT></H3>
+<P>The general problem treated by FIDES is given by the 2-D elliptic partial differential equation:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-01d.jpg"></P>
+<P>defined over a general bounded domain <I>D</I> with a boundary <I>B</I>. The equation coefficients are in <I>C</I><SUP><SMALL>1</SMALL></SUP>(<I>D</I>) and satisfy <I>ac - b<SUP><SMALL>2</SMALL></SUP></I> &gt; 0 over <I>D</I>.</P>
+<P>The boundary is composed of three sections <I>B<SUB><SMALL>1</SMALL></SUB>, B<SUB><SMALL>2</SMALL></SUB>, B<SUB><SMALL>3</SMALL></SUB></I> on which the most commonly used boundary conditions are given:</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-02d.jpg"></P>
+<P>where
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-03d.jpg"></P>
+<P><I>f</I>, &#963;, <I>h</I> are continuous functions specified on <I>B<SUB><SMALL>1</SMALL></SUB>, B<SUB><SMALL>3</SMALL></SUB></I>, respectively, and <I>n<SUB><SMALL>x</SMALL></SUB>, n<SUB><SMALL>y</SMALL></SUB></I>, &#151; the x,y components of the outward normal to the boundary.</P>
+<P>FIDES (via MANFEP) can also solve the general eigenvalue problem defined by:</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-04d.jpg"></P>
+<P>with homogeneous Dirichlet or Neumann boundary conditions, and boundary value problems given by Equations 1&#151;4 where <I>d</I>&#966; is replaced by a nonlinear term of Thomas-Fermi type.<SUP><SMALL>8</SMALL></SUP></P>
+<P>The user supplies the input data, first the coefficients <I>a, b, c, d, p, f</I>, &#963;, <I>h</I> which could be either constants or functions. The boundary is then defined as an ordered list of pairs of numbers <IMG SRC="images/14-01i.jpg"> that creates a closed polygon. Each polygon side that is not a straight segment must be followed by a pair of functions:</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-05d.jpg"></P>
+<P>that specify the boundary between the vertices <I>i, i</I> + 1. This portion of the boundary is eventually replaced by an approximating polygon, so that the whole boundary <I>B</I> is finally represented by one closed polygon.</P>
+<P>For each vertex <I>i</I>, the user is expected to specify the boundary condition that must hold between vertices <I>i</I> and <I>i</I> + 1. However, if no boundary condition is inserted, a &#147;natural boundary condition&#148; (homogeneous Neumann) will automatically hold.<SUP><SMALL>1</SMALL></SUP></P>
+<P>Once the input is inserted, FIDES automatically replaces the domain by a triangular finite element mesh and sets MANFEP to solve Equations 1&#151;4.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch13/200-202.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="205-208.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

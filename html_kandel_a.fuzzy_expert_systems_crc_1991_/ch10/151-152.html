@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Associative Memory Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=10//-->
+<!--PAGES=151-152//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="150-151.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="152-155.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>Hopfield uses a clever argument to show that the integral term on the right-hand side of Equation 23 is zero or nearly zero and, thus, that stable points corresponds to sets on B<SUP><SMALL>n</SMALL></SUP>. Writing V<SUB><SMALL>i</SMALL></SUB> = g<SUB><SMALL>i</SMALL></SUB>(s u<SUB><SMALL>i</SMALL></SUB>) allows the voltage gain g<SUB><SMALL>i</SMALL></SUB> to be scaled without altering the sigmoidal asymptotes. Then u<SUB><SMALL>i</SMALL></SUB> = 1/s g<SUB><SMALL>i</SMALL></SUB><SUP><SMALL>-1</SMALL></SUP> (V<SUB><SMALL>i</SMALL></SUB>). Therefore we can factor 1/s out of the integral term on the right-hand side of Equation 23. Accordingly, this term approaches zero in the high-gain case as s approaches infinity, and the sigmoid becomes a threshold-linear operation, as in the bivalent case. Then the minima of E = -VMV<SUP><SMALL>T</SMALL></SUP> are the same as if V is a binary vector, namely, (usually) the vertices of I<SUP><SMALL>n</SMALL></SUP>. As s decreases, energy minima move to the interior of I<SUB><SMALL>n</SMALL></SUB>, creating a more proper FAM, though more difficult to program. The less steep the sigmoid, the fewer energy minima occur at vertices of I<SUP><SMALL>n</SMALL></SUP>. In sum, the trajectory of an initial input pattern is from somewhere inside I<SUP><SMALL>n</SMALL></SUP> to the nearest vertex. This <I>disambiguation process</I> is exactly the minimization of fuzzy entropy.</P>
+<P>Another popular associative memory that turns out to minimize fuzzy entropy is Anderson&#146;s<SUP><SMALL>2-4</SMALL></SUP> brain state in a box (BSB), called this because, once more, a brain state or neuron activation vector is represented as a point in I<SUP><SMALL>n</SMALL></SUP>, as a fuzzy set. BSB is an example of <I>supervised learning</I> using the celebrated Widrow-Hoff rule of feedback error-correction. A<SUB><SMALL>i</SMALL></SUB> and B<SUB><SMALL>i</SMALL></SUB> are vectors of length n. The connection matrix is formed by summing the correlation matrices A<SUB><SMALL>i</SMALL></SUB><SUP><SMALL>T</SMALL></SUP> B<SUB><SMALL>i</SMALL></SUB>. To teach the network B<SUB><SMALL>i</SMALL></SUB>, the difference is computed between the desired signal B<SUB><SMALL>i</SMALL></SUB> and the (unthresholded) actual output A<SUB><SMALL>i</SMALL></SUB>M to produce the error B<SUB><SMALL>i</SMALL></SUB> - A<SUB><SMALL>i</SMALL></SUB>M. M is then incremented additively with the error signal:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-32d.jpg"></P>
+<P>where r is a learning rate parameter. Now suppose A<SUB><SMALL>i</SMALL></SUB> = B<SUB><SMALL>i</SMALL></SUB>. BSB dynamics are described by A(t + 1) = A(t) + A(t) M = (I + M) A(t). M has the form of a sample covariance matrix and, thus, admits standard principal component or factor analysis in terms of dominant eigenvectors/eigenvalues, which contain most of the variance of the system. Equation 24 produces differential weighting of eigenvectors. Eigenvector enhancement drives brain states to corners of the I<SUP><SMALL>n</SMALL></SUP> box. After learning, Anderson describes the qualitative nonlinear dynamics of the BSB as follows: &#147;If we start with an activity pattern inside the box, it receives positive feedback on certain components which have the effect of forcing it outward. When its elements start to limit (i.e., when it hits the walls of the box), it moves into a corner of the box where it remains for eternity.&#148; In other words, the BSB dynamics produce a state trajectory so that, with respect to the nearest (stored) vertex, each change in fit value is monotonically toward 0 or 1 depending whether the fit value was initially below or above &#189;. Therefore, the BSB model is a fuzzy entropy minimizer.</P>
+<P>A final example of neural network minimization of fuzzy entropy occurs in some sense in Grossberg competitive learning.<SUP><SMALL>16-18</SMALL></SUP> These networks are <I>lateral inhibition</I> or recurrent <I>on-center off-surround</I> networks. Much biological evidence suggests they naturally occur in visual information processing. Here M has positive diagonal and negative off-diagonal elements. This every-neuron-for-himself connection topology forces every neuron to positively reinforce itself and negatively reinforce its neighbors. The neurons, or feature detectors, compete for activation.<SUP><SMALL>46</SMALL></SUP> The winner(s) of the competition classify the input pattern according to their feature characteristic. Activation thresholds regulate competition. The larger the threshold, the more sum positive activation a neuron must receive to fire and, thus, the fewer feature-detecting winners. As mentioned before, Grossberg<SUP><SMALL>15-18</SMALL></SUP> has shown that sigmoid signal functions compute a quenching threshold for competitive networks that decides which competitors will be contrast enhanced or suppressed as noise. If the input patterns are fuzzy sets, if competitive contrast enhancement and noise suppression produce bit vectors from fit vectors, and if the quenching threshold is taken to be &#189;, then competitive learning also minimizes fuzzy entropy.</P>
+<P>Two comments are in order about these examples of fuzzy entropy minimization occurring in popular associative-memory/learning models. First, fuzzy entropy minimization is a candidate design principle or architecture constraint for associative memories that disambiguate fit vectors into stored bit vectors. Grossberg competitive learning illustrates that fuzzy entropy minimization can occur in the absence of a minimized Lyapunov or energy function. We can require that proposed associative memories on I<SUP><SMALL>n</SMALL></SUP> minimize fuzzy entropy, at least on average. More reasonably, we ought always examine such associators to see whether they minimize fuzzy entropy and why. Conversely, we can construct FAMs that change state if, and only if, they minimize fuzzy entropy. For instance, if I<SUB><SMALL>i</SMALL></SUB>(t) is some suitably preprocessed input to fit element or neuron a<SUB><SMALL>i</SMALL></SUB>(t), then an interesting FAM is defined by the rule: a<SUB><SMALL>i</SMALL></SUB>(t + 1) = I<SUB><SMALL>i</SMALL></SUB>(t) if I<SUB><SMALL>i</SMALL></SUB>(t) &#8804; a<SUB><SMALL>i</SMALL></SUB>(t) &#8804; &#189; or I<SUB><SMALL>i</SMALL></SUB>(t) &#8805; a<SUB><SMALL>i</SMALL></SUB>(t) &#8805; &#189;; otherwise, a<SUB><SMALL>i</SMALL></SUB>(t + 1) = a<SUB><SMALL>i</SMALL></SUB>(t).</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="150-151.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="152-155.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Associative Memory Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=10//-->
+<!--PAGES=139-140//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="137-138.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="140-142.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>Another new concept is degree of <I>subsethood</I> S(A,B), the degree to which A is a subset of B. Analyses of subsethood are relatively recent. Bandler and Kohout<SUP><SMALL>5</SMALL></SUP> pointed out that, with nonfuzzy sets, A &sub; B if A &#8712; 2<SUP><SMALL>B</SMALL></SUP>. They suggested the fuzzification strategy of interpreting S(A,B) as the degree of membership of A in B fuzzy power set F(2<SUP><SMALL>B</SMALL></SUP>), i.e., m<SUB><SMALL>F</SMALL></SUB>(<SUB><SMALL>2</SMALL></SUB>B)(A) = S(A,B). Kosko<SUP><SMALL>39</SMALL></SUP> showed how to operationally measure S(A,B) by counting <I>violations</I> of the dominated membership function relationship m<SUB><SMALL>A</SMALL></SUB> &#8804; m<SUB><SMALL>B</SMALL></SUB>.</P>
+<P>Suppose m<SUB><SMALL>A</SMALL></SUB> is dominated by m<SUB><SMALL>B</SMALL></SUB> for all elements x except the violation x<SUB><SMALL>v</SMALL></SUB>: m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>v</SMALL></SUB>) &gt; m<SUB><SMALL>B</SMALL></SUB>(x<SUB><SMALL>v</SMALL></SUB>). Then should not A still be a subset of B to a high degree? Should not this degree depend on the magnitude and relative frequency of violations? Consider the fuzzy sets A = (.2 0 .5 .7) and B = (.3 1 .8 .6) and C = (1 .2 .8 .8). Then A &#8713; F(2<SUP><SMALL>B</SMALL></SUP>) and A &#8712; F(2<SUP><SMALL>C</SMALL></SUP>). The violation x<SUB><SMALL>4</SMALL></SUB>, with magnitude .7 - .6 = .1, prevents A from being a proper fuzzy subset of B. We solve this problem by defining nonsubsethood in terms of normalized violations, then negate that measure. &#931;max(0,m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) - m<SUB><SMALL>B</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>)) counts violations of m<SUB><SMALL>A</SMALL></SUB> &#8804; m<SUB><SMALL>B</SMALL></SUB>. Dividing by &#931;Count(A) adjusts for the <I>mass</I> of A and forces the nonsubsethood measure to vary between 0 and 1.</P>
+<P>Negating this measure defines fuzzy subsethood:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-04d.jpg"></P>
+<P>Therefore, S(A,B) = 1 if m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) &#8804; m<SUB><SMALL>B</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) for all i. If A = (.2 0 .5 .7) and B = (.3 1 .8 .6), then S(A,B) = 1 - .1/1.4 = 13/14. Fuzzy theorists will note that 1 - max(0, m<SUB><SMALL>A</SMALL></SUB> - m<SUB><SMALL>B</SMALL></SUB>) = min(1 - m<SUB><SMALL>A</SMALL></SUB> + m<SUB><SMALL>B</SMALL></SUB>) = t<SUB><SMALL>L</SMALL></SUB>(A &#8594; B), the Lucasiewicz implication operator for fuzzy logic. The key theorem<SUP><SMALL>39</SMALL></SUP> is that the local definition of S(A,B) given by Equation 3 in terms of pairwise violations is equivalent to a global ratio of cardinalities:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-05d.jpg"></P>
+<P>Hence, for nonfuzzy A and B, S(A,B) is a rational number.
+</P>
+<P>Of course, Equation 4 has the look of a conditional probability P(B | A) = P(A &#8745; B)/P(A). Zadeh<SUP><SMALL>52-54</SMALL></SUP> even defines his <I>relative sigma-count</I> &#931;count(B/A) according to the right-hand side of Equation 4, though he notes S(A,B) + S(A,B<SUP><SMALL>c</SMALL></SUP>) &#8805; 1. Who can <I>derive</I> a conditional probability from first principles? The Radon-Nikodym theorem in measure theory allows the derivation of the conditional expectation E(m<SUB><SMALL>A</SMALL></SUB> | m<SUB><SMALL>B</SMALL></SUB>) = P(B | A), if A and B are nonfuzzy, but this is hardly a first-principles derivation! Fuzzy theorists will also note that if the intersection A &#8745; B in Equation 4 is defined with any other t-norm T than min, and if max in Equation 3 is or is not replaced with the dual (or any) other t-conorm S, then, in general, S(A,B) is strictly greater than the ratio of sigma-counts since T &#8804; min and max(0, x) = S(0, x) for all S.</P>
+<P>The following theorem is the key result of the new fuzzy concepts, which follows trivially from theorems 2 and 4, and provides a definitive answer to the often heard objection to fuzzy theory, &#147;What can you get with fuzzy theory that you cannot get with probability theory?&#148;:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-06d.jpg"></P>
+<P>Suppose a dogmatic probabilist claims some probability measure P measures the uncertainty of the situation A and, thus, that fuzzy entropy is but a disguised notational variant of classical measure theory. Then P cannot be identically 0, since E(A) &gt; 0 if A &#8712; I<SUP><SMALL>n</SMALL></SUP>/B<SUP><SMALL>n</SMALL></SUP>. Nevertheless, P(A) &gt; 0 implies that A = X = &#216;, since in a probability space A &#8745; A<SUP><SMALL>c</SMALL></SUP> = &#216; and A &#8746; A<SUP><SMALL>c</SMALL></SUP> = X. Then the sure event X is impossible: P(X) = 0, not 1. Contradiction!</P>
+<P>We also note that, using a traditional logarithm-of-probability measure of entropy, the maximum entropy<SUP><SMALL>27,50</SMALL></SUP> set is the uniform distribution U = (1/n, . . . , 1/n). However, E(U) = 1/n - 1 by Equation 2, revealing how fast U approaches &#216; with increasing dimensionality n. Of course, E(&#216;) = 0. This raises the question: which distribution best characterizes maximum uncertainty, the midpoint M = (&#189;, . . . , &#189;) or the uniform distribution U = (1/n, . . . , 1/n)? It seems odd that m<SUB><SMALL>U</SMALL></SUB>(x) depends on n but m<SUB><SMALL>M</SMALL></SUB>(x) does not. An appeal to <I>relative</I> constancy is unpersuasive because the entropy of the constant set C = (c, . . . , c) is E(C) = c/1 - c if c &#8804; &#189;, 1 - c/c if c &#8805; &#189;, which again is maximized if c = &#189;. For every uniform distribution U there is a constant distribution C so that U = C, the point of intersection of the probability simplex with the locus of equipossible events. (There are uncountably many irrational-coordinate C &#8800; U.) More generally we can show that <I>every</I> probability distribution P is such that E(P) &#8804; E(U) = 1/n - 1, and, consequently, as dimensionality increases, probability distributions approach entropic degeneracy! For the metric associative memories discussed later that store patterns at I<SUP><SMALL>n</SMALL></SUP> vertices, M not U corresponds to the most ambiguous memory cue.</P>
+<P>Another remark is in order about fuzzy vs. probabilistic foundations. There is the Cox theorem<SUP><SMALL>11</SMALL></SUP> that Bayesians cite to show that non-Bayesian statisticians and probabilists, in particular frequentists, are ultimately in error. Thus, Jaynes<SUP><SMALL>28</SMALL></SUP> proclaims, &#147;Cox proved that any method of inference, in which we represent degrees of plausibility by real numbers, is necessarily either equivalent to Laplace&#146;s, or inconsistent.&#148; Cox used <I>bivalent</I> logic (Boolean algebra) to show that the &#147;conditions of consistency can be stated in the form of functional equations,&#148;<SUP><SMALL>28</SMALL></SUP> namely, the probabilistic product and sum rules:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-07d.jpg"></P>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="137-138.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="140-142.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

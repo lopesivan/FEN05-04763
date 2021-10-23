@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Associative Memory Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=10//-->
+<!--PAGES=146-148//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="145-146.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="148-149.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>We now describe the convergence, coding, and decoding properties of a binary hetero-associative CAM whose continuous extension minimizes fuzzy entropy. The memory is a <I>bidirectional associative memory</I> (BAM).<SUP><SMALL>37</SMALL></SUP> BAMs generalize the unidirectional autoassociative CAMs popularized by Hopfield.<SUP><SMALL>25,26</SMALL></SUP> A BAM is represented by an n-by-p real matrix M. Two-way associative search of stored heteroassociative patterns (A<SUB><SMALL>i</SMALL></SUB>,B<SUB><SMALL>i</SMALL></SUB>) occurs by iteratively passing information in the forward direction through M and in the backward direction through M<SUP><SMALL>T</SMALL></SUP>: A &#8594; M &#8594; B &#8594; M<SUP><SMALL>T</SMALL></SUP> &#8594; A&#8242; &#8594; M &#8594; B&#8242; &#8594; . . . &#8594; A<SUB><SMALL>i</SMALL></SUB> &#8594; M &#8594; B<SUB><SMALL>i</SMALL></SUB> &#8594; M<SUP><SMALL>T</SMALL></SUP> &#8594; A<SUB><SMALL>i</SMALL></SUB> &#8594; . . . The interpretation of this schema is that the BAM stabilizes or resonants on the nearest stored pair (A<SUB><SMALL>i</SMALL></SUB>,B<SUB><SMALL>i</SMALL></SUB>). If M is symmetric (M = M<SUP><SMALL>T</SMALL></SUP>), unidirectional and bidirectional behavior coincides. We prove that <I>every</I> n-by-p matrix M is a discrete and continuous bidirectionally stable heteroassociative CAM. Accordingly, every matrix can be decoded.</P>
+<P>The m pairs (A<SUB><SMALL>i</SMALL></SUB>,B<SUB><SMALL>i</SMALL></SUB>) are encoded in a BAM by summing bipolar correlation matrices. This sculpts a scalar energy surface that governs the BAM nonalgorithmic computation, in principle producing O(1) search &#151; classification speed is <I>independent</I> of the number of patterns stored! The BAM storage-capacity upper bound is m &lt; min(n,p).</P>
+<P>The neural-net interpretation of a BAM is a two-layer hierarchy of symmetrically connected neurons with fixed connection weights. There are n neurons in the A field F<SUB><SMALL>A</SMALL></SUB> and p neurons in the B field F<SUB><SMALL>B</SMALL></SUB> (see Figure 4).</P>
+<P>When an arbitrary pattern A, B, or (A,B) is presented to the BAM, the respective neurons in the F<SUB><SMALL>A</SMALL></SUB> or F<SUB><SMALL>B</SMALL></SUB> fields are activated. The network quickly equilibrates to a state of two-pattern reverberation, or pseudo-<I>adaptive resonance</I>.<SUP><SMALL>6,7,10,17-21</SMALL></SUP> The stable resonance corresponds to a system energy local minimum. Geometrically, an input pattern is placed on the BAM energy surface as a ball-bearing in the binary product space {0,1}<SUP><SMALL>n</SMALL></SUP> &#215; {0,1}<SUP><SMALL>p</SMALL></SUP>. The correlation encoding scheme sculpts the energy surface so that the patterns (A<SUB><SMALL>i</SMALL></SUB>,B<SUB><SMALL>i</SMALL></SUB>) are stored as local energy minima. The input ball-bearing rolls down into the nearest basin of attraction, dissipating energy as it rolls. Frictional damping brings it to rest at the bottom of the energy well, and the pattern is classified accordingly. We remark that temporal patterns or limit cycles can similarly be stored at local energy minima in large product spaces.</P>
+<P><A NAME="Fig4"></A><A HREF="javascript:displayWindow('images/10-04.jpg',500,347)"><IMG SRC="images/10-04t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/10-04.jpg',500,347)"><FONT COLOR="#000077"><B>Figure 4</B></FONT></A>&nbsp;&nbsp;</P>
+<P>The binary pair (A,B) &#8712; {0,1}<SUP><SMALL>n</SMALL></SUP> &#215; {0,1}<SUP><SMALL>p</SMALL></SUP> defines a <I>state</I> of the BAM M. The <I>energy</I> E(A,B) of the state is defined by the quadratic form:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-16d.jpg"></P>
+<P>The bivalent neurons turn on or off according to a McCulloch-Pitts<SUP><SMALL>42</SMALL></SUP> sign law:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-17d.jpg"></P>
+<P ALIGN="CENTER"><IMG SRC="images/10-18d.jpg"></P>
+<P>where M<SUB><SMALL>i</SMALL></SUB> is the i<SUP><SMALL>th</SMALL></SUP> row (column) of M (M<SUP><SMALL>T</SMALL></SUP>) and M<SUP><SMALL>j</SMALL></SUP> is the j<SUP><SMALL>th</SMALL></SUP> column (row) of M (M<SUP><SMALL>T</SMALL></SUP>). If a neuron equals 0, it maintains its current state. If the default 0 thresholds in the hyperplane, threshold laws in Equations 11 and 12 are respectively replaced with T = (t<SUB><SMALL>1</SMALL></SUB>, . . . , t<SUB><SMALL>n</SMALL></SUB>) and S = (s<SUB><SMALL>1</SMALL></SUB>, . . . , s<SUB><SMALL>p</SMALL></SUB>), then the BAM energy is generalized by replacing Equation 10 with Equation 13:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-19d.jpg"></P>
+<P>We shall, however, assume 0 thresholds.
+</P>
+<P>BAM convergence is proved by showing that synchronous or asynchronous state changes decrease the energy and that the energy is bounded below, so the BAM gravitates to fixed points. Boundedness follows from:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-20d.jpg"></P>
+<P>for all A and B.
+</P>
+<P>Synchronous behavior occurs when all or some neurons in a field change their state at the same clock cycle. Asynchronous behavior occurs in the special case where only one neuron changes state per cycle and, thus, can be interpreted as each neuron in the field randomly and independently changing state. Field F<SUB><SMALL>A</SMALL></SUB> change is denoted by &#916;A = A<SUB><SMALL>2</SMALL></SUB> - A<SUB><SMALL>1</SMALL></SUB> = (&#916;a<SUB><SMALL>1</SMALL></SUB>, . . . , &#916;a<SUB><SMALL>n</SMALL></SUB>) and energy change by &#916;E = E<SUB><SMALL>2</SMALL></SUB> - E<SUB><SMALL>1</SMALL></SUB>. Thus, &#916;a<SUB><SMALL>i</SMALL></SUB> = - 1, 0, or + 1. Then</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-21d.jpg"></P>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="145-146.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="148-149.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

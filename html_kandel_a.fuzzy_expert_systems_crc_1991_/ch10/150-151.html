@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Associative Memory Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=10//-->
+<!--PAGES=150-151//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="148-149.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="151-152.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>S(a<SUB><SMALL>i</SMALL></SUB>(t)) and S(b<SUB><SMALL>j</SMALL></SUB>(t)) take values in [0,1], and then A(t) = (S(a<SUB><SMALL>1</SMALL></SUB>(t)), . . . , S(a<SUB><SMALL>n</SMALL></SUB>(t))) and B(t) = (S(b<SUB><SMALL>1</SMALL></SUB>(t)), . . . , S(b<SUB><SMALL>p</SMALL></SUB>(t))) define fuzzy sets in I<SUP><SMALL>n</SMALL></SUP> and I<SUP><SMALL>p</SMALL></SUP> at any time t. In other words, Equations 17 and 18 equate analogue neurons to fuzzy sets! Ultimately this is perhaps the deepest connection between neural networks and fuzzy theory.</P>
+<P>The <I>signal function</I> S in the input sums to a<SUB><SMALL>i</SMALL></SUB> and b<SUB><SMALL>j</SMALL></SUB> denotes an arbitrary monotone nondecreasing function and, thus, its derivative S&#8242; with respect to the argument a<SUB><SMALL>i</SMALL></SUB> or b<SUB><SMALL>j</SMALL></SUB> is nonnegative, S&#8242; &#8805; 0. In particular, S is a <I>sigmoid</I> or S-shaped curve such as S(x) = (1 + e<SUP><SMALL>-bx</SMALL></SUP>)<SUP><SMALL>-1</SMALL></SUP> for positive b. It is well known that neuron firing frequency is sigmoidal. Indeed, the fact that neuron input-output curves are S-shaped has the status of a neurobiological constant. Nature selected sigmoidal behavior for some good reason. Grossberg<SUP><SMALL>15-18</SMALL></SUP> has proven the remarkable fact that, roughly speaking, a sigmoid signal function is optimal because it computes a <I>quenching threshold</I> below which activity is suppressed as noise and above which activity is contrast enhanced (then stored in short-term memory). Unfortunately linear signal functions (S(a<SUB><SMALL>i</SMALL></SUB>) = a<SUB><SMALL>i</SMALL></SUB>) amplify noise as faithfully as they amplify signals. At first sight, then, the hyperplane threshold laws in Equations 11 and 12 appear inadmissible. However, threshold linear (step function) behavior is the limiting case of a steep sigmoid curve. The first terms on the right-hand side of Equations 17 and 18 are again the input sums to a<SUB><SMALL>i</SMALL></SUB> and b<SUB><SMALL>j</SMALL></SUB>. The second terms are passive decay terms. If no activation flows into them, a<SUB><SMALL>i</SMALL></SUB> and b<SUB><SMALL>j</SMALL></SUB> exponentially decay to zero. We note that constant input I<SUB><SMALL>i</SMALL></SUB> (J<SUB><SMALL>j</SMALL></SUB>) or constant thresholds -A<SUB><SMALL>i</SMALL></SUB> (-B<SUB><SMALL>j</SMALL></SUB>) can be added to the right-hand sides of Equations 17 and 18. We shall omit these terms for notational convenience in the dynamic analysis following.</P>
+<P>The global stability of the BAM system defined in Equations 17 and 18 can be analyzed by applying the Lyapunov techniques of the Cohen-Grossberg theorem<SUP><SMALL>9,24</SMALL></SUP> (which was proved for general unidirectional autoassociators). Lyapunov techniques offer a shortcut to global analysis of a dynamic system without solving the underlying differential equations. For very steep S, we can prove BAM convergence for Equations 17 and 18 by taking the time derivative of the bounded energy function:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-27d.jpg"></P>
+<P>The steep S assumption essentially allows us to ignore the passive decay terms -a<SUB><SMALL>i</SMALL></SUB> and -b<SUB><SMALL>j</SMALL></SUB> in Equations 17 and 18. Then the chain and product rules of differentiation (and relabeling of m<SUB><SMALL>ij</SMALL></SUB> as needed) give:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-28d.jpg"></P>
+<P>upon substitution of Equations 17 and 18 (with zeroed decay terms) for input sums. If passive decay terms are used, appropriate sums of integrals must be added to Equation 19 to allow the substitution trick of Equation 20 to work. Similarly, if inputs and thresholds are used in Equations 17 and 18, sums of the terms S(a<SUB><SMALL>1</SMALL></SUB>) I<SUB><SMALL>i</SMALL></SUB> and -S(a<SUB><SMALL>i</SMALL></SUB>) A<SUB><SMALL>i</SMALL></SUB> must be added. Since the constant connection matrix M used was an arbitrary n-by-p real matrix, this proves that <I>every matrix is continuously bidirectionally stable</I>.</P>
+<P>We next examine Hopfield&#146;s<SUP><SMALL>26</SMALL></SUP> neural-circuit interpretation of Cohen-Grossberg unidirectional autoassociators. Hopfield proposes a resistance-capacitance charging equation of the form:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-29d.jpg"></P>
+<P>for symmetrical M, where C<SUB><SMALL>i</SMALL></SUB> is the input capacitance of the i<SUP><SMALL>th</SMALL></SUP> cell membrane, R<SUB><SMALL>i</SMALL></SUB> is the transmembrane resistance, and 1/m<SUB><SMALL>ij</SMALL></SUB> is the finite impedance between the output voltage V<SUB><SMALL>j</SMALL></SUB> and the cell body of cell i. The voltage vector V(t) = (V<SUB><SMALL>1</SMALL></SUB>(t), . . . , V<SUB><SMALL>n</SMALL></SUB>(t)) defines a time-varying fuzzy subset in I<SUP><SMALL>n</SMALL></SUP>. The voltage signal is a sigmoid function of its input V<SUB><SMALL>i</SMALL></SUB> = g(u<SUB><SMALL>i</SMALL></SUB>), where g(u<SUB><SMALL>i</SMALL></SUB>) describes the input-output behavior of a nonlinear amplifier with negligible response time and which is one-to-one, u<SUB><SMALL>i</SMALL></SUB> = g<SUP><SMALL>-1</SMALL></SUP>(V<SUB><SMALL>i</SMALL></SUB>). Therefore, as a function of V<SUB><SMALL>i</SMALL></SUB>, the integral of g<SUP><SMALL>-1</SMALL></SUP>(x) dx on [0,V<SUB><SMALL>i</SMALL></SUB>] describes a U-shaped curve, and m<SUB><SMALL>ij</SMALL></SUB> is a resistor whose magnitude is 1/R<SUB><SMALL>ij</SMALL></SUB>, Therefore,</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-30d.jpg"></P>
+<P>where p<SUB><SMALL>i</SMALL></SUB> is the input resistance of the i<SUP><SMALL>th</SMALL></SUP> amplifier. Then the u<SUB><SMALL>i</SMALL></SUB> input sum V M<SUB><SMALL>i</SMALL></SUB><SUP><SMALL>T</SMALL></SUP> is the electrical current input to the i<SUP><SMALL>th</SMALL></SUP> neuron.</P>
+<P>As per the Cohen-Grossberg theorem, Hopfield&#146;s symmetrical electrical network admits the global Lyapunov function:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-31d.jpg"></P>
+<P>since E is bounded below and <IMG SRC="images/10-22i.jpg">, which follows upon differentiation, substitution of Equation 21, use of symmetrical M, and noting g<SUP><SMALL>-b</SMALL></SUP>(V<SUB><SMALL>i</SMALL></SUB>) &#8805; 0 since g<SUP><SMALL>-1</SMALL></SUP> is a monotone increasing (sigmoid) function of V<SUB><SMALL>i</SMALL></SUB>.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="148-149.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="151-152.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

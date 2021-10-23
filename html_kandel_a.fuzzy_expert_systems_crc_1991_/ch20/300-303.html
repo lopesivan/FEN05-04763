@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:COMEX -- An Autonomous Fuzzy Expert System or Tactical Communications</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=20//-->
+<!--PAGES=300-303//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="297-300.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="303-304.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>The matching process is performed as follows. If the key word A in the conclusion of rule <I>i</I> or its synonym is the same as the key word A in the clause of the premise in rule <I>j</I> or its synonym, then we say that the A part is matched successfully. The same matching process is conducted for the key words B and C. If C is a number or a range of numbers, then we perform the evaluation of C in the conclusion of rule <I>i</I> and in the clause of the premise in rule <I>j</I> and perform the matching as will be described later. If all three key words do match, then we assume that conclusion i may contribute to the firing of rule <I>j</I>. When the bit matrix is created, a final check is performed:</P>
+<P ALIGN="CENTER"><I>If BM</I>[<I>j,i</I>] = <I>1 then flag an error</I></P>
+<P>If the conclusion of rule <I>i</I> may fire rule <I>j</I> and the conclusion of rule <I>j</I> may fire rule <I>i</I>, then we have identity and we do not need this rule. Consider the following two rules:</P>
+<P ALIGN="CENTER">IF a THEN b</P>
+<P ALIGN="CENTER">IF b THEN a</P>
+<P>In this case the reasoning path will be</P>
+<P ALIGN="CENTER">b because of a (rule 2)</P>
+<P ALIGN="CENTER">a because of b (rule 1)</P>
+<P ALIGN="CENTER">b because of a (rule 2)</P>
+<P ALIGN="CENTER">a because of b (rule 1)</P>
+<P>As can be seen, we have an infinite loop.</P>
+<P><A NAME="Fig10"></A><A HREF="javascript:displayWindow('images/20-10.jpg',500,208)"><IMG SRC="images/20-10t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/20-10.jpg',500,208)"><FONT COLOR="#000077"><B>Figure 10</B></FONT></A>&nbsp;&nbsp;The QAP algorithm.</P>
+<P>Another problem that can be created is that since each line will contain the value 1 (BM[1,2] = BM[2,1] = 1), the expert system will not be able to reach a conclusion. It will fire both rules but will terminate the inference process unsuccessfully because there is not at least one concluding rule in the knowledge base.
+</P>
+<P>A question-answer program (QAP) is used to retrieve the chain of firings in the inference procedure and display all rules and data that were involved in the firing of that rule. The user may invoke the program by typing:</P>
+<P ALIGN="CENTER"><I>explain rule s</I></P>
+<P>where <I>s</I> is the desired rule. First the QAP checks to ensure that rule <I>s</I> is in the list of fired rules (LR). If the rule was not found in the LR then the program is terminated (after an error message is displayed to the user). If the rule number is found in LR, the process continues.</P>
+<P>The QAP uses the bit matrix (BM) to retrieve rules and data. As was shown in Equation 2:</P>
+<P ALIGN="CENTER"><I>BM</I>[<I>i,j</I>] = <I>1</I></P>
+<P>means that rule i may contribute to the firing of rule j. But it also means that rule j can be fired from rule i. Using this logic, we can derive a general recursive algorithm for retrieving the rules and data which were involved in the firing of the rule in question. The algorithm is presented in a Pascal-like language in Figure 10. If column k in BM consists of only zeros then, necessarily, conclusion k came from user-supplied data.</P>
+<P>Since this procedure is activated recursively, it is guaranteed to find all the rules and data which were involved in the firing of rule k.</P>
+<H3><A NAME="Heading7"></A><FONT COLOR="#000077">IV. Communication in COMEX</FONT></H3>
+<P>One of the major issues in constructing cooperative expert systems is the communication between the expert systems and within the expert system. Requests and replies must arrive to the right expert system, they must be understood, and it is desirable for them to be simple and short. In COMEX the communication is performed via a shared memory area.
+</P>
+<P>Since COMEX uses a communication protocol to communicate between MMI and the CONTROLLER to pass data and knowledge, it can be treated as a local network of processes. To reduce the complexity in the design, most networks are organized as a series of <I>layers</I>, each one built upon its predecessor. The number of layers and the functions of each layer may differ from network to network. However, in all networks, the purpose of each layer is to offer certain services to the higher layers, shielding those layers from the details of how the offered services are actually implemented.</P>
+<P>The communication process in COMEX belongs to the &#147;data link&#148; layer of the ISO-OSI model, with three sublayers:</P>
+<P><B>First sublayer</B> &#151; This consists of three key words:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;A key character: &#147;R&#148; for request or &#147;A&#148; for answer
+<DD><B>2.</B>&nbsp;&nbsp;The address of the sender
+<DD><B>3.</B>&nbsp;&nbsp;The designated address
+</DL>
+<P>Thus the first sublayer looks like:
+</P>
+<P ALIGN="CENTER">A MMI CONTROLLER</P>
+<P>which means a reply from MMI to CONTROLLER.</P>
+<P><B>Second sublayer</B> &#151; This contains the code number for the request. In other words, there are several code numbers which are understood by both the sender and the receiver. This code number must be unique for both expert systems. For example, if the user wants to see a rule, then he asks MMI to print a rule. This request is made in a natural language. MMI interprets the request and sends the request to CONTROLLER in the following way:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;R MMI CONTROLLER {request from MMI to CONTROLLER}
+<DD><B>2.</B>&nbsp;&nbsp;3 {the code for printing a rule}
+</DL>
+<P><B>Third sublayer</B> &#151; This consists of the appropriate data, which are associated with the code number just described. Each code number must be followed by the appropriate data. If, for example, a user wants to print a rule, then he will enter the request in the following way:</P>
+<P ALIGN="CENTER"><B>print rule 6</B></P>
+<P>MMI interprets the request and sends it to CONTROLLER in the following way:</P>
+<CENTER>
+<TABLE WIDTH="30%"><TR>
+<TD>R MMI CONTROLLER
+<TR>
+<TD>3
+<TR>
+<TD>6
+</TABLE>
+</CENTER>
+<P>which is interpreted by CONTROLLER as &#147;<B>Print rule #6</B>&#148;.</P>
+<P>In order to avoid deadlock and interference problems, it was necessary to build a semaphore. A semaphore is a data structure which is designed to block a common memory from being accessed by more than one processor simultaneously. Before each request or reply, the communication file is blocked and the request is processed. After the completion of the communication process, the communication file is unblocked. Let LOCKFN be the procedure that locks the communication file (called COMFILE) and let UNLOCKFN be the procedure that frees COMFILE. The communication will be performed as presented in Figure 11.</P>
+<P><A NAME="Fig11"></A><A HREF="javascript:displayWindow('images/20-11.jpg',500,265)"><IMG SRC="images/20-11t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/20-11.jpg',500,265)"><FONT COLOR="#000077"><B>Figure 11</B></FONT></A>&nbsp;&nbsp;Example of communication between two expert systems.<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="297-300.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="303-304.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

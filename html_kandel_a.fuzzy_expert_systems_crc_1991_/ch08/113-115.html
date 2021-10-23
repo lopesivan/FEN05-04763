@@ -1,0 +1,144 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Linguistic Inference Network Generator</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=8//-->
+<!--PAGES=113-115//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch07/110-112.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="115-117.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 8<BR>Fuzzy Linguistic Inference Network Generator
+</FONT></H2>
+<P><I>Thomas Whalen<BR>Brian Schott</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Network Fault Diagnosis
+<DT>II.&nbsp;&nbsp;FAULT: A Fuzzy Production System for Financial Network Diagnosis
+<DT>III.&nbsp;&nbsp;FLING: A Fuzzy Linguistic Inference Network Generator
+<DT>IV.&nbsp;&nbsp;Demonstration of Network Inference Using FAULT
+<DT>V.&nbsp;&nbsp;Common Size Analysis
+<DT>VI.&nbsp;&nbsp;Conclusion
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Network Fault Diagnosis</FONT></H3>
+<P>A large number of practical problem situations involving economic, electronic, biomedical, and other systems involve complex collections of interacting components which can be modeled as a directed graph or network. Typically, most of the components or &#147;nodes&#148; of the system are difficult or costly to assess directly; a few nodes, designated as &#147;outputs&#148;, &#147;symptoms&#148;, &#147;indicators&#148;, etc., are exceptions to this general rule.
+</P>
+<P>The first step in solving a problem (or recognizing an opportunity for improvement) in such a system is to use information about the indicator nodes to determine which of the other nodes have values which are &#147;too high&#148; or &#147;too low&#148;. This question is a fundamentally qualitative one, even though it will usually lead to a subsequent quantitative decision to apply a measured stimulus to raise or lower the offending nodes. In fact, some systems, such as financial accounting systems, abound in variables which can be measured very precisely in a numeric sense but which are very difficult to assess as high, low, or medium. These assessments, which are necessary for management, must be inferred indirectly.</P>
+<P>Fault diagnosis is the process of isolating the defective node, which is causing the unacceptable behavior at the indicator nodes, by deducing possible candidates given the collective behavior of the outputs and the interconnections in the network. The structure of the fault diagnosis problem and the way human beings go about solving it have been extensively studied by the Rouses and their associates, both as an abstract problem<SUP><SMALL>9,10</SMALL></SUP> and in real or realistic applied contexts.<SUP><SMALL>1</SMALL></SUP> This work has all been done in a &#147;crisp&#148; context in which each node is either &#147;on&#148; (functioning optimally) or &#147;off&#148; (not functioning at all), with individual nodes modeled as either <B>and</B> gates or as <B>or</B> gates. A more recent paper<SUP><SMALL>6</SMALL></SUP> uses fuzzy logic to model human performance in this nonfuzzy task.</P>
+<P>In a fuzzy network, on the other hand, nodes are not restricted to just the two values, &#147;on&#148; and &#147;off&#148;, but may also function at various intermediate levels of partial degradation. The output or indicator nodes are distinguished by relatively easy access to objective measurements as they are in the crisp formulation and, more importantly, by the fact that the user can classify these measurements using the fuzzy sets of acceptable and unacceptable values.</P>
+<P>For the majority of nodes, either the objective measurements are costly to observe or their qualitative assessment is much more difficult than for the indicator nodes. One important source of difficulty in assessing nonindicator nodes occurs when their fuzzy sets of acceptable values are context-sensitive, depending strongly on the values of other nodes in the network. Also, despite clear goals about system outputs, we may not know what numeric values of nonindicator nodes are most compatible with these goals.</P>
+<P>When poor performance is detected at the indicator nodes of a fuzzy network, we need to use qualitative assessments of the indicator nodes and the pattern of interconnections in the network to deduce assessments of the nonindicator nodes. In the present research this is done using fuzzy logic and linguistic variables combined into a fuzzy production system<SUP><SMALL>14,15</SMALL></SUP> to propagate assessments backward in the network from indicator nodes to nonindicator nodes.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. FAULT: a Fuzzy Production System for Financial Network Diagnosis</FONT></H3>
+<P>A production system is a body of problem-specific knowledge represented in a computer by a collection of &#147;<B>IF</B> condition <B>THEN</B> conclusion&#148; rules.<SUP><SMALL>2</SMALL></SUP> In a fuzzy production system, the actions and conditions are represented in terms of fuzzy sets and the <B>IF-THEN</B> relationship is represented by one of several systems of fuzzy logic.<SUP><SMALL>16</SMALL></SUP> In FAULT,<SUP><SMALL>18</SMALL></SUP> the propositions in the <B>IF</B> clause and the <B>THEN</B> clause refer to financial accounting ratios and line items. These propositions are expressed using linguistic fuzzy variables;<SUP><SMALL>12,19</SMALL></SUP> the inputs to FAULT are assessments of the ratios and its outputs are assessments of the line items, also expressed using fuzzy linguistic variables. The fuzzy logic used is based on Brouwerian many valued logic.<SUP><SMALL>11,16,17</SMALL></SUP></P>
+<P>A large part of the financial accounting profession&#146;s body of knowledge consists of ways to reduce numerous monetary amounts, by a division and subtraction, to a smaller number of more easily interpreted summary figures.<SUP><SMALL>3,5,13</SMALL></SUP> The relationships among these quantities can be easily expressed in network form. In this context, the main benefit of a fuzzy production system is the ability to make formal deductions based on the vague linguistic assessments most appropriate to the analysis of overall financial conditions of ongoing business enterprise or by extension of any phenomenon being modeled by a fuzzy network. Also, unlike standard logic, the concept of &#147;close&#146; is readily defined in fuzzy logic: If the data come close to matching the <B>if</B> clause of a particular rule, without actually matching it completely, then the outcome of the rule is somewhat less definite than it would have been if the match had been closer.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch07/110-112.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="115-117.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

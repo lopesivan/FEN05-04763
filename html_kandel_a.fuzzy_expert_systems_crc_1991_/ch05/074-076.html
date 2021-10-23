@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Reduction Procedures for Rule-Based Expert Systems as a Tool for Sutdies of Properties of Expert's Knowledge</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=5//-->
+<!--PAGES=074-076//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="071-074.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="076-079.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. Generalization of Production Rules</FONT></H3>
+<P>In this section we will present how, without any calculations of the fuzzy relation of the knowledge base, one can detect a situation in which this reduction procedure may be applied.
+</P>
+<P>As before, we discuss the rule-based system where a knowledge is of a format of condition-action statements. For clarity, we consider two of the rules, the i<SUP><SMALL>th</SMALL></SUP> and the j<SUP><SMALL>th</SMALL></SUP> one, i,j = 1,2,&#133;,N, i &#8800; j and we discuss four cases:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Both A<SUB><SMALL>i</SMALL></SUB> and A<SUB><SMALL>j</SMALL></SUB> are very similar (close to each other), (the similarity notion or closeness of fuzzy notions will be explained later); the same holds for actions, e.g., B<SUB><SMALL>i</SMALL></SUB> and B<SUB><SMALL>j</SMALL></SUB>. Thus, we can say that these two rules are consistent and there is no necessity to modify them.
+<DD><B>2.</B>&nbsp;&nbsp;The same holds A<SUB><SMALL>i</SMALL></SUB> and A<SUB><SMALL>j</SMALL></SUB>, as well as B<SUB><SMALL>i</SMALL></SUB>, B<SUB><SMALL>j</SMALL></SUB>, are very different.
+<DD><B>3.</B>&nbsp;&nbsp;Here A<SUB><SMALL>i</SMALL></SUB> = A<SUB><SMALL>j</SMALL></SUB> while B<SUB><SMALL>i</SMALL></SUB> and B<SUB><SMALL>j</SMALL></SUB> differ significantly. We are faced with a case where one has to extend the condition space to get consistency of this pair of rules. In other words, this situation requires a particularization of the rules, as it is shown in Reference 8.
+<DD><B>4.</B>&nbsp;&nbsp;This case is widely discussed here: A<SUB><SMALL>i</SMALL></SUB> and A<SUB><SMALL>j</SMALL></SUB> are different, yielding the same or very similar actions B<SUB><SMALL>i</SMALL></SUB> and B<SUB><SMALL>j</SMALL></SUB>. Thus, if the same elements of the space of conditions were eliminated, A<SUB><SMALL>i</SMALL></SUB> and A<SUB><SMALL>j</SMALL></SUB>, redefined in this new reduced space of conditions, would become closer to each other. The phenomenon, already needed to resolve this inconsistency, will be called rule generalization.
+</DL>
+<P>Thus, we need a mechanism that allows us to detect the situation 4. At the beginning one has to express precisely how <I>nearness</I> of the fuzzy relations (conditions) and fuzzy sets (actions) can be evaluated. Here we may give a lot of approaches; all of them generate indices taking their maximal values for identical fuzzy sets, i.e., equal (but not necessarily) to 1.0, approaching to the minimum (i.e., zero) for completely different fuzzy sets. An example of this index, borrowed by multivalued logic, is the following. We recall that for truth values of two propositions &#147;p&#148; and &#147;q&#148;, p, q &#8712; [0,1], a degree, to which extent they are equal to each other, is given by:</P>
+<P ALIGN="CENTER"><IMG SRC="images/05-13d.jpg"></P>
+<P>where &#147;&#8594;&#148; is treated as a Godelian implication &#147;&#945;&#148;, namely, (p &#945; q) = 1 if p &#8804; q, (p &#945; q) = q if p &gt; q and &#147;&#38;&#148; is treated as minimum. Then this expression reads as:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/05-14d.jpg"></P>
+<P>For two fuzzy sets (relations) of a universe of discourse A, we may speak about a degree to which the membership functions of A<SUB><SMALL>i</SMALL></SUB>, A<SUB><SMALL>j</SMALL></SUB> at some elements a &#8712; A are equal to each other:</P>
+<P ALIGN="CENTER"><IMG SRC="images/05-15d.jpg"></P>
+<P>In order to obtain a global overview to which extent A<SUB><SMALL>i</SMALL></SUB> is equal to A<SUB><SMALL>j</SMALL></SUB>, we calculate the values of [A<SUB><SMALL>i</SMALL></SUB>(a) &#8801; A<SUB><SMALL>j</SMALL></SUB>(a)] for all a &#8712; A building an empirical probability distribution function defined as:</P>
+<P ALIGN="CENTER"><IMG SRC="images/05-16d.jpg"></P>
+<P>that one can utilize, for instance, to calculate:
+</P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;an averaged value,
+<P ALIGN="CENTER"><IMG SRC="images/05-17d.jpg"></P>
+<DD><B>&#149;</B>&nbsp;&nbsp;a model value, i.e., the value of w &#8712; [0,1] for which a probability density function:
+<P ALIGN="CENTER"><IMG SRC="images/05-18d.jpg"></P>
+<P>attains its maximum.
+</DL>
+<P>The same computations are performed for the fuzzy sets Bi and Bj. It is easily seen that an expression:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/05-19d.jpg"></P>
+<P>can serve as a suitable index for detecting whether the rules have to be generalized. Note that this index takes quite high values for situations 1&#151;3, and reaches values nearly zero for case 4. Performing the calculations for all the pairs of indices, we arrange the results in a matrix form &#915; = [&#947;<SUB><SMALL>ij</SMALL></SUB>], i = 1,2,&#133;,N. Obviously, &#947;<SUB><SMALL>ii</SMALL></SUB> = 1.0, &#947; <SUB><SMALL>ij</SMALL></SUB> &#947;= &#947;<SUB><SMALL>ji</SMALL></SUB> but N(N &#45; 1)/2 elements of &#915; must be calculated.</P>
+<P>Again, to get a global view to which extent the rules viewed as the entire collection should be generalized, i.e., the condition space reduced, we may take any synthetic index, perhaps an average value of &#947;<SUB><SMALL>ij</SMALL></SUB>&#8242; seems to be a reasonable choice:</P>
+<P ALIGN="CENTER"><IMG SRC="images/05-20d.jpg"></P>
+<P>This value may indicate a need to reduce the condition space. The proposal just presented, also has been studied extensively in Reference 8.
+</P>
+<P>At this point both of the methods given so far can be conveniently treated as complementary ones. The test for rule generalization enables us to detect a situation where a requirement is to reduce the condition space without any explicit knowledge of the fuzzy relation R. Moreover, the second method described here points out which particular rules are responsible for such a status of the knowledge base. Nevertheless, this approach does not indicate clearly which subspaces of the conditions space should be formed. The information necessary for this purpose comes from applying the results of Section II.</P>
+<H3><A NAME="Heading5"></A><FONT COLOR="#000077">IV. Reconstruction Problem</FONT></H3>
+<P>First, we observe that the obvious inequality <IMG SRC="images/05-15i.jpg"> holds, where it is understood that <U>G</U> (a<SUB><SMALL>ij</SMALL></SUB>, b<SUB><SMALL>k</SMALL></SUB>) &#8804; <IMG SRC="images/05-16i.jpg">(a<SUB><SMALL>ij</SMALL></SUB>, b<SUB><SMALL>k</SMALL></SUB>) for any j = 1,2,&#133;,N and k = 1,2,&#133;,m. For simplicity, we put <U>G</U>(a<SUB><SMALL>ij</SMALL></SUB>, b<SUB><SMALL>k</SMALL></SUB>) = <U>G</U><SUB><SMALL>j</SMALL></SUB> and <IMG SRC="images/05-17i.jpg">(a<SUB><SMALL>ij</SMALL></SUB>, b<SUB><SMALL>k</SMALL></SUB>) = <IMG SRC="images/05-18i.jpg"><SUB><SMALL>j</SMALL></SUB> for any j = 1,2,&#133;,N.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="071-074.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="076-079.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

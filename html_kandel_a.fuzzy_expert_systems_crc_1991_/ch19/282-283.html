@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:A Probabilistic Logic for Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=19//-->
+<!--PAGES=282-283//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="280-282.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="283-285.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P><B>Remarks</B></P>
+<P>If any of the components in a compound formula has probability &#8869; (unknown), the whole formula has probability &#8869; except for existential formulas (which get &#8869; only if no positive probability value exist for any assignment of the variable). This rule is a candidate for reexamination in the future.</P>
+<P>When probabilities are restricted to be only 0 or 1, these rules are compatible with the FOPC interpretations.</P>
+<P>The definition of implication is part of the model, not of satisfaction. There is a big controversy concerning the functionality of the conditional connective, for example, Anderson and Belnap.<SUP><SMALL>1</SMALL></SUP> To support our choice, note that it is rare in the context of expert systems reasoning that we compute the truth value of an implication based on the truth value of the components.</P>
+<P>The probability of the disjunction of independent formulas could have been defined as the sum of the respective probabilities. This would require building into the model tools for the analysis of independence of formulas. Similarly, the probability of conjunction of formulas could have been defined as the product of the probability of the first formula and the conditional probability of the second formula. We adopted the definitions given in preceding Statements 4 and 5 for the sake of simplicity of implementation.</P>
+<P>Satisfaction of &#966; &#8596; &#936; may have a probability value different from that [&#966; &#8594; &#936;] <IMG SRC="images/19-24i.jpg"> [&#936; &#8596; &#966;]. Tautologies of FOPC involving implication do not necessarily hold in PL.</P>
+<P>The relationship between the probability &alpha; of &#8707;&#957;&#966; and the probability &beta; of &#8704;&#957; <IMG SRC="images/19-25i.jpg"> &#966; may satisfy &beta; &ne; 1 &#45; &alpha;.</P>
+<P>Equality in our model is strict, not probabilistic. An alternative and more general approach is to allow elements of the universe to be equal with probability <I>p</I> (corresponding to a world in which facts are sometimes distinguishable, and sometimes indistinguishable). This is one of many possible generalizations of the proposed logic.</P>
+<P>The proposed interpretation of the connectives is independent of the meaning of formulas. A sophisticated system may be able to determine the dependence/independence of the connected formulas (based on their meaning) and modify the rules accordingly (e.g., probability of &#147;and&#148; of complements may be set to zero).</P>
+<P>Just as in FOPC,<SUP><SMALL>6</SMALL></SUP> one can show that if two assignments <I>z</I> and <I>z</I><SUB><SMALL>1</SMALL></SUB> agree on all free variables of a formula &#966;, then <IMG SRC="images/19-26i.jpg">. This implies that for assertions (formulas without free variables), the probability of satisfaction is independent of the specific assignment.</P>
+<P><B>Example 4: Satisfaction of Formulas</B></P>
+<P>We shall use the formulas of Example 2 and the model of Example 3:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;<I>S</I>(<I>s</I>1,<I>N.Y.</I>). Probability of satisfaction is .7.
+<DD><B>2.</B>&nbsp;&nbsp;<IMG SRC="images/19-27i.jpg">. If x and y are assigned to the same element, then the probability of satisfaction is the same as that of <I>P</I> (<I>y, red</I>), which is .5 if y is assigned to p1, .3 if to p2, 1 if to p4. If x and y are assigned to different elements, the satisfaction probability is 0.
+<DD><B>3.</B>&nbsp;&nbsp;<IMG SRC="images/19-28i.jpg">. Probability of satisfaction is 1 if y = blue, 1 if y = gren, 0 if y = red.<DD><B>4.</B>&nbsp;&nbsp;&#8704;<I>x</I> [<I>P</I> (<I>x, red</I>) &#8596; &#8707;<I>y</I> <I>SP</I>(<I>y,</I> <I>x</I>]. Probability of satisfaction is 0.
+<DD><B>5.</B>&nbsp;&nbsp;&#8707;<I>x</I> [SP (<I>x</I>, <I>p</I>1) &#8596; <I>SP</I> (<I>x, p</I>2)]. Probability of satisfaction is 1.
+<DD><B>6.</B>&nbsp;&nbsp;<IMG SRC="images/19-29i.jpg">. PS is identical to its transitive closure, and thus the satisfaction probability equals the probability that the tuple of values assigned to &lt;x,y&gt; is in PS.</DL>
+<H3><A NAME="Heading7"></A><FONT COLOR="#000077">III. Semantics, Soundness, and Completeness of PL</FONT></H3>
+<H4 ALIGN="LEFT"><A NAME="Heading8"></A><FONT COLOR="#000077">A. A Definitional Approach to Assigning Meaning to Formulas</FONT></H4>
+<P>Meaning is defined by a mapping of syntactical objects to semantic ones. An FOPC structure may be viewed as an assignment of meaning to constant and relation symbols. When assigning meaning to formulas, we first have to identify suitable semantic objects, i.e., the range of the meaning function. One way of creating a semantic domain is to view formulas as definitions of relations in the sense of definability theory. A formula without free variables defines in FOPC a singleton set containing either true or false, and in PL it defines the probability that it is satisfied. If a formula has free variables, it defines in FOPC a relation whose degree is the number of free variables, and whose components satisfy the formula. In PL, each formula defines a probabilistic relation. Note that since we do not assume the axioms of probability, relations in PL may be under-defined in the sense that we are unable to decide the belonging of some tuples to a relation. In these cases we adopt the cautious (minimal) approach, and do not include those tuples in the relation. Natural semantics in this context may be the mapping from formulas to the relations defined by them in a given model. This topic is discussed further in References 20 and 21.
+</P>
+<P><B>Example 5: Meaning of Formulas</B></P>
+<P>We use again the formulas presented in Example 2, and the model of Example 3.</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;<I>S</I>(<I>s</I>1,<I>N.Y.</I>) (supplier s1 is in N.Y.). This formula has no free variables; it defines its probability of satisfaction, .7.
+<DD><B>2.</B>&nbsp;&nbsp;[<I>x = y</I>] <IMG SRC="images/19-30i.jpg"> <I>P</I> (<I>y, red</I>). This defines a relation with two identical components in each tuple, the part numbers of the red parts (p1, p2, p4); the probability is the same as in the corresponding P tuple.
+<DD><B>3.</B>&nbsp;&nbsp;<IMG SRC="images/19-31i.jpg">. This formula defines the set of colors (probability 1 for each entry) which appear in the color domain and are not red.<DD><B>4.</B>&nbsp;&nbsp;&#8704;<I>x</I> [<I>P</I> (<I>x,red</I>) &#8596; &#8707;<I>y</I> <I>SP</I> (<I>y,</I> <I>x</I>)]. This formula defines a probability that every part is red if supplied by some supplier.
+<DD><B>5.</B>&nbsp;&nbsp;&#8707;<I>x</I> [ <I>SP</I> (<I>x,</I> <I>p</I>1) &#8596; <I>SP</I> (<I>x,p</I>2)]. This defines the probability of satisfaction of the condition: there exists a supplier x who supplies part p1 with probability <I>p</I>, if x also supplies p2 with probability <I>p</I>.
+<DD><B>6.</B>&nbsp;&nbsp;<I>PS</I>(<I>x,y</I>) <IMG SRC="images/19-32i.jpg"> &#8707;<I>z</I> [<I>PS</I>(<I>x,z</I>) <IMG SRC="images/19-33i.jpg"> <I>PS</I>(<I>z,y</I>)]. This defines <I>PS</I> <IMG SRC="images/19-34i.jpg"> <I>PS</I><SUP><SMALL>2</SMALL></SUP>, which in the example model is equal to PS.
+</DL>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="280-282.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="283-285.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

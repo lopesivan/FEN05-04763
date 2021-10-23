@@ -1,0 +1,179 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Medical Decision Making Using Multidimensional Polynomials</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=16//-->
+<!--PAGES=230-233//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="227-230.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="233-235.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="LEFT"><A NAME="Heading7"></A><FONT COLOR="#000077">C. Pattern Recognition Algorithm</FONT></H4>
+<P>This algorithm implements the details of the classification method described in the previous section. It receives as input the training set and proceeds iteratively to produce a separating hypersurface. The result of this program is an algebraic equation which represents this hypersurface.
+</P>
+<P>In the algorithm outlined in Section II. algebraic equations must be maintained through all stages of the computation. The result itself is an equation. In order to accomplish this, the program must be capable of performing algebraic operations, rather than straight-forward numerical computation.</P>
+<P>If multidimensional polynomials are generated from one-dimensional polynomials, the following procedure is used. The required sets of polynomials of one variable are stored in 2 two-dimensional arrays: con(i,j), icon(i,j) &#151; where con(i,j) contains the coefficient of term j in polynomial i and icon(i,j) contains one plus the power of x corresponding to that coefficient. If a coefficient is zero, it is not stored. This representation permits compact storage of the polynomials.</P>
+<P>The polynomial coefficients are generated through the use of the appropriate recurrence relation. The coefficients for the first two terms are initialized with all remaining terms generated recursively.</P>
+<P>The multiplication of term i in polynomial m by term j in polynomial n to yield term k in polynomial l is accomplished by the two operations:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-16d.jpg"></P>
+<P>In order to generate the multivariant polynomials, the following procedure is followed:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;An initial set of one-dimensional polynomials is computed using the appropriate recurrence relation, and the representation in Equation 17.
+<DD><B>2.</B>&nbsp;&nbsp;Combinations are then made according to Equation 11.
+</DL>
+<P><A NAME="Fig1"></A><A HREF="javascript:displayWindow('images/16-01.jpg',500,731)"><IMG SRC="images/16-01t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/16-01.jpg',500,731)"><FONT COLOR="#000077"><B>Figure 1</B></FONT></A>&nbsp;&nbsp;Flow of Pattern Classification System.</P>
+<P>The internal representation of a multidimensional polynomial is the following:
+</P>
+<P ALIGN="CENTER">phi(i,j): coefficient for polynomial i, term j</P>
+<P ALIGN="CENTER">iphi(i,j,k): power plus one of x<SUB><SMALL>k</SMALL></SUB> for polynomial i, term j</P>
+<P>For example:</P>
+<P ALIGN="CENTER">phi(1,1) = 3, phi(1,4) = -6, phi(1,7) = 8</P>
+<P ALIGN="CENTER">iphi(1,4,2) = 8, iphi(1,4,3) = 5, iphi(1,7,2) = 15</P>
+<P>would represent:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-17d.jpg"></P>
+<P>If the Cohen multidimensional polynomial is used, it can be stored directly in the phi and iphi arrays.
+</P>
+<P>Once the chosen orthogonal polynomial is represented in this structure, the first equation in the training set is used to compute initial weighting factors through the equation:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-18d.jpg"></P>
+<P>where <IMG SRC="images/16-10i.jpg"> is the preceding polynomial, and <IMG SRC="images/16-11i.jpg"> is the first vector in the training set. Subsequent interactions are then accomplished by using Equations 4 and 6.</P>
+<H3><A NAME="Heading8"></A><FONT COLOR="#000077">IV. Application: Analysis of Exercise Testing Data</FONT></H3>
+<P>The use of exercise treadmill testing (ETT) to classify patients with coronary artery disease has resulted in disagreement about which parameters should be included in the analysis. This is an important test for diagnosis, because it is noninvasive. If the results are accurate, it can be used in place of more invasive and potentially harmful tests such as cardiac catheterization.
+</P>
+<P>The following data were collected for exercise testing subjects who also had cardiac catheterization to confirm diagnosis: identification number, age, date of cardiac catheterization, results (0, 1, 2, or 3 diseased vessels), date of ETT, resting heart rate, resting blood pressure, resting electrocardiogram (ECG) results, time of angina, heart rate and blood pressure at time of angina, time of 1 mm ST depression, heart rate and blood pressure at 1 mm ST depression, maximum ST depression, total duration of ETT, heart rate and blood pressure at end of ETT, total duration of chest pain, total duration of ST depression, and reason for stopping ETT. Seventy cases were analyzed.<SUP><SMALL>37,41,42</SMALL></SUP> An ST depression is a cardiac arrhythmia in which the ECG signal drops below the baseline following ventricular contraction of the heart.</P>
+<P>The following parameters were used as features: maximum ST depression, percentage changes in heart rate and in blood pressure from beginning to end of test, and product of heart rate and blood pressure at end of test.</P>
+<P>Four classes were used: class 0 &#151; patients with no coronary artery disease; class i &#151; patients with i diseased vessels, i = 1,2,3. Each class was compared separately to each of the other classes.</P>
+<H3><A NAME="Heading9"></A><FONT COLOR="#000077">V. Results</FONT></H3>
+<P>For the application described in Section IV. the results for the new Cohen multidimensional polynomial were compared to other classification methods. The first was the method previously developed by the authors for the single-dimensional Cohen orthogonal functions. A special case of the one-dimensional Cohen orthogonal polynomial, <IMG SRC="images/16-12i.jpg">, is used to demonstrate the one-dimensional approach.<SUP><SMALL>38</SMALL></SUP> This is a special case of Equation 7. The new multidimensional method is represented by C<SUB><SMALL>n</SMALL></SUB>(x). The second method used for comparison was standard nonlinear statistical discriminant analysis.</P>
+<P>The classification results are shown in Tables 1 and 2 for coronary artery disease. For two cases, equivalent results were obtained by the multidimensional polynomials in fewer iterations. In the remaining two cases, more accurate results were achieved with the multidimensional polynomial. In all cases, the pattern recognition approach produced superior results to nonlinear statistical discriminant analysis.</P>
+<P>Sample equations for class 0 vs. 1 for the ETT data are shown below for the one-dimensional polynomial <IMG SRC="images/16-13i.jpg"> and the multidimensional polynomial C<SUB><SMALL>n</SMALL></SUB>(x):</P>
+<P ALIGN="CENTER">D<SUB><SMALL>g</SMALL></SUB> = -2.2 + 2.9x<SUB><SMALL>1</SMALL></SUB> + 3.3x<SUB><SMALL>2</SMALL></SUB> + 4.6x<SUB><SMALL>3</SMALL></SUB> + 2.9x<SUB><SMALL>4</SMALL></SUB> - 21.5x<SUB><SMALL>3</SMALL></SUB>x<SUB><SMALL>4</SMALL></SUB> + 11.4x<SUB><SMALL>2</SMALL></SUB>x<SUB><SMALL>4</SMALL></SUB></P>
+<P ALIGN="CENTER">+ 1.9x<SUB><SMALL>1</SMALL></SUB>x<SUB><SMALL>4</SMALL></SUB> - 19.4x<SUB><SMALL>1</SMALL></SUB>x<SUB><SMALL>2</SMALL></SUB> + 7.9x<SUB><SMALL>1</SMALL></SUB>x<SUB><SMALL>3</SMALL></SUB> - 1.6x<SUB><SMALL>2</SMALL></SUB>x<SUB><SMALL>3</SMALL></SUB></P>
+<P ALIGN="CENTER">D<SUB><SMALL>c</SMALL></SUB> = 5.3 - 7.4x<SUB><SMALL>1</SMALL></SUB> + 2.4x<SUB><SMALL>2</SMALL></SUB> - 23.3x<SUB><SMALL>3</SMALL></SUB> + 39.8x<SUB><SMALL>4</SMALL></SUB> - 60.0x<SUB><SMALL>3</SMALL></SUB>x<SUB><SMALL>4</SMALL></SUB> + 31.1x<SUB><SMALL>2</SMALL></SUB>x<SUB><SMALL>4</SMALL></SUB></P>
+<P ALIGN="CENTER">+ 5.3x<SUB><SMALL>1</SMALL></SUB>x<SUB><SMALL>4</SMALL></SUB> - 52.1x<SUB><SMALL>1</SMALL></SUB>x<SUB><SMALL>2</SMALL></SUB> + 28.9x<SUB><SMALL>1</SMALL></SUB>x<SUB><SMALL>3</SMALL></SUB> - 6.8x<SUB><SMALL>2</SMALL></SUB>x<SUB><SMALL>3</SMALL></SUB></P>
+<P>where</P>
+<TABLE WIDTH="100%"><TR>
+<TD WIDTH="7%">x<SUB><SMALL>1</SMALL></SUB>:
+<TD>Maximum ST depression
+<TR>
+<TD>x<SUB><SMALL>2</SMALL></SUB>:
+<TD>Percentage change in heart rate from beginning to end of test
+<TR>
+<TD>x<SUB><SMALL>3</SMALL></SUB>:
+<TD>Percentage change in blood pressure from beginning to end of test
+<TR>
+<TD>x<SUB><SMALL>4</SMALL></SUB>:
+<TD>Percentage of heart rate and blood pressure
+</TABLE>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="227-230.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="233-235.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

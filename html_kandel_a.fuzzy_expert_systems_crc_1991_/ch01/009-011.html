@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Evolution From Expert Systems to Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=1//-->
+<!--PAGES=009-011//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="008-009.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="011-012.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="LEFT"><A NAME="Heading8"></A><FONT COLOR="#000077">B. Class Two Systems</FONT></H4>
+<P>Definition: Class two expert systems are those with good, even expert, performance, which have not gained wide acceptance by the average user.
+</P>
+<P>Class two systems include consultation or diagnostic expert systems which do not explain themselves well enough to satisfy the user. These systems may not gain expert acceptance because they do not ask his diagnosis, but simply give their own. It is conjectured that if they would comment on the expert&#146;s diagnosis they would gain wider acceptance. Some class two systems have not acquired quite enough expertise to be in class one. Human prejudice against machines may be holding back some.</P>
+<P>There are many medical consultation expert systems in the class two category. Internist/Caduceus,<SUP><SMALL>29</SMALL></SUP> MYCIN, CASNET, and PUFF/Centaur are all examples. Their domains are internal medicine, bacterial infections, glaucoma, and pulmonary physiology, respectively. We will examine Internist/Caduceus and PUFF/Centaur in some detail as follows.</P>
+<P>Internist/Caduceus covers at least 85% of internal medicine which is a large domain. It takes into account and tries to distinguish multiple diseases. It has been known to correctly diagnose complex test cases that have stymied human experts! It reasons under uncertainty, although in a somewhat ad hoc fashion. It is slow to respond, can require large chunks of input from the user, and does not have an impressive user interface.</P>
+<P>The user interface has probably been its greatest drawback. Any awkwardness simply magnifies the fact that one is dealing with a machine. If we are working with a new machine we want to know exactly how and why it comes up with its answers. Of course, speed is a factor that will also impede acceptance. Doctors will need time to become familiar and comfortable with the system, especially since a life may be at stake.</P>
+<P>PUFF was originally developed with the use of the expert system building tool EMYCIN. EMYCIN allows the development of expert systems with MYCIN-like control and knowledge structures. Centaur is a newer version of PUFF with control knowledge represented within prototypes. Prototypes are basically frames of data. They allow context-specific control since control knowledge is represented in each prototype. This enables the separation of control knowledge from other knowledge in the system. Centaur asks the user fewer questions than PUFF. It is able to determine more things for itself via more powerful inference.</P>
+<P>Prototypes are a very general construct. A typical consultation is represented as a prototype with the different stages of the consultation represented in control slots. Prototypes make it natural for Centaur to have a review task. This task will allow the user to specify a prototype which then has its typical features revealed as well as any control knowledge associated with it.</P>
+<P>Prototypes were developed to solve some of the problems that the production rule-based system PUFF faced. The problems which prototypes help to solve are representing prototypical patterns, adding new rules or modifying old ones, altering the order in which information is requested during the consultation, and explaining system performance. The explanation of system performance is crucial to the acceptance of medical diagnostic systems, which points out the importance of prototype improvement. Prototypes, it should be noted, are a fancy name for a frame-based knowledge representation scheme.</P>
+<P>The control structure or formalism used in Centaur is that of hypothesize and match. An attempt is made to match the representation of classes of hypotheses against the actual data in the case. Prototypes represent classes of hypotheses. An attempt to instantiate a prototype to determine whether there is a match to the data may require new information, which can result in questions being asked of the user. The system may be able to infer the answer to a question from other known pieces of data. It always tries to avoid asking the user a question.</P>
+<P>The performance of the system appears to be equivalent or just below that of an expert in several performance studies. The explanation facilities of the system are good. It reasons under uncertainty using a graded method, which is somewhat ad hoc. Their certainty factors are added to upon the occurrence of supporting data and reduced by data that conflicts with the hypotheses. The expert system does not appear to ask the user an unreasonable number of questions. It is used at a California medical center.</P>
+<P>Possibly the major factors impeding its widespread acceptance are user familiarity and confidence. We believe another significant problem exists. A doctor will learn from experience as new cases come before him, while PUFF/Centaur will not. It must be taught. This involves acquisition of the new knowledge from an expert. If knowledge acquisition is difficult, then it may not occur or it may be done incorrectly. Yet the system must always perform as well as possible (at least when it is working on us!). If the system becomes invalid, since it lacks some new information, people will be very wary of using it as anything more than a showpiece. We must have a method of acquiring new knowledge in a timely, efficient, and correct manner in order for consultation systems in dynamic fields to be ultimately accepted.</P>
+<P>Sacon operates in a very focused domain. There is a large structural analysis program called Marc which is very useful for structural engineers. However, it is difficult to use and people often need an expert&#146;s help to use it or learn its use. Sacon performs the task of the Marc program expert. It enables the user of Marc to use its features more fully, efficiently, and correctly. It interacts a fair amount with the user on a very limited domain, one computer program. If it helps one to use Marc in a manner that increases productivity, then it is working correctly. Hence determining its correctness is not difficult. Its performance matches that of a human consultant and it has been validated to an extent by field use. It was written with the use of an expert system building tool called EMYCIN, with is LISP based.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="008-009.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="011-012.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

@@ -1,0 +1,160 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fess: A Reusable Fuzzy Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=12//-->
+<!--PAGES=181-184//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch11/177-180.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="184-185.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 12<BR>Fess: A Reusable Fuzzy Expert System
+</FONT></H2>
+<P><I>Lawrence O. Hall<BR>Abraham Kandel</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Relational Knowledge Representation
+<DD>A.&nbsp;&nbsp;Frame structure and relations
+<DT>III.&nbsp;&nbsp;The Fess Fuzzy Inference Mechanism
+<DT>IV.&nbsp;&nbsp;Fess Evidence Combination
+<DD>A.&nbsp;&nbsp;Definition 1
+<DD>B.&nbsp;&nbsp;Definition 2
+<DD>C.&nbsp;&nbsp;Definition 3
+<DT>V.&nbsp;&nbsp;Chaining Through the Fuzzy Relations
+<DT>VI.&nbsp;&nbsp;Single or Multiple Conclusion Search
+<DT>VII.&nbsp;&nbsp;Summary
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>Expert systems are computer programs that emulate the reasoning process of a human expert or perform in an expert manner in a domain for which no human expert exists. They typically reason with uncertain and imprecise information. There are many sources of imprecision and uncertainty. The knowledge that they embody is often not exact, in the same way that a human&#146;s knowledge is imperfect. The facts or user-supplied information is also uncertain.
+</P>
+<P>An expert system is typically made up of at least three parts: an <I>inference engine</I>, a <I>knowledge base</I>, and a <I>global</I> or <I>working memory</I>. The knowledge base contains the expert domain knowledge for use in problem solving. The working memory is used as a scratch pad and to store information gained from the user of the system. The inference engine uses the domain knowledge together with acquired information about a problem to provide an expert solution.</P>
+<P>Expert systems have modeled uncertainty and imprecision in various ways. MYCIN<SUP><SMALL>30</SMALL></SUP> uses certainty factors, while CASNET<SUP><SMALL>33</SMALL></SUP> uses the most significant results of tests. We apply the well-established theory of fuzzy sets and fuzzy logic to the problem of modeling imprecision and uncertainty in expert systems. This provides a theoretical foundation for this crucial portion of an expert system. We also show that it is the case that fuzzy techniques can be used to provide a valid model of human reasoning.</P>
+<P>The principles of software engineering do not appear to have been followed by many expert system developers. We have followed those principles. Expert systems have typically been developed, and then the development process has given rise to practical advice on building one. We developed a theory of building a fuzzy expert system, a methodology, and then applied it.</P>
+<P>An expert system building methodology has been developed along with the necessary tools and theory to use fuzzy sets and logic in the reasoning process. A coherent description of the expert system is provided by the use of relations in all aspects of it. We have used our methodology to develop a fuzzy expert system, called <B>Fess</B>, which incorporates these described attributes.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Relational Knowledge Representation</FONT></H3>
+<P>There are many different forms in which knowledge may be represented in an expert system. Several different forms have been used very successfully for certain types of applications. The most pervasive form of knowledge representation is the rule-based form. That is because it is a natural form and easy to understand, as well as quite powerful. It enforces very little structure. Data-driven production rules are the most widely used form of rules. We desired a knowledge representation form that will provide great flexibility along with some structure to aid in its understanding.
+</P>
+<P>Since it was desired a build a reusable expert system, its knowledge representation scheme must provide at least the power of a rule-based system. On the other hand, for some applications, it would be useful to allow a scaling down or structuring of the knowledge representation scheme. All knowledge representation schemes can be described as relations. For example, in a semantic net two nodes are either related by an arc (usually weighted) or they are not. So a natural fuzzy relation suggests itself. We chose fuzzy relations as a powerful and flexible knowledge representation scheme.</P>
+<P>The combination of rules and frames in an expert system provides some definite structure to an expert system and has been found to be quite powerful. Along those lines it was speculated that the combination of relations and frames may also be very powerful. This would appear true, since rules can be easily described in a relational format. Frames also allow inheritance properties to come into play which can be important in some expert system applications.</P>
+<P><A NAME="Fig1"></A><A HREF="javascript:displayWindow('images/12-01.jpg',400,313)"><IMG SRC="images/12-01t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/12-01.jpg',400,313)"><FONT COLOR="#000077"><B>Figure 1</B></FONT></A>&nbsp;&nbsp;Invariant and instance implication frames.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading4"></A><FONT COLOR="#000077">A. Frame Structure and Relations</FONT></H4>
+<P>The frames used are broken up into two general classes. The classes are instance frames and invariant frames. The invariant frames contain the information that does not change about the relations. It will contain the number of elements in a relational-tuple. The properties of the relation such as transitive, reflexive, symmetric, etc. will also be in the invariant frame. A slot will contain information on how to calculate the fuzzy value of the relation; there will be a slot which contains information on how to find the attribute values, and one for the domains of each attribute of the relational-tuple. The name of the relation type is also included here. Invariant frames may also have a parent invariant frame associated with them. This provides a standard sort of inheritance mechanism. They may inherit properties that their parent frames possess.
+</P>
+<P>In the instance frame, the unique name of a relation is contained. A link to its invariant parent frame is also included. It also contains the values for each attribute of the relation, the value for the relation, and the <I>a priori</I> relation certainty, if one exists. An example invariant frame and an instance of it are shown in Figure 1.</P>
+<P>Frames are also used to store information about all the conclusions in the expert system. This includes intermediate and final conclusions. These frames indicate what relations give evidence about the conclusion and what relations use the conclusion.</P>
+<P><A NAME="Fig2"></A><A HREF="javascript:displayWindow('images/12-02.jpg',400,122)"><IMG SRC="images/12-02t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/12-02.jpg',400,122)"><FONT COLOR="#000077"><B>Figure 2</B></FONT></A>&nbsp;&nbsp;Example implication relation.</P>
+<P>The relations that are used in the system are simply n-tuples with some value assigned to them when each field in the relation is filled. The value of the relation will lie in the rational interval [0,1]. The relations are therefore not binary valued, but fuzzy valued. A relation may have an <I>a priori</I> determined certainty of less than one which is given by the expert. This means that the maximum value for the relation when completely satisfied will be the strength provided by the expert. All knowledge is represented in some type of relation. This includes meta-knowledge.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch11/177-180.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="184-185.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

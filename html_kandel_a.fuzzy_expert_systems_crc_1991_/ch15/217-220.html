@@ -1,0 +1,148 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:MILORD: A Fuzzy Expert Systems Shell</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=15//-->
+<!--PAGES=217-220//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="215-217.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="220-222.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>In MILORD we have implemented the pairs (T<SUB><SMALL>1</SMALL></SUB>,S<SUB><SMALL>1</SMALL></SUB>), (T<SUB><SMALL>2</SMALL></SUB>,S<SUB><SMALL>2</SMALL></SUB>), and (T<SUB><SMALL>3</SMALL></SUB>,S<SUB><SMALL>3</SMALL></SUB>), following the experimental results obtained by Bonissone,<SUP><SMALL>3</SMALL></SUP> which consisted of applying nine t-norms to three different term sets. Bonissone analyzed the sensitivity of each operator with respect to the granularity (number of elements) in the term sets and concluded that only the t-norms T<SUB><SMALL>1</SMALL></SUB>, T<SUB><SMALL>2</SMALL></SUB>, and T<SUB><SMALL>3</SMALL></SUB> generated sufficiently different results for term sets that do not have more than nine elements. On the other hand, according to the results of Miller<SUP><SMALL>9</SMALL></SUP> concerning the span of absolute judgment, it is unlikely that any expert or user would consistently qualify uncertainty using more than nine different terms.</P>
+<H3><A NAME="Heading9"></A><FONT COLOR="#000077">V. The Linguistic Certainty Values</FONT></H3>
+<P>MILORD allows the expert to define the term set of linguistic certainty values which constitutes the verbal scale that he and the users will use to express their degree of confidence in the rules and facts, respectively. Recent psychological studies<SUP><SMALL>1</SMALL></SUP> have shown the feasibility of such verbal scales. &#147;. . . A verbal scale of probability expressions is a compromise between people&#146;s resistance to the use of numbers and the necessity to have a common numerical scale,&#148; according to Beyth-Marom.<SUP><SMALL>1</SMALL></SUP> &#147;. . . People asked to give numerical estimations on a common-day situation err most of the time and in a nonconsistent way. Furthermore, they are unable to appreciate their judgment imprecision (errors are by far bigger than the maximum error accepted as possible by the subjects themselves). Nevertheless, judgments embodied in linguistic descriptors appear consistent in this same situation.&#148;<SUP><SMALL>6</SMALL></SUP></P>
+<P>Each linguistic value is represented internally by a fuzzy interval (fuzzy number), i.e., the membership function of a fuzzy set on the real line, or, more precisely, on the truth space represented by the interval [0,1]. These membership functions can be interpreted as the meanings of the terms in the term set. The conjunction and disjunction operators applied to these functions will produce another membership function, as a result that will have to be matched to a term in the term set, in order to keep the term set closed. This can be done by a linguistic approximation process that will be described later (see Bonissone<SUP><SMALL>2</SMALL></SUP> for an extensive study of the linguistic approximation process).</P>
+<P><A NAME="Fig1"></A><A HREF="javascript:displayWindow('images/15-01.jpg',500,222)"><IMG SRC="images/15-01t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/15-01.jpg',500,222)"><FONT COLOR="#000077"><B>Figure 1</B></FONT></A>&nbsp;&nbsp;The trapezoidal function.</P>
+<P><A NAME="Fig2"></A><A HREF="javascript:displayWindow('images/15-02.jpg',500,190)"><IMG SRC="images/15-02t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/15-02.jpg',500,190)"><FONT COLOR="#000077"><B>Figure 2</B></FONT></A>&nbsp;&nbsp;Five elements representation.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading10"></A><FONT COLOR="#000077">A. A Default Term Set and Its Representation</FONT></H4>
+<P>Although the expert can define its own term set together with its internal representation, MILORD provides the following default term set:
+</P>
+<P ALIGN="CENTER">{False, almost-false, maybe, almost-true, true}</P>
+<P>Each term T<SUB><SMALL>i</SMALL></SUB> is represented by a membership function &#181;i(x), for x in the interval [0,1].</P>
+<P>For computational reasons, each membership function is represented by four parameters T<SUB><SMALL>1</SMALL></SUB> = (a<SUB><SMALL>i</SMALL></SUB>,b<SUB><SMALL>i</SMALL></SUB>,c<SUB><SMALL>i</SMALL></SUB>,d<SUB><SMALL>i</SMALL></SUB>), corresponding to the following trapezoidal function:</P>
+<P>The five element default term set has the following representation:</P>
+<P ALIGN="CENTER"><IMG SRC="images/15-05d.jpg"></P>
+<P>corresponding to the following functions in Figure 2.
+</P>
+<P>In order to be able to evaluate the t-norms T<SUB><SMALL>1</SMALL></SUB>,T<SUB><SMALL>2</SMALL></SUB>,T<SUB><SMALL>3</SMALL></SUB>, and the t-conorms S<SUB><SMALL>1</SMALL></SUB>,S<SUB><SMALL>2</SMALL></SUB>,S<SUB><SMALL>3</SMALL></SUB> on the elements of the term set, we have applied the following formulas according to the arithmetic rules on fuzzy numbers.</P>
+<P>Given two fuzzy intervals <B>l</B> = (a,b,c,d) and <B>l</B>&#8242; = (a&#8242;,b&#8242;,c&#8242;,d&#8242;), we have the following:</P>
+<P ALIGN="CENTER"><IMG SRC="images/15-06d.jpg"></P>
+<H4 ALIGN="LEFT"><A NAME="Heading11"></A><FONT COLOR="#000077">B. The Linguistic Approximation</FONT></H4>
+<P>A linguistic approximation process is performed in order to find a term (linguistic value) in the term set whose &#147;meaning&#148; (membership function) is the closest (according to a given metric) to the &#147;meaning&#148; (membership function) of the result of the conjunction or disjunction operation performed on any two linguistic values of the term set. This allows us to maintain, closed, the operations for any t-norm and t-conorm. The problem is, therefore, that of computing a distance between two trapezoidal membership functions. In order to do so, we have adopted a simple solution consisting of the computation of a weighted Euclidean distance of two features of the functions: the first moment and the area under the function. The next figure shows the results obtained with the selected t-norms T<SUB><SMALL>1</SMALL></SUB>, T<SUB><SMALL>2</SMALL></SUB>, and T<SUB><SMALL>3</SMALL></SUB> on the default term set of Figure 2.</P>
+<P><A NAME="Fig3"></A><A HREF="javascript:displayWindow('images/15-03.jpg',300,356)"><IMG SRC="images/15-03t.jpg"></A></P>
+<H3><A NAME="Heading12"></A><FONT COLOR="#000077">VI. The Knowledge Elicitation Module of Expertise Transfer</FONT></H3>
+<P>This section describes elicit-analyze-refine (EAR), a system and ancillary methodology for aiding knowledge engineers in the early phases of knowledge base design. That is to say, we focus on the top half of Figure 3 because we are convinced that much of the difficulty in knowledge acquisition lies in the fact that the expert cannot easily describe how he views a problem, because he may not distinguish between the facts or beliefs and the factors which influence his decision making. Much of the expertise lies in the way an experienced person views the problem, and this is a psychological issue that can be dealt in terms of the personal construct psychology. The psychology of Kelly<SUP><SMALL>7</SMALL></SUP> views a human as a scientist classifying and theorizing about his world and basing his theory on the hypothesis that everybody has his own model of the world made up of personal constructs.</P>
+<P><A NAME="Fig4"></A><A HREF="javascript:displayWindow('images/15-04.jpg',500,588)"><IMG SRC="images/15-04t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/15-04.jpg',500,588)"><FONT COLOR="#000077"><B>Figure 3</B></FONT></A>&nbsp;&nbsp;Knowledge acquisition stages.<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="215-217.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="220-222.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

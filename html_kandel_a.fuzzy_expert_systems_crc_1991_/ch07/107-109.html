@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:On the Processing of Imperfect Information Using Structured Frameworks</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=7//-->
+<!--PAGES=107-109//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="106-107.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="109-110.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>The effort function g<SUB><SMALL>k</SMALL></SUB>[R<SUP><SMALL>k</SMALL></SUP>, q<SUB><SMALL>k</SMALL></SUB>(R<SUP><SMALL>k</SMALL></SUP>)] represents the effort associated with responding to query q<SUB><SMALL>k</SMALL></SUB> at a particular state R<SUB><SMALL>k</SMALL></SUB>. There will generally exist queries that are more difficult to understand, and hence respond to, than others. There will also be some queries that lead to a final state faster than others. The effort function should reflect this. The system equation f(R<SUP><SMALL>k</SMALL></SUP>,q<SUB><SMALL>k</SMALL></SUB>) is obtained from the decision model for interactive aiding developed in Reference 19, and just reviewed. It computes the next state (order) of the system R<SUP><SMALL>k + 1</SMALL></SUP> = f(R<SUP><SMALL>k</SMALL></SUP>,q<SUB><SMALL>k</SMALL></SUB>) given the current state (order) and the response to query q<SUB><SMALL>k</SMALL></SUB>. The objective is to minimize the total effort of the inquiring process through identification of the optimal inquiry pattern, or minimal set of information, required to provide a recommendation.</P>
+<P>Before proceeding with some commentary concerning development of the dynamic programming algorithm for the inquiring system, it is important to clarify the underlying sequence of events envisioned in the decision support process. These are</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Identify an initial state R<SUP><SMALL>0</SMALL></SUP> (no order on the set of alternatives) and initial stage k = 0.
+<DD><B>2.</B>&nbsp;&nbsp;The inquiring system recognizes the state R<SUP><SMALL>k</SMALL></SUP> and presents query q<SUB><SMALL>k</SMALL></SUB>(R<SUP><SMALL>k</SMALL></SUP>) to the decision maker.
+<DD><B>3.</B>&nbsp;&nbsp;If no response is given to the query, then go to step 2 (another query is presented at the same stage).
+<DD><B>4.</B>&nbsp;&nbsp;The next order (R<SUP><SMALL>k + 1</SMALL></SUP>) on the set of alternatives is computed according to the decision model equation R<SUP><SMALL>k + 1</SMALL></SUP> = f[R<SUP><SMALL>k</SMALL></SUP>,q<SUB><SMALL>k</SMALL></SUB>(R<SUP><SMALL>k</SMALL></SUP>)].
+<DD><B>5.</B>&nbsp;&nbsp;If we are at the final stage (k = N &#45; 1), then stop. Otherwise, go to step 2.
+</DL>
+<P>After this process is completed, a sequence of queries {q<SUB><SMALL>0</SMALL></SUB>,q<SUB><SMALL>1</SMALL></SUB>,&#133;,q<SUB><SMALL>N &#45; 1</SMALL></SUB>} is obtained. We call this sequence an inquiry pattern, and it specifies the queries to be presented at each stage for every possible order that may occur. In other words, it tells which query to select after the decision maker responds to the currently unresolved query.</P>
+<P>It is important to note that although this process evolves much like a deterministic dynamic programming problem, i.e., the order of the alternatives is fully determined by knowing the order and the response to the query at each stage, there is an element of uncertainty in that the response to the query is not known <I>a priori</I>. Thus, the possible orders of the alternatives at each stage is a stochastic variable determined by the order at the previous stage and the probability distribution of the possible responses to each query at that stage. The decision model equation then becomes R<SUP><SMALL>k + 1</SMALL></SUP> = f[R<SUP><SMALL>k</SMALL></SUP>,w<SUB><SMALL>k</SMALL></SUB>(q<SUB><SMALL>k</SMALL></SUB>(R<SUP><SMALL>k</SMALL></SUP>))]. This is a stochastic control problem. Hence, it is more difficult to solve than a simple deterministic problem. We also face the problem of identifying a probability measure for the set of responses to each query at each stage. Thus, implementation of the inquiring system is not necessarily a trivial task without the ability to rapidly solve the posed computations.</P>
+<P>The inquiry space is determined by the set of all possible simple preference comparisons among elements on the set of alternatives F<SUB><SMALL>x</SMALL></SUB> and also strength of preference judgments in <IMG SRC="images/07-09i.jpg">. A set of m feasible alternatives to be evaluated in terms of n attributes results in a set of alternatives F<SUB><SMALL>x</SMALL></SUB> with cardinality m<SUP><SMALL>n</SMALL></SUP>. The inquiry space is then a set containing m<SUP><SMALL>n</SMALL></SUP>(m<SUP><SMALL>n</SMALL></SUP> &#45; 1) <SUB><SMALL>&#126;</SMALL></SUB> 2 possible queries regarding the relation of preference among pairs of alternatives in F<SUB><SMALL>x</SMALL></SUB>, and the number of strength of preference queries depends on previous preference judgments in F<SUB><SMALL>x</SMALL></SUB>. For notational purposes, let [i,j] denote a query requesting the preference relation among alternatives A<SUP><SMALL>i</SMALL></SUP> and A<SUP><SMALL>j</SMALL></SUP> in F<SUB><SMALL>x</SMALL></SUB>, and assuming (i,j) and (k,l) are in <IMG SRC="images/07-10i.jpg">, denote [(i,j),(k,l)] a query requesting the strength of preference relation among previous simple preference judgments.</P>
+<P>The response space constitutes the element of uncertainty in the inquiring system. When the decision maker is presented with query [i,j], the possible responses could be that alternative A<SUP><SMALL>i</SMALL></SUP> is as good or preferred to A<SUP><SMALL>j</SMALL></SUP>, A<SUP><SMALL>j</SMALL></SUP> is as good or preferred to A<SUP><SMALL>i</SMALL></SUP>, there is indifference between the two, or the decision maker might even refuse to respond to that query. The response space can be described by the set of relations {(i,j),(j,i)}, with (i,j) meaning that A<SUP><SMALL>i</SMALL></SUP>&#183;A<SUP><SMALL>j</SMALL></SUP>. That is, not (i,j) and not (j,i) is equivalent to not responding to that query, (i,j) and not (j,i) that A<SUP><SMALL>i</SMALL></SUP> is as good or preferred to A<SUP><SMALL>j</SMALL></SUP>, and (i,j) and j,i) that the decision maker is indifferent between the two alternatives. Likewise, the response for query [(i,j),(k,l)] is described by the set of relations {((i,j),(k,l)),((k,l),(i,j))} with a similar interpretation. A probability measure defined on the set of responses for each query at each state could represent the uncertainty associated with the response. This probability measure may depend explicitly on the present order of the alternatives and the query presented.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="106-107.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="109-110.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

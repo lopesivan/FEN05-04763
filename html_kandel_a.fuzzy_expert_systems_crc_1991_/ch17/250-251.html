@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Expert Systems for an Intelligent Computer-based Tutor</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=17//-->
+<!--PAGES=250-251//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="247-250.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="251-253.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="LEFT"><A NAME="Heading15"></A><FONT COLOR="#000077">C. Student Record Fuzzy Expert System</FONT></H4>
+<P>Even though extant ITSs are designed to incorporate intelligence into the tutoring portion of the system, they have neglected to do so in the SR component of the system. In contrast, a human tutor, as well as making informed tutorial decisions, also is continually analyzing and making inferences concerning his or her uncertain or fuzzy knowledge about the student. The purpose of our SR is to have a similar capability. By designing the FTRDB to work with an inference engine we endow the student model with <I>intelligence</I> in the sense that it can evaluate and update the SR.</P>
+<P>In the TAPS system after each session, the SR monitor evaluates the progress of the student in much the same way a teacher would in order to update her records on this student. Moreover, just as any decisions the human teacher would make must be based on uncertain information and, hence, be fuzzy, so also are the decisions of the SR expert system. The decisions as to progress made by the student are based on the current SR, information made available by the tutor FES, and patterns observed from analyses made on students and their solution protocols. The latter provides the <I>fuzzy</I> component in the production rule representation of the inference engine. The typical rule has the following structure (i.e., is a fuzzy relation between two fuzzy propositions):</P>
+<DL>
+<DD><B>If</B> char <B>is</B> [fuzzy___adj] <B>and</B> observed___pattern <B>is</B> [fuzzy___pattern <B>then</B> char <B>is</B> [fuzzy___adj].
+</DL>
+<P>For example, consider the case where the expert system must analyze the student&#146;s capability after a session on two-schema problems with one combine-vary, when the SR indicated that initially the student was <I>very poor</I> on these two-schema problems. The tutor indicates that the student has completed three of the ten problems with no assistance, two with a suggestion to <I>check your work</I>, two with mislabeling hints, one with <I>operator-incorrect</I> message, one with <I>bad-label</I> message (i.e., made explicit vs. <I>hint</I> above), and one unable to complete without tutor assistance. These are generic descriptions of the messages; each message is actually individualized to the particular student. The observed pattern is referred to as 3-c; 2-g; 2-h; 1-o-e; 1-bl-e; 1-w where:</P>
+<DL>
+<DD><B>c:</B>&nbsp;&nbsp;correct, no assistance
+<DD><B>h:</B>&nbsp;&nbsp;specific hint
+<DD><B>e:</B>&nbsp;&nbsp;explicit
+<DD><B>w:</B>&nbsp;&nbsp;wrong
+<DD><B>g:</B>&nbsp;&nbsp;general assistance
+<DD><B>o:</B>&nbsp;&nbsp;operator
+<DD><B>bl:</B>&nbsp;&nbsp;bad label
+</DL>
+<P>and where a hint is directed at the error but is not made <I>explicit</I>. For example, a hint for one mislabeled node in a schema would be: &#147;Rob, before proceeding, review the last schema you built.&#148; In contrast, an explicit bad-label message is much more intrusive and results from the student&#146;s performance indicating she is having <I>significant difficulty</I> at this point (the tutor makes these decisions). In this case an applicable rule would be:</P>
+<DL>
+<DD><B>If</B> 2-schema <B>is</B> very___poor <B>and</B> observed___pattern <B>is</B>
+<DD>[(3,5)c; (2,4) g/h; (1,3) e; (1,2) w]
+<DD><B>then</B> 2-schema is weak___good,
+</DL>
+<P>where c &#43; g/h &#43; e &#43; w = 10, i.e., the analysis is based on sets of 10 problems.
+</P>
+<P>One argument against making the SR <I>intelligent</I> has been that the response time for ITSs must be realistic, if not real-time. However, designed in this way, the information needed by the tutor is read in and accessed by the tutor initially, and the analysis by the SR monitor is done after the student completes the session. Consequently, no overhead is added to the response time, yet the tutor gains significantly in the sensitivity and accuracy of the knowledge it has on each student.</P>
+<P>Of interest to teachers and researchers are certain cumulative scores and averages. The SR monitor can easily calculate these in an off-line manner also.</P>
+<P>Updating and statistical analyses are performed based on data currently in the SR and information already in the system. A second type of updating involves inferences made in a forward-chaining manner by the SR FES. Although considerable information is made available to the system through pretests and teacher evaluations, there are many instances where, for various reasons, such information is unavailable. The FES must then make fuzzy entries for as many of these as possible using fuzzy inference rules, known data and results provided by the tutor. For example, if the student has not been asked to solve three-schema problems previously, there will be no entry for this in the SR. A typical rule follows for such knowledge:</P>
+<DL>
+<DD><B>If</B> 3-schema <B>is</B> null <B>and</B> observed___pattern <B>is</B>
+<DD>[(0 - 1)c; (0 - 2) g/h: (3 - 5) e; (2 - 4) w]
+<DD><B>then</B> 3 &#151; schema is rather___poor,
+</DL>
+<P>where c + g/h + e + w = 10.
+</P>
+<P>Other information is supplied by the tutor based on error-analysis inferences made by the tutor. Such information is passed on directly to the SR manager for updating purposes. This is discussed in more detail in Section IX.</P>
+<P>The general format of the rules are as given previously. Specific rules may have the [fuzzy___adj] and [fuzzy___pattern] portions modified with experience.</P>
+<P>The power of such an implementation to enhance an ITS is obvious.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="247-250.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="251-253.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

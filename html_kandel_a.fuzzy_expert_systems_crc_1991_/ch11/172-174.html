@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Role Approximate Reasoning in a Medical Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=11//-->
+<!--PAGES=172-174//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="167-172.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="174-177.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H3><A NAME="Heading5"></A><FONT COLOR="#000077">IV. Generalization of Binary Inference</FONT></H3>
+<P>First, consider the SC structure. Initially, there were three rules for determining an SC value (true or false). It was an AND, OR, or COUNT. As described in the previous section, it is, in fact, unnecessary to make this distinction, as all can be treated as substantiation of a certain number in a list. In this structure, we are still dealing with crisp numbers. However, we can define the generalized SC in the crisp sense by:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/11-03d.jpg"></P>
+<P>where
+</P>
+<P ALIGN="CENTER">&#948;(i) = 1 if the ith antecedent is substantiated</P>
+<P ALIGN="CENTER">0 otherwise</P>
+<P>Then SC is substantiated if SC &#8805; n, where n is the required number of premises 1 &#8804; n &#8804; m. We, therefore, have essentially a threshold value for the substantiation, where the threshold is determined by the number of premises required to hold. The same system can be applied to rule substantiation but, in this case, since the antecedents are always conjoined, n = m.</P>
+<P>If we include the generalization described in the last two sections, we now have two new values to deal with in the rule inference scheme. First, there is the a(i) value attached to the ith antecedent of every rule and SC. Second, there is the user response for each symptom, which we shall denote d(i). The following definition is made:</P>
+<P ALIGN="CENTER"><IMG SRC="images/11-04d.jpg"></P>
+<P>where a(i) is the weighting factor for the ith antecedent, d(i) is the degree of presence of the ith antecedent, and m is the total number of antecedents for the rule or SC in question. The result of evaluation of an SC is thus a numerical value. The next question is how to interpret this numerical value.
+</P>
+<P>We can still consider substantiation to be a thresholding problem, but the question is now how to determine the threshold in the fuzzy case. The determination of the threshold depends on the intent of a rule or SC, and must be arrived at in conjunction with experts. For example, consider the SC:</P>
+<P>a(i)</P>
+<P>.2 History of Chronic Atrial Flutter</P>
+<P>.5 Atrial Flutter Resolved on 2nd ECG</P>
+<P>.3 Heart Rate 120</P>
+<P>which was an AND in the original system. One could clearly agree that all symptoms must be present in order to substantiate the SC. However, the second question is to what degree each symptom must be present. If one chooses a value of .7, then the threshold for the SC would be</P>
+<P ALIGN="CENTER">S = (.7)(.33) + .7(.33) + .7(.33) = .7</P>
+<P>if equal contribution of antecedents is assumed. However, since we have the requirement:</P>
+<P ALIGN="CENTER"><IMG SRC="images/11-05d.jpg"></P>
+<P>the value will, in fact, be .7 regardless of the weighting factors on each antecedent. The threshold will change, however, if a different value for each symptom is required to confirm presence of a symptom.
+</P>
+<P>If the value of s exceeds the threshold for an SC, the&#146;s value is used in the rule, otherwise 0 is used.</P>
+<P>As an example, consider the run in Figure 5 and the weighting factors a(i) in Figure 8. The following computations would take place:</P>
+<DL>
+<DD>SC32
+<P>S = (.5)(.5) + (.5)(.9) = .25 + .45 = .70 &gt; .5
+</P>
+<P>SC13
+</P>
+<P>S = (.6)(.8) + (.4)(.8) = .48 + .32 = .80 &gt; .7
+</P>
+<P>Rule 400
+</P>
+<P>(.3)(.7) + (.1)(1) + (1)(.7) + (.1)(.7) + (.2)(.8) + (.2)(.5) = .71 &gt; .7
+</DL>
+<P>Thus, the rule would be substantiated.
+</P>
+<H3><A NAME="Heading6"></A><FONT COLOR="#000077">V. Approximate Reasoning</FONT></H3>
+<P>In order to put the previous example on a sound theoretical basis, approximate reasoning techniques have been incorporated.<SUP><SMALL>46,47</SMALL></SUP></P>
+<P>As suggested by Zadeh,<SUP><SMALL>20</SMALL></SUP> expert system data can be expressed in the form:</P>
+<P ALIGN="CENTER"><B>V is A</B></P>
+<P>where V is a variable and A is its current value. An example from the EMERGE chest pain rule base would be &#147;blood pressure is low&#148;. To give some more precise meaning to the word &#147;low&#148;, fuzzy subsets can be used. Assume A is a fuzzy subset of a base set. For the preceding example, we consider the base set to be the interval of possible blood pressures [0,300]. Let X be the set of all values that V can assume. Then one can consider the possibility distribution P<SUB><SMALL>x</SMALL></SUB>(x) over X so that:</P>
+<P ALIGN="CENTER">P<SUB><SMALL>x</SMALL></SUB>(x) = A(x)</P>
+<P>where A(x) on the unit interval [0,1] is the grade of membership for each x &#8712; X.</P>
+<P>More commonly, EMERGE has statements of the form &#147;sweating is present&#148; as implied by the SC in Figure 8. The user response then indicates the degree of presence of the symptom.</P>
+<P>Following the work by Yager,<SUP><SMALL>32</SMALL></SUP> for antecedents in conjunctive form:</P>
+<P ALIGN="CENTER">V<SUB><SMALL>1</SMALL></SUB> is A<SUB><SMALL>1</SMALL></SUB> AND V<SUB><SMALL>2</SMALL></SUB> is A<SUB><SMALL>2</SMALL></SUB> is A<SUB><SMALL>2</SMALL></SUB> OR&#133; V<SUB><SMALL>n</SMALL></SUB> is A<SUB><SMALL>n</SMALL></SUB></P>
+<P>then</P>
+<P ALIGN="CENTER"><IMG SRC="images/11-06d.jpg"></P>
+<P>where A<SUB><SMALL>i</SMALL></SUB> is the membership function for the ith proposition. For disjunctive form:</P>
+<P ALIGN="CENTER">V<SUB><SMALL>1</SMALL></SUB> is A<SUB><SMALL>1</SMALL></SUB> OR V<SUB><SMALL>2</SMALL></SUB> is A<SUB><SMALL>2</SMALL></SUB> OR&#133; V<SUB><SMALL>n</SMALL></SUB> is A<SUB><SMALL>n</SMALL></SUB></P>
+<P>then</P>
+<P ALIGN="CENTER"><IMG SRC="images/11-07d.jpg"></P>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="167-172.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="174-177.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

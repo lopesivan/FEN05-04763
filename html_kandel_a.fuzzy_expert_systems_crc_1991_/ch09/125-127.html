@@ -1,0 +1,146 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Advances in Automatic Reasoning Using Possibilistic Logic</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=9//-->
+<!--PAGES=125-127//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch08/122-124.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="127-130.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 9<BR>Advances in Automated Reasoning Using Possibilistic Logic
+</FONT></H2>
+<P><I>Didier Dubois<BR>J&#233;r&#244;me Lang<BR>Henri Prade</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Background
+<DT>III.&nbsp;&nbsp;The Resolution Rules
+<DT>IV.&nbsp;&nbsp;Refutation in Possibilistic Logic
+<DT>V.&nbsp;&nbsp;Example
+<DT>VI.&nbsp;&nbsp;Semantic Aspects
+<DT>VII.&nbsp;&nbsp;Nonmonotonicity
+<DT>VIII.&nbsp;&nbsp;Concluding Remarks
+<DT>Acknowledgment
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>Pieces of information stored in a knowledge base are not always regarded as equally certain. The lack of certainty is sometimes due to incomplete and/or conflicting evidence. Possibilistic logic, through the use of so-called necessity measures, offers a way of grading certainty on a numerical scale. As shown by Dubois,<SUP><SMALL>1</SMALL></SUP> these necessity measures are the unique numerical counterpart to a kind of qualitative ordering relations which model &#147;is at least as certain as&#148;. These qualitative foundations of necessity measures suggest that when assessing degrees of certainty, the ordering of these numbers is more important than their absolute values. This notion of certainty is not probabilistic because its only ambition is to model the fact that, in a knowledge base, some sentences are more disputable than others, due to incomplete information, so that the body of knowledge can be stratified in layers of various strength levels. This view of uncertainty contrasts with the Bayesian paradigm where uncertainty derives from reasoning with exceptions; degrees of uncertainty are meant to summarize these exceptions (for instance, counting them as a surrogate of enumerating them). Of course, there is a debate regarding the Bayesian approach whose mathematics are often claimed to be tailored to the modeling of degrees of belief. They are also adapted to handle frequencies, be they subjectively estimated. This chapter does not mean to get into this controversy. It puts forward a more qualitative view of degrees of belief that relies on ordering. It is purposely weaker than a pure probabilistic approach.</P>
+<P>Possibilistic logic is in accordance with Zadeh&#146;s possibility theory.<SUP><SMALL>11</SMALL></SUP> Possibility measures can also be viewed as consonant belief functions.<SUP><SMALL>3</SMALL></SUP> However, possibilistic logic is not a truth-functional, many-valued logic. Also it is not a logic of vagueness (as is fuzzy logic) because it pertains to nonfuzzy propositions, the truth of which is partially unknown due to incomplete information. It is, rather, a logic of partial ignorance. See Dubois and Prade<SUP><SMALL>4</SMALL></SUP> for the distinction between logic of vagueness and logic of uncertainty. Possibilistic logic allows for refutation techniques that stem from extensions of the resolution principle;<SUP><SMALL>2,4</SMALL></SUP> such an automated reasoning method has been implemented.<SUP><SMALL>2</SMALL></SUP> In this paper completeness properties of the resolution method are established. A nice feature of this logic is pointed out; namely, it can deal with partially inconsistent sets of uncertain sentences without resorting to extraneous control procedures.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Background</FONT></H3>
+<P>Possibilistic logic uses propositional calculus formulas or first-order logic closed formulas, to which a possibility degree or a necessity degree, between 0 and 1, is attached. Let &#928;(p) (respectively, N(p)) be the possibility (respectively, necessity) degree of p. We adopt the following conventions:
+</P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;N(p) = 1 means that, from the available knowledge, p is certainly true; &#928;(p) = 0, that it is impossible for p to be true.
+<DD><B>&#149;</B>&nbsp;&nbsp;<IMG SRC="images/09-01i.jpg"> where ;&#216; and <IMG SRC="images/09-02i.jpg"> denote the contradiction and the tautology, respectively.<DD><B>&#149;</B>&nbsp;&nbsp;<IMG SRC="images/09-03i.jpg">, i.e., to say that p is impossible is equivalent to saying that <IMG SRC="images/09-04i.jpg"> is certainly true.<DD><B>&#149;</B>&nbsp;&nbsp;<IMG SRC="images/09-05i.jpg"> (equivalent to <IMG SRC="images/09-06i.jpg">) expresses that, from the available knowledge, nothing, can disprove or confirm p (this is the case of total ignorance).<DD><B>&#149;</B>&nbsp;&nbsp;<IMG SRC="images/09-07i.jpg">; this is the basic axiom of possibility measures,<SUP><SMALL>3,11</SMALL></SUP> which supposes that the imprecise of vague knowledge upon which the attribution of possibility or necessity degrees is based, is coherent (i.e., can be described in terms of fuzzy sets or equivalently, in terms of a nested family of ordinary subsets); see Dubois Prade.<SUP><SMALL>3</SMALL></SUP> This is equivalent to <IMG SRC="images/09-08i.jpg">. However, we only have <IMG SRC="images/09-09i.jpg"> (no equality in the general case) and, similarly, <IMG SRC="images/09-10i.jpg">.<DD><B>&#149;</B>&nbsp;&nbsp;Beside, we have <IMG SRC="images/09-11i.jpg"> for any classical formula p, i.e., which does not involve any vague predicate or vague quantifier, indeed <IMG SRC="images/09-12i.jpg"> in this case. This implies that N(p) &gt; 0 &#8594; &#928;(p) = 1 (i.e., <IMG SRC="images/09-13i.jpg">), which means that a formula is completely possible before being somewhat certain.<DD><B>&#149;</B>&nbsp;&nbsp;This contrasts with fuzzy logic where the degree of truth v satisfies both <IMG SRC="images/09-14i.jpg"> and <IMG SRC="images/09-15i.jpg">, as well as <IMG SRC="images/09-16i.jpg"> for vague proportions <IMG SRC="images/09-17i.jpg"> and <IMG SRC="images/09-18i.jpg">. But these propositions no longer obey excluded-middle or contradiction laws..</DL>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch08/122-124.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="127-130.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:On the Processing of Imperfect Information Using Structured Frameworks</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=7//-->
+<!--PAGES=109-110//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="107-109.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="110-112.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>There are at least two possible representations for the inquiry space and the response space. The representation of the inquiry space is highly interrelated with the representation of the response space. First, we can assume that the set of queries is independent of the state of the system. This means, for example, that even when the decision maker has already stated that A<SUP><SMALL>i</SMALL></SUP>&#183;A<SUP><SMALL>j</SMALL></SUP>, we can present again query [i,j]. However, in this case the probability of obtaining the same response should be one. The probability measure on the set of responses is dependent on the current order of the alternatives and hence to the responses of previous queries. The other approach is to let the set of queries be state dependent in the sense that queries already responded to become inadmissible in subsequent stages. In this case, the probability of the responses only depends on the query selected.</P>
+<P>Although both representations allow for the resolution of our inquiry problem, the second approach together with other special characteristics of the inquiring process helps reduce the computational complexity of the dynamic programming problems.</P>
+<P>The states or orders of the alternatives are completely specified by the initial state (no order) and the set of possible queries at each stage. The state space is then the set of all the possible orders that can be constructed from the set of alternatives. An alternate representation for the orders of the alternatives is the set of queries still available to assess in F<SUB><SMALL>x</SMALL></SUB>. These two representations are equivalent in the sense that knowing the state of one representation we can obtain the corresponding state on the other representation. Still another representation for the order of the alternatives is the number of queries still available to assess in F<SUB><SMALL>x</SMALL></SUB>. This last representation is sufficient for the purpose of the inquiring system. It also has the advantage that its value is scalar rather than the content of a set as in the case of the other two representations.</P>
+<P>The purpose of the inquiring system is to control the process of selection of queries from the set of admissible queries at each stage so as to induce a linear order on the set of alternatives with minimum effort from the decision maker. To accomplish this, the system needs to determine which queries to select to minimize the total effort demanded by the decision maker. Hence, the measure of effectiveness being used is the total effort demanded by the decision maker which is a function of:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;The total number of queries selected in order to reach a linear order
+<DD><B>2.</B>&nbsp;&nbsp;The complexity of such queries
+</DL>
+<P>We are assuming that time is an important factor in decision making and thus minimizing the number of queries will reduce the time spent in the process. Also, the cognitive complexity of the queries contributes to the total effort demanded because preference comparisons where a few attributes are held at different levels are easier to understand, and hence to respond to, than those with many attributes held at different levels.
+</P>
+<P>Given the initial state R<SUP><SMALL>0</SMALL></SUP>, the problem is to find an inquiry pattern {q<SUB><SMALL>0</SMALL></SUB>,q<SUB><SMALL>1</SMALL></SUB>,&#133;, q<SUB><SMALL>N</SMALL></SUB>}, where N is the total number of stages that minimizes the total effort. To make this approach operational, we must define the scalar-valued function g<SUB><SMALL>k</SMALL></SUB> considering that the objective of the inquiring system is to keep to a minimum the amount and complexity of the queries required to make a recommendation. The inquiring system will always select the best admissible query so as to induce a linear order on the set of feasible alternatives. Although the criterion of effectiveness is based on simplicity and relevancy to performing the task, it may be possible, depending on the decision situation, that the system would have to select queries not necessarily simple according to the decision maker&#146;s conception of simplicity.</P>
+<P>Facilitation of the decision-making process in this and similar situations does not necessarily ease the task of the decision maker. On the other hand, it accomplishes the other part of our measure of effectiveness in focusing on those queries that are relevant to the objective of discovering a preference order. The effort function g<SUB><SMALL>k</SMALL></SUB>[R<SUP><SMALL>k</SMALL></SUP>,w<SUB><SMALL>k</SMALL></SUB>(q<SUB><SMALL>k</SMALL></SUB>)] determines the behavior of the inquiring system. An effort function that penalizes complex queries will result in a different inquiry pattern than an effort function that does not.</P>
+<P>We should stress that although other functional forms of g<SUB><SMALL>k</SMALL></SUB> satisfy our requirements, a different form of g<SUB><SMALL>k</SMALL></SUB> will only affect the behavior of the inquiring system and not its purpose of conducting inquiry in the most effective way.</P>
+<P>The dynamic programming formulation for the search of a large knowledge base may result in a very complex and large set of dynamic programming problems. The set of final states grows very rapidly with increases in the number of alternatives (m) and the number of attributes (n). There are 2<SUP><SMALL>nm</SMALL></SUp>! possible linear orders. This fact may render this approach inefficient due to the computational complexity required each time a response to a query is made. Obviously, this complexity is reduced when some information is learned. Thus, it is possible to start the process with heuristically generated queries and redirect our search each time we learn about the true order of the set of alternatives. This combination of heuristic and dynamic programming improves the efficiency of the search for inquiry patterns.</P>
+<P>As mentioned earlier, solving the dynamic programming formulation of the inquiring process may be computationally impractical or infeasible due to the dimensionality of the problem. A good part of this difficulty is removed by the fact that exact knowledge of the state of the system at each stage is obtained during the inquiring process. In other words, the decision maker articulates a preference among alternatives when given a query. A valid assumption in facilitating the computation is to let the inquiry space be state dependent. Every time the decision maker responds to a query, the cardinality of the set of admissible queries is reduced. These conditions of the inquiring process give the system the characteristic of being adaptive. It uses knowledge of the state at the current stage to readjust the search toward the final stage in the most effective way.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="107-109.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="110-112.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

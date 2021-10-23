@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Advances in Automatic Reasoning Using Possibilistic Logic</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=9//-->
+<!--PAGES=132-134//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="130-132.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="../ch10/135-137.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H3><A NAME="Heading8"></A><FONT COLOR="#000077">VII. Nonmonotonicity</FONT></H3>
+<P>It is possible to work with a partially inconsistent knowledge base <IMG SRC="images/09-108i.jpg">. Let &#8733; be the inconsistency degree of <IMG SRC="images/09-109i.jpg">. From <IMG SRC="images/09-110i.jpg"> we want to prove C with some necessity degree. Let &#946; be the necessity degree of the optimal empty clause derived from <IMG SRC="images/09-111i.jpg">. Then, if &#946; &gt; &#8733;, <SUP><SMALL><B>&#8224;</B></SMALL></SUP> there exists a consistent sub-base <IMG SRC="images/09-113i.jpg"> of <IMG SRC="images/09-114i.jpg"> from which we can infer (C (N &#946;)) by resolution, and then we will consider the proof of (C (N &#946;)) as valid. Indeed, the &#946;-refutation uses only clauses with a necessity degree greater or equal to &#946;, i.e., strictly greater than &#8733;; <IMG SRC="images/09-115i.jpg"> is the subset of <IMG SRC="images/09-116i.jpg"> containing the clauses of <IMG SRC="images/09-117i.jpg"> used in this &#946;-refutation, and we cannot produce any refutation from <IMG SRC="images/09-118i.jpg"> only, since this refutation would have a valuation strictly greater to (N &#8733;), and then <IMG SRC="images/09-119i.jpg"> would have had an inconsistency degree greater than &#8733;.</P>
+
+<BLOCKQUOTE>
+<HR>
+<SUP><SMALL><B>&#8224;</B></SMALL></SUP><FONT SIZE="-1">We always have &#946; &#8805; &#8733;. More precisely, we have min(&#946;,&#946;&#8242;) = &#8733; where &#946;&#8242; is the degree attached to the optimal empty clause derived from 
+<IMG SRC="images/09-112i.jpg">.
+</FONT>
+<HR>
+</BLOCKQUOTE>
+
+<P>Moreover, as pointed out in Reference 8, adding to a consistent knowledge base <IMG SRC="images/09-120i.jpg">, a clause (C (N&#8733;)) that makes it partially inconsistent, produces a nonmonotonic behavior. Namely, if from <IMG SRC="images/09-121i.jpg"> a conclusion (p (N &#946;)) can be obtained by refutation, it may happen that from <IMG SRC="images/09-122i.jpg">, an opposite conclusion <IMG SRC="images/09-123i.jpg"> with <IMG SRC="images/09-124i.jpg"> can be derived.</P>
+<P><B>EXAMPLE</B>: We again work with the knowledge base of Section IV. Suppose we add to <IMG SRC="images/09-125i.jpg"> the clause <IMG SRC="images/09-126i.jpg">, i.e., &#8733; = 1, expressing that we are now certain that John will not come tomorrow. Let <IMG SRC="images/09-127i.jpg"> be the new knowledge base. The inconsistency degree of <IMG SRC="images/09-128i.jpg"> is 0.7, i.e., <IMG SRC="images/09-129i.jpg"></P>
+<P><A NAME="Fig2"></A><A HREF="javascript:displayWindow('images/09-02.jpg',300,81)"><IMG SRC="images/09-02t.jpg"></A></P>
+<P>Now the proof of <IMG SRC="images/09-130i.jpg"> (it corresponds to &#946; = 0.6) is no longer valid; but we prove (quiet(m) (N 0.8)), i.e., &#947; = 0.8:</P>
+<P><A NAME="Fig3"></A><A HREF="javascript:displayWindow('images/09-03.jpg',300,86)"><IMG SRC="images/09-03t.jpg"></A></P>
+<P>using only a consistent part of <IMG SRC="images/09-131i.jpg">. Thus, a nonmonotonic behavior can be captured in this framework.</P>
+<H3><A NAME="Heading9"></A><FONT COLOR="#000077">VIII. Concluding Remarks</FONT></H3>
+<P>The resolution patterns and the refutation strategy presented in this chapter are implemented in the system POSLOG (for POSsibilistic LOGic) on a microcomputer.
+</P>
+<P>Besides, extensions of the resolution principles Equations 1 and 4 presented here to clauses with <B>vague</B> predicates have been proposed in Dubois and Prade.<SUP><SMALL>5</SMALL></SUP></P>
+<H3><A NAME="Heading10"></A><FONT COLOR="#000077">Acknowledgment</FONT></H3>
+<P>A previous version of the ideas discussed in this paper were the topic of oral communication at JILIA-88, European Workshop on Logical Methods Artificial Intelligence, Roscoff, France, June 27&#150;30, 1988.
+</P>
+<H3><A NAME="Heading11"></A><FONT COLOR="#000077">References</FONT></H3>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;<B>Dubois, D.,</B> Possibility theory: towards normative foundations, in <I>Decision, Risk, and Rationality,</I> Munier, B., Ed., D. Reidel, Dordrecht, 1988, 601.
+<DD><B>2.</B>&nbsp;&nbsp;<B>Dubois, D., Lang, J., and Prade, H.,</B> <I>Theorem proving under uncertainty &#151; A possibility theory-based approach,</I> Proc. 10th Int. Joint Conf. Artif. Intell., Milano, August 1987, 984.
+<DD><B>3.</B>&nbsp;&nbsp;<B>Dubois, D. and Prade, H., (with the collaboration of Farreny, H., Martin-Clouaire, R., and Testemale, C.,)</B> Th&#233;orie des Possibilit&#233;s, Applications &#224; la Repr&#233;sentation des Connaissances en Informatique, Masson, Paris, (2nd rev. ext. ed. 1987), English version: <I>Possibility Theory, An Approach to Computerized Processing of Uncertainty,</I> Plenum Press, New York, 1988.
+<DD><B>4.</B>&nbsp;&nbsp;<B>Dubois, D. and Prade, H.,</B> Necessity measures and the resolution principle, <I>IEEE Trans. Syst., Man Cybern.,</I> 17, 474, 1987.
+<DD><B>5.</B>&nbsp;&nbsp;<B>Dubois, D. and Prade, H.,</B> Resolution principles in possibilistic logic, <I>Int. J. Approx. Reason.,</I> 4, 1, 1990.
+<DD><B>6.</B>&nbsp;&nbsp;<B>Dubois, D., Prade, H., and Testemale, C.,</B> In search of a modal system for possibility theory, <I>Proc. 8th Europ. Conf. Artif. Intell.,</I> Pitman Publishing, London, 1988, 501.
+<DD><B>7.</B>&nbsp;&nbsp;<B>Fari&#241;as del Cerro, L.,</B> Resolution modal logic, <I>Logique et Analyse,</I> 110&#150;111, 153, 1985.
+<DD><B>8.</B>&nbsp;&nbsp;<B>Besnard, P., Cordier, M. O., Dubois, D., Fari&#241;as del Cerro, L., Froidevaux, C., Moinard, Y., Prade, H., Schwind, C., and Siegel, P.</B> (Groupe L&#233;a-Somb&#233;) Raisonnements sur des informations incompl&#232;tes en intelligence artificielle, Teknea, Toulouse, <I>Int. J. of Intell. Syst.,</I> John Wiley &amp; Sons, New York., 1989 (English trans.).
+<DD><B>9.</B>&nbsp;&nbsp;<B>Lee, R. C. T.,</B> Fuzzy logic and the resolution principle, <I>J. Assoc. Comput. Mach.,</I> 19, 109, 1972.
+<DD><B>10.</B>&nbsp;&nbsp;<B>Mukaidono, M., Shen, Z. L., and Ding. L.,</B> Fundamentals of fuzzy Prolog, <I>Int. J. Approx. Reason.,</I> 3, 179, 1989.
+<DD><B>11.</B>&nbsp;&nbsp;<B>Zadeh, L. A.,</B> Fuzzy sets as a basis for a theory of possibility, <I>Fuzzy Sets Syst.,</I> 1, 3, 1978.
+</DL>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="130-132.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="../ch10/135-137.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

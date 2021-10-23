@@ -1,0 +1,279 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:General Purpose Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=2//-->
+<!--PAGES=034-038//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="031-034.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="038-042.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H3><A NAME="Heading19"></A><FONT COLOR="#000077">IV. The Inference Engine</FONT></H3>
+<P>An inference engine is an expert system tool built for the evaluation of the knowledge base.<SUP><SMALL>7,8,9,10</SMALL></SUP> The inputs to the inference engine are the compiled data (provided by the FC) and the knowledge base. The output is the conclusions of rules that have been fired.</P>
+<P>First, we explain the structure of the knowledge base and then we discuss the evaluation process.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading20"></A><FONT COLOR="#000077">A. The Knowledge Base</FONT></H4>
+<P>The knowledge base is a data structure which contains knowledge about the problem domain. A knowledge base can be represented by several different knowledge representation methods such as
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Frames
+<DD><B>2.</B>&nbsp;&nbsp;Semantic nets
+<DD><B>3.</B>&nbsp;&nbsp;Production rules
+</DL>
+<P>The expert system described here uses production rules as a knowledge representation method.
+</P>
+<P>The general structure of a production rule is</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-12d.jpg"></P>
+<P>where P is the premise of the rule and C is the conclusion. The general structure of P is (using the BNF notation)
+</P>
+<DL>
+<DD>P :: = S |(P) |NOT P |S or P |S and P |
+<DD>S :: = A sentence of type 1 (as was explained in the previous section).
+</DL>
+<P>The general structure of the knowledge base is
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-13d.jpg"></P>
+<P>The knowledge base is associated with a special matrix called Bit Matrix (BM). BM is a an NxN matrix where N represents the number of rules in the knowledge base, such that
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-14d.jpg"></P>
+<P>and,
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-15d.jpg"></P>
+<P>The bit matrix has 2 functions:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;It is used by the Question-answer Program (QAP) to trace the inference path when describing how a conclusion was reached.
+<DD><B>2.</B>&nbsp;&nbsp;It helps the inference engine to guide the user to reach a conclusion when the data which was provided by the user was not enough.
+</DL>
+<P>The bit matrix is created when the inference engine is activated. Next we discuss the evaluation process.
+</P>
+<H4 ALIGN="LEFT"><A NAME="Heading21"></A><FONT COLOR="#000077">B. The Inference Procedure</FONT></H4>
+<P>In order to understand the inference procedure, it is necessary to describe new data structures that are part of the inference mechanism. These data structure are two linked lists defined as:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;A list of fired rules (LR)
+<DD><B>2.</B>&nbsp;&nbsp;A list of conclusions (LC)
+</DL>
+<P>The general algorithm for the evaluation process is
+</P>
+<!-- CODE //-->
+<PRE>
+DONE : = FALSE;
+
+WHILE NOT DONE DO
+
+BEGIN
+
+ DONE : = TRUE;
+
+ I : = 1;
+
+ FOR I : = 1 TO N DO
+
+ IF NOT_IN_LR(I) THEN  { check only the rules which are not in LR }
+
+ BEGIN
+
+  GET_PREMISE(STI);     { get premise of rule I }
+
+  COMPILE_PREMISE(ST);
+
+  COMPARE(ST,BB,MATCH);      { compare the premise against the blackboard }
+
+  IF MATCH &gt; 0.5 THEN
+
+  BEGIN                      { if a match is found between BB and ST }
+
+   GET_CONCLUSION(CONC,I);          { get conclusion of rule I }
+
+   COMPILE_CONCLUSION(CONC);
+
+   PLACE_CONCLUSION(CONC);          { place conclusion on the blackboard }
+
+   ADD_TO_LR(I);   { add the rule number to LR }
+
+   ADD_TO_LC(I);   { if I is a concluding rule then add I to LC }
+
+   DONE : = FALSE;
+
+  END;
+
+ END;
+
+END;
+</PRE>
+<!-- END CODE //-->
+<P>In other words, the algorithm as stated allows us to fire as many rules as possible in one cycle. The process will continue until no rules can be fired in one complete pass through the knowledge base. In step 4 the determination is made as to whether or not a rule can be fired. The following is an explanation of the matching process.
+</P>
+<P>The matching process is divided into two steps. First it is necessary to match the key words (the key words are either identical or are synonyms). If there is a match between the key words of the premise and the key words of the compiled data then the evaluation process continues.</P>
+<P>Let LB1 and UB1 be the upper and the lower bounds of key word 3 in a sentence from the compiled data, and LB2 and UB2 be the lower and the upper bounds of key word 3 in the compiled premise. Then let M be the result of the matching between the compiled data and the compiled premise.</P>
+<P>In order to see how well the compiled data matches the compiled premise it is necessary to examine the degree of overlap between the compiled data and the compiled premise. For convenience we force the result to be in the range [0,1].</P>
+<P>There are several cases to consider.</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;If LB1 = UB1 and LB2 = UB2 then we are considering points matching. Thus if the points are identical (LB1 = LB2 or UB1 = UB2) then M = 1; otherwise, M = 0.
+<DD><B>2.</B>&nbsp;&nbsp;If LB1 &#8800; UB1 and LB2 = UB2 then we compare a point to a range. The point is the premise and range is the data. Thus, if the point is not in the range [LB1 - LB2] then M = 0; otherwise, we divide the point by the range. But what will be the value of the point? If we choose the value of the point to be LB2 then we may have
+<DL>
+<BR>
+<DD>LB2 &gt; (UB1 - LB1)
+</DL>
+<BR>
+<P>and the result of the matching may be greater than 1. Thus, the solution will be to choose one point out of the range of possible points (the range can be found in the characteristic function). So, for example, if the characteristic function of old varies in the range [1..120], then the value of the point we choose will be <IMG SRC="images/02-13i.jpg">; and if the characteristic function of the variable <I>weight</I> is in the range [1..280], then we choose the value of the point to be <IMG SRC="images/02-14i.jpg">, and so on. But, if there is no characteristic function for the variable in the premise, we choose the value of the point to be <IMG SRC="images/02-15i.jpg">. Thus, the value of the point is<P ALIGN="CENTER"><IMG SRC="images/02-16d.jpg"></P>
+<BLOCKQUOTE>
+<P><FONT SIZE="-1"><HR>* This number can be found in the proper characteristic function.<HR></FONT>
+</BLOCKQUOTE>
+</P>
+<P>and the result of the matching will be
+<P ALIGN="CENTER"><IMG SRC="images/02-17d.jpg"></P>
+</P>
+<DD><B>3.</B>&nbsp;&nbsp;If LB1 = UB1 and LB2 &#8800; UB2, then we compare a point with a range. This time the point is the data and the range is the premise. If the point is in the range [LB2..UB2] then M = 1 otherwise M = 0.
+<DD><B>4.</B>&nbsp;&nbsp;If LB1 &#8800; UB1 and LB2 &#8800; UB2 (the common case) then:
+<DL>
+<BR>
+<DD>If the ranges do not intersect then M = 0.
+<DD>If LB1 &#8805; LB2 and UB2 &#8805; UB1 (the range of the compiled data is included in the range of the compiled premise) then M = 1.
+<DD>If LB2 &#8805; LB1 and UB1 &#8805; UB2 (the range of the compiled premise is included in the range of the compiled data) then
+<P ALIGN="CENTER"><IMG SRC="images/02-18d.jpg"></P>
+<DD>If UB1 &#8805; UB2 and LB1 &#8805; LB2 (the ranges intersect and the range of the compiled data is higher<SUP><SMALL><B>**</B></SMALL></SUP> than the range of the compiled premise) then
+<BLOCKQUOTE>
+<HR>
+<SUP><SMALL><B>**</B></SMALL></SUP><FONT SIZE="-1">See Definition 1.
+</FONT>
+<HR>
+</BLOCKQUOTE>
+
+</DL>
+<BR>
+<P ALIGN="CENTER"><IMG SRC="images/02-19d.jpg"></P>
+<P>Here we divide the intersection of the two ranges by the range of the compiled data. That means that M is an indication of how much from the compiled data is matched against the range of the compiled premise.
+</P>
+<P>IF UB2 &#8805; UB1 and LB2 &#8805; LB1 (the ranges intersect and the range of the compiled premise is <I>higher</I><SUP><SMALL><B>*</B></SMALL></SUP> than the range of the compiled data) then
+<BLOCKQUOTE>
+<HR>
+<SUP><SMALL><B>*</B></SMALL></SUP><FONT SIZE="-1">See Definition 1.
+</FONT>
+<HR>
+</BLOCKQUOTE>
+
+<P ALIGN="CENTER"><IMG SRC="images/02-20d.jpg"></P>
+</P>
+<P>Again, by dividing the intersection with the range of the compiled data, we find the degree to which the compiled data matches the compiled premise.
+</DL>
+<P>As mentioned earlier, the premise may contain the key words <I>not, and</I>, or <I>or</I>. This means that the premise may be composed of more than one part (clause). In this case the matching is done separately for each part and the results are combined such that:</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-21d.jpg"></P>
+<P ALIGN="CENTER"><IMG SRC="images/02-22d.jpg"></P>
+<P>and
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-23d.jpg"></P>
+<P>When the premise is evaluated (for each rule) then
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-24d.jpg"></P>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="031-034.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="038-042.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

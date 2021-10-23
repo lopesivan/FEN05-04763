@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Evolution From Expert Systems to Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=1//-->
+<!--PAGES=017-019//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="015-017.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="019-022.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>We will briefly examine the way the expert systems MYCIN<SUP><SMALL>32</SMALL></SUP> and CASNET<SUP><SMALL>36</SMALL></SUP> deal with uncertainty. MYCIN introduced the concept of certainty factors. This concept has been widely applied, in several different forms, to the handling of imprecision in expert systems. Each MYCIN rule has a strength, called a certainty factor, lying in the interval [0, 1] associated with it. When a rule is fired its premise is evaluated and a numeric value between - 1 and 1 is associated with the premise. If the premise value is outside the previously specified threshold interval (e.g., 0.2 and - 0.2, respectively), then the action part of the rule is evaluated and the conclusion is made with a certainty which is the premise value times the certainty factor of the rule. Evidence for hypotheses is combined into measures of belief and disbelief. The belief measure is a value in the range [0,1], and the disbelief measure is in the range [- 1,0]. A hypothesis is believed or disbelieved if the hypothesis is above or below the respective threshold. It is informative to note that in other expert systems with MYCIN base reasoning, the method of combining has been modified. Centaur<SUP><SMALL>1</SMALL></SUP> is an example.</P>
+<P>CASNET is a semantic net-based expert system. Each node, or state, as it is known in this context, in the net has a forward and reverse weight associated with it; these weights are the strengths of causation between the nodes. This enables the net to be traversed from bottom to top or top to bottom. The weights correspond to the following interpretations of causal strength: sometimes, often, usually, almost always, and always. Since time is an element of the glaucoma disease model of CASNET, some states when confirmed will cause the rest of the path, of which they are a part, to be considered for treatment. Rules are used to associate observations with states. They have a confidence value, between - 1 and 1, assigned to them. Prescribed methods for combining confidence values have been defined. Certainty factors are associated with each state. They denote the belief that the state has occurred. States or nodes are considered confirmed when their certainty factor is above a threshold. Observations are usually tests. The observation with the strongest positive or negative result is used to confirm or deny a state. The combination of observations and partially confirmed pathways allow inference under uncertainty to be done and conclusions with treatment plans obtained.</P>
+<P>These methods and others are reasonably effective in specific cases. In fact, many variations of the MYCIN method of dealing with uncertainty are currently in use. We argue that fuzzy methods can, in some areas, replace the classical methods and provide better performance. In others they may augment and work in concert with probability-based methods. The need for a theory-based method of dealing with uncertainty brings us to fuzzy set theory. Before we delve into that, the Dempster-Shafer theory of evidence<SUP><SMALL>12,31</SMALL></SUP> must be mentioned. This theory is probability based and it has been speculated to be useful in building expert systems. A problem with this theory is that rule of evidence combination may create too large a certainty measure of the combined evidence about a fact, if a normalization is used to eliminate or hide a contradiction.<SUP><SMALL>43</SMALL></SUP> This method is certainly valuable in a domain in which most of the uncertainty may be effectively described by probabilities. However, where the domain is not amenable to the estimation or measurement of probabilities, fuzzy set theory offers an alternative.<SUP><SMALL>44</SMALL></SUP> Where fuzzy sets or linguistic terms best describe items in a domain, the theories of possibility and necessity sets may be applied more naturally than probabilities.</P>
+<P>We shall first describe what is meant by a fuzzy expert system. We will then indicate why they are more useful than others where applicable and give some examples of fuzzy expert systems.</P>
+<P>By fuzzy expert system we mean an expert system which incorporates fuzzy sets and/or fuzzy logic into its reasoning process and/or knowledge representation scheme. Several expert systems have been developed which incorporate fuzzy techniques.</P>
+<P>The theory of fuzzy sets and fuzzy logic is well-founded and strong. The theories have been in existence for over 25 years and have been shown useful in several control applications among others. Fuzzy logic is employed in the control of trains in Japan.<SUP><SMALL>26</SMALL></SUP> It has been very successful, and an expert fuzzy controller is on-line in the city of Sendai, Japan. It provides smoother changes in velocity than nonfuzzy systems have yet achieved. Fuzzy set theory is used in the cement kiln controller of Mamdani.<SUP><SMALL>24</SMALL></SUP> In both of these cases, linguistic fuzzy variables are used to do internal calculation and provide the control strategy.</P>
+<P>The theoretical basis behind fuzzy techniques will allow us to deal with uncertainty in a manner that is well supported. The theory properly used will allow fuzzy reasoning schemes to be developed and applied to a wide range of problems without constant minor changes. A unified, theoretically sound set of methods can be developed for reasoning under certainty in expert systems.</P>
+<P>Whalen and Schott<SUP><SMALL>39</SMALL></SUP> use a fuzzy linguistic logic system with production rules to suggest appropriate forecasting techniques for sales predictions in their expert system. They use possibilities and work in a backward chaining manner. They start with the possibilities of all conclusions equal to one and attempt to reduce the possibilities until they find an irreducible set. SPERILL II,<SUP><SMALL>27</SMALL></SUP> an expert system for damage assessment of existing structures, uses fuzzy sets to represent imprecise data. FLOPS<SUP><SMALL>10</SMALL></SUP> is a fuzzy rule-based production expert system. Input to the system is a vector all of whose components are fuzzy sets. As output it produces a fuzzy set of conclusions. Incoming information is pattern matched against rules to provide a fuzzy set of fireable rules, which are then executed. They continue this process until they can no longer find rules to fire and then produce a set of fuzzy conclusions. FLOPS has been sold commercially for several years now. It has been successfully used to model several different expert domains.<SUP><SMALL>8</SMALL></SUP></P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="015-017.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="019-022.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

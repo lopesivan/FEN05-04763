@@ -1,0 +1,164 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:MILORD: A Fuzzy Expert Systems Shell</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=15//-->
+<!--PAGES=213-215//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch14/208-212.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="215-217.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 15<BR>MILORD: A Fuzzy Expert Systems Shell
+</FONT></H2>
+<P><I>R. L&#243;pez de M&#225;ntaras<BR>J. Agusti<BR>E. Plaza<BR>C. Sierra</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;The Knowledge Representation
+<DT>III.&nbsp;&nbsp;Forward, Backward, and Their Combination
+<DD>A.&nbsp;&nbsp;The Lookahead Prospection Technique
+<DD>B.&nbsp;&nbsp;The Rule Selection Criteria
+<DT>IV.&nbsp;&nbsp;The Management of Uncertain Reasoning
+<DD>A.&nbsp;&nbsp;The Calculus of Uncertainty
+<DT>V.&nbsp;&nbsp;The Linguistic Certainty Values
+<DD>A.&nbsp;&nbsp;A Default Term Set and Its Representation
+<DD>B.&nbsp;&nbsp;The Linguistic Approximation
+<DT>VI.&nbsp;&nbsp;The Knowledge Elicitation Module of Expertise Transfer
+<DD>A.&nbsp;&nbsp;Elicitation
+<DD>B.&nbsp;&nbsp;Inference Analysis
+<DD>C.&nbsp;&nbsp;Inference Validation and Refining Environment
+<DT>VII.&nbsp;&nbsp;Concluding Remarks
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>This paper describes MILORD, an expert systems building tool containing a knowledge elicitation module and two inference engines (forward and backward) with uncertain reasoning capabilities based on fuzzy logic. MILORD allows the user to express the degree of certainty by means of expert-defined linguistic statements and provides the possibility to choose among three different calculi of uncertainty corresponding to three different models of the <I>and, or</I> and <I>implication</I> connectives.</P>
+<P>The switching between the two engines is transparent to the user. MILORD has two types of control strategies: one consists of a lookahead technique that allows the user to detect, in advance, whether or not the linguistic certainty value of a conclusion will reach a minimal threshold acceptance value. The other concerns the selection of rules according to several criteria. MILORD also contains a limited, but useful, explanation module as well as a rule editor, not described in this chapter.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. The Knowledge Representation</FONT></H3>
+<P>The knowledge base consists of facts and rules. The facts are LISP atoms associated with a linguistic certainty value. A nonevaluated fact will have the value <I>nil</I> and, therefore, is very fast to check if a given fact is known, i.e., if a certainty value has been assigned to it.</P>
+<P>Every rule has a set of conditions which, when evaluated with a certain degree of linguistic certainty, leads to a conclusion whose degree of linguistic certainty depends on the degrees of the conditions. The rules are externally represented as follows:</P>
+<P ALIGN="CENTER">(Rule rule &#151; number (If conditions) [vc] (Then conclusions))</P>
+<P>where [vc] is the linguistic certainty value of the rule.</P>
+<P>In order to enable a fast access to the rules, MILORD translates the preceding list into the following internal representation that uses the LISP property lists:</P>
+<P ALIGN="CENTER">Rule-N &#8594; VAL[vc] IF (p<SUB><SMALL>1</SMALL></SUB>, . . . , p<SUB><SMALL>N</SMALL></SUB>) THEN (c<SUB><SMALL>1</SMALL></SUB>, . . . , c<SUB><SMALL>M</SMALL></SUB>)</P>
+<P>where <I>VAL</I>, <I>IF</I>, and <I>THEN</I> are properties of the atom <I>rule</I>. The access to the conditions and conclusions of a rule is then an access to the properties of an atom.</P>
+<P>The internal representation of the rules builds, for each conclusion, a property list which is the list of rules that deduce this conclusion, together with the linguistic certainty value of each rule, i.e.,</P>
+<P ALIGN="CENTER">Conclusion &#8594; Rules ((rule<SUB><SMALL>1</SMALL></SUB> vc<SUB><SMALL>1</SMALL></SUB>)...(rule<SUB><SMALL>k</SMALL></SUB> vc<SUB><SMALL>k</SMALL></SUB>))</P>
+<P>where the rules in this list are listed in decreasing order of their linguistic certainty values. This ordering will be used by the lookahead control strategy that will be described later.</P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. Forward, Backward, and Their Combination</FONT></H3>
+<P>The forward reasoning starts with a set of given facts and its goal is to deduce a hypothesis whose linguistic certainty value reaches a given acceptance threshold. If the forward reasoning gets to a hypothesis whose certainty value is below the threshold, the backward reasoning is called in order to try to increase this certainty value by considering, through a lookahead process, other rule-paths that would conclude the same hypothesis with a higher certainty.
+</P>
+<H4 ALIGN="LEFT"><A NAME="Heading5"></A><FONT COLOR="#000077">A. The Lookahead Prospection Technique</FONT></H4>
+<P>MILORD applies a prospection process from the hypothesis toward the external (non-deducible) facts in such a way that at any time it checks if the certainty value of the hypothesis can reach the acceptance threshold value. If not, it will consider a new hypothesis. Let us now briefly describe such a process with the following default operators, and for the <I>and, or</I> and &#8594; connectives, to perform the calculus of uncertainty (although the lookahead process is independent of the operators used):</P>
+<P ALIGN="CENTER"><IMG SRC="images/15-01d.jpg"></P>
+<P>where A and B are conditions of a same premise, C<SUB><SMALL>R1</SMALL></SUB> and C<SUB><SMALL>R2</SMALL></SUB> represent the same conclusion deduced by the two rules R1 and R2, and C is the conclusion of rule R whose premise is P.</P>
+<P>The preceding operators are used, respectively, in the evaluation of the satisfaction of the premise, in the combination of several rules with the same conclusion, and in the propagation of the uncertainty from the premise to the conclusion of a rule.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch14/208-212.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="215-217.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

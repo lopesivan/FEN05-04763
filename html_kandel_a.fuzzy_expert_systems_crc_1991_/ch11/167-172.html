@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Role Approximate Reasoning in a Medical Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=11//-->
+<!--PAGES=167-172//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="163-167.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="172-174.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Partial Presence of Symptoms</FONT></H3>
+<P>The EMERGE system was designed with two user interfaces: a question mode, in which the system answered questions with y, n, or ? and a data-driven mode, in which the user enters information. These two modes are illustrated in Figures 2 and 3. The data-driven mode incorporates an algorithm for inexact word and phrase matching to permit acceptance of altered word order and minor misspellings. Note the altered word order of &#147;Abnormal Chest X-ray&#148; in Figure 3 as compared to the question mode in Figure 2. As the system developed, a third menu-driven mode was developed. This interface was, in fact, developed during prospective analysis of the system at the request of the end users, who had become familiar with user-oriented microcomputer programs. Some sample menus are shown in Figure 4. These two menus contain the information addressed in the level control flow. In all of the previous user interfaces, however, the symptoms were considered to be either present or absent. A third alternative was possible on the question mode. If the user had no information, a question mark could be entered. The question mark was treated as a &#147;no&#148; in the inference rules, but was treated differently in the certainty factor computation.
+</P>
+<P><A NAME="Fig2"></A><A HREF="javascript:displayWindow('images/11-02.jpg',450,316)"><IMG SRC="images/11-02t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/11-02.jpg',450,316)"><FONT COLOR="#000077"><B>Figure 2</B></FONT></A>&nbsp;&nbsp;Question mode of user interface.</P>
+<P><A NAME="Fig3"></A><A HREF="javascript:displayWindow('images/11-03.jpg',450,290)"><IMG SRC="images/11-03t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/11-03.jpg',450,290)"><FONT COLOR="#000077"><B>Figure 3</B></FONT></A>&nbsp;&nbsp;Data-driven mode of user interface.</P>
+<P>Difficulties arose in the preceding scheme in that the user had to make a yes/no decision about each test result, thus resulting in loss of information regarding severity of the symptoms. It was, in fact, discovered that the standard procedure for residents doing a physical examination was to enter a number between 0 and 10, inclusive, which indicated severity of the symptom. It was decided to adopt this procedure. A sample consultation using this new version is shown in Figure 5. The values entered are then divided by 10 to give a value between 0 and 1, inclusive. All values are given as positive symptoms. If a negation occurs in a production rule, the value is subtracted from 1. Similarly, in the data-driven mode, a numerical value can be entered after each clinical finding, as shown in Figure 6. If the number is omitted, a &#147;yes,&#148; which is equivalent to a value of 10, is assumed. In the menu mode the number of the finding is entered, followed by the value. Separate findings are separated by commas. This is illustrated in Figure 7. In the question mode, the user is still given the option of responding with &#147;y,&#148; &#147;n,&#148; or &#147;?&#148; rather than with a numerical value.
+</P>
+<P><A NAME="Fig4"></A><A HREF="javascript:displayWindow('images/11-04.jpg',450,623)"><IMG SRC="images/11-04t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/11-04.jpg',450,623)"><FONT COLOR="#000077"><B>Figure 4</B></FONT></A>&nbsp;&nbsp;Menu mode of user interface.</P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. Unequal Contribution of Antecedents</FONT></H3>
+<P>In the original version of EMERGE a modified production rule format was used. All antecedents in the production rule were conjoined. However, an antecedent could take the form of standard check (SC). An SC could consist of a conjunction (AND), a disjunction (OR), or a COUNT. In a COUNT, n out of m premises were required to hold. These structures are illustrated in Figure 8. These SCs permitted representation of logical processes which were apparently common in medical reasoning, as noted in the criteria mapping procedure.
+</P>
+<P><A NAME="Fig5"></A><A HREF="javascript:displayWindow('images/11-05.jpg',450,331)"><IMG SRC="images/11-05t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/11-05.jpg',450,331)"><FONT COLOR="#000077"><B>Figure 5</B></FONT></A>&nbsp;&nbsp;Question mode with partial presence of symptoms.</P>
+<P><A NAME="Fig6"></A><A HREF="javascript:displayWindow('images/11-06.jpg',450,358)"><IMG SRC="images/11-06t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/11-06.jpg',450,358)"><FONT COLOR="#000077"><B>Figure 6</B></FONT></A>&nbsp;&nbsp;Data-driven mode with partial presence of symptoms.</P>
+<P><A NAME="Fig7"></A><A HREF="javascript:displayWindow('images/11-07.jpg',500,219)"><IMG SRC="images/11-07t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/11-07.jpg',500,219)"><FONT COLOR="#000077"><B>Figure 7</B></FONT></A>&nbsp;&nbsp;Menu mode with partial presence of symptoms.</P>
+<P><A NAME="Fig8"></A><A HREF="javascript:displayWindow('images/11-08.jpg',500,335)"><IMG SRC="images/11-08t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/11-08.jpg',500,335)"><FONT COLOR="#000077"><B>Figure 8</B></FONT></A>&nbsp;&nbsp;Sample rule and standard checks (SC).</P>
+<P>Upon further analysis it can be noted that, in fact, ANDs, ORs, and COUNTs are special cases of a general SC in that:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/11-01d.jpg"></P>
+<P>where m is the total number of antecedents in the SC.
+</P>
+<P>As illustrated in Figure 8, for example, suppose that all antecedents are not of equal importance at arriving at a decision. We can then attach a weighting factor a(i) to the ith antecedent indicating its relative significance in the reasoning process. The requirement</P>
+<P ALIGN="CENTER"><IMG SRC="images/11-02d.jpg"></P>
+<P>is added in order to achieve a normalizing process. As a practical consideration, values must be determined from experts in the application area as to the weighting of each antecedent. The default is to make all of equal weight, in which case all computations revert to previous values. However, upon questioning, it is often discovered that the expert does, in fact, consider some findings to be more significant than others. It appears that this information was not obtained previously simply because it could not be represented on traditional expert systems. The question then arises as to how to interpret these values in the context of the general SC described previously.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="163-167.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="172-174.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

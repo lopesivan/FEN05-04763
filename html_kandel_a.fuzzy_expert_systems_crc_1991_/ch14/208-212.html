@@ -1,0 +1,213 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:On the Design of a Fuzzy Intelligent Differential Equation Solver</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=14//-->
+<!--PAGES=208-212//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="205-208.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="../ch15/213-215.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H3><A NAME="Heading6"></A><FONT COLOR="#000077">IV. Examples</FONT></H3>
+<H4 ALIGN="LEFT"><A NAME="Heading7"></A><FONT COLOR="#000077">A. A Boundary Value Problem Over a Concave Polygon</FONT></H4>
+<P>Laplace&#146;s equation with Dirichlet and homogeneous Neumann boundary conditions is solved over a domain D &#151; a concave polygon &#151; represented by an ordered list of its vertices (0,0), (1,0), (2,.6), (2,2), (.8,2), (.8,.8), (0,2.) and shown in Figure 3.
+</P>
+<P>The fineness of the finite element grid is a parameter supplied by the user. Three grids &#151; coarse, semifine, and fine &#151; are presented by Figures 3A&#151;C and consist of 8, 17, and 27 elements, respectively. Obviously, a finer mesh would provide a better approximation to the exact solution. The boundary conditions are Dirichlet, homogeneous Neumann, and mixed are denoted by D, H.N., M, respectively. The exact solution to Laplace&#146;s equation given in Equations 8 and 9 is e cosy.</P>
+<P><A NAME="Fig3"></A><A HREF="javascript:displayWindow('images/14-03.jpg',500,395)"><IMG SRC="images/14-03t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/14-03.jpg',500,395)"><FONT COLOR="#000077"><B>Figure 3</B></FONT></A>&nbsp;&nbsp;Concave polygon &#151; various grids. (A) A coarse grid; (B) a semifine grid; (C) a fine grid.</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-09d.jpg"></P>
+<P>Once the grid is determined by FIDES, its partial differential equation solver &#151; MANFEP &#151; approximates the exact solution using different polynomials over the various triangles. The degree of these polynomials is another parameter supplied by the user and should not exceed four.
+</P>
+<P>A comparison between the three approximating solutions related to the various grids, using cubics and the exact solution, is given in Table 1.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading8"></A><FONT COLOR="#000077">B. A Boundary Value Problem Over a Domain with a Bottleneck</FONT></H4>
+<P>The second-order partial differential equation:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-10d.jpg"></P>
+<P>is solved over the domain D (Figure 4) whose boundary is represented by the ordered list of points (2,0), (0,1), (0,.2), ( - 2.1,.2), ( - 2. 1,0), and (0,0). This domain is composed of the right upper quarter of the ellipsoid:
+</P>
+<TABLE WIDTH="100%"><CAPTION ALIGN=LEFT><B>Table 1</B> Laplace&#146;s Equation &#151; Various Grids
+<TR>
+<TD WIDTH="20%">(x,y)
+<TD WIDTH="20%">Coarse
+<TD WIDTH="20%">Semifine
+<TD WIDTH="20%">Fine
+<TD WIDTH="20%">Exact
+<TR>
+<TD>(.5,0)
+<TD>1.64763
+<TD>1.64880
+<TD>1.64877
+<TD>1.64872
+<TR>
+<TD>(.5,1)
+<TD>0.89059
+<TD>0.89039
+<TD>0.89079
+<TD>0.89081
+<TR>
+<TD>(1,.5)
+<TD>2.38712
+<TD>2.38616
+<TD>2.38524
+<TD>2.38532
+</TABLE>
+<P><A NAME="Fig4"></A><A HREF="javascript:displayWindow('images/14-04.jpg',500,131)"><IMG SRC="images/14-04t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/14-04.jpg',500,131)"><FONT COLOR="#000077"><B>Figure 4</B></FONT></A>&nbsp;&nbsp;A domain with a bottleneck.</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-11d.jpg"></P>
+<P>and a long narrow rectangle attached to it at the bottleneck <I>x</I> = 0, 0 &#8804; <I>y</I> &#8804; .2.</P>
+<P>Equation 10 is solved with the following boundary conditions:</P>
+<P ALIGN="CENTER"><IMG SRC="images/14-12d.jpg"></P>
+<P>FIDES recognizes the bottleneck near the origin (0,0) and separates D into two different sections, namely, a quarter of an ellipsoid and a long and narrow rectangle. It then replaces each section <I>independently</I> by a <I>proper</I> set of triangles, annexes them smoothly, and transfers the complete grid (Figure 4) to MANFEP.</P>
+<P>In this example, second order polynomials are used to approximate the exact solution, cos(xy) and a comparison is given in Table 2.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading9"></A><FONT COLOR="#000077">C. A Complex Domain</FONT></H4>
+<P>Figure 5 shows the triangularization of a complex domain whose boundary is composed of straight and curved sections. The curved part consists of two parabolas, a circle, and an ellipsoid. In spite of the lack of any <I>real</I> bottleneck, FIDES is <I>aware</I> of the existence of almost closed subdomains as the circle of radius 1 centered at (5.0) and the ellipsoid with axes a = 2.32, b = 1.96 centered at (3,7). It replaces them separately and independently by their finite element grids, as it does to <I>any other section</I>. The complete net is then transferred to MANFEP.</P>
+<TABLE WIDTH="100%"><CAPTION ALIGN=LEFT><B>Table 2</B> Curved Boundary and Bottleneck
+<TR>
+<TH WIDTH="35%" ALIGN="LEFT">(x,y)
+<TH WIDTH="35%" ALIGN="LEFT">Numerical
+<TH WIDTH="30%" ALIGN="LEFT">Exact
+<TR>
+<TD>(.5,.5)
+<TD>0.972
+<TD>0.969
+<TR>
+<TD>(1,.5)
+<TD>0.884
+<TD>0.878
+<TR>
+<TD>(0,.1)
+<TD>1.000
+<TD>1.000
+<TR>
+<TD>( - 1.1,.1)
+<TD>0.994
+<TD>0.994
+</TABLE>
+<P><A NAME="Fig5"></A><A HREF="javascript:displayWindow('images/14-05.jpg',400,775)"><IMG SRC="images/14-05t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/14-05.jpg',400,775)"><FONT COLOR="#000077"><B>Figure 5</B></FONT></A>&nbsp;&nbsp;A complex domain triangularized by FIDES.</P>
+<H3><A NAME="Heading10"></A><FONT COLOR="#000077">Acknowledgment</FONT></H3>
+<P>Research is partially supported by National Science Foundation Grant IST 8405953 and by Florida High Technology and Industrial Council Grant UPN 85100316.
+</P>
+<H3><A NAME="Heading11"></A><FONT COLOR="#000077">References</FONT></H3>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;<B>Friedman, M., Richards, D., and Wexler, A.,</B> MANFEP &#151; University of Manitoba Finite Element Program, Polytechnic of Central London, 1974.
+<DD><B>2.</B>&nbsp;&nbsp;<B>Friedman, M., Rosenfeld, Y., Rabinovitch, A., and Thieberger, R.,</B> Finite element methods for solving two dimensional Schroedinger equation, <I>J. Comput. Phys.</I>, 26(2), 1978.
+<DD><B>3.</B>&nbsp;&nbsp;<B>Goshen, S., Friedman, M., Thieberger, R., and Weil, J. A.,</B> Models for the hydrogen atom confined within crystalline quartz, <I>J. Chem. Phys.</I>, 79, 1983.
+<DD><B>4.</B>&nbsp;&nbsp;<B>Friedman, M., Rabinovitch, A., and Thieberger, R.,</B> The influence of an electric field on a hydrogen atom confined to boxes of different shapes, <I>A. Phys.</I>, A 316, 1984.
+<DD><B>5.</B>&nbsp;&nbsp;<B>Kandel, A.,</B> <I>Fuzzy Techniques in Pattern Recognition</I>, Wiley Interscience, New York, 1982.
+<DD><B>6.</B>&nbsp;&nbsp;<B>Kandel, A.,</B> <I>Fuzzy Mathematical Techniques with Applications</I>, Addison Wesley, Reading, MA, 1986.
+<DD><B>7.</B>&nbsp;&nbsp;<B>Zadeh, L. A.,</B> Fuzzy sets, <I>Inf. Control</I>, 8, 338, 1985.
+<DD><B>8.</B>&nbsp;&nbsp;<B>Friedman, M., Rosenfeld, Y., Rabinovitch, A., and Thieberger, R.,</B> Finite element methods for solving 3-D Thomas-Fermi equation, accepted by <I>J. Comput. Phys.</I>, September 1986.
+<DD><B>9.</B>&nbsp;&nbsp;<B>Hall, L. O. and Kandel, A.,</B> <I>Designing Fuzzy Expert Systems</I>, Verlag T&#220;V Rheinland, K&#246;ln, Germany, 1986.
+</DL>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="205-208.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="../ch15/213-215.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

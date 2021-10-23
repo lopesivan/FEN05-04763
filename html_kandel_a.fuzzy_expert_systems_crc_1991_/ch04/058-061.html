@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:On the Representation of Relational Production Rules in Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=4//-->
+<!--PAGES=058-061//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="055-058.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="061-064.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>It should be noted that the spirit of the theory of approximate reasoning is very much like that of mathematical programming.
+</P>
+<P>Assume V is a variable which takes its value in X. Let A and B be two normal subsets of X. If A &sub; B, then the statement <B>V is A</B> is more informative than the statement <B>V is B.</B> This can be easily seen in the situation in which:</P>
+<P ALIGN="CENTER">A = {x<SUB><SMALL>1</SMALL></SUB>, x<SUB><SMALL>2</SMALL></SUB>, x<SUB><SMALL>3</SMALL></SUB>}</P>
+<P ALIGN="CENTER">B = {x<SUB><SMALL>1</SMALL></SUB>, x<SUB><SMALL>2</SMALL></SUB>, x<SUB><SMALL>3</SMALL></SUB>, x<SUB><SMALL>4</SMALL></SUB>, x<SUB><SMALL>5</SMALL></SUB>}</P>
+<P>In the first case we know that V is one of three elements, while in the second it is one of five.</P>
+<P>Yager<SUP><SMALL>3</SMALL></SUP> has discussed a measure of specificity to indicate how much information is contained in a set. In particular,</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-12d.jpg"></P>
+<P>where
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-13d.jpg"></P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. Relations in Production Rules</FONT></H3>
+<P>Assume V, W, and U are three variables taking their values in the sets X, Y, and Z, respectively. Consider the rule:
+</P>
+<P ALIGN="CENTER">If <B>V is W</B> then <B>U is B</B></P>
+<P>where we shall assume the base sets of V and W, X, and Y are the same.</P>
+<P>In trying to represent this rule in a form amenable to application of the theory of approximate reasoning, the crucial issue becomes that of representing the relational antecedent condition <B>V is W.</B> The approach we shall take to representing this type of nonfixed requirement on variables is to replace the condition V is W by a fixed joint canonical statement of the form:</P>
+<P ALIGN="CENTER">(V, W) is R</P>
+<P>where R is a subset on the set X &#215; Y capturing the desired relationship between V and W. We shall call R the tolerance relationship.</P>
+<P>As a first attempt to develop an R to capture the desired relationship we let R be defined as:</P>
+<P ALIGN="CENTER">R(x,y) = 1 if x = y</P>
+<P ALIGN="CENTER">R(x,y) = 0 if x &#8800; y</P>
+<P>Thus, our rule can be written as:</P>
+<P ALIGN="CENTER">If (V,W) is R then U is B</P>
+<P>This rule translates into a possibility distribution &#928;<SUB><SMALL>1</SMALL></SUB> with respect to V,W,U over the set X &#215; Y &#215; Z so that:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-14d.jpg"></P>
+<P>If we have the additional knowledge that:
+</P>
+<P ALIGN="CENTER">V is D and W is E</P>
+<P>then we get two more constraining possibility distributions:</P>
+<P ALIGN="CENTER">&#928;<SUB><SMALL>2</SMALL></SUB>(x) = D(x)</P>
+<P ALIGN="CENTER">&#928;<SUB><SMALL>3</SMALL></SUB>(y) = E(y)</P>
+<P>Conjuncting these three distributions we get the overall distribution</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-15d.jpg"></P>
+<P>To get the inferred value of U, which we shall denote as F, we take the projection of &#928; onto Z, thus:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-16d.jpg"></P>
+<P>thus,
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-17d.jpg"></P>
+<P>when D and E are assumed normal.
+</P>
+<P>Thus,</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-18d.jpg"></P>
+<P>What becomes evident in this formulation is that the condition of equality of the two sets D and E does not imply that F(z) = B(z).
+</P>
+<P>Consider the simple case in which:</P>
+<P ALIGN="CENTER">E = D = {x<SUB><SMALL>1</SMALL></SUB>,x<SUB><SMALL>2</SMALL></SUB>}</P>
+<P>First, we note that:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-19d.jpg"></P>
+<P>and that R<SUP>-</SUP>(x,y) = 1 if x &#8800; y. Since x<SUB><SMALL>1</SMALL></SUB> &#8800; x<SUB><SMALL>2</SMALL></SUB> and D(x<SUB><SMALL>1</SMALL></SUB>) = 1 and E(x<SUB><SMALL>2</SMALL></SUB>) = 1, then:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-20d.jpg"></P>
+<P>thus F(z) = 1 for all z and we infer that U is unknown rather equal to B. At first this seems anti-intuitive, but a careful analysis makes it seem reasonable. The statement V is D indicates that V is either x<SUB><SMALL>1</SMALL></SUB> or x<SUB><SMALL>2</SMALL></SUB> but does not tell us which element it is. It just reduces the possible values of V to this smaller set. Similarly, W is E also just tells us that W is either X<SUB><SMALL>1</SMALL></SUB> or X<SUB><SMALL>2</SMALL></SUB>. What is important to note is that E = D does not imply that the value of V equals the value of W, but rather that the values of these elements are drawn from the same set. This fact becomes more obvious when we have the data D = E = X; here we see that the values of V and W are completely unknown. It can be easily shown that with the requirement of normality on D and E and the current choice for R, the only situation in which we will infer F = B, perfectly fires the rule, is if:</P>
+<P ALIGN="CENTER">D = E = {x}</P>
+<P>where x is any element of X. That is, only if D and E are the same singleton will we get B as our inferred value for U. Alternatively, this condition is seen to be that E and D are equal and have the highest specificity.</P>
+<P>It can also be easily shown that if there exist two distinct elements x<SUB><SMALL>1</SMALL></SUB>,x<SUB><SMALL>2</SMALL></SUB> so that D(x<SUB><SMALL>1</SMALL></SUB>) = 1 and E(x<SUB><SMALL>2</SMALL></SUB>) = 1 then we shall always infer F = Z; that is, U is unknown.</P>
+<P>The choice of R as our tolerance relation is a very restrictive choice. It is highly specific in that it only perfectly fires the rule if E and D are the same singleton sets. We can say that this R is an intolerant tolerance relationship. In many cases of relational antecedent conditions we may prefer a more relaxed requirement. For example, in a control problem, if V and W are two pressures, we may desire that the antecedent condition be satisfied if both variables are very close to each other in value. In order to capture these less restrictive conditions we are forced to redefine the tolerance relationship R which determines the satisfaction of the antecedent condition.</P>
+<P>Let R be a relationship on X &#215; X we can indicate for each pair x<SUB><SMALL>1</SMALL></SUB>, x<SUB><SMALL>2</SMALL></SUB> &#8712; X, R(x<SUB><SMALL>1</SMALL></SUB>,x<SUB><SMALL>2</SMALL></SUB>) &#8712; [0,1] as the degree to which x<SUB><SMALL>1</SMALL></SUB> and x<SUB><SMALL>2</SMALL></SUB> can tolerate each other as being possible values for V and W, respectively. The only requirement we make on our selection of R is that there exists at least one pair (x<SUB><SMALL>1</SMALL></SUB>,x<SUB><SMALL>2</SMALL></SUB>) so that R(x<SUB><SMALL>1</SMALL></SUB>,x<SUB><SMALL>2</SMALL></SUB>) = 1; that is, we require that R be normal. The reason for this requirement is that unless this is made it will not be possible for the rule to ever fire completely. We note that the larger R(x<SUB><SMALL>1</SMALL></SUB>,x<SUB><SMALL>2</SMALL></SUB>), the more tolerant. The choice of membership of elements in R is a reflection of our desired relationship between V and W.</P>
+<P>We recall that a rule:</P>
+<P ALIGN="CENTER">If (V,W) is R then U is B</P>
+<P>with the data:</P>
+<P ALIGN="CENTER">V is D and W is E</P>
+<P>results in an inferred value for U of F where:</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-21d.jpg"></P>
+<P>in which:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/04-22d.jpg"></P>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="055-058.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="061-064.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

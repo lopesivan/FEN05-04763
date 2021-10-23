@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:A Probabilistic Logic for Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=19//-->
+<!--PAGES=278-280//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="277-278.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="280-282.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="LEFT"><A NAME="Heading4"></A><FONT COLOR="#000077">A. The Syntax of PL Formulas</FONT></H4>
+<P>A PL type is a relational type, i.e., a set of constant and relation symbols. Note that we are not using functions in PL.
+</P>
+<P><B>Example 1: A PL Type</B></P>
+<P>A PL type is {<I>red, Suppliers, Parts, SP, PS, Family</I>}. Here all relation symbols stand for binary relations. SP is the relationship between suppliers and parts and PS is a partnership relationship between suppliers. In what follows we shall use acronyms instead of full relation names. Reasoning about a very large data base of facts necessitates the use of many constant symbols, and a practical compromise is to accept any specially syntactically designated symbols as constants, without explicitly declaring them in the type. A relation symbol included in the type is called <B>a base relation</B>. The symbols in the language are those in the type, the equality relation symbol =, variable symbols denoting individual elements, the logical symbols (<IMG SRC="images/19-06i.jpg">, &#8594;, &#8596, &#8704;, &#8707;), and parentheses. We may also use new relation symbols (not in the type) to denote auxiliary relations. A term in PL is either a constant symbol or a variable. <B>Formulas in PL are only those of FOPC.</B></P>
+<P><B>Example 2: PL Formulas</B></P>
+<P>Consider a data base with the type given in preceding Example 1:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;<I>S</I>(<I>s</I>1,<I>N.Y.</I>)
+<DD><B>2.</B>&nbsp;&nbsp;<IMG SRC="images/19-07i.jpg"><DD><B>3.</B>&nbsp;&nbsp;<IMG SRC="images/19-08i.jpg"><DD><B>4.</B>&nbsp;&nbsp;<IMG SRC="images/19-09i.jpg"><DD><B>5.</B>&nbsp;&nbsp;<IMG SRC="images/19-10i.jpg"><DD><B>6.</B>&nbsp;&nbsp;&#8704;<I>x</I> [<I>P</I> (<I>x,red</I>) &#8596; &#8707;y <I>SP</I> (<I>y,x</I>)]
+<DD><B>7.</B>&nbsp;&nbsp;&#8707<I>x</I> [<I>SP</I> (<I>x,p</I>1) &#8596; <I>SP</I> (<I>x,p</I>2)]
+<DD><B>8.</B>&nbsp;&nbsp;<IMG SRC="images/19-11i.jpg"></DL>
+<H4 ALIGN="LEFT"><A NAME="Heading5"></A><FONT COLOR="#000077">B. Probabilistic Models</FONT></H4>
+<P>A structure in FOPC may be viewed as a model of the relevant aspects of the world. It is composed of two components: the extension, the model universe and its organization, and the intention, the correspondence between object names and objects in the model extension. An alternative modeling tool is the Kripke structures, often used in modal logic. The main difference of concern to us between Kripke and FOPC is that the former uses a single structure whereas the latter uses a set of &#147;FOPC-like&#148; structures to model each state of the world. The &#147;extra&#148; structures are used in interpreting a formula of probability values as the number of worlds in which it is satisfied divided by the total number of possible worlds. Kripke structures may be used in the future for PL modeling, but the present work is based on FOPC.
+</P>
+<P>The main differences between FOPC structures and PL models are</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Relations are probabilistic; i.e., there is a probability for tuples to belong to a relation.
+<DD><B>2.</B>&nbsp;&nbsp;The probability values of implication formulas are defined by the model (in other words &#151; by an expert, possibly using some alternative uncertainty management paradigm), and not as a function of the truth values of their components.
+<DD><B>3.</B>&nbsp;&nbsp;Constraints (i.e., formulas with no free variables) are included in models as part of the world state description. The constraints are a tool for a concise description of some properties of the world which must be reflected by the model. An alternative approach separates the constraints from the model (maybe adds them as axioms) without any difference in the properties of PL. Since a model to us is a reflection of the world, we have chosen to make the constraints part of the model.
+</DL>
+<P>Let T be a type. Let I be a set of implication formulas (i.e., formulas whose most external connective is implication). A probabilistic model S of probabilistic type T is a function with domain <IMG SRC="images/19-12i.jpg"> so that:</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;S({&#8709;}) is a nonempty set &#151; the universe, or domain. It is denoted by |S|, and although in practice it is many sorted, for simplicity of presentation we shall use a one-sorted notation.
+<DD><B>2.</B>&nbsp;&nbsp;S(<I>c</I><SUB><SMALL>&alpha;</SMALL></SUB>) &#8712; |S| for each constant symbol <I>c</I><SUB><SMALL>&alpha;</SMALL></SUB> &#8712; <I>T</I>. Every constant symbol is mapped by the model to an element in the universe.
+<DD><B>3.</B>&nbsp;&nbsp;For each n-ary relation symbol <I>R</I> &#8712; <I>T</I>, S(<I>R</I>) is a probabilistic relation &lt;|S|<SUP><SMALL>n</SMALL></SUP>,<I>p</I><SUB><SMALL>R</SMALL></SUB>&gt;, where <I>p</I><SUB><SMALL>R</SMALL></SUB> is an n-ary partial function from the n cartesian product of the domain to [0,1], assigning to tuples a probability of belonging to the relation.
+<DD><B>4.</B>&nbsp;&nbsp;S({{&#8709;}}) is &lt;C,<I>p</I><SUB><SMALL>c</SMALL></SUB>&gt; where C is a set of constraints (i.e., closed formulas) and <I>p</I><SUB><SMALL>c</SMALL></SUB>, is a function from C to [0,1].
+<DD><B>5.</B>&nbsp;&nbsp;For &#966; &#8712; <I>I</I>, S(&#966;) (if specified) is in [0,1], and is the truth value of &#966;. We further impose a consistency condition on assignments of probability values to implications: if &#966; is &#936; &#8594; &#952; and S <IMG SRC="images/19-13i.jpg"> &#936; (i.e., the probability of satisfaction of &#936; is 1) and S <IMG SRC="images/19-14i.jpg"> &#952; then S(&#966;) = 0.</DL>
+<P>Models will be denoted by bold capital letters. <I>Finite models</I> are those models whose universe is finite. The <I>support</I> of a probabilistic relation R is the set of tuples whose probability of membership in R is not zero. For safety, we are considering only finite models, or models where all the relations have a finite support.</P>
+<P><B>Remarks</B></P>
+<P>First, note that the probability assignment is a partial function; it is possible for our knowledge of the world to be partial and it is possible to express ignorance in PL simply by failing to specify unknown information (this is in contradiction to the closed world assumption,<SUP><SMALL>13</SMALL></SUP> which, paraphrased, states that anything not explicitly expressed is false). As a consequence, summation in PL of the probabilities over all known possibilities may be &lt;1. An alternative formalism is to make the probability function assign a special value, &#8869; (bottom, or unknown) in case a value is unknown. &#8869; is considered to be smaller than any value in [0,1] (this order corresponds to &#147;less known,&#148; for future &#147;higher orders&#148; corrections to be probabilities), and its multiplication with any number in [0,1] gives &#8869;. Second, as our real experts are human beings, we do not have complete knowledge of probabilities of all implications. In many cases it is impractical to specify, in the model definition, all these probabilities, even if known. Therefore, we under-specify model definitions, and assign probabilities only to implications seemed relevant to the problem at hand.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="277-278.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="280-282.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

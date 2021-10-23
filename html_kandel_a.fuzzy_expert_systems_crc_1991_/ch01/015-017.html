@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:The Evolution From Expert Systems to Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=1//-->
+<!--PAGES=015-017//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="014-015.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="017-019.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>The data that the expert system acquires as it attempts to solve a problem often comes from error-prone humans. Therefore, it cannot be expected to be 100% precise. Even if the answer is related with precision, it may not be a binary response. Since people do not think in black and white, the answer will usually lie somewhere between the extremes. As stated earlier, it is extremely important that a general purpose expert system be able to accept and properly interpret imprecise information provided by the system user. In cases where the expert system received data from sensing devices or some type of equipment, the well-known problem of noise comes into play and puts imprecision into the equation. In addition the equipment may be out of adjustment. The expert system interface to external equipment must be able to accept that readings are imprecise or fuzzy and effectively deal with this fact.
+</P>
+<P>Uncertainty also occurs in the knowledge base where we may have weak implications, in the form of implication relations with middle range certainties, given us by the expert. In translating the expert&#146;s statement to the implication, we may lose the meaning of it somewhat. The expert system must be able to accept and use the weak implications together with other sources of information to come to a conclusion about the problem under investigation.</P>
+<P>Another type of uncertainty arises in the collection of knowledge from different sources, experts, literature, etc. There may be conflicting, redundant, subsuming, or missing chunks of knowledge. In rule-based systems this type of uncertainty has led to the compilation of the rules into a network where they may be examined for these problems. Missing chunks of knowledge become evident as the system is tested. Pieces of knowledge which subsume others may be found by the knowledge engineer or through traces of the system operation. Conflicts are also normally found by system testing, but it is conceivable that a fuzzy function, which operates on the knowledge base, could be used to indicate conflicts.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading13"></A><FONT COLOR="#000077">A. Examples of Imprecision</FONT></H4>
+<P>In the following some examples of the different types of imprecision presented previously will be given. The likely source(s) of the imprecision or uncertainty in the examples will also be discussed.
+</P>
+<P>It can be the case that a person is unsure of a particular piece of causal information. An example:</P>
+<DL>
+<DD>IF Z is tall, THEN Z played on a basketball team (0.8).
+<DD>Z is tall (0.9).
+</DL>
+<P>The numeric values are certainty values associated with the rule and fact, respectively. In this statement, it may be that enough information has been gathered to reliably assign a probabilistic uncertainty to the statement. However, this is often not the case, and the value may be generated by a well-designed fuzzy membership function<SUP><SMALL>17</SMALL></SUP> for people who have played basketball. To determine whether a person is tall, a fuzzy membership function on heights may provide us this information. It may not be as exact as doing the work necessary to derive a reliable probability, but since fuzzy inferencing will still work reliably with small errors, the correct answers can still be determined.</P>
+<P>Another type of imprecision comes from a linguistic statement in which the boundary is not clearly defined. For example:</P>
+<DL>
+<DD>Mary is middle-aged.
+<DD>IF the inventory is high, THEN production should be slowed.
+</DL>
+<P>The terms middle-aged, high, and slowed are imprecise terms. In the context of fuzzy set theory, they are called fuzzy terms. This type of information is modeled well by linguistic fuzzy sets. It is true that they could be modeled with the Dempster-Shafer theory of evidence, but it is our contention that fuzzy sets provide a more intuitive method and will provide accurate answers.
+</P>
+<P>Both uncertainty and imprecision may exist in some statements. For instance:</P>
+<P ALIGN="CENTER">IF the wind is high THEN the sailing should be good (0.8).</P>
+<P>In this case, the fuzzy information is contained in the terms high and good. The overall statement only holds most (0.8) of the time.</P>
+<P>The uncertainty could also be fuzzy. In the statement,</P>
+<P ALIGN="CENTER">Ed is a masterful sailor, (0.8 to 0.9),</P>
+<P>a fuzzy range with which it may be believed is given. The range could be interpreted as about 0.85.</P>
+<P>It is not our intention to cover anything other than how Fuzzy Set Theory may be used in expert systems. There are places where the uncertainty may be probabilistic in nature, and probability-based theories will provide the best models. Most often it will be the case that fuzzy sets may be used, possibly in conjunction with probability, to model the uncertainty and imprecision inherent in real world problems.</P>
+<P>There is imprecision in most areas of an expert system. Most of the interesting domains to which an expert system may be applied have some significant amount of imprecision in them. It should be noted that some of the applications with the least amount of imprecision in them have been most successfully attacked. Those with large amounts of imprecision have not been as successfully solved and some are beyond the current reach of expert systems. This indicates that uncertainty and imprecision are very important aspects of an expert system. They must be handled in a sound manner both theoretically and practically.</P>
+<H3><A NAME="Heading14"></A><FONT COLOR="#000077">V. The Evolution to Fuzzy Expert Systems</FONT></H3>
+<P>The method of handling imprecision must be excellent for an expert system to succeed in becoming a useful tool. It also needs to be natural so that the knowledge flows freely from the expert. There are currently quite a few different ways that imprecision may be handled in an expert system. The ones that are complete tend to allow imprecision and uncertainty to be managed in only a small degree or in an awkward fashion. Most methods of handling imprecision are probability based. It is interesting that experts often do not think in probability values, but in terms such as much, usually, always, sometimes, etc. While it is possible to give these terms probabilistic values, this book is concerned with the use of fuzzy values which capture their meaning in a natural fashion.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="014-015.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="017-019.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

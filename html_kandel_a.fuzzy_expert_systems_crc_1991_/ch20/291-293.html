@@ -1,0 +1,146 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:COMEX -- An Autonomous Fuzzy Expert System or Tactical Communications</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=20//-->
+<!--PAGES=291-293//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch19/288-290.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="293-297.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 20<BR>COMEX&#151;An Autonomous Fuzzy Expert System for Tactical Communications Networks
+</FONT></H2>
+<P><I>Mordechay Schneider<BR>Joseph M. Perl<BR>Abraham Kandel</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Description of COMEX
+<DD>A.&nbsp;&nbsp;The MMI
+<DD>B.&nbsp;&nbsp;The CONTROLLER
+<DT>III.&nbsp;&nbsp;The Internal Structure of the CONTROLLER
+<DT>IV.&nbsp;&nbsp;Communication in COMEX
+<DT>V.&nbsp;&nbsp;Conclusions
+<DT>Acknowledgments
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>Reliable and efficient communication is crucial in many situations where the success or failure of an endeavor depends on the ability to transmit and receive important information. Such situations abound in military applications as well as in civilian ones such as in the merchant navy, oil exploration, aviation, etc. At present, although a variety of communication means and equipment is available, the success or failure of the communication depends largely on the operator's expertise. This is particularly evident in ionospheric HF communication,<SUP><SMALL>1</SUP></SMALL> although it is true on other communication channels as well.</P>
+<P>COMEX is an intelligent expert system designed to perform the tasks presently performed by an expert operator. Thus, it selects the proper communication channel (HF, VHF, UHF, satellite, telephone) for the desired communication (voice, data); it selects the proper path (direct, relay) and equipment to be used (modem, radio, antenna); it selects the equipment operating parameters as well as the frequency and protocol to be used; and finally, it performs the communication. COMEX employs an initially loaded data base, which is automatically updated by the expert system learning capability. In addition, it collects and updates statistical data concerning channel and equipment availability and communication performance. COMEX communicates with utility programs running on the same processor (IONCAP, MINIMUF, satellite visibility prediction and BER performance evaluation) as well as with external units such as frequency management systems.<SUP><SMALL>1-7</SMALL></SUP></P>
+<P>These frequency management systems measure channel occupancy, signal-to-noise levels, (pseudo-) bit error rates, fading rates on time varying channels, multipath propagation conditions, and Doppler shifts. They can operate autonomously or under the control of the expert system, depending on the operation mode of COMEX.</P>
+<P>COMEX runs on an IBM compatible PC, which also acts as the communication station controller. When the station equipment (radios, modems, terminals) has remote control capability, it will remotely control the equipment, set the selected operation modes, and perform the communication.</P>
+<P>COMEX is intended for the use of novice operators and is not limited to communication station or equipment constraints. During the initial setup, COMEX prompts the operator to provide all the information necessary for an intelligent and expert decision on solving the communication problem at hand. Its intelligence enables it to interface with a variety of channel monitoring sensors, and accept and use the information provided by these autonomous sensors to achieve an optimal solution to the communication problem at hand.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Description of COMEX</FONT></H3>
+<P>Figure 1 presents the architecture of COMEX, which is composed of a number of modules. The man-machine-interface (MMI) module handles the interactions between the user and COMEX. Through the MMI module, the user loads and updates the &#147;user data base&#148;. This data base accepts data from external sensors as well. Such external sensors are frequency management and communication monitoring devices,<SUP><SMALL>1</SMALL></SUP> which communicate with COMEX via a standard RS-232 serial I/O port. For example, in the HF band, COMEX can operate with a variety of sensors, including MESA,<SUP><SMALL>1</SMALL></SUP> AUTOCAL,<SUP><SMALL>7</SMALL></SUP> AUTOLINK,<SUP><SMALL>6</SMALL></SUP> SELSCAN,<SUP><SMALL>5</SMALL></SUP> etc.</P>
+<P>The main part is the CONTROLLER, which contains the overall operating system that controls the operation of the various modules. The CONTROLLER operates the EXECUTE module, which carries out the communication with the communication station equipment via a serial I/O port. Thus, when the expert system is ready to commence communication (transmit or receive), the EXECUTE module performs this task. In addition, the CONTROLLER supervises the operation of a &#147;statistical data base&#148;, which accumulates communication statistics in real time. Certain information, such as the sample distributions of various channel parameters, are also accumulated in this data base by the external sensors (see Figure 2). It also supervises the activities of MMI, especially the handling of the data base provided by the user and by the external sensors. Finally, the CONTROLLER employs the three knowledge bases (KBs) during the inference procedure. The CONTROLLER is in fact an expert system which also manages the various functions performed by COMEX.</P>
+<P><A NAME="Fig1"></A><A HREF="javascript:displayWindow('images/20-01.jpg',500,426)"><IMG SRC="images/20-01t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/20-01.jpg',500,426)"><FONT COLOR="#000077"><B>Figure 1</B></FONT></A>&nbsp;&nbsp;COMEX architecture.<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch19/288-290.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="293-297.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

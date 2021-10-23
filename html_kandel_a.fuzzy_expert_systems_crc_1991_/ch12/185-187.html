@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fess: A Reusable Fuzzy Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=12//-->
+<!--PAGES=185-187//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="184-185.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="187-189.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>It was noted earlier that implication relations may have a premise which consists of any combination of clauses conjuncted and disjuncted together. We require that they be fully parenthesized for clarity. A complex relation may look like the following:
+</P>
+<DL>
+<DD>IF (((X1 is Y1) and (X2 is almost Y2)) or (X3 is not Y3)))
+<P>THEN X4 is almost Y4
+</DL>
+<P>This relation is easy to read and requires no difficult translations. The relations may be added to the knowledge base simply by using a text editor, although a more sophisticated knowledge acquisition system is desirable.
+</P>
+<P>Variables are represented by a percent sign (%) before the variable word. Clauses with variables in them are matched to all possible matches in the working memory. With consistency enforced across the premise clauses, this enables the system to infer several related items with the application of a single implication relation. Variables may also be in the conclusion of the implication relation and are given the value resulting from the premise matches. Variable use is implicit in the following discussion.</P>
+<H3><A NAME="Heading5"></A><FONT COLOR="#000077">III. The Fess Fuzzy Inference Mechanism</FONT></H3>
+<P>Fuzzy relations are a very flexible representation formalism which can be used to model any knowledge formalism. The frames that are used to contain the relations do not detract from this ability. One formalism was chosen for implementation and testing. One of the beauties of Fess is that the representation and inference formalisms could be changed without significant modifications, if any, to other parts of the system. Implication relations are used for inference chaining in the expert system. The implication relation consists of two main parts: a premise and a conclusion. The premise is made up of a number of clauses. Each clause in a premise looks like:
+</P>
+<P ALIGN="CENTER">X is Y</P>
+<P>where X and Y represent variable linguistic statements. Y may contain a fuzzy quantifier such as <I>almost, very</I>, etc. The premise consists of one to n clauses, with <I>n</I> &lt; &#8734;. A typical clause is the following: <I>the plant is almost green</I>. The clauses are connected by the conjunction and disjunction operators <IMG SRC="images/12-01i.jpg">. Any t-norm, t-conorm pair may be used.<SUP><SMALL>11</SMALL></SUP></P>
+<P>The conclusion is a set of one or more clauses connected by the linguistic connective <I>and</I>, which is used as a uniform conjunctive operator. That means that each clause in the conclusion holds with the same strength as the overall conclusion. Each relation is given, by the expert, some <I>a priori</I> strength which we call a certainty. This certainty may be represented linguistically with terms, such as <I>usually</I>, <I>sometimes</I>, or <I>occasionally</I>. It may also be represented with discrete numerical values in the rational-valued interval [0,1], into which the linguistic terms are currently translated.</P>
+<P>We use a technique somewhat like generalized modus ponens<SUP><SMALL>11</SMALL></SUP> to determine that a conclusion holds with some true value in the interval [0,1]. A conclusion that has a truth value of 0 is considered false, 0.5 as the midpoint is considered to indicate neither truth nor falsity, and 1 is considered to represent the crisp true. Intermediate values have varying degrees of truth and falsity. In the interval [.5,1], as the conclusion becomes more true its certainty approaches 1. Likewise, as the value of the conclusion certainty decreases in the interval [0,.5], the conclusion is seen as increasingly false.</P>
+<P>We are interested in determining a method for operating akin to modus ponens, but in the context of fuzzy logic. Our problem may be stated in the following, letting <I>cf</I> denote the certainty of the relation, <I>a</I> denote the truth value of the premise, and <I>b</I> denote the truth value of the conclusion. We have an equation which looks like the following:</P>
+<P ALIGN="CENTER"><IMG SRC="images/12-01d.jpg"></P>
+<P>We have values for <I>a</I> and <I>cf</I>; we must find a value for <I>b</I> that is consistent with the <I>i<SUP><SMALL>th</SMALL></SUP></I> fuzzy implication operator.<SUP><SMALL>19</SMALL></SUP> There are many different implication operators which may be used in fuzzy implication relations. We choose an implication operator, the <I>i</I><SUP><SMALL><I>th</I></SMALL></SUP> in this case, and calculate <I>b</I> our confidence in the conclusion. There are cases in which no value for <I>b</I> can be calculated. These have been referred to as <I>out of bounds</I> conditions by Bandler and Kohout.<SUP><SMALL>4</SMALL></SUP> They are a practical problem that an expert system must be able to solve.</P>
+<P><A NAME="Fig3"></A><A HREF="javascript:displayWindow('images/12-03.jpg',500,315)"><IMG SRC="images/12-03t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/12-03.jpg',500,315)"><FONT COLOR="#000077"><B>Figure 3</B></FONT></A>&nbsp;&nbsp;Modus ponens for the Kleene-Dienes-Lukasiewicz operator.</P>
+<P>It was speculated that an <I>out of bounds</I> condition denoted some inconsistency or error within the expert system knowledge or operation. Toward this end records were kept of such occurrences in the initial prototype of Fess. An examination of some occurrences showed that this was not always the case.</P>
+<P>In Figure 3, modus ponens for the Kleene-Dienes-Lukasiewicz implication operator is shown. For this operator, given an <I>a priori</I> certainty for a relation of 0.7 and a certainty in the premise which lies anywhere in the range [0,0.2], false to almost false, we find that we are indeed <I>out of bounds</I>. This possibility does not, intuitively, seem to be unreasonable. Clearly, if such cases can happen with some legitimacy, a methodology for dealing with them must be developed. We deal with the problem by ignoring the relation which causes the problem. This means when an <I>out of bounds</I> value is obtained for a conclusion in an implication relation <I>R<SUB><SMALL>i</SMALL></SUB></I>, the relation is left out of our inference chain. We will either establish the relative truth or falsity of the conclusion of <I>R<SUB><SMALL>i</SMALL></SUB></I> by other relations or will be obliged to find a reasoning path which does not make use of the conclusion contained within the offending relation.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="184-185.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="187-189.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

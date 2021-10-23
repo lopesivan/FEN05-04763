@@ -1,0 +1,192 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Expert System on a Chip: An Engine for Approximate Reasoning</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=18//-->
+<!--PAGES=264-267//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="262-264.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="267-268.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H3><A NAME="Heading11"></A><FONT COLOR="#000077">IV. Logic Architecture of Fuzzy Inference Engine</FONT></H3>
+<P>In the current section, we propose an inference mechanism suitable for hardware implementation. It is based on the concepts of fuzzy implication, or fuzzy rules, and the compositional rule of inference. A fuzzy rule is defined by the relation between observation (or antecedent) and action (or conclusion). For a given set of fuzzy rules, the action is inferred from both a certain observation and the fuzzy relation which is composed from the rules.
+</P>
+<P>If A and B are fuzzy subsets representing linguistic labels, over the universe of discourse U and V, respectively, then a decision rule in the form of &#147;if A then B&#148; is defined by binary membership functions of A and B so that:</P>
+<P ALIGN="CENTER"><IMG SRC="images/18-10d.jpg"></P>
+<P>More specifically, suppose <I>A</I><SUB><SMALL>1</SMALL></SUB>,<I>A</I><SUB><SMALL>2</SMALL></SUB>, . . . ,<I>A<SUB><SMALL>N</SMALL></SUB></I> are fuzzy subsets of U and <I>B</I><SUB><SMALL>1</SMALL></SUB>,<I>B</I><SUB><SMALL>2</SMALL></SUB>, . . . ,<I>B<SUB><SMALL>N</SMALL></SUB></I> are fuzzy subsets of V, a fuzzy relation is defined by rules so that:</P>
+<CENTER>
+<TABLE WIDTH="60%"><TR>
+<TD WIDTH="7%" COLSPAN="2">Rule 1.
+<TD WIDTH="20%">
+<TD WIDTH="18%" COLSPAN="2">If <I>A</I><SUB><SMALL>1</SMALL></SUB> then <I>B</I><SUB><SMALL>1</SMALL></SUB>
+<TR>
+<TD COLSPAN="2">Rule 2.
+<TD>ELSE
+<TD COLSPAN="2">If <I>A</I><SUB><SMALL>2</SMALL></SUB> then <I>B</I><SUB><SMALL>2</SMALL></SUB>
+<TR>
+<TD>
+<TD WIDTH="15%">.
+<TD>
+<TD>
+<TD WIDTH="40%">.
+<TR>
+<TD>
+<TD>.
+<TD>
+<TD>
+<TD>.
+<TR>
+<TD>
+<TD>.
+<TD>
+<TD>
+<TD>.
+<TR>
+<TD COLSPAN="2">Rule N.
+<TD>ELSE
+<TD COLSPAN="2">If <I>A</I><SUB><SMALL><I>N</I></SMALL></SUB> then <I>B</I><SUB><SMALL><I>N</I></SMALL></SUB>
+</TABLE>
+</CENTER>
+<P>Then each rule is combined by the ELSE connective to yield an overall fuzzy relation R.
+</P>
+<P><I>R<SUB><SMALL>i</SMALL></SUB></I> is a fuzzy relation constructed from rule i, and linguistic values <I>A<SUB><SMALL>i</SMALL></SUB></I> and <I>B<SUB><SMALL>i</SMALL></SUB></I>. The connective ELSE is denoted by the function <I>f<SUB><SMALL>ELSE</SMALL></SUB></I>, then the overall relation R is defined by:</P>
+<P ALIGN="CENTER"><IMG SRC="images/18-11d.jpg"></P>
+<P>The connective <I>f<SUB><SMALL>ELSE</SMALL></SUB></I> is interpreted as an <B>or</B> connective in order to derive an overall fuzzy relation R because the relation R should consist of rule 1 <B>or</B> rule 2 <B>or</B> &#133; <B>or</B> rule N. Hence the overall relation R is denoted and defined as:</P>
+<P ALIGN="CENTER"><IMG SRC="images/18-12d.jpg"></P>
+<P>Suppose we have a fuzzy observation <I>A</I>&#8242; and the overall relation R; then the resultant action <I>B</I>&#8242; is inferred by the compositional rule of inference, that is:</P>
+<P ALIGN="CENTER"><IMG SRC="images/18-13d.jpg"></P>
+<P>The membership value of <I>B</I>&#8242; is calculated by so called the &#147;max-min operation&#148; defined by (7):</P>
+<P ALIGN="CENTER"><IMG SRC="images/18-14d.jpg"></P>
+<P>To follow up the preceding discussion, we propose an architecture of a fuzzy inference engine suitable for a hardware implementation.
+</P>
+<P>Let us consider the i-th rule of a set of N rules. Given an observation <I>A</I>&#8242; and a rule <I>R<SUB><SMALL>i</SMALL></SUB></I>, the action <I>B</I>&#8242;<SUB><SMALL><I>i</I></SMALL></SUB> is inferred and defined as follows:</P>
+<P ALIGN="CENTER"><IMG SRC="images/18-15d.jpg"></P>
+<P ALIGN="CENTER"><IMG SRC="images/18-16d.jpg"></P>
+<P>where
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/18-17d.jpg"></P>
+<P>The operation given by Equation 14 and Equation 15 is illustrated in Figure 4. Then the maximum of <I>B</I><SUB><SMALL>1</SMALL></SUB>,<I>B</I><SUB><SMALL>2</SMALL></SUB>, &#133; ,<I>B<SUB><SMALL>N</SMALL></SUB></I>, determine the overall resulting decision (or action) <I>B</I>&#8242;, that is</P>
+<P ALIGN="CENTER"><IMG SRC="images/18-18d.jpg"></P>
+<P><A NAME="Fig4"></A><A HREF="javascript:displayWindow('images/18-04.jpg',450,232)"><IMG SRC="images/18-04t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-04.jpg',450,232)"><FONT COLOR="#000077"><B>Figure 4</B></FONT></A>&nbsp;&nbsp;A Mechanism of &#147;max-min operation&#148; for <I>B</I>&#8242; = <I>A</I>&#8242; o (<I>A</I> &#8594; <I>B</I>)
+</P>
+<P><A NAME="Fig5"></A><A HREF="javascript:displayWindow('images/18-05.jpg',450,413)"><IMG SRC="images/18-05t.jpg"></A>
+<BR><A HREF="javascript:displayWindow('images/18-05.jpg',450,413)"><FONT COLOR="#000077"><B>Figure 5</B></FONT></A>&nbsp;&nbsp;A functional architecture of fuzzy inference mechanism.</P>
+<P>The inference mechanism given before can be realized by the logical architecture with two-level hierarchy as shown in Figure 5. The proper choice of &#945;<SUB><SMALL><I>i</I></SMALL></SUB>s is the first-level decision, while the proper choice of <I>B</I>&#8242; is the second-level decision. The operation serially done in each column of the structure is equivalent to the operation which is illustrated in Figure 4. It has been shown that the logical architecture obtained here is basically the same even for multiple observation and multiple action cases.<SUP><SMALL>12</SMALL></SUP> The advantage of the proposed structure is that max-min operations are realized by the ordinary <I>or</I> and <I>and</I> gates, respectively.</P>
+<H3><A NAME="Heading12"></A><FONT COLOR="#000077">V. VLSI Design</FONT></H3>
+<P>The VLSI inference engine consists of three major parts: a rule set memory, an inference processing unit, and a controller. The inference mechanism described in the previous section executes all the rules in parallel. This high degree of parallelism requires a wide bus between the rule set storage unit and the inference processing unit of the engine. Because of the very high rate of communication between these two elements, we decided to store the rules on a chip. Otherwise, the restriction of the pin counts prevents the effective use of the parallelism.
+</P>
+<P>Since this is the first version of the design, we emphasize simplicity. One important decision is to process individual rules serially. This simplifies the design and increases its extensibility. The logic structure of the fuzzy inference mechanism is mapped nicely to the VLSI structure. There is an one-to-one correspondence between the basic operations of fuzzy logic and the basic units of the VLSI inference processing unit. The three major parts of the inference engine are described in the following section.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading13"></A><FONT COLOR="#000077">A. Storage and Format of Rule Set</FONT></H4>
+<P>The rule set can be stored using either a random access memory (RAM) or a read only memory (ROM). The advantage of using RAM is its flexibility. Depending on the application, the rule set can be loaded from off-chip. On the other hand, ROM takes much less area for the same amount of data and operates faster. The control unit of the inference engine can be very simple since we do not need to load a rule set from off-chip. Also, we have a well-engineered ROM generator in our design system, so that we used ROM for the storage of the inference rules.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="262-264.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="267-268.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fess: A Reusable Fuzzy Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=12//-->
+<!--PAGES=189-190//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="187-189.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="190-192.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>Again, for convenience, we allow <I>MD</I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>) to denote the value for the measure of disbelief function at the current <I>t</I>, the number of relations used to determine the disbelief in the conclusion. It is important to note that the measure of belief and measure of disbelief are calculated separately. Therefore, it is possible that <I>MB</I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>) &#8800; 1 &#45; <I>MD</I>(<I>C<SUB><SMALL>i</SMALL></SUB></I>). To obtain relations which act on both the positive and negative part of a conclusion may require a bit more effort by the knowledge engineer and engender a very small number of additional queries of the system user. However, the clarity of reasoning provided by such a system is well worth the trade-off.</P>
+<P>Given that measures of belief and disbelief in a conclusion have been calculated, we must come to an overall certainty for the conclusion. The overall certainty lies in the interval [0,1]. The value 0.5 indicates neither belief nor disbelief in the interval [0.5,1.0] our belief increases as the certainty approaches one, and in the interval [0.5,0] our disbelief increases as the certainty approaches zero. The overall certainty of a conclusion <I>C<SUB><SMALL>i</SMALL></SUB></I> is calculated as shown in the following definition.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading9"></A><FONT COLOR="#000077">C. Definition 3</FONT></H4>
+<P>The overall certainty of a conclusion is defined as:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/12-04d.jpg"></P>
+<P>The overall certainty, just defined, has the required characteristics which were previously discussed. We now have the mechanisms for determining whether to believe or disbelieve a conclusion based on one or more pieces of evidence about it. Some strategy about the number of relations to use to determine a conclusion, and when to stop trying to determine a conclusion, are necessary for an expert system implementation using this combination of evidence scheme.
+</P>
+<P>All applicable relations may be applied to determine a conclusion. This is a straightforward scheme, but it is not very efficient. If there are many relations, and we use some that give us a strong measure of belief and no measure of disbelief, should we continue processing? Unless we have an unusual application for the expert system, we do not. In fact, to continue will require a great deal of extra processing time, and an extremely slow expert system is not likely to be accepted. This is clearly an area in which different approaches may be suitable for distinct problem areas. Again, in Fess, the algorithm which governs the determination of a conclusion is confined to a specific section and can be easily changed. The current algorithm used in Fess to determine a conclusion will be described in the following text.</P>
+<P>If more than one implication relation that acts on a conclusion exists, we will use a minimum of two relations to determine the conclusion. We alternate in using relations which act to increase our measure of belief and our measure of disbelief regarding the current conclusion. This process continues until we run out of relations which act to increase MB or MD, or we have tried two of each type of relation and the overall certainty has not changed more than some value &#916;. If we find the overall certainty has changed more than the &#916;, we will continue the process until we run out of relations or, after attempting to increase our MB and MD, the overall certainty has not changed by &#916;. If there are no more relations providing evidence upon the MB or MD, but we have not used at least two relations, or our overall certainty changed by more than &#916;, we will continue using relations to determine the overall certainty. This continues until two relations have been used, no more exist which act on this conclusion, or the overall certainty is not changing by more than &#916;.</P>
+<P>The algorithm just described, while somewhat complex, provides for efficient search and conclusion determination. It attempts to ensure that both the measure of belief and disbelief are fully determined so that an erroneous reasoning path is not followed.</P>
+<H3><A NAME="Heading10"></A><FONT COLOR="#000077">V. Chaining Through the Fuzzy Relations</FONT></H3>
+<P>We have previously discussed finding the value of the conclusion of an implication relation by the use of fuzzy modus ponens. What is done with the conclusion when it has been determined with some truth value? It is used in the continuance of the reasoning process. The reasoning process halts when the system has come to a conclusion which provides the information that the user of the expert system seeks or there are no more relations available to determine an answer for the user.
+</P>
+<P>Fess may operate in a limited forward chaining or a backward chaining mode. The mode is chosen by the system with the use of context relations which will be discussed later. When the system is operating in the forward chaining, it begins by choosing an initial implication relation for processing. An evaluation function chooses the best implication relation. If the conclusion is determined to be certain above a threshold, it is used to guide the choice of the next relation to be processed. The conclusion, a portion of it or a result from it, will be in the premise of the relation which is evaluated as the best one for processing. This process of determining a conclusion certainty, and proceeding to choose a new relation with some trace of the former conclusion in its premise, will continue until a conclusion is determined to have a certainty below the preset threshold, or a final conclusion, expert answer, is determined with a truth value above the appropriate threshold.</P>
+<P>If a conclusion along the path is found to have a certainty below the positive threshold, and is not conclusively false, then other relations, which act upon the conclusion, are used. This process continues until the conclusion certainty is above the true threshold, or below the false threshold, or there are no more relations available to determine it. In this case, another path must be found, if possible.</P>
+<P>In this system, the chaining is more directed than in the OPS style,<SUP><SMALL>14</SMALL></SUP> match, recognize and act cycle. The system would not be applicable in the case of a planning or design problem.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="187-189.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="190-192.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

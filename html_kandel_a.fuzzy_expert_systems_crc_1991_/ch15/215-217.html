@@ -1,0 +1,171 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:MILORD: A Fuzzy Expert Systems Shell</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=15//-->
+<!--PAGES=215-217//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="213-215.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="217-220.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>The lookahead process in the backward reasoning starts assuming that all the nonevaluated conditions of the rules leading to the same conclusion, have the highest linguistic certainty value among the ordered set of linguistic values defined by the expert. This allows to compute the highest possible certainty value that this conclusion could reach. If this value is higher than the acceptance threshold, the backward reasoning proceeds asking the user to assign a linguistic certainty value to the nonevaluated, nondeducibile conditions one by one. Each time a condition gets its value, it is propagated to the conclusion using the preceding formula, and if its certainty value is still higher than the threshold, the process proceeds asking for the value of the next nondeducible condition and so on until either the certainty value of the conclusion falls below the threshold (in which case MILORD calls back the forward reasoning mode to deduce another hypothesis), or all the nondeducible conditions have been assigned a certainty value. As far as the deducible conditions are concerned, the lookahead process is applied recursively to each one of them, as described, and its certainty value is also propagated toward the conclusion in order to keep checking if its certainty value is higher than the threshold, in which case the process resumes. If not, the forward reasoning mode will try to deduce a new hypothesis.
+</P>
+<P>If the user initially gives a set of hypotheses, instead of a set of facts, MILORD calls the backward reasoning mode with one of the hypotheses and tries to validate it with a linguistic certainty value higher than the threshold, using exactly the same process described previously. If it fails, it tries another hypothesis, and so on until either one of them succeeds or all of them fail.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading6"></A><FONT COLOR="#000077">B. The Rule Selection Criteria</FONT></H4>
+<P>The set of criteria to select rules has to be easily modifiable because the efficiency of any criterion depends on each particular application. In MILORD it is very easy for the user to modify or introduce criteria. The selection among a given set of criteria can, in some cases, be done automatically. For example, if a knowledge base only contains rules which have a single conclusion, any criterion based on the number of conclusions would not be considered. The criteria that, in addition to metarules, are available in MILORD are
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;The order of the rules
+<DD><B>2.</B>&nbsp;&nbsp;The linguistic certainty values
+<DD><B>3.</B>&nbsp;&nbsp;The number of conditions
+<DD><B>4.</B>&nbsp;&nbsp;The number of conclusions
+<DD><B>5.</B>&nbsp;&nbsp;The rule most recently used
+<DD><B>6.</B>&nbsp;&nbsp;The rule containing the most recently deduced fact in its premise
+</DL>
+<P>Furthermore, the user can combine several criteria according to a given priority. For example:
+</P>
+<DL>
+<DD>R1: Condition<SUB><SMALL>1</SMALL></SUB>, condition<SUB><SMALL>2</SMALL></SUB> &#8658; [absolutely-true] conclusion<SUB><SMALL>1</SMALL></SUB>
+<DD>R2: Condition<SUB><SMALL>2</SMALL></SUB>, condition<SUB><SMALL>3</SMALL></SUB> &#8658; [almost-true] conclusion<SUB><SMALL>2</SMALL></SUB>
+<DD>R3: Condition<SUB><SMALL>4</SMALL></SUB> &#8658; [quite-true] conclusion<SUB><SMALL>1</SMALL></SUB>
+</DL>
+<P>The extreme values corresponding to the following ordered criteria are
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Maximum certainty value: absolutely-true
+<DD><B>2.</B>&nbsp;&nbsp;Maximum number of conclusions: 1
+<DD><B>3.</B>&nbsp;&nbsp;Minimum number of conditions: 1
+</DL>
+<P>In this case the system will try to select a rule, among the applicable ones, having a certainty value equal to &#147;absolutely-true&#148;, and having one condition and one conclusion. If there is no rule satisfying these criteria, it will drop the last one (number of conditions) and so on until one or more rules are obtained. If several rules have been obtained, the user can use the rest of the criteria to end up with only one rule. In our example, after dropping the last criterion, the selected rule is R1.
+</P>
+<H3><A NAME="Heading7"></A><FONT COLOR="#000077">IV. The Management of Uncertain Reasoning</FONT></H3>
+<P>The numerical approaches to the representation of uncertainty imply hypotheses of independence, mutual exclusiveness, etc. about the information they deal with. On the other hand, they oblige the expert and the user to be unrealistically precise and consistent in the assignment of such numerical values to rules and facts. Furthermore, these approaches are computationally expensive.
+</P>
+<P>Our approach is based on a linguistic characterization of the uncertainty and follows the work of Bonissone.<SUP><SMALL>3</SMALL></SUP> The linguistic certainty values are terms defined by the expert. The internal representation of each term is a fuzzy number on the interval [0,1] characterized by a parametric representation for computational reasons.</P>
+<P>MILORD has been parametrized in order to perform three different calculi of uncertainty operating on the expert defined term set of linguistic certainty values.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading8"></A><FONT COLOR="#000077">A. The Calculus of Uncertainty</FONT></H4>
+<P>It can be shown<SUP><SMALL>5</SMALL></SUP> that triangular norms (t-norms) and triangular conorms (t-conorms) are the most general families of two-place functions from [0,1] &#215; [0,1] to [0,1], that satisfy the requirements of conjunction and disjunction operators, respectively.</P>
+<P>A t-norm. T(p,q) performs a conjunction operator, on the degrees of certainty of two or more conditions in the same premise, satisfying the following properties:</P>
+<P ALIGN="CENTER"><IMG SRC="images/15-02d.jpg"></P>
+<P>A t-conorm S(p,q) computes the degree of certainty of a conclusion derived from two or more rules. It is a disjunction operator satisfying the following properties:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/15-03d.jpg"></P>
+<P>The propagation function P(p,r), giving the certainty value of the conclusion of a rule as a function of the certainty value of the premise and the certainty value of the rule itself, satisfies the properties of a t-norm.
+</P>
+<P>For suitable negation operators N(x)<SUP><SMALL>13</SMALL></SUP>, t-norms and t-conorms are dual in the sense of DeMorgan&#146;s law.</P>
+<P>Some usual pairs of dual t-norms and t-conorms are</P>
+<P ALIGN="CENTER"><IMG SRC="images/15-04d.jpg"></P>
+<P>It can be shown that they are ordered as follows:
+</P>
+<P ALIGN="CENTER">T<SUB><SMALL>0</SMALL></SUB> &#8804; T<SUB><SMALL>1.5</SMALL></SUB> &#8804; T<SUB><SMALL>2</SMALL></SUB> &#8804; T<SUB><SMALL>2.5</SMALL></SUB> &#8804; T<SUB><SMALL>3</SMALL></SUB></P>
+<P ALIGN="CENTER">S<SUB><SMALL>3</SMALL></SUB> &#8804; S<SUB><SMALL>2.5</SMALL></SUB> &#8804; S<SUB><SMALL>2</SMALL></SUB> &#8804; S<SUB><SMALL>1.5</SMALL></SUB> &#8804; S<SUB><SMALL>1</SMALL></SUB> &#8804; S<SUB><SMALL>0</SMALL></SUB></P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="213-215.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="217-220.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

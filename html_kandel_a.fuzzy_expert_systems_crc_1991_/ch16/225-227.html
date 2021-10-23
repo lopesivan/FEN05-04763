@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Medical Decision Making Using Multidimensional Polynomials</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=16//-->
+<!--PAGES=225-227//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch15/222-224.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="227-230.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 16<BR>Medical Decision Making Using Pattern Classification Techniques for Establishment of Knowledge Bases
+</FONT></H2>
+<P><I>M. E. Cohen<BR>D. L. Hudson</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;Classification Methodology
+<DT>III.&nbsp;&nbsp;Implementation
+<DD>A.&nbsp;&nbsp;Automatic Formatter
+<DD>B.&nbsp;&nbsp;Training Set Selector
+<DD>C.&nbsp;&nbsp;Pattern Recognition Algorithm
+<DT>IV.&nbsp;&nbsp;Application: Analysis of Exercise Testing Data
+<DT>V.&nbsp;&nbsp;Results
+<DT>VI.&nbsp;&nbsp;Expert System Design
+<DT>VII.&nbsp;&nbsp;Conclusion
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>Automated decision-making aids have found wide application in medicine.<SUP><SMALL>1,2</SMALL></SUP> These systems have been based on a variety of techniques, including traditional artificial intelligence knowledge-based systems<SUP><SMALL>3</SMALL></SUP> utilizing frames<SUP><SMALL>4</SMALL></SUP> or rules<SUP><SMALL>5</SMALL></SUP> for the knowledge base, data base query systems,<SUP><SMALL>6</SMALL></SUP> Bayesian-based decision-making systems,<SUP><SMALL>7,8</SMALL></SUP> as well as other types of pattern classification.<SUP><SMALL>9</SMALL></SUP> All of these techniques have a place in decision making, and in fact some techniques are better suited to a given application. In this chapter, a decision-making system based on pattern classification techniques is described.</P>
+<P>The idea of fuzzy expert systems was present in a rudimentary form in early medical expert systems,<SUP><SMALL>10</SMALL></SUP> although this terminology was not used. More recently, medical expert systems have been developed which explicitly use techniques from fuzzy set theory and fuzzy logic,<SUP><SMALL>11-14</SMALL></SUP> based on general advances in the use of fuzzy logic in expert systems.<SUP><SMALL>15,16</SMALL></SUP></P>
+<P>The field of pattern recognition and classification had its roots in the early days of artificial intelligence research.<SUP><SMALL>17,18</SMALL></SUP> The term pattern recognition was used in conjunction with a wide variety of techniques, including two general fields: classification of data by discerning inherent patterns and recognition of pattern in visual images.<SUP><SMALL>19-22</SMALL></SUP> The first of these is the field of interest here and is designated by both the terms pattern recognition and pattern classification.</P>
+<P>Pattern classification itself encompasses a variety of techniques,<SUP><SMALL>23</SMALL></SUP> including parametric statistical techniques;<SUP><SMALL>24</SMALL></SUP> discriminant analysis;<SUP><SMALL>25</SMALL></SUP> Bayesian classification;<SUP><SMALL>26,27</SMALL></SUP> maximum likelihood;<SUP><SMALL>28</SMALL></SUP> and nonparametric techniques such as supervised learning,<SUP><SMALL>29-31</SMALL></SUP> unsupervised learning,<SUP><SMALL>32</SMALL></SUP> nearest neighbor,<SUP><SMALL>33</SMALL></SUP> and clustering.<SUP><SMALL>34</SMALL></SUP> Clustering algorithms have been expanded to include clusterings of fuzzy data sets.<SUP><SMALL>35,36</SMALL></SUP> The method described here is a supervised learning approach to pattern classification based on a new class of multidimensional orthogonal polynomials developed by Cohen.<SUP><SMALL>37</SMALL></SUP></P>
+<P>Pattern classification involves a number of steps, including problem definition, feature extraction, classification, and verification. The objective of the method is to divide data into two or more categories; thus, the problem must be clearly defined in these terms. As a supervised learning approach is employed, it is necessary to initially have a set of data of known classification. The data are then randomly divided into two sets: a training set and a test set. The training set is used to determine the separating criteria, while the test set is used to ascertain the accuracy of the results. During the problem definition phase, parameters are identified which are pertinent to the problem at hand. Data must then be collected to ascertain values for these parameters. As in all data analysis approaches, an increase in the number of parameters to be analyzed necessitates collection of data for more cases.</P>
+<P>In the second phase, feature extraction, some or all of the parameters identified in phase 1 are selected as features to be used in classification. The features are collected into a structure known as a feature vector. The number of features included determines the dimensionality of the resulting hypersurface.</P>
+<P>Once the features have been selected, classification is begun. Values are assigned to the feature vectors using data in the training set, with weighting factors attached to each of the features. The weighting factors are then adjusted iteratively with the aid of the multidimensional Cohen polynomials until separation of the data into correct categories is achieved. If separation does not occur, the nonseparable feature vector is discarded, and a new vector is randomly selected to replace it. At the end of the classification phase, a dividing hypersurface (for the two category case) or hypersurfaces (for the multicategory case) are obtained.</P>
+<P>The hypersurface obtained from the classification phase is then used directly to classify data in the test set. Results are then compared with independently obtained classification to ascertain the effectiveness of the dividing hypersurface. The ultimate goal is to obtain a reliable hypersurface which can be used to classify future data for which correct categorization is unknown.</P>
+<P>This technique can be used for two purposes. The first is for classification of data sets into categories, as explained before. The second is to use data of known classification to determine which parameters are important in the decision-making process and also to determine the relative importance of these parameters by assigning weights to them. This information can be used to reduce the amount of data collected and, subsequently, to design an expert system which collects only necessary information. Derivation of information directly from data circumvents the long and tedious process of establishing a knowledge base through expert consultation, a process which must be repeated for each new application.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch15/222-224.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="227-230.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

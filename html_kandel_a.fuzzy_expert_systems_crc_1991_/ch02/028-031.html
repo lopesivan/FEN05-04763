@@ -1,0 +1,322 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:General Purpose Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=2//-->
+<!--PAGES=028-031//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="025-028.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="031-034.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="CENTER"><A NAME="Heading10"></A><FONT COLOR="#000077">1. Case 1</FONT></H4>
+<P>Suppose we have the following sentence:
+</P>
+<P>The 3 key words are <I>color, product</I> and <I>green</I>. The CF is 1 (since the data was provided by the user) and the RN is 0 (again, since the data is provided by the user). The lower and upper bounds are values which describe K3. Since K3 is not a number, LB1 = 1, UB1 = 1, LB2 = UNDEF and UB2 = UNDEF. Thus, the compiled sentence will be stored on the blackboard as</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB1
+<TH>UB1
+<TH>LB2
+<TH>UB2
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">color
+<TD ALIGN="CENTER">product
+<TD ALIGN="CENTER">green
+<TD ALIGN="CENTER">0
+<TD ALIGN="CENTER">0.99
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<H4 ALIGN="CENTER"><A NAME="Heading11"></A><FONT COLOR="#000077">2. Case 2</FONT></H4>
+<P>Assume we have the following sentence:
+</P>
+<P ALIGN="CENTER">The color of the product is not green.</P>
+<P>Here the key word <I>not</I> is present in the data. The negation creates two intervals such that:</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-10d.jpg"></P>
+<P>Using Equation 10 we can evaluate the new LBs and UBs and compile the sentence to look like (let &#8712; = 0.01):
+</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB1
+<TH>UB1
+<TH>LB2
+<TH>UB2
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">color
+<TD ALIGN="CENTER">product
+<TD ALIGN="CENTER">green
+<TD ALIGN="CENTER">0
+<TD ALIGN="CENTER">0.99
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<P>We set LB2 and UB2 to be UNDEF since they fall outside the interval [0,1].
+</P>
+<H4 ALIGN="CENTER"><A NAME="Heading12"></A><FONT COLOR="#000077">3. Case 3</FONT></H4>
+<P>Consider the following sentence:
+</P>
+<P ALIGN="CENTER">The color of the product is almost green.</P>
+<P>We really don&#146;t know the meaning of <I>almost green</I> but, mathematically, we can represent it. <I>Almost</I> is an adjective and, therefore, has a numerical range (see Appendix A). Since <I>green</I> is not a number we assign the value 1 to it. Now we can find the values for almost green</P>
+<P ALIGN="CENTER">LB1 (ALMOST GREEN) = 0.9<BR>UB1 (ALMOST GREEN) = 0.9</P>
+<P>The upper bound of <I>almost green</I> is 0.9 because UB (ALMOST GREEN) = 1 - 1 = 0. But since LB &gt; UB (logically inconsistent) we establish the following:</P>
+<P ALIGN="CENTER"><IMG SRC="images/02-11d.jpg"></P>
+<P>Thus, the compiled data is:
+</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB1
+<TH>UB1
+<TH>LB2
+<TH>UB2
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">color
+<TD ALIGN="CENTER">product
+<TD ALIGN="CENTER">green
+<TD ALIGN="CENTER">0.9
+<TD ALIGN="CENTER">0.9
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<H4 ALIGN="CENTER"><A NAME="Heading13"></A><FONT COLOR="#000077">4. Case 4</FONT></H4>
+<P>Suppose we have the following data sentence:
+</P>
+<P ALIGN="CENTER">The age of Tom is 20.</P>
+<P>In this case we have only two key words and a number. First we translate the value <I>20 years old</I> by mapping it to a value in the range [0,1]. (see Appendix B). Thus, the value corresponding to <I>20 years old</I> is 0.16. Since K3 does not exist (empty) the FC understands that the LB and the UB are mappings from the actual numbers to the grade of membership. Thus, the compiled sentence will be:</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB1
+<TH>UB1
+<TH>LB2
+<TH>UB2
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">age
+<TD ALIGN="CENTER">Tom
+<TD>&nbsp;
+<TD ALIGN="CENTER">0.16
+<TD ALIGN="CENTER">0.16
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<P>Again, the interpretation of the table above is: <I>We are certain</I> (CF = 1) <I>that the age of Tom is 20 years old</I>. The CF = 1 and the RN = 0 came from the fact that the data was provided by the user.</P>
+<H4 ALIGN="CENTER"><A NAME="Heading14"></A><FONT COLOR="#000077">5. Case 5</FONT></H4>
+<P>Consider the following data line:
+</P>
+<P ALIGN="CENTER">The age of Tom is more or less 20.</P>
+<P>First we have to interpret <I>more or less 20 years old</I> (using Appendix A):</P>
+<P ALIGN="CENTER">LB(more orless 20 years old) = 18 years old<BR>UB(more or less 20 years old) = 22 years old</P>
+<P>Now we can use Appendix B to map the actual numbers into the range [0,1].</P>
+<P ALIGN="CENTER">LB(18) = 0.15<BR>UB(22) = 0.18</P>
+<P>Again, since K3 does not exist, the LB and the UB represent the mappings from the actual numbers to the range [0,1]. Thus, the compiled data is:</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB1
+<TH>UB1
+<TH>LB2
+<TH>UB2
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">age
+<TD ALIGN="CENTER">Tom
+<TD>&nbsp;
+<TD ALIGN="CENTER">0.15
+<TD ALIGN="CENTER">0.18
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">UNDEF
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<H4 ALIGN="CENTER"><A NAME="Heading15"></A><FONT COLOR="#000077">6. Case 6</FONT></H4>
+<P>In the next case we establish the rules of interpretation about the key word not. Assume we have the following data sentence:
+</P>
+<P ALIGN="CENTER">The age of Tom is not 18.</P>
+<P>Using Appendix B we can evaluate the grade of membership of age 18 (which is 0.15). Thus, using Equation 10 we have</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB1
+<TH>UB1
+<TH>LB2
+<TH>UB2
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">age
+<TD ALIGN="CENTER">Tom
+<TD>&nbsp;
+<TD ALIGN="CENTER">0
+<TD ALIGN="CENTER">0.14
+<TD ALIGN="CENTER">0.16
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<H4 ALIGN="CENTER"><A NAME="Heading16"></A><FONT COLOR="#000077">7. Case 7</FONT></H4>
+<P>The last case combines all cases discussed above. Consider the following data line:
+</P>
+<P ALIGN="CENTER">The age of Tom is not more or less 20.</P>
+<P>The first step is to find the range of <I>more or less 20</I> (using Appendix A):</P>
+<P ALIGN="CENTER">LB(MORE OR LESS 20 YEARS OLD) = 18 YEARS OLD<BR>UB(MORE OR LESS 20 YEARS OLD) = 22 YEARS OLD</P>
+<P>Next we use Appendix B to find the grade of membership of the ages found above:</P>
+<P ALIGN="CENTER">&#967;(18) = 0.15<BR>&#967;(22) = 0.18</P>
+<P>Therefore the compiled data will be:</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB1
+<TH>UB1
+<TH>LB2
+<TH>UB2
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">age
+<TD ALIGN="CENTER">Tom
+<TD>&nbsp;
+<TD ALIGN="CENTER">0
+<TD ALIGN="CENTER">0.14
+<TD ALIGN="CENTER">0.19
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<P>Thus, for any Type 1 sentence the compiler performs the evaluation as described above, placing on the blackboard the results from that evaluation. Next we discuss the evaluation of sentences of Type 2.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="025-028.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="031-034.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:A Probabilistic Logic for Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=19//-->
+<!--PAGES=287-288//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="285-287.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="288-290.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>For a second motivation for adopting the first definition of consistency, consider the following case: &#915; has probability 1 and there are no constraints, and we may derive from &#915; both a formula and its negation (this is possible in PL since implications are assigned probability by the model). In this case, all formulas derived from &#915; will have probability 1. The first definition will assign in this case a consistency 0 while, according to the second definition, the consistency is 1. Therefore, in the following, &#147;consistency&#148; will be used in the meaning assigned by the first definition.
+</P>
+<P>It is easy to see that consistency of &#915; to degree 1 implies that <I>p</I><SUB><SMALL>&#915;</SMALL></SUB> = 1 (and the same goes for the constraints). The converse is not true, as the formulas &#966;, &#966; &#8594; &#936;, and &#966; &#8594; <IMG SRC="images/19-56i.jpg"> &#936; may all have probability 1, but the consistency of the set is 0.</P>
+<P>Consistency check may be used to assess the quality of the probability estimates of the experts (probability assignments of the model) to rules (implication formulas). Note that an expert system may be inconsistent in the everyday usage of the word by assigning different probability values to the same formula when different derivations are used. This is typical of expert systems execution, where many outputs may correspond to a single input, since the choice of rules to be fired is not completely deterministic.</P>
+<P>The notion of <I>extended consistency</I> is also relevant to expert systems. This is the consistency of a set of implication formulas (rules). If &#915; is a set of implication formulas, then only few conclusions can be drawn: the original formulas and their conjunctions, transitive closure, and substitution of constant symbols. Let &#931;<SUB><SMALL>1</SMALL></SUB> be a set of formulas consisting of all the left-hand-side parts of implications in &#915;, and let &#931;<SUB><SMALL>2</SMALL></SUB> be a set of formulas consisting of all the negated right-hand-side parts of implications in &#915;. When &#931;<SUB><SMALL>1</SMALL></SUB> or &#931;<SUB><SMALL>2</SMALL></SUB> is joined with &#915;, additional conclusions may be drawn. It is the minimal consistency of &#931;<SUB><SMALL>1</SMALL></SUB> U &#915;, &#931;<SUB><SMALL>2</SMALL></SUB> U &#915; which corresponds to our notion of the extended consistency of the rules. Obviously, extended consistency to degree &#945; implies consistency to degree at least &#945;, but not vice versa.</P>
+<P>We are only interested in derivation from sets of formulas which are consistent to some positive degree. Given such a set of formulas &#915;, define:</P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;Relative soundness: a derivation of a formula &#966; from a set of formulas &#915; is relatively sound if <I>p</I><SUB><SMALL>&#966;</SMALL></SUB> &ge; <I>p</I><SUB><SMALL>&#915;</SMALL></SUB>.
+<DD><B>&#149;</B>&nbsp;&nbsp;Uniform soundness: a derivation of a formula &#966; is uniformly sound to degree k (<I>k</I> &ge; .5) if <I>p</I><SUB><SMALL>&#966;</SMALL></SUB> &ge; <I>k</I>.
+</DL>
+<P>It is easy to see that only consistency to degree 1 ensures both relative and uniform soundness. For a counter example consider the following &#915;: {&lt;&#966;, p&gt;, &lt;&#966; &#8594; (&#966; &#8594; &#952;), 1&gt;}, and let <I>p</I> &lt; 1; <I>p</I><SUB><SMALL>&#915;</SMALL></SUB> = <I>p</I> but <I>p</I><SUB><SMALL>&#952;</SMALL></SUB> = <I>p</I><SUP><SMALL>2</SMALL></SUP> &lt; <I>p</I>, so we do not have relative soundness. This example can be modified (by substituting for the second formula &#966; &#8594; . . . &#966; &#8594; (&#966; &#8594; &#952;) to show that absolute soundness is not ensured (for any positive value of k). Consistency to degree k implies uniform soundness to degree k. Derivations from sets of formulas consistent to some positive degree less than one (the common case for expert systems) may be sound, but each one must be carefully checked.</P>
+<P><B>Completeness:</B> PL is complete if for each &#915; and formula &#966;, if &#915; <IMG SRC="images/19-57i.jpg"> &#966; then &#915; <IMG SRC="images/19-58i.jpg"> &#966;. In the case of consistency to degree 1 and all constraints probability 1, corresponding to FOPC consistency, one can show that PL is complete for &#945; = 1, i.e., if &#915; <IMG SRC="images/19-59i.jpg"> &#966; then &#915; <IMG SRC="images/19-60i.jpg"> &#966;. The proof idea is to use FOPC completeness, and we outline the technical retails. Let &#931; denote the union of the constraints C, &#915;, and &#966;. Given a PL model S satisfying &#931; with probability 1, construct a first order structure S&#8242; satisfying &#931; in the following way: each atomic formula in S&#8242; will be true provided it has a positive probability in S. By structural induction on formulas in &#931; it can be shown that S&#8242; satisfies them (use that every formula in &#931; is satisfied to degree 1; the interesting part is implications, and the consistency condition on implications is the required key). This mapping from PL models to FOPC structures is onto. By completeness of FOPC, there exists a derivation in FOPC of &#966; from <IMG SRC="images/19-61i.jpg">, which can be easily translated into a proof of &#966; from &#915; in PL (since the axioms of FOPC were made the axioms of PL). Therefore we have outlined the following:</P>
+<P><B>Theorem</B> &#151; For PL theories where all probabilities are 1, derivation is sound and complete. In other words, PL is a generalization of FOPC. When the degree of consistency is less than 1, PL is not complete. For a proof consider &#915; = <IMG SRC="images/19-62i.jpg"> <IMG SRC="images/19-63i.jpg">; &#915; F<SUB><SMALL>.9</SMALL></SUB> &#936; (since either &#966; or <IMG SRC="images/19-64i.jpg"> has probability 1, and by modus ponens &#915;&#146;s probability is .9). Yet, there is no derivation of &#936; from &#915;.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="285-287.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="288-290.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

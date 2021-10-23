@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Associative Memory Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=10//-->
+<!--PAGES=155-156//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="152-155.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="156-160.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>A FCM m-by-m connection matrix F is a FAM. Its <I>complexity</I> is ultimately bounded by m<SUP><SMALL>2</SMALL></SUP>. The i<SUP><SMALL>th</SMALL></SUP> row of F, F<SUB><SMALL>i</SMALL></SUB>, lists the excitatory and inhibitory causal connections from C<SUB><SMALL>i</SMALL></SUB> to the other causal concepts C<SUB><SMALL>j</SMALL></SUB>. The i<SUP><SMALL>th</SMALL></SUP> column, F<SUP><SMALL>i</SMALL></SUP>, lists the causal connections directed to C<SUB><SMALL>i</SMALL></SUB>. We assume no concept causes itself; so F is zero-diagonal. Here we shall assume the simple binary-state model as used in the BAM which, nevertheless, is a useful practical tool and complex theoretical structure. We assume concepts are either on (1) or off (0), knowing that we can generalize this with a differential model. FCM weights F<SUB><SMALL>ij</SMALL></SUB> = e(C<SUB><SMALL>i</SMALL></SUB>,C<SUB><SMALL>j</SMALL></SUB>) are causally excitatory or inhibitory weights in the fuzzy causal interval [-1,1], knowing that disconcepts can be used to maintain unit-interval causality. An <I>event</I> or <I>state</I> of the FCM is the bit (fit) vector of causal concept activations c(t) = (C<SUB><SMALL>1</SMALL></SUB>(t), . . ., C<SUB><SMALL>m</SMALL></SUB>(t)) &#8712; B<SUP><SMALL>m</SMALL></SUP> at time t in the dynamic process. We assume the causal concepts in C are <I>synchronously</I> updated knowing that, as in the BAM case, asynchronous update schedules (causal time constants) can be used as well. The input to C(t + 1) is some nonlinear function n of the input-sum vector C(t) M that keeps C(t + 1) binary. We assume the simplest nonconstant function n, the threshold-linear function. Then:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-33d.jpg"></P>
+<P>Equation 25 differs from the BAM threshold-linear law, as seen in Equation 12, when the causal input sum equals the threshold (here the default threshold 0). In Equation 12 the neuron maintains its current state, either on or off, when this occurs. In Equation 25 we encode the causal intuition that something happens if, and only if, something makes it happen. Put another way, we assume passive decay of causal activation.
+</P>
+<P>A FCM inference is a <I>resonant</I> state or pattern. The FCM is <I>turned on</I> by an initial or continuous input pattern that quickly evolves to some steady resonant state of FCM activity. FCMs only make predictions or forward-chaining inferences because of the underlying nonlinear (irreversible) dynamics of the state-transition model. A resonant state is a limit cycle, sequence of states, or a fixed point (one-step limit cycle). The causal interpretation of a resonant limit cycle is a predicted <I>sequence of events</I>, or spatiotemporal pattern. Some complex differential FCMs with time-varying edge functions can, in principle, resonate on chaotic attractors.</P>
+<P>Binary FCMs governed by Equation 25 always converge to a stable limit cycle in no more than 2<SUP><SMALL>m</SMALL></SUP> synchronous update iterations. The first state of the resonant limit cycle is the first state that is causally recalled twice. Energy minimization arguments<SUP><SMALL>37</SMALL></SUP> can also be used to show rapid convergence to stable limit cycles. If 1<SUB><SMALL>i</SMALL></SUB> is the length of the i<SUP><SMALL>th</SMALL></SUP> limit cycle and there are r distinct limit cycles, then 1<SUB><SMALL>1</SMALL></SUB> + . . . + 1<SUB><SMALL>r</SMALL></SUB> &#8804; 2<SUP><SMALL>m</SMALL></SUP> since a distinct binary state can occur in, at most, one limit cycle and need not occur in any. If A<SUB><SMALL>r</SMALL></SUB> is the arithmetic-mean length of distinct limit cycles, then r &#8804; 2<SUP><SMALL>m</SMALL></SUP>/A<SUB><SMALL>r</SMALL></SUB> holds with strict inequality in most cases. In general there are few limit cycles relative to the total number 2<SUP><SMALL>m</SMALL></SUP> of possible input states.</P>
+<P>FCM resonant states can be interpreted as <I>hidden patterns</I> in the F connections that summarize an expert&#146;s or experts&#146; knowledge. Experts tend to map all possible what-if questions (2<SUP><SMALL>m</SMALL></SUP> binary states) into relatively few responses. We identify these characteristic responses with FCM limit cycles; so, once again, r/2<SUP><SMALL>m</SMALL></SUP> tends to be very small. The limit-cycle patterns are <I>hidden</I> in the FCM connection topology. As shown by Equation 25, different fuzzy weights with the same sign can produce different hidden patterns. Yet also by Equation 25, FCMs tend to be <I>robust</I> when edges are perturbed. This follows since typically in large FCM matrices only large changes can change the sign of the input sum, and even then only one or two bit values may change and the trajectory may still converge to the original limit cycle or some modification of it.</P>
+<P>Suppose we have somehow combined the knowledge of several experts in the FCM F. We can intuitively interpret a resident hidden pattern in F as the consensus eventually reached by a round-table discussion among the experts. A topic or question (causal state description) is proposed; then fairly soon a rough agreement or fixed pattern of responses is reached &#151; no matter how many experts or how rich the causal environment. In rare cases a unanimous opinion is reached, which corresponds to quick convergence to a fixed point. In general, the stable responses will be some causal sequence or set of conditions (&#147;Yes, but only if this and that . . .&#148;), which corresponds to a limit cycle, or a clear-cut two-sided disagreement, which corresponds to a two-step limit cycle or BAM fixed point. The evolved pattern of responses will typically differ from the complete position of each expert. Indeed, even in casual conversation, like questions tend to map into like response configurations, and perturbations of the causal environment or problem domain usually do not affect the evolved outcome.</P>
+<P>We now summarize the FCM knowledge combination scheme in Kosko.<SUP><SMALL>40</SMALL></SUP> A more general, but somewhat less practical, scheme for combining arbitrary partially ordered quantities can be found in Kosko.<SUP><SMALL>38</SMALL></SUP> The present scheme combines arbitrary FCMs from arbitrarily many knowledge sources with arbitrary credibility weights w<SUB><SMALL>i</SMALL></SUB> in [0,1]. Accordingly, unlike traditional AI knowledge engineering, where there is only one or two <I>domain experts,</I> here there can be as many experts as pleased, with as diverse knowledge as pleased, and with different levels (degrees) of expertise. The author has used this technique to systematically combine over 30 experimental sociopolitical FCMs in a matter of minutes.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="152-155.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="156-160.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

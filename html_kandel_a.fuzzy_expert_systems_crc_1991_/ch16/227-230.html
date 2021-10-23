@@ -1,0 +1,176 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Medical Decision Making Using Multidimensional Polynomials</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=16//-->
+<!--PAGES=227-230//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="225-227.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="230-233.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>The classification method can operate on fuzzy data as well as crisp data. The nature of the data is determined in the problem definition phase. The algorithm itself operates directly on either categorical or continuous variables. However, the categorical variables must have an ordering. The decision in the two-category case is obtained by substituting the values for the feature vector into the equation for the hypersurface. If the result is positive, category I is assumed, negative implies category 2, and a value of zero is inconclusive. However, rather than interpreting the result as a crisp decision, the relative absolute magnitude can be considered as a degree of membership in the category. The classification method can be extended to the multicategory case in two ways. The most direct approach is to obtain hypersurfaces for all combinations of classes, although this method results in a combinational explosion if a large number of classes are involved. Alternately, a hypersurface value can be computed for each category, with classification assigned to the class yielding the highest numerical value.
+</P>
+<P>This method has been applied to a number of medical applications,<SUP><SMALL>38-47</SMALL></SUP> although it is generally applicable to any type of data. It will be illustrated here in a medical application: a multicategory problem involving classification of exercise testing data to determine the extent of coronary artery disease.</P>
+<P>In the next section, details of the classification method are given. In the following sections, the method is illustrated in conjunction with the application just described.</P>
+<H3><A NAME="Heading3"></A><FONT COLOR="#000077">II. Classification Methodology</FONT></H3>
+<P>The classification method is based on the potential function approach to decision function generation. The multivariant potential function is defined by:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-01d.jpg"></P>
+<P>where <IMG SRC="images/16-01i.jpg"> are orthonormal functions, <IMG SRC="images/16-02i.jpg"> and <IMG SRC="images/16-03i.jpg"> are n-dimensional feature vectors, and &#955;<SUB><SMALL><I>i</I></SMALL></SUB>, i = 1,2, . . . are real numbers. The equation which represents the decision hypersurface is</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-02d.jpg"></P>
+<P>where c<SUB><SMALL>i</SMALL></SUB>, i = 1,2, . . . are unknown weighting factors determined in an interative procedure using the training set. For a two-class problem, the decision is made according to:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-03d.jpg"></P>
+<P>The iterative procedure works in the following manner. The basic iterative equation is
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-04d.jpg"></P>
+<P>where <IMG SRC="images/16-04i.jpg"> is assumed to be zero, and:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-05d.jpg"></P>
+<P>where w<SUB><SMALL>1</SMALL></SUB> represents class 1 and w<SUB><SMALL>2</SMALL></SUB> represents class 2. For the two-class problem:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-06d.jpg"></P>
+<P>It then remains to choose the orthogonal function <IMG SRC="images/16-05i.jpg">. In previous work of the authors,<SUP><SMALL>38</SMALL></SUP> a new class of one-dimensional Cohen orthogonal polynomials were used. The general form of this polynomial is</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-07d.jpg"></P>
+<P>where
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-08d.jpg"></P>
+<P>The recurrence relation for this polynomial is
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-09d.jpg"></P>
+<P>The orthogonal relationship is
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-10d.jpg"></P>
+<P>Multidimensional orthogonal polynomials were then generated using the expression:
+</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-11d.jpg"></P>
+<P>where <IMG SRC="images/16-06i.jpg"> (x) is the one-dimensional orthogonal polynomial defined in Equation 7. <IMG SRC="images/16-07i.jpg"> is then defined by:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-12d.jpg"></P>
+<P>where m is the degree of the resulting hypersurface and determined experimentally.
+</P>
+<P>It should be noted that the polynomials used are orthogonal, rather than orthonormal. This is permitted since all comparisons are made to zero, and the normalizing constant serves only as a scaling device and does not affect the class decision.</P>
+<P>In the method described, computational complexity is reduced by the use of the new multidimensional polynomial developed by Cohen. It takes the form:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-13d.jpg"></P>
+<P>where m is the dimensionality of the data, a(n,i<SUB><SMALL>p</SMALL></SUB>),i<SUB><SMALL>p</SMALL></SUB> = 1,...k are parameters which may be arbitrarily selected, A is the normalization constant, and v<SUB><SMALL>i</SMALL></SUB>,i = 1, . . . ,m are assigned values corresponding to the components of the first feature vector.</P>
+<P>In this chapter, we make the assumption a(n,i<SUB><SMALL>p</SMALL></SUB>) = 1. <IMG SRC="images/16-08i.jpg"> is then defined by:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-14d.jpg"></P>
+<P>where <IMG SRC="images/16-09i.jpg"> are the components of the Cohen polynomials, which themselves form an orthogonal set:</P>
+<P ALIGN="CENTER"><IMG SRC="images/16-15d.jpg"></P>
+<P>where B is the normalization constant.
+</P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. Implementation</FONT></H3>
+<P>The pattern recognition method described in Section II. is implemented on the VAX 11/750 computer. It is written in FORTRAN 77 and contains a number of features to facilitate its use. Figure I shows a systems diagram.
+</P>
+<H4 ALIGN="LEFT"><A NAME="Heading5"></A><FONT COLOR="#000077">A. Automatic Formatter</FONT></H4>
+<P>This program allows the user to input the format of the new data file, and then reformats it in accordance with the format expected by the pattern recognition programs. At this stage, the user indicates the number of possible parameters, the number of classes into which the data should be divided, and the variable which determines the classification. A disk file is then written to be used by the training set selector.
+</P>
+<H4 ALIGN="LEFT"><A NAME="Heading6"></A><FONT COLOR="#000077">B. Training Set Selector</FONT></H4>
+<P>This program creates the training set by starting with two randomly selected feature vectors and adding additional vectors one at a time. At each stage, the training set is tested to make sure that separation occurs. The user can indicate the size of the training set desired. Its size usually falls between one third and one half of the available pattern vectors.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="225-227.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="230-233.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

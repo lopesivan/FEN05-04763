@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fess: A Reusable Fuzzy Expert System</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=12//-->
+<!--PAGES=190-192//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="189-190.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="192-194.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>If Fess is operating in a backward chaining mode, the first implication relation chosen will be one which contains a final conclusion. That is, a relation whose conclusion, when found to be above a threshold, causes the system operation to halt and the user to be supplied with a problem solution. The same evaluation function mentioned above chooses the <I>best</I> relation for processing. In order to determine the fuzzy truth value of the conclusion, the premise must be evaluated. Typically, some of the clauses in the premise will have their values supplied by the user, while other clauses will be the conclusions of some implication relations. We will discuss the use of the implication relations to find clause values since this is where the name backward chaining comes from.</P>
+<P>The best relation to determine the clause will be chosen by the <I>implication relation evaluation function</I>. In order to determine it there will usually be a clause which requires another relation or set of relations to be used. This backward chaining process will continue until a relation, which has all clauses supplied by the user or factual relations, is evaluated. When this occurs, certainty values are found for the various intermediate conclusions, and these are propagated along the chain to give us a truth value for our final conclusion which is our main interest. If the path does not hold up, and the system cannot determine a truth value for our final conclusion above some preset certainty threshold, then it will try to determine the certainty of the next best final conclusion. This process continues until a final conclusion, with a certainty above the truth threshold, is found or there are none left to try.</P>
+<P>This was a brief discussion of forward and backward chaining in Fess. The basic building blocks of a fuzzy relational reasoning scheme for a general expert system has been presented before. One of the real benefits of the methodology we have presented is that it is relatively simple, yet powerful and flexible. Its implementation is not overly slow and creaking, while the results it provides allow a human expert reasoning with uncertainty to be emulated, as will be shown later.</P>
+<H3><A NAME="Heading11"></A><FONT COLOR="#000077">VI. Single or Multiple Conclusion Search</FONT></H3>
+<P>During the operation of Fess the user will be asked whether a single conclusion configuration or a multiple conclusion configuration is desired. If a single conclusion configuration is chosen, the system will attempt to find a reasoning path which leads to one conclusion with a certainty above a threshold. In the multiple conclusion configuration, the system will attempt to find all possible conclusions above the specified certainty threshold. The single conclusion configuration provides faster inferencing and should be used whenever the problem is amenable.
+</P>
+<P>In forward chaining mode and a single conclusion configuration, Fess will search for a path from the start relations to a final conclusion which has a certainty (overall certainty) above a threshold. The first one that it finds is presented to the user with its certainty as the system answer to the problem. In backward chaining mode, Fess presents the user with the first conclusion that it is able to establish with the a certainty above a threshold. The certainty of the conclusion is also provided. In both inference modes it simply searches for the first path which provides a conclusion above the specified certainty threshold. After this is accomplished, processing is halted thus, possibly, leaving other valid conclusions undiscovered.</P>
+<P>In a multiple conclusion configuration and forward chaining mode, Fess will search for <B>all</B> possible paths that provide a conclusion which is above a threshold. It will examine all the start relations to determine if they lead to conclusion that is certain to its satisfaction. The search for all of the paths is quite time-consuming. In backward chaining mode, Fess will try each final conclusion to determine if it can establish the conclusion with a certainty above the threshold. In both inference modes Fess is searching for all possible reasonable answers to the problem. This requires that many more relations be evaluated than in the other configuration. It also requires some efficient method for deciding when to give up the search, otherwise all relations will be tried. This leads us to our next topic on halting path search in this configuration.</P>
+<P>A minimal threshold of overall certainty is set in which a conclusion certainty must exceed in order for processing along the path to continue. If the evidence about a conclusion along a path cannot support it above a minimal threshold corresponding to <I>slightly true</I>, then we abandon the path on which the conclusion lies. This has been shown to be an effective, yet simple, method of pruning paths in our search space.</P>
+<P>Now a summary of how Fess halts the inference process will be presented. In forward chaining mode and a single conclusion configuration, processing is halted when a conclusion is found and presented to the user or all paths have been tried unsuccessfully. In forward mode and a multiple conclusion configuration, processing halts when all conclusions with certainties above a threshold are found and presented to the user, or all paths have been tried unsuccessfully. In backward chaining mode and a single conclusion configuration, processing is halted when a conclusion with certainty above a threshold has been presented to the user or none could be found. In multiple conclusion configuration and backward chaining mode, processing halts when all conclusions with certainty above a threshold are presented to the user or no conclusions could be found which were above the threshold. In this case the user is informed that the system is <I>stuck</I>. The certainty threshold is fuzzy and corresponds, linguistically, to <I>fairly certain</I>.</P>
+<H3><A NAME="Heading12"></A><FONT COLOR="#000077">VII. Summary</FONT></H3>
+<P>The concept of a reusable expert system which makes use of fuzzy reasoning techniques and a design methodology has been incorporated into Fess. A reusable expert system is one in which <B>no</B> domain knowledge is incorporated in the inference engine. Any necessary domain knowledge is contained solely in the knowledge base(s). Only the incorporation of a new knowledge base is necessary for the system to be applied to a new application area. Limited explanation capabilities are incorporated in the system. It will basically provide the user with a trace of the rules fired.</P>
+<P>Modula-2 worked out well as a development language. It provides good structures, which enabled a modular and structured system to be developed. Fess has proved easy to extend and update. The one necessity with the Modula-2 language is a good symbolic debugger, which was available on our VAX<SUP><SMALL><B>*</B></SMALL></SUP> development system. The language also provides a nice mechanism, in process modules, to distribute the expert system.</P>
+<BLOCKQUOTE>
+<HR>
+<SUP><SMALL><B>*</B></SMALL></SUP><FONT SIZE="-1">VAX is a trademark of the Digital Equipment Corporation.
+</FONT>
+<HR>
+</BLOCKQUOTE>
+
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="189-190.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="192-194.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

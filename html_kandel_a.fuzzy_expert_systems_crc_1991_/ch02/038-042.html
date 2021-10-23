@@ -1,0 +1,226 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:General Purpose Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=2//-->
+<!--PAGES=038-042//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="034-038.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="../ch03/043-045.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>Let &#945; be some threshold then if CF &gt; &#945; then rule I is fired and the compiled premise is placed on the blackboard.
+</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB
+<TH>UB
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">Key word 1
+<TD ALIGN="CENTER">Key word 2
+<TD ALIGN="CENTER">Key word 3
+<TD ALIGN="CENTER">LB1
+<TD ALIGN="CENTER">UB1
+<TD ALIGN="CENTER">CF
+<TD ALIGN="CENTER">I
+</TABLE>
+<P>When the inference procedure has finished (no more rules can be fired), the conclusion(s) is printed along with its certainty factor.
+</P>
+<P>Once all inferences have been made and all conclusions stated, the user may elect to ask questions of the expert system. The most important question that the user can ask is, &#147;How did you arrive at conclusion I?.&#148; The question-answer dialogue is conducted via the Question-Answer Program (QAP) and is explained in the next section.</P>
+<H3><A NAME="Heading22"></A><FONT COLOR="#000077">V. The Question-answer Program</FONT></H3>
+<P>The Question-Answer Program (QAP) is used to retrieve the chain of firings in the inference procedure and display all rules and data that were involved in the firing of that rule.
+</P>
+<P>The user may invoke the program by typing:</P>
+<P ALIGN="CENTER"><I>explain rule n</I></P>
+<P>where n is any number. First the QAP checks to ensure that rule n is in the list of fired rules (LR). If the rule was not found in the LR, then the program is terminated (after an error message is displayed to the user). If the rule number is found in the list of fired rules, then the process continues.</P>
+<P>The QAP uses the bit matrix (BM) to retrieve rules and data. As was mentioned (Equation 13),</P>
+<P ALIGN="CENTER"><I>BM [I,J] = 1</I></P>
+<P>means that rule I may contribute to the firing of rule J. But it also means that rule J can be fired from rule I. Using this logic, we can derive a general recursive algorithm for retrieving the rules and data which were involved in the firing of the rule in question. The algorithm is presented in a Pascal-like language.</P>
+<!-- CODE //-->
+<PRE>
+PROCEDURE conclusion (k); {k is the rule number to be retrieved}
+FOR I = 1 to n do {n is the number of rules in the knowledge base}
+IF BM[I,K] = '1' THEN
+BEGIN
+ find out if rule I is in LR; {if rule I was used in firing rule K}
+ if so then
+ BEGIN
+  print the conclusion of rule I;
+  activate procedure &#8594; conclusion(I);
+ END;
+END;
+</PRE>
+<!-- END CODE //-->
+<P>If nothing is found then conclude that the system has inferred that conclusion K came from user-supplied data.
+</P>
+<P>Since the preceding procedure is activated recursively, it is guaranteed to find all the rules and data which were involved in the firing of rule K.</P>
+<H3><A NAME="Heading23"></A><FONT COLOR="#000077">VI. Conclusion</FONT></H3>
+<P>The expert system discussed here is a general purpose expert system. In other words, the expert system is not domain dependent. The user can provide knowledge about any domain (in the form discussed in Section IV.A.) and the expert system should perform as described. The main achievements in this work are:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;The ability to interpret mathematically fuzzy variables (and, thus, use natural language in the front-end of the expert system)
+<DD><B>2.</B>&nbsp;&nbsp;The use of heuristics in pattern matching in the inference procedure
+<DD><B>3.</B>&nbsp;&nbsp;The use of the bit matrix eliminating the need for employing forward and backward reasoning
+</DL>
+<P>The application program was written in Pascal and we feel that it fully satisfied our goals in writing the expert system.
+</P>
+<H3><A NAME="Heading24"></A><FONT COLOR="#000077">Appendix A.</FONT></H3>
+<P>Example of mapping table
+</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH COLSPAN="3" ALIGN="CENTER">for the variable PEOPLE
+<TR>
+<TH>ADJECTIVE
+<TH>LB
+<TH>UB
+<TR>
+<TD ALIGN="CENTER">almost
+<TD ALIGN="CENTER">x - 10%
+<TD ALIGN="CENTER">x - 1
+<TR>
+<TD ALIGN="CENTER">more or less
+<TD ALIGN="CENTER">x - 10%
+<TD ALIGN="CENTER">x + 10%
+<TR>
+<TD ALIGN="CENTER">over
+<TD ALIGN="CENTER">X + 1
+<TD ALIGN="CENTER">x + 10%
+<TR>
+<TD ALIGN="CENTER">much more then
+<TD ALIGN="CENTER">2x
+<TD ALIGN="CENTER">&#8734;
+</TABLE>
+<H3><A NAME="Heading25"></A><FONT COLOR="#000077">Appendix B.</FONT></H3>
+<P>Examples of characteristic function
+</P>
+<P ALIGN="CENTER">For the variable <I>Old</I></P>
+<P ALIGN="CENTER"><IMG SRC="images/02-25d.jpg"></P>
+<P ALIGN="CENTER">For the variable <I>Weight</I></P>
+<P ALIGN="CENTER"><IMG SRC="images/02-26d.jpg"></P>
+<H3><A NAME="Heading26"></A><FONT COLOR="#000077">References</FONT></H3>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;<B>Zadeh, L. A.,</B> Fuzzy sets, <I>Inf. Control</I>, 8, 338, 1965.
+<DD><B>2.</B>&nbsp;&nbsp;<B>Kandel, A. and Byatt, W. J.,</B> Fuzzy sets, fuzzy algebra, and fuzzy statistics, Proc. IEEE, 66 (12), 1619, 1978.
+<DD><B>3.</B>&nbsp;&nbsp;<B>Kandel, A.,</B> <I>Fuzzy Techniques in Pattern Recognition</I>, Wiley-Interscience, New York, 1982.
+<DD><B>4.</B>&nbsp;&nbsp;<B>Kandel, A.</B> <I>Fuzzy Mathematical Techniques With Application</I>, Addison-Wesley, Reading, MA, 1986.
+<DD><B>5.</B>&nbsp;&nbsp;<B>Schneider, M., and Kandel, A.,</B> Properties of the Fuzzy Expected Value and the Fuzzy Expected Interval, <I>Int. J. Fuzzy Sets Syst.</I>, 26, 1988.
+<DD><B>6.</B>&nbsp;&nbsp;<B>Schneider, M. and Kandel, A.,</B> Properties of the Fuzzy Expected Value and the Fuzzy Expected Interval in Fuzzy Environment, <I>Int. J. Fuzzy Sets Syst.</I>, 28, 1988.
+<DD><B>7.</B>&nbsp;&nbsp;<B>Negoita, C. V.,</B> <I>Expert System and Fuzzy Systems</I>, Benjamin/Cummings, Menlo Park, CA, 1985.
+<DD><B>8.</B>&nbsp;&nbsp;<B>Weiss, S. M. and Kulikowski, C. A.,</B> <I>A Practical Guide to Designing Expert Systems</I>, Rowman and Allanheld, Totowa, NJ, 1984.
+<DD><B>9.</B>&nbsp;&nbsp;<B>Hayes-Roth, F., Waterman, D. A. and Lenat, D. B.,</B> <I>Building Expert Systems</I>, Addison-Wesley, Reading, MA, 1983.
+<DD><B>10.</B>&nbsp;&nbsp;<B>Waterman, D. A.,</B> <I>A Guide to Expert Systems</I>, Addison-Wesley, Reading, MA, 1985.
+</DL>
+<P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="034-038.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="../ch03/043-045.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

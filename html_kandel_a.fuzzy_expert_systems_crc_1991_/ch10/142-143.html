@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Fuzzy Associative Memory Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=10//-->
+<!--PAGES=142-143//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="140-142.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="143-145.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>Zadeh<SUP><SMALL>51</SMALL></SUP> has also shown that if we interpret the n-set A as a possibility distribution, we can interpret the n-by-p relation R as a <I>conditional possibility distribution:</I> A o R = B; or, in Zadeh&#146;s notation, P<SUB><SMALL>Z</SMALL></SUB> o P<SUB><SMALL>Y|X)</SMALL></SUB> = P<SUB><SMALL>Y</SMALL></SUB>, where the values of the variables X, Y, and Z have been restricted<SUP><SMALL>51</SMALL></SUP> to the fuzzy sets, C, B, and A, and C is also an n-set. Zadeh defines the matrix elements of P(Y|X) as literal fuzzy logical (Lucasiewicz) implications: p<SUB><SMALL>ij</SMALL></SUB> = min(1, 1 - m<SUB><SMALL>C</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) + m<SUB><SMALL>B</SMALL></SUB>(y<SUB><SMALL>j</SMALL></SUB>)). This leads to the <I>compositional rule of inference:</I><SUP><SMALL>53</SMALL></SUP> P(X&#8242;) o P(Y|X) &#8776; P(Y) if X&#8242; &#8776; X. Accordingly, the compositional rule of inference is a set-level generalization of modus ponens. It is also a prototypical FAM.</P>
+<H3><A NAME="Heading4"></A><FONT COLOR="#000077">III. Fuzzy Eigenset Subset FAMs</FONT></H3>
+<P>The compositional rule of inference is a compositional rule of fuzzy association. The set pair (A,B) is stored in parallel distributed fashion in the n-by-p relation R. Zadeh&#146;s suggests defining R pointwise with the fuzzy logical implication values r<SUB><SMALL>ij</SMALL></SUB> = min(1,1 - m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) + m<SUB><SMALL>B</SMALL></SUB>(y<SUB><SMALL>j</SMALL></SUB>)) so that, in effect, A will push B out of R in a set-level modus ponens. The FAM interpretation of the compositional rule of inference, however, does not dictate a particular selection of R. For instance, if we insist that A compositionally recall B if (A,B) is stored in R, then R cannot be defined by Lucasiewicz implication. Other operators must be sought.</P>
+<P>A <I>fuzzy eigenset FAM</I> is an n-by-n relation M that stores an n-set A as an eigenset: A o M = A. This is an autoassociative FAM. An heteroassociative <I>eigenset</I> FAM stores the set pair (A,B), where A is an n-set and B is a p-set, as left/right eigensets of some n-by-p relation M: A o M = B and B o M<SUP><SMALL>T</SMALL></SUP> = A. A <I>subset</I> FAM maps arbitrary sets A&#8242; &#8776; A into subsets of A or B: A&#8242; o M &sub; A or A&#8242; o M<SUP><SMALL>T</SMALL></SUP> &sub; B. Intuitively a subset FAM maps the unknown into the known (stored). The less similar A&#8242; is to A, the closer A&#8242; o M should be to the empty set &#216;.</P>
+<P>Let us examine the behavior of the Lucasiewicz L used by Zadeh:<SUP><SMALL>51</SMALL></SUP> 1<SUB><SMALL>ij</SMALL></SUB> = min(1, 1 - m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) + m<SUB><SMALL>B</SMALL></SUB>(y<SUB><SMALL>j</SMALL></SUB>)) = 1 if m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>) &#8804; m<SUB><SMALL>B</SMALL></SUB>(y<SUB><SMALL>j</SMALL></SUB>). Therefore L tends to be widely populated with 1 values and values near 1. Consequently, m<SUB><SMALL>B</SMALL></SUB>,(y<SUB><SMALL>j</SMALL></SUB>) = m<SUB><SMALL>AoR</SMALL></SUB>(y<SUB><SMALL>j</SMALL></SUB>) &#8776; max{m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>1</SMALL></SUB>), . . . , m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>n</SMALL></SUB>)} = H(A) tends to hold. Suppose we store A = (.2 0 .5 .7) and B = (1 .5 .6) in L:</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-12d.jpg"></P>
+<P>Then A o L = (.7 .7 .7) and B o L<SUP><SMALL>T</SMALL></SUP> = (1 1 1) as expected, with H(A) = .7 and H(B) = 1. Therefore, L is not an eigenset FAM or a subset FAM. Indeed this behavior suggests abandoning the selection R = L in the compositional rule of inference and, in general, in conditional possibility theory. Theorem 2 following suggests an alternative.</P>
+<P>We propose the M = A<SUP><SMALL>T</SMALL></SUP> o B as a fuzzy eigenset subset FAM. The connection strength m<SUB><SMALL>ij</SMALL></SUB> = min(m<SUB><SMALL>A</SMALL></SUB>(x<SUB><SMALL>i</SMALL></SUB>),m<SUB><SMALL>B</SMALL></SUB>(y<SUB><SMALL>j</SMALL></SUB>)) is a <I>fuzzy Hebb law</I><SUP><SMALL>23</SMALL></SUP> since it encodes correlation or conjunctive learning. A fuzzy logical implication operator is m<SUB><SMALL>ij</SMALL></SUB> since it satisfies the only one invariant axiom<SUP><SMALL>14</SMALL></SUP> of implication &#151; that t(A &#8594; B) = 0 if t(A) = 1 and t(B) = 0, or &#147;Truth cannot imply falsehood&#148; as Aristotelian philosophers say.</P>
+<P>First, we examine the autoassociative case M = A<SUP><SMALL>T</SMALL></SUP> o A. The fit vector A = (.2 0 .5 .7) is then stored in the symmetrical relation</P>
+<P ALIGN="CENTER"><IMG SRC="images/10-13d.jpg"></P>
+<P>Then A o M = A. Consider A&#8242; = (.3 .2 1 .6): A&#8242; o M = (.2 0 .5 .6) A. These properties, in fact, hold in general and follow from two facts: Diagonal(M) = A and M is <I>diagonal-dominant</I>, m<SUB><SMALL>ij</SMALL></SUB> &#8804; m<SUB><SMALL>jj</SMALL></SUB> for all i. This observation allows us to prove that there exist families of fuzzy eigenset subset FAMs.</P>
+<P><B><I>Theorem 1.</I></B> If Diagonal(M) = A and M is diagonal dominant, then M is a fuzzy eigenset subset FAM.</P>
+<P><B><I>Proof.</I></B> <IMG SRC="images/10-17i.jpg">, where &#147;v&#148; stands for max, since a<SUB><SMALL>j</SMALL></SUB> = m<SUB><SMALL>jj</SMALL></SUB> &#8805; m<SUB><SMALL>ij</SMALL></SUB> &#8805; min(a<SUB><SMALL>i</SMALL></SUB>,m<SUB><SMALL>ij</SMALL></SUB>) for all i. Thus, A o M = A.</P>
+<P>Next suppose A&#8242; ~ A. Then <IMG SRC="images/10-18i.jpg">. Thus, A&#8242; o M &sub; A.</P>
+<P ALIGN="RIGHT">Q. E. D.</P>
+<P>Accordingly, the matrix Diagonal(A) is always a fuzzy eigenset subset FAM, as well as A<SUP><SMALL>T</SMALL></SUP> o A. The latter FAM, of course, has greater recall or pattern-completion power.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="140-142.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="143-145.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

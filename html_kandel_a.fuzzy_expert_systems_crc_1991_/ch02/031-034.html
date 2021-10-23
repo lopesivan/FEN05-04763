@@ -1,0 +1,303 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:General Purpose Fuzzy Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=2//-->
+<!--PAGES=031-034//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="028-031.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="034-038.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H4 ALIGN="LEFT"><A NAME="Heading17"></A><FONT COLOR="#000077">B. Evaluation of Sentences of Type 2</FONT></H4>
+<P>The general structure of a sentence of Type 2 is
+</P>
+<P ALIGN="CENTER">[adjective] [number to] number K1 C,</P>
+<P>where words inside the brackets are optional and C is a general statement that contains a key word and number (or a range of numbers), and may contain the key word <I>not</I> and any adjectives (from the list in Appendix A). From the general structure of a sentence of type 2 it can be seen that the first part of the sentence (excluding C) includes a key word (K1) and a range of numbers (in case there is only one number, we make LB = UB). C has a similar structure. Thus, the sentence:</P>
+<P ALIGN="CENTER">Almost 20 people are between the ages 25 to 30</P>
+<P>will be translated to:</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>LB1
+<TH>UB1
+<TH>K1
+<TH>K2
+<TH>LB2
+<TH>UB2
+<TR>
+<TD ALIGN="CENTER">18
+<TD ALIGN="CENTER">19
+<TD ALIGN="CENTER">people
+<TD ALIGN="CENTER">age
+<TD ALIGN="CENTER">25
+<TD ALIGN="CENTER">30
+</TABLE>
+<P>Thus, the first range provides information about K1 and the second range provides information about K2.
+</P>
+<P>After all sentences have been transformed to a form described previously, we perform the next step in the evaluation of sentences of type 2.</P>
+<P>The next step involves grouping the relevant representations of the sentences together. A comparison is performed using K1 and K2 and their synonyms. Thus, in the stated example, we search for the sentences describing population of people and their ages and place them together in one group.</P>
+<P>Next it is necessary to order each group by the second range which is the range LB2 &#151; UB2 (according to Equation 1 and Definition 1).</P>
+<P>After groups have been formed and ordered properly, we find the fuzzy expected interval for each group. The algorithm for the evaluation of the fuzzy expected value is presented below.</P>
+<P><B>Algorithm 1.</B></P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;Use the proper characteristic function to find all &#967;&#146;s.
+<DD><B>2.</B>&nbsp;&nbsp;Use Equations 8 and 9 to find  all &#956;&#146;s.
+<DD><B>3.</B>&nbsp;&nbsp;Use Equation 3, 5, or 7 to find the minimum for each line.
+<DD><B>4.</B>&nbsp;&nbsp;Use Equation 2, 4, or 6 to find the maximum over the minima found in step 3.
+</DL>
+<P>When the four steps have been completed, the compiled data is placed on the blackboard. In the next example we show how the FC evaluates the data.
+</P>
+<H4 ALIGN="CENTER"><A NAME="Heading18"></A><FONT COLOR="#000077">1. Example 3</FONT></H4>
+<P>Assume we have the following data:
+</P>
+<DL>
+<DD>more or less 20 people are between the ages of 20 and 30
+<DD>20 to 25 people are 15 years old
+<DD>the color of the house is green
+<DD>10 people are 6 feet tall
+<DD>the weight of John is 120 pounds
+<DD>25 people are almost 40 years old
+<DD>almost 15 people are 5 feet and 10 inches tall
+</DL>
+<P>First, we compile the two sentences which start with the key work <I>the</I>. Using the methods formerly stated, we compile the two sentences and place the compiled data on the blackboard:</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB
+<TH>UB
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">color
+<TD ALIGN="CENTER">house
+<TD ALIGN="CENTER">blue
+<TD ALIGN="CENTER">0.9
+<TD ALIGN="CENTER">0.9
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+<TR>
+<TD ALIGN="CENTER">weight
+<TD ALIGN="CENTER">John
+<TD ALIGN="CENTER">&nbsp;
+<TD ALIGN="CENTER">0.54
+<TD ALIGN="CENTER">0.54
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<P>Next we group the sentences that describe ages and people and order them by their increasing age:
+</P>
+<DL>
+<DD><B>1.</B>&nbsp;&nbsp;20 to 25 people are 15 years old
+<DD><B>2.</B>&nbsp;&nbsp;more or less 20 people are between the ages of 20 and 30
+<DD><B>3.</B>&nbsp;&nbsp;25 people are almost 40 years old
+</DL>
+<P>Using the algorithm for finding the fuzzy expected interval we follow the four steps:
+</P>
+<DL>
+<DD><B>STEP 1</B> &#151; Find all &#967;&#146;s
+</DL>
+<CENTER>
+<TABLE WIDTH="90%" BORDER>
+<TR>
+<TH>RAW DATA
+<TH>&#967;
+<TR>
+<TD ALIGN="CENTER">20 to 25 people
+<TD ALIGN="CENTER">0.125 - 0.125
+<TR>
+<TD ALIGN="CENTER">more or less 20 people
+<TD ALIGN="CENTER">0.16 - 0.25
+<TR>
+<TD ALIGN="CENTER">25 people
+<TD ALIGN="CENTER">0.3 - 0.325
+</TABLE>
+</CENTER>
+<DL>
+<DD><B>Step 2</B> &#151; Find all &#956;&#146;s.
+</DL>
+<CENTER>
+<TABLE WIDTH="90%" BORDER>
+<TR>
+<TH>&#956;
+<TH>&#967;
+<TR>
+<TD ALIGN="CENTER">1 - 1
+<TD ALIGN="CENTER">0.125 - 0.125
+<TR>
+<TD ALIGN="CENTER">0.63 - 0.70
+<TD ALIGN="CENTER">0.16 - 0.125
+<TR>
+<TD ALIGN="CENTER">0.34 - 0.39
+<TD ALIGN="CENTER">0.3 - 0.325
+</TABLE>
+</CENTER>
+<DL>
+<DD><B>Step 3</B> &#151; Find the minimum for each pair.
+<DL>
+<BR>
+<DD>MIN(1,[0.125 - 0.125]) = [0.125 - 0.125]
+<DD>MIN([0.63 - 0.7],[0.16 - 0.25]) = [0.16 - 0.25]
+<DD>MIN([0.34 - 0.39],[0.3 - 0.325]) = [0.3 - 0.325]
+</DL>
+<BR>
+<DD><B>Step 4</B> &#151; Find the maximum over the minima (found in Step 3):
+<DL>
+<BR>
+<DD>MAX([0.125 - 0.125],[0.16 - 0.25],[0.3 - 0.325]) = [0.3 - 0.325]
+</DL>
+<BR>
+</DL>
+<P>The fuzzy expected interval for the last group is evaluated similarly and the compiled data is placed on the blackboard:
+</P>
+<TABLE WIDTH="100%" BORDER><TR>
+<TH>K1
+<TH>K2
+<TH>K3
+<TH>LB
+<TH>UB
+<TH>CF
+<TH>RN
+<TR>
+<TD ALIGN="CENTER">color
+<TD ALIGN="CENTER">house
+<TD ALIGN="CENTER">blue
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+<TR>
+<TD ALIGN="CENTER">weight
+<TD ALIGN="CENTER">John
+<TD ALIGN="CENTER">&nbsp;
+<TD ALIGN="CENTER">0.54
+<TD ALIGN="CENTER">0.54
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+<TR>
+<TD ALIGN="CENTER">people
+<TD ALIGN="CENTER">age
+<TD ALIGN="CENTER">&nbsp;
+<TD ALIGN="CENTER">0.3
+<TD ALIGN="CENTER">0.325
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+<TR>
+<TD ALIGN="CENTER">people
+<TD ALIGN="CENTER">weight
+<TD ALIGN="CENTER">&nbsp;
+<TD ALIGN="CENTER">0.83
+<TD ALIGN="CENTER">0.83
+<TD ALIGN="CENTER">1
+<TD ALIGN="CENTER">0
+</TABLE>
+<P>It is interesting to note that, in spite of the fact that we had fuzzy information about the height of the people, the result obtained was a single number (0.83) to show that there are cases in which the fuzzy expected interval can be reduced to the fuzzy expected value. The compiled data is used by the inference engine in the process of evaluating the knowledge base. Next we explain the features of the inference engine, and show how it uses the compiled data in the evaluation of the knowledge base.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="028-031.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="034-038.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

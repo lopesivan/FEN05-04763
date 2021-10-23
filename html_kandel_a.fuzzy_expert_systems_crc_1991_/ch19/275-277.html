@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:A Probabilistic Logic for Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=19//-->
+<!--PAGES=275-277//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch18/273-274.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="277-278.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<H2><A NAME="Heading1"></A><FONT COLOR="#000077">Chapter 19<BR>A Probabilistic Logic for Expert Systems
+</FONT></H2>
+<P><I>Arie Tzvieli</I></P>
+<DL>
+<DT><B>TABLE OF CONTENTS</B>
+<DT>I.&nbsp;&nbsp;Introduction
+<DT>II.&nbsp;&nbsp;A Probability Logic PL
+<DD>A.&nbsp;&nbsp;The Syntax of PL Formulas
+
+<DL>
+<DD>1.&nbsp;&nbsp;Example 1: A PL Type
+<DD>2.&nbsp;&nbsp;Example 2: PL Formulas
+
+</DL>
+<DD>B.&nbsp;&nbsp;Probabilistic Models
+
+<DL>
+<DD>1.&nbsp;&nbsp;Remarks
+<DD>2.&nbsp;&nbsp;Example 3: A Probabilistic Model
+
+</DL>
+<DD>C.&nbsp;&nbsp;Satisfaction in PL
+
+<DL>
+<DD>1.&nbsp;&nbsp;Remarks
+<DD>2.&nbsp;&nbsp;Example 4: Satisfaction of Formulas
+
+</DL>
+<DT>III.&nbsp;&nbsp;Semantics, Soundness, and Completeness of PL
+<DD>A.&nbsp;&nbsp;A Definitional Approach to Assigning Meaning to Formulas
+
+<DL>
+<DD>1.&nbsp;&nbsp;Example 5: Meaning of Formulas
+
+</DL>
+<DD>B.&nbsp;&nbsp;Axioms and Derivation Rules in PL
+
+<DL>
+<DD>1.&nbsp;&nbsp;Derivation Rules
+<DD>2.&nbsp;&nbsp;Remarks
+<DD>3.&nbsp;&nbsp;Example 6: Consequences of Constraints
+<DD>4.&nbsp;&nbsp;Example 7
+
+</DL>
+<DD>C.&nbsp;&nbsp;Consistency, Soundness, and Completeness of PL
+<DT>IV.&nbsp;&nbsp;Summary and Proposed Research
+<DT>Acknowledgment
+<DT>References
+</DL>
+<H3><A NAME="Heading2"></A><FONT COLOR="#000077">I. Introduction</FONT></H3>
+<P>Modeling uncertainties is one of the most difficult and controversial issues in current expert systems research. This difficulty arises from the fact that, in the process of system development, some assumptions have to be made about &#147;its world&#148;; those are the axioms of the system. When a system is developed, it is not always known where and when it will be used, and whether the axioms will be valid in the environment of the application. The current literature on the subject of uncertainty management abounds with examples of incompatibility between the system premises and the application environment. It is, therefore, extremely important to specify each system&#146;s axioms explicitly and to check their validity, in a particular enviroment, <I>before</I> using it in an expert system. However, this is not always possible, because of lack of information about the applications. We believe that a productive approach to choosing a methodology for the management of uncertainty should attempt to compare the different approaches based on the range of applicable environments.</P>
+<P>A formal logical system of reasoning with uncertainties can serve as a tool for studying different axiom sets, and later be used for tuning a shell to the application environment. This chapter describes a formal logical system (probability logic [PL]) which uses estimates based on probabilities (or beliefs). These estimates are assumed to be independent of each other. Logical systems model the world by assigning truth values to formulas. A logical formula is a very powerful tool for capturing objects and their relationship. It includes individual variables and constants to model objects, atomic formulas to express basic relationships, connectives (and/or/not) to connect subformulas, and quantifiers (exist/for-all) to capture existence and uniformity of a property over a set of objects. Logical systems use formal derivation rules to infer conclusions from a given description of the world.</P>
+<P>In PL, formulas have a truth value, ranging between true and false. The truth value &#147;true&#148; is expressed by the constant one, &#147;false&#148; by zero, and intermediate truth values are expressed by numbers between zero and one. The higher the truth value of a formula &#966;, the more we believe that the fact expressed by &#966; is true. Tuning a PL system to an environment is achieved by two actions: choosing a definition of satisfaction, and choosing a corresponding set of axioms and inference rules. The definition of satisfaction involves a procedure for arriving at the truth value of a compound formula from the truth value of the constituent subformulas. The procedure also depends on the environment; by substituting one procedure for another, we change, in the logical model, the interpretation of the external world. So far, over 100 different satisfaction procedures have been proposed (e.g., Dubois and Prade<SUP><SMALL>5</SMALL></SUP> and Weber<SUP><SMALL>16</SMALL></SUP>). Yet, more research is required before an automatic system could be developed to decide which satisfaction procedure to choose, depending on the application (one of the difficulties is that different procedures correspond to the same axiom set). A practical approach to resolving this type of conflict may involve testing those candidate procedures, <I>sharing</I> a chosen set of axioms, against a set of test cases, and choosing the best fit.</P>
+<P>The second component of tailoring a logical system to a specific environment is to choose the axioms and specific derivation rules. As in the satisfaction interpretation issue, more research is needed before automation of the process will become feasible.</P>
+<P>The version of PL described in this chapter should be viewed as an example system. We have not elaborated on the <I>environment tailoring</I> process, but we believe that the case discussed here could correspond to a situation where we have only little knowledge of the application, and where it is reasonable to assume independence between truth values of formulas, regardless of their intention.</P>
+<P>PL can be combined with other quantitative uncertainty management systems to enhance their reasoning capabilities. A probabilistic (or belief) approach can be used to assign probabilities to a core of formulas, and then PL can be used to reason about the probability of logical consequences of these formulas. This is demonstrated by using an example from Shafer<SUP><SMALL>14</SMALL></SUP> and adding derived consequences to his results.</P>
+<P>The logical model advocated in this paper was motivated by the goal of applying the notion of probability in the context of expert systems. Another use of PL might be development of a theory of correctness of probabilistic systems. Lack of reliability is a very important criticism of expert and other software systems (e.g., Parnas<SUP><SMALL>12</SMALL></SUP>) and a crucial factor influencing their adoption and utilization. It is desirable that we be able to prove formally the correctness of an expert system. Logic-based expert systems seem to be most promising for this goal. Both the input and the output can be described by formulas, and the logical relationship between them is easier to express in a logical framework. In this chapter we outline a formal semantics for PL.</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="../ch18/273-274.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="277-278.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+

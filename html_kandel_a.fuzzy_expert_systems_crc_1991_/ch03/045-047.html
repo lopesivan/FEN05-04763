@@ -1,0 +1,186 @@
+<HTML>
+<HEAD>
+<META name=vsisbn content="084934297x">
+<META name=vstitle content="Fuzzy Expert Systems">
+<META name=vsauthor content="Abraham Kandel">
+<META name=vsimprint content="CRC Press">
+<META name=vspublisher content="CRC Press LLC">
+<META name=vspubdate content="11/01/91">
+<META name=vscategory content="Web and Software Development: Artificial Intelligence: Fuzzy Logic">
+
+
+
+
+
+<TITLE>Fuzzy Expert Systems:Inferences With Inaccuracy and Uncertainty in Expert Systems</TITLE>
+
+<!-- HEADER -->
+
+<STYLE type="text/css"> 
+ <!--
+ A:hover  {
+ 	color : Red;
+ }
+ -->
+</STYLE>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<script>
+<!--
+function displayWindow(url, width, height) {
+         var Win = window.open(url,"displayWindow",'width=' + width +',height=' + height + ',resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</script>
+<SCRIPT>
+<!--
+function popUp(url) {
+        var Win = window.open(url,"displayWindow",'width=400,height=300,resizable=1,scrollbars=yes');
+	if (Win) {
+		Win.focus();
+	}
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript1.2">
+<!--
+function checkForQuery(fm) {
+  /* get the query value */
+  var i = escape(fm.query.value);
+  if (i == "") {
+      alert('Please enter a search word or phrase');
+      return false;
+  }                  /* query is blank, dont run the .jsp file */
+  else return true;  /* execute the .jsp file */
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY> 
+
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td width=75 valign=top>
+<img src="../084934297x.gif" width=60 height=73 alt="Fuzzy Expert Systems" border="1">
+</td>
+<td align="left">
+    <font face="arial, helvetica" size="-1" color="#336633"><b>Fuzzy Expert Systems</b></font>
+    <br>
+    <font face="arial, helvetica" size="-1"><i>by Abraham Kandel</i>
+    <br>
+    CRC Press,&nbsp;CRC Press LLC
+    <br>
+    <b>ISBN:</b>&nbsp;084934297x<b>&nbsp;&nbsp;&nbsp;Pub Date:</b>&nbsp;11/01/91</font>&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+<P>
+
+<!--ISBN=084934297x//-->
+<!--TITLE=Fuzzy Expert Systems//-->
+<!--AUTHOR=Abraham Kandel//-->
+<!--PUBLISHER=CRC Press LLC//-->
+<!--IMPRINT=CRC Press//-->
+<!--CHAPTER=3//-->
+<!--PAGES=045-047//-->
+<!--UNASSIGNED1//-->
+<!--UNASSIGNED2//-->
+
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="043-045.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="047-049.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P><BR></P>
+<P>The implication is defined, in the case of fuzzy logic, in several ways which lead to various definitions of the value r(x,y) representing the strength of the inference that involves the facts &#147;X is A&#148; and &#147;Y is B&#148;, for any pair (x,y) of elements of the universes U<SUB><SMALL>X</SMALL></SUB> and U<SUB><SMALL>Y</SMALL></SUB>. These definitions present analogous properties and they can be compared through the behavior of r(x,y) with regard to x or y, according to probable forms of f<SUB><SMALL>A</SMALL></SUB> or f<SUB><SMALL>B</SMALL></SUB>. They present both advantages and difficulties and, in most cases, the user of the knowledge-based system must make a choice in the probable properties of the fuzzy implications, indicating which ones he considers essential or of minor importance.</P>
+<P>The value of the strength of the deduction rule is principally useful to determine the fact which will be obtained as a conclusion of such a rule when the observation which enables us to use it is somewhat different from the premise of the rule, as will be explained in Section III.</P>
+<H4 ALIGN="LEFT"><A NAME="Heading5"></A><FONT COLOR="#000077">B. Definitions Of the Main Fuzzy Implications</FONT></H4>
+<P>There exist several ways of introducing fuzzy implications, and general classes of such quantities may be exhibited.<SUP><SMALL>1,8-10</SMALL></SUP> The most classical forms, which have been used in the practical realization of knowledge-based systems, are indicated here, through the value r(x,y) of the implication involving premise &#147;X is A&#148; and conclusion &#147;Y is B&#148;, &#8704; x &#8712; U<SUB><SMALL>X</SMALL></SUB>, &#8704; y &#8712; U<SUB><SMALL>Y</SMALL></SUB>:</P>
+<CENTER>
+<TABLE WIDTH="95%"><TD WIDTH="65%">r<SUP><SMALL>1</SMALL></SUP>(x,y) = 1 &#45; f<SUB><SMALL>A</SMALL></SUB>(x) + f<SUB><SMALL>A</SMALL></SUB>(x) f<SUB><SMALL>B</SMALL></SUB>(y)
+<TD WIDTH="35%">(Reichenbach implication)
+<TR>
+<TD>r<SUP><SMALL>2</SMALL></SUP>(x,y) = max (1 - f<SUB><SMALL>A</SMALL></SUB>(x), min(f<SUB><SMALL>A</SMALL></SUB>(x),f<SUB><SMALL>B</SMALL></SUB>(y)))
+<TD>(Willmott implication)
+<TR>
+<TD>r<SUP><SMALL>3</SMALL></SUP>(x,y) = min (f<SUB><SMALL>A</SMALL></SUB>(x),f<SUB><SMALL>B</SMALL></SUB>(y))
+<TD>(Mamdani implication)
+<TR>
+<TD>r<SUP><SMALL>4</SMALL></SUP>(x,y) = 1 <I>if</I> f<SUB><SMALL>A</SMALL></SUB>(x) &#8804; f<SUB><SMALL>B</SMALL></SUB>(y) <I>and</I> 0 <I>otherwise</I>
+<TD>(Rescher-Gaines implication)
+<TR>
+<TD>r<SUP><SMALL>5</SMALL></SUP>(x,y) = max (1 - f<SUB><SMALL>A</SMALL></SUB>(x), f<SUB><SMALL>B</SMALL></SUB>(y))
+<TD>(Kleene-Dienes implication)
+<TR>
+<TD>r<SUP><SMALL>6</SMALL></SUP>(x,y) = 1 <I>if</I> f<SUB><SMALL>A</SMALL></SUB>(x) &#8804; f<SUB><SMALL>B</SMALL></SUB>(y) <I>and</I> f<SUB><SMALL>B</SMALL></SUB>(y) <I>otherwise</I>
+<TD>(Brouwer-G&ouml;del implication)
+<TR>
+<TD>r<SUP><SMALL>7</SMALL></SUP>(x,y) = min (f<SUB><SMALL>A</SMALL></SUB>(y)/f<SUB><SMALL>B</SMALL></SUB>(x), 1) <I>if</I> f<SUB><SMALL>A</SMALL></SUB>(x) &#8800; 0 and 1 <I>otherwise</I>
+<TD VALIGN="TOP">(Goguen implication)
+<TR>
+<TD>r<SUP><SMALL>8</SMALL></SUP>(x,y) = min (1 - f<SUB><SMALL>A</SMALL></SUB>(x) + f<SUB><SMALL>B</SMALL></SUB>(y), 1)
+<TD>(Lukasiewicz implication)
+<TR>
+<TD>r<SUP><SMALL>N</SMALL></SUP>(x,y) = max (N(f<SUB><SMALL>A</SMALL></SUB>(x)), f<SUB><SMALL>B</SMALL></SUB>(y))
+<TD>
+</TABLE>
+</CENTER>
+<P>For a strong negation N defined by N(u) = f<SUP><SMALL>(-1)</SMALL></SUP>(f(0) - f(u)), where f is the additive generator of a triangular norm F,<SUP><SMALL>6,10</SMALL></SUP> which can be written:</P>
+<DL>
+<DD>F(u,v) = f<SUP><SMALL>(-1)</SMALL></SUP> (f(u) + f(v)), u &#8712; [0,1], v &#8712; [0,1]
+</DL>
+<P>with regard to the continuous, strictly decreasing function f defined on [0,1] and lying on R<SUP><SMALL>+</SMALL></SUP>, so that f(1) = 0 and f(0) &lt; + &#8734;, with f<SUP><SMALL>(-1)</SMALL></SUP>(u) equal to f<SUP><SMALL>-1</SMALL></SUP>(u) if 0 &#8804; u &#8804; f(0), to 0 if u &#8805; f(0), and to 1 if u &#8804; 0. A particular case corresponds to i = 5, with N(u) = 1 - u, f(u) = 1 - u.</P>
+<DL>
+<DD>r<SUP><SMALL>F</SMALL></SUP>(x,y) = <I>f</I>(f<SUB><SMALL>A</SMALL></SUB>(x), f<SUB><SMALL>B</SMALL></SUB>(y))
+</DL>
+<P>where <I>f</I> is the quasi-inverse of a t-norm F, defined by:</P>
+<DL>
+<DD><I>f</I>(u,v) = max {w &#8712; [0,1], F(u,w) &#8804; v}
+</DL>
+<P>Particular cases correspond to i = 6 with F(u,v) = min (u,v), i = 7 with F(u,v) = uv, f(u) = -log u, and i = 8 with F(u,v) = max (u + v - 1, 0), f(u) = 1 - u.
+</P>
+<P>It must be noted that r<SUP><SMALL>3</SMALL></SUP> does not satisfy the same properties as the other ones and cannot be considered as a real fuzzy implication, but it has been included in the list because it has actually been used to quantify the strength of fuzzy inference rules.</P>
+<P>In order to compare some of their properties with those of the Boolean implication we denote this one as follows:</P>
+<DL>
+<DD>r<SUP><SMALL>B</SMALL></SUP>(x,y) = 1 <I>if</I> f<SUB><SMALL>A</SMALL></SUB>(x) = 0 or f<SUB><SMALL>B</SMALL></SUB>(y) = 1, <I>and</I> 0 <I>if</I> f<SUB><SMALL>A</SMALL></SUB>(x) = 1 and
+<DD>f<SUB><SMALL>B</SMALL></SUB>(y) = 0 with U<SUB><SMALL>x</SMALL></SUB> = {x} and U<SUB><SMALL>y</SMALL></SUB> = {y} and f<SUB><SMALL>A</SMALL></SUB> and F<SUB><SMALL>b</SMALL></SUB> ranging
+<DD>in {0,1} in this case.
+</DL>
+<H4 ALIGN="LEFT"><A NAME="Heading6"></A><FONT COLOR="#000077">C. Properties of the Implications in Crisp Situations</FONT></H4>
+<P>The previous definitions give more or less equivalent results, but some differences appear when we consider simple situations, which can be interpreted in different ways by the specialist constructing the knowledge base.<SUP><SMALL>2,3,11</SMALL></SUP> His choice of one of them will essentially depend on the kind of situations he comes upon and the behavior of the implication he thinks interesting.</P>
+<H4 ALIGN="CENTER"><A NAME="Heading7"></A><FONT COLOR="#000077">1. Unambiguous (Crisp) Premise &#147;X is A&#148;</FONT></H4>
+<P>A is characterized by a membership function f<SUB><SMALL>A</SMALL></SUB> equal to 1 at some point x<SUB><SMALL>1</SMALL></SUB> of U<SUB><SMALL>X</SMALL></SUB> and 0 elsewhere. We can consider the following example:</P>
+<P ALIGN="CENTER">Rule 2 (R2): IF the size is 1 cm, THEN the price is high.</P>
+<P>Almost all the fuzzy implications present the same behavior, analogous to those in Boolean logic:</P>
+<DL>
+<DD><B>&#149;</B>&nbsp;&nbsp;They give a value of r<SUP><SMALL>i</SMALL></SUP>(x<SUB><SMALL>1</SMALL></SUB>,y) equal to f<SUB><SMALL>B</SMALL></SUB>(y), in every case including the Boolean one, except i = 4.
+<DD><B>&#149;</B>&nbsp;&nbsp;If x is different from x<SUB><SMALL>1</SMALL></SUB>, the value of r<SUP><SMALL>i</SMALL></SUP>(x,y) is generally 1 and the only exception concerns the case i = 3, yielding 0.
+</DL>
+<P>This situation is important when we consider a fact matching more or less the premise of the rule. It means that no conclusion will be available when the observation is not identical with A. Further remarks will be given in Section III.
+</P><P><BR></P>
+<CENTER>
+<TABLE BORDER>
+<TR>
+<TD><A HREF="043-045.html">Previous</A></TD>
+<TD><A HREF="../ewtoc.html">Table of Contents</A></TD>
+<TD><A HREF="047-049.html">Next</A></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<hr width="90%" size="1" noshade>
+<div align="center">
+<font face="Verdana,sans-serif" size="1">Copyright &copy; <a href="/reference/crc00001.html">CRC Press LLC</a></font>
+</div>
+</BODY>
+
