@@ -21,6 +21,11 @@
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
 
+\usepackage{color}    % suporte a cor
+\usepackage{xcolor}
+\input{etc/lstlisting.tex}
+\input{etc/color.tex}
+
 %\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 \begin{document}
@@ -436,60 +441,45 @@ O método utilizado neste sistema proposto foi o modelo tipo
 Mamdani que desenvolveu o cálculo utilizando como método de
 defuzzificação centróide.
 
-\section{Conclusão}
-Sabemos que a função da avaliação é auxiliar o processo de
-ensino/aprendizagem dos alunos, porém a maneira que está sendo
-aplicada não está surtindo os resultados esperados. Para obter
-o conceito final do desempenho do aluno, após a realização
-de todas as provas de um determinado período, é calculada a
-média aritmética com todas as notas obtidas.
+Salvamos o nosso projeto como ``avaliacao.fis'' na mesma pasta
+que o workspace foi aberto, de volta ao prompt de comando
+carregamos a nossa lógica como uma função conforme mostrado
+abaixo.
 
+\lstinputlisting[language=Matlab]{code/matlabprompt1.m}
+
+Simulando uma turma de 10 alunos.
+
+\lstinputlisting[language=Matlab]{code/matlabprompt2.m}
+
+Simulando 10 alunos e comparando a média aritmética com 
+a média obtida pela lógica fuzzy.
+
+\lstinputlisting[language=Matlab]{code/matlabprompt3.m}
+
+\section{Conclusão}
 A média aritmética usada para o cálculo da nota final
 do aluno não analisa todas as notas em conjunto. Um aluno
-conseguiu boas notas na primeira e na segunda prova, porém
-na terceira prova ele obteve uma nota inferior. Ao calcular
+conseguiu boas notas na primeira e na segunda avaliação, porém
+na terceira avaliação obteve uma nota inferior. Ao calcular
 a média esta diminui consideravelmente por causa da nota
 baixa da terceira prova. No caso de uma nota mais baixa ao
 fazer o cálculo da média o aluno pode ser prejudicado mesmo
-tendo notas boas em outras provas. Uma média insatisfatória
+tendo notas boas em outras avaliações. Uma média insatisfatória
 transparece que o aluno não aprendeu. Ele pode ter aprendido
-muito bem o conteúdo da primeira e segunda prova, porém ele
-ficou com uma deficiência no conteúdo da terceira prova. A
+muito bem o conteúdo da primeira e segunda avaliação, porém ele
+ficou com uma deficiência no conteúdo da terceira avaliação. A
 média aritmética não mostra essa realidade.
 
-
-As provas aplicadas e o cálculo matemático utilizado estão
+As avaliações aplicadas e o cálculo matemático utilizado estão
 sendo insuficientes para avaliar o aprendizado dos alunos,
 portanto um modelo fuzzy foi desenvolvido neste trabalho
-utilizando o software Matlab visando a avaliação para cursos
-presenciais.
-
+utilizando o software Matlab visando a avaliação de um curso fictício.
 
 A lógica fuzzy é uma abordagem intuitiva e tolerante com dados
 imprecisos. Pode ser construída através de experiência de
 especialistas e sobre as estruturas da descrição qualitativa
 utilizada na linguagem cotidiana.
-
-Em nosso modelo utilizamos valores aleatórios como entrada
-para o sistema fuzzy, tentando contemplar a maior quantidade
-possível de situações para avaliar o desempenho dos alunos.
-Estes valores utilizados são: nota de avaliação escrita,
-atividade em classe e atividade extra classe. O principal
-objetivo era usar todos os tipos de avaliações para estimar
-um novo índice para o conceito final dos alunos e comparar os
-resultados obtidos com o modelo clássico (cálculo matemático
-– média aritmética). O sistema fuzzy tem algumas vantagens
-quando comparado com o modelo clássico. Possui muitos recursos
-para aperfeiçoar a modelagem e adquirir melhores resultados,
-por exemplo o formato das funções de pertinência, o modelo de
-inferência que pode ser o Mamdani ou o Sugeno além de permitir
-trabalhar com variáveis quantitativas e qualitativas. Para
-a modelagem desse sistema foi construída uma base de regras
-através de variáveis linguísticas que pode ser modificada
-até adquirir os resultados esperados. O modelo desenvolvido
-possui 20 regras para estimar o índice e sua implementação e
-interpretação são fáceis para o usuário.
-
 
 O mais importante é que este sistema considera a contribuição
 de todas as etapas de avaliação do aluno para gerar o índice
@@ -498,29 +488,18 @@ ocorreu com os modelos clássicos, porque eles prejudicam o
 conceito final do aluno que não foi muito bem em umas das
 etapas de avaliação.
 
-
 Dentre os testes que podem ser feitos no modelo fuzzy como
 proposta de trabalhos futuros são:
 
 \begin{itemize}
-    \item Dar pesos diferentes para uma determinada regra;
     \item Ao invés de utilizar o método de implicação
 Mamdani pode ser usado o modelo de Takagi-Sugeno-Kang;
     \item Além da trapezoidal pode utilizar outras formas de
     funções de pertinência como a triangular, gaussiana,
     sinoidal;
+    \item Dar pesos diferentes para uma determinada regra;
     \item Diminuir as regras para obter melhores resultados.
 \end{itemize}
-
-Assim, a metodologia proposta sugere um novo índice de
-cálculo que foi capaz de melhorar os resultados do sistema
-de classificação clássico na maioria das situações
-simuladas e tem uma grande flexibilidade. Estes elementos
-ampliam significativamente a sensibilidade do modelo para
-a classificação do conceito final do estudante, e faz da
-metodologia uma proposta muito adaptável a qualquer nova norma.
-
-
 
 \bibliographystyle{plain}
 \bibliography{references}
