@@ -1,0 +1,70 @@
+[System]
+Name='avaliacao'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=20
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Notas_de_prova_escrita'
+Range=[0 10]
+NumMFs=5
+MF1='I':'trapmf',[-2.25 -0.25 0.25 2.25]
+MF2='R':'trapmf',[0.5026 1.404 1.642 2.638]
+MF3='B':'trapmf',[2.95 4.55 5.45 7.05]
+MF4='MB':'trapmf',[5.25 7.25 7.75 9.75]
+MF5='EX':'trapmf',[7.75 9.75 10.25 12.25]
+
+[Input2]
+Name='Participação_em_sala_de_aula'
+Range=[0 10]
+NumMFs=3
+MF1='I':'trapmf',[-4.5 -0.5 0.5 4.5]
+MF2='S':'trapmf',[0.5 4.5 5.5 9.5]
+MF3='EX':'trapmf',[5.5 9.5 10.5 14.5]
+
+[Input3]
+Name='trabalhos_realizados_em_casa'
+Range=[0 10]
+NumMFs=3
+MF1='I':'trapmf',[-4.5 -0.5 0.5 4.5]
+MF2='S':'trapmf',[0.5 4.5 5.5 9.5]
+MF3='EX':'trapmf',[5.5 9.5 10.5 14.5]
+
+[Output1]
+Name='Resultado_final'
+Range=[0 10]
+NumMFs=5
+MF1='I':'trapmf',[-2.25 -0.25 0.25 2.25]
+MF2='R':'trapmf',[0.25 2.25 2.75 4.75]
+MF3='B':'trapmf',[2.75 4.75 5.25 7.25]
+MF4='MB':'trapmf',[5.25 7.25 7.75 9.75]
+MF5='EX':'trapmf',[7.75 9.75 10.25 12.25]
+
+[Rules]
+1 1 1, 1 (1) : 1
+1 1 -1, 2 (1) : 1
+1 -1 1, 2 (1) : 1
+1 -1 -1, 2 (1) : 1
+2 1 1, 1 (1) : 1
+2 -1 1, 2 (1) : 1
+2 1 -1, 3 (1) : 1
+2 -1 -1, 3 (1) : 1
+3 1 1, 2 (1) : 1
+3 1 -1, 3 (1) : 1
+3 -1 1, 3 (1) : 1
+3 -1 -1, 4 (1) : 1
+4 1 1, 3 (1) : 1
+4 -1 1, 3 (1) : 1
+4 1 -1, 3 (1) : 1
+4 -1 -1, 4 (1) : 1
+5 1 1, 4 (1) : 1
+5 -1 1, 4 (1) : 1
+5 -1 -1, 5 (1) : 1
+5 1 -1, 4 (1) : 1
