@@ -6,10 +6,11 @@
   \large utilizando lógica\\
     Fuzzy}
 
-\author{Daniel Ferreira, Ivan Carlos, Rodrigo de Paula} 
+\author{Daniel Ferreira, Ivan Carlos, Rodrigo de Paula}
 \date{October 2021}
 
 \usepackage{natbib}
+\usepackage{amsmath}  % matemática
 
 \usepackage{blindtext} % links
 \usepackage{hyperref}  % links
@@ -32,8 +33,8 @@ O trabalho consiste em projetar, implementar e mostrar
 funcionando um sistema de avaliação que utilize lógica difusa
 (fuzzy), para gerar a média final dos alunos de uma determida
 disciplina fictícia. É permitido escolher as variáveis de
-entrada suas funções de pertinência, variáveis de saída e
-suas respectivas funções de pertinência e regras do sistema.
+entrada suas rtespectivas funções de pertinência, variáveis de
+saída com funções de pertinência e regras do sistema.
 
 \section{Introdução}
 
@@ -67,7 +68,7 @@ apoiá-los. Eles foram validados apenas por meio de testes
 empíricos.
 
 Eles geralmente usam alguma forma de regras de alto nível. A
-busca cega do espaço da solução é evitada e alto desempenho,
+busca cega do espaço da solução é evitada e o alto desempenho,
 se aproximando ou ultrapassando o de um especialista, é
 obtido. O raciocínio pode ser feito por manipulação de
 símbolo. Eles mostram alguma inteligência. Os sistemas
@@ -86,13 +87,13 @@ especialistas humanos.''\citep{kandel1992fuzzy}
 
 \section{Projetando um sistema de avaliação de discentes}
 
-O sistema de avaliação utilizado nas disciplinas é geralmente 
-baseado por avaliações escritas que são aplicadas ao término 
-de cada unidade ou conteúdo. O planejamento da quantidade 
-de provas depende de cada instituição e professor. De uma 
-forma geral, são duas provas por semestre ou no máximo três 
-provas, onde cada uma avalia um determinado conteúdo. Após a 
-realização de cada exame o aluno obtém uma nota. No final de 
+O sistema de avaliação utilizado nas disciplinas é geralmente
+baseado por avaliações escritas que são aplicadas ao término
+de cada unidade ou conteúdo. O planejamento da quantidade
+de provas depende de cada instituição e professor. De uma
+forma geral, são duas provas por semestre ou no máximo três
+provas, onde cada uma avalia um determinado conteúdo. Após a
+realização de cada exame o aluno obtém uma nota. No final de
 um determinado período é feita uma média aritmética com
 todas as notas do aluno. A média final para a aprovação é
 determinada pela instituição.
@@ -100,7 +101,7 @@ determinada pela instituição.
 O cálculo matemático utilizado não deixa claro o conhecimento
 que o aluno realmente adquiriu. Ele pode ter tido uma nota
 excelente na prova referente ao conteúdo de X, por
-exemplo, e uma nota ruim na prova de conteúdo Y, mas 
+exemplo, e uma nota ruim na prova de conteúdo Y, mas
 calculando sua média obteve-se uma nota suficiente para aprovação.
 
 Como conseqüência, o aluno será aprovado por ter bastante
@@ -109,21 +110,121 @@ conhecimento em X, mas terá uma dificuldade em Y.
 No exemplo citado, após o resultado da avaliação do aluno
 não é feita uma retomada dos conteúdos em que os alunos
 apresentaram maiores problemas. A respeito
-da dificuldade em Y. Já que o aluno foi aprovado, não 
-se preocupa se o conhecimento adquirido é satisfatório 
+da dificuldade em Y. Já que o aluno foi aprovado, não
+se preocupa se o conhecimento adquirido é satisfatório
 para prosseguir nas disciplinas subsequentes.
+
+A teoria dos conjuntos fuzzy fornece ferramentas para expressar
+numericamente valores imprecisos tais como bom, ruim, excelente
+e normal. Estabelece uma relação entre a precisão da matemática
+clássica e a imprecisão do mundo real, tornando possível
+implementar um algoritmo computacional.
+
+Um conjunto fuzzy permite representar conceitos vagos em
+linguagem natural, a representação não depende apenas do
+conceito, mas também, do contexto em que está inserido. Vários
+conjuntos fuzzy representando conceitos linguísticos como alto,
+médio ou baixo são frequentemente empregados para definir o
+estado de uma variável, tal variável é denominada variável
+linguística ou variável fuzzy. A variável linguística expressa
+valores que não são numéricos, e sim, palavras ou sentenças de
+uma linguagem natural ou artificial. Segundo Faria o conjunto de
+valores assumidos pela variável linguística é denominado
+Conjunto de Termos, no qual cada valor assumido pela variável
+linguística é representado por um conjunto fuzzy definido pela
+função de pertinência correspondente.
+
+Não existem regras definitivas para a escolha das funções de
+pertinência, é necessário o conhecimento de um especialista no
+assunto ou informações extraídas de um banco de dados. As
+funções possuem algumas características quanto ao formato,
+obtenção e normalização.
+
+As funções de pertinência podem ter várias formas: triangular,
+trapezoidal, gaussiana, sinoidal, entre outras; a forma
+escolhida é determinada de acordo com o contexto da aplicação. A
+obtenção dessas funções pode ser escolhida pelos usuários com
+base em suas experiências ou através de um processo de
+otimização a partir de dados experimentais e/ou obtidos por
+simulação. Quanto à normalização, as funções de pertinência são
+definidas no intervalo [0,1], quando normalizadas.
+
+A estrutura de um sistema baseado em lógica fuzzy possui quatro
+etapas: fuzzificação, base de regras, inferência e
+defuzzificação. A fuzzificação é o processo no qual são
+definidas as variáveis de entrada e saída, para as quais são
+atribuídos termos linguísticos que descrevem seu estado. É nessa
+etapa do processo que são construídas as funções de pertinência.
+Semelhantes termos são traduzidos pela função a um subconjunto
+fuzzy num domínio apropriado.
+
+A base de regras é caracterizada pela base de conhecimento,
+todos os conjuntos fuzzy que representam as variáveis
+relacionadas por funções de pertinência formam a base de
+conhecimento. O algoritmo processa as funções de pertinência de
+cada um dos conjuntos fuzzy, a combinação dos resultados através
+de instruções gera a base de regras. A representação da base de
+regras pode variar de acordo com o modelo utilizado. Os dois
+tipos mais comuns de modelo fuzzy são: Modelo de Mamdani e o
+Modelo de Takagi-Sugeno-Kang.
+
+O modelo de Mamdani é baseado em proposições linguísticas
+\emph{SE-ENTÃO} com vagos predicados e o modelo de
+Takagi-Sugeno-Kang é formado por regras lógicas que têm uma
+combinação de modelos difusos e exatos. A saída no método de
+inferência Sugeno é um número real exato, o conjunto consequente
+de inferência será um conjunto difuso discreto com um número
+finito de pontos e as regras consequentes são funções exatas. O
+método mais utilizado para criar a base de regras funciona
+através de expressões do tipo \emph{SE} (premissa) \emph{ENTÃO}
+(conclusão). Esse método supõe que conhecido um fato (premissa)
+é possível concluir outro fato (conclusão). A maioria dos
+sistemas envolve mais de uma regra, a consequência do processo
+global, a partir de cada regra individual, é conhecida como
+conjuntivos ou disjuntivos.
+
+Nos sistemas de regras conjuntivos são utilizados os conectivos
+``E'', neste caso, a conclusão é encontrada por meio de
+intersecção de todas as regras individuais. Nos sistemas de
+regras disjuntivos são empregados os conectivos ``OU'' e a
+conclusão final é obtida através da união das contribuições
+individuais. Após definidas as regras, os operadores de união e
+intersecção e o método utilizado, ocorre a inferência. Na
+defuzzificação é necessário um processo de tradução do conjunto
+fuzzy resultante do método de inferência para um número real.
+
+Muitas vezes, a saída do processo deve ser uma quantidade
+escalar e não conjuntos fuzzy. Um valor crisp (físico) para a
+saída do sistema é obtido pela defuzzificação do conjunto de
+saída fuzzy.
+
+Existem alguns métodos de defuzzificação: princípio da máxima
+associação também conhecido como método da altura, método da
+média ponderada, média de associação máxima, centro das somas e
+método dos centróides ou centro de área ou gravidade. Talvez o
+método de defuzzificação mais popular seja o cálculo do
+centróide, que retorna o centro da área sob a curva. Neste
+método o valor crisp é obtido pelo centro da área dada pela
+atribuição das funções de pertinência de saída como:
+
+\begin{equation} \label{eq1}
+\begin{split}
+    \hat{y} & = \frac{\iint_D y \,dx\,dy}{\iint_D 1 \,dx\,dy} \\
+\end{split}
+\end{equation}
+
 
 \section{Métodos de inferência (Máquinas de inferência)}
 
-Os 2 tipos mais importantes de método de inferência fuzzy
-são \emph{Mamdani} e \emph{Sugeno}. O método de inferência 
-difuso do tipo Mamdani é o método mais comumente usado. 
-Este método foi introduzido por Mamdani e Assilian (1975). 
-Outro método de inferência bem conhecido é o chamado método do processo de inferência fuzzy Sugeno ou Takagi-Sugeno-Kang. 
-Este método foi introduzido por Sugeno (1985). Este método 
-também é chamado de método TS. A principal diferença entre 
-os dois métodos reside no consequente das regras Fuzzy.
-
+Os 2 tipos mais importantes de método de inferência fuzzy são
+\emph{Mamdani} e \emph{Sugeno}. O método de inferência difuso do
+tipo Mamdani é o método mais comumente usado. Este método foi
+introduzido por Mamdani e Assilian (1975). Outro método de
+inferência bem conhecido é o chamado método do processo de
+inferência fuzzy Sugeno ou Takagi-Sugeno-Kang. Este método foi
+introduzido por Sugeno (1985). Este método também é chamado de
+método TS. A principal diferença entre os dois métodos reside no
+consequente das regras Fuzzy.
 
 \subsubsection{Método de Inferência Difusa Mamdani\citep{
 ProfVolmirWilhelm}}
@@ -131,27 +232,62 @@ ProfVolmirWilhelm}}
 Etapas:
 
 \begin{enumerate}
-    \item  Determinar um conjunto de regras fuzzy
-    \item  Fuzzificar das entradas usando as funções de pertinência de entrada;
-    \item  Combinar as entradas fuzificadas de acordo com as regras fuzzy para
-estabelecer a ``força da regra'' (operações difusas);
-    \item  Encontrado o resultado da regra, combinar a ``força da regra'' com a função
-de pertinência de saída (implicação);
-    \item  Combinar as consequências para obter uma saída (agregação);
-    \item  Defuzzificar a saída (apenas se uma saída crisp é necessária).
+    \item Determinar um conjunto de regras fuzzy
+	\item Fuzzificar das entradas usando as funções de
+		pertinência de entrada;
+	\item Combinar as entradas fuzificadas de acordo com as
+		regras fuzzy para estabelecer a ``força da regra''
+		(operações difusas);
+	\item Encontrado o resultado da regra, combinar a ``força
+		da regra'' com a função de pertinência de saída
+		(implicação);
+	\item Combinar as consequências para obter uma saída
+		(agregação);
+	\item Defuzzificar a saída (apenas se uma saída crisp é
+		necessária).
 \end{enumerate}
 
 
+\subsection{Modelo fuzzy}
 
+Nesta seção é descrito o modelo fuzzy desenvolvido no software
+Matlab para avaliação dos discentes em uma disciplina
+hipotética.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.3]{matlab\_version.png}
+\caption{Matlab 2020}
+\label{fig:matlab_version}
+\end{figure}
 
+Foram escolhidas três variáveis de entrada: Notas de prova
+escrita (X1), participação em sala de aula (X2) e trabalhos
+realizados em casa (X3). Como nosso intuito é considerar a
+contribuição das três notas para avaliação, o resultado final
+final (Y) é a variável de saída do nosso sistema.
+
+O formato das funções de pertinência, tanto nas variáveis 
+de entrada como na de saída, foi o trapezoidal (trampf). As
+funções de pertinência contruídas foram:
+
+\begin{itemize}
+    \item Para a variável de entrada X1: Insuficiente (I),
+    Regular (R), Bom (B), Muito Bom (MB) e Excelente (EX);
+    \item Para a variável de entrada X2:  Insuficiente  (I),
+    Satifatório (S), Excelente (EX). 
+    \item Para a variável de entrada X3: Insuficiente  (I),
+    Satifatório (S), Excelente (EX). 
+    \item Para a variável de saída Y: Insuficiente (I), 
+    Regular (R), Bom (B), Muito Bom (MB) e Excelente (EX).
+\end{itemize}
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=1.7]{universe.jpg}
-\caption{The Universe}
-\label{fig:univerise}
+\includegraphics[scale=.2]{X1.png}
+\caption{Notas de prova escrita (X1)}
+\label{fig:notas_de_provas_escritas}
 \end{figure}
 
 \section{Conclusão}
@@ -218,7 +354,7 @@ etapas de avaliação.
 
 
 Dentre os testes que podem ser feitos no modelo fuzzy como
-proposta de trabalhos futuros são: 
+proposta de trabalhos futuros são:
 
 \begin{itemize}
     \item Dar pesos diferentes para uma determinada regra;
@@ -237,10 +373,11 @@ simuladas e tem uma grande flexibilidade. Estes elementos
 ampliam significativamente a sensibilidade do modelo para
 a classificação do conceito final do estudante, e faz da
 metodologia uma proposta muito adaptável a qualquer nova norma.
-	
+
 
 
 \bibliographystyle{plain}
 \bibliography{references}
 
 \end{document}
+
