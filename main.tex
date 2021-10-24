@@ -265,9 +265,9 @@ Foram escolhidas três variáveis de entrada: Notas de prova
 escrita (X1), participação em sala de aula (X2) e trabalhos
 realizados em casa (X3). Como nosso intuito é considerar a
 contribuição das três notas para avaliação, o resultado final
-final (Y) é a variável de saída do nosso sistema.
+(Y) é a variável de saída do nosso sistema.
 
-O formato das funções de pertinência, tanto nas variáveis 
+O formato das funções de pertinência, tanto nas variáveis
 de entrada como na de saída, foi o trapezoidal (trampf). As
 funções de pertinência contruídas foram:
 
@@ -275,10 +275,10 @@ funções de pertinência contruídas foram:
     \item Para a variável de entrada X1: Insuficiente (I),
     Regular (R), Bom (B), Muito Bom (MB) e Excelente (EX);
     \item Para a variável de entrada X2:  Insuficiente  (I),
-    Satifatório (S), Excelente (EX). 
+    Satifatório (S), Excelente (EX).
     \item Para a variável de entrada X3: Insuficiente  (I),
-    Satifatório (S), Excelente (EX). 
-    \item Para a variável de saída Y: Insuficiente (I), 
+    Satifatório (S), Excelente (EX).
+    \item Para a variável de saída Y: Insuficiente (I),
     Regular (R), Bom (B), Muito Bom (MB) e Excelente (EX).
 \end{itemize}
 
@@ -286,9 +286,133 @@ funções de pertinência contruídas foram:
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=.2]{X1.png}
-\caption{Notas de prova escrita (X1)}
+\caption{Funções de pertinência para a variável de entrada
+``Notas de prova escrita'' (X1)}
 \label{fig:notas_de_provas_escritas}
 \end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.2]{X2.png}
+\caption{Funções de pertinência para a variável de entrada
+``participação em sala de aula'' (X2)}
+\label{fig:notas_de_provas_escritas}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.2]{X3.png}
+\caption{Funções de pertinência para a variável de entrada
+``trabalhos realizados em casa'' (X3)}
+\label{fig:notas_de_provas_escritas}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.2]{Y.png}
+\caption{Funções de pertinência para a variável de saída
+``resultado final'' (Y)}
+\label{fig:notas_de_provas_escritas}
+\end{figure}
+
+A base de dados foi escolhida de forma aleatória tentando
+contemplar a maior quantidade possível de situações para avaliar
+o desempenho dos alunos. O sistema foi composto por 20 regras,
+todas modeladas com o mesmo peso e de decisões simples, como por
+exemplo: se todas as variáveis de entrada foram consideradas
+insuficientes, então o conceito final do estudante deve ser
+classificado como insuficiente.
+
+Seguem as 20 regras utilizadas em nosso sistema:
+
+\begin{enumerate}
+	\item Se avaliação escrita é insuficiente e atividade em
+		classe é insuficiente e atividade extraclasse é
+		insuficiente então conceito final é insuficiente.
+
+	\item Se avaliação escrita é insuficiente e atividade em
+		classe é insuficiente e atividade extraclasse é não
+		insuficiente então conceito final é regular.
+
+	\item Se avaliação escrita é insuficiente e atividade em
+		classe é não insuficiente e atividade extraclasse é
+		insuficiente então conceito final é regular.
+
+	\item  Se avaliação escrita é insuficiente e atividade em
+		classe é não insuficiente e atividade extraclasse é não
+		insuficiente então conceito final é regular.
+
+	\item Se avaliação escrita é regular e atividade em classe
+		é insuficiente e atividade extraclasse é insuficiente
+		então conceito final é insuficiente.
+
+	\item Se avaliação escrita é regular e atividade em classe
+		é não insuficiente e atividade extraclasse é
+		insuficiente então conceito final é regular.
+
+	\item  Se avaliação escrita é regular e atividade em classe
+		é insuficiente e atividade extraclasse é não
+		insuficiente então conceito final é bom.
+
+	\item  Se avaliação escrita é regular e atividade em classe
+		é não insuficiente e atividade extraclasse é não
+		insuficiente então conceito final é bom.
+
+	\item  Se avaliação escrita é bom e atividade em classe é
+		insuficiente e atividade extraclasse é insuficiente
+		então conceito final é regular.
+
+	\item Se avaliação escrita é bom e atividade em classe é
+		insuficiente e atividade extraclasse é não insuficiente
+		então conceito final é bom.
+
+	\item Se avaliação escrita é bom e atividade em classe é não
+		insuficiente e participação extraclasse é insuficiente
+		então conceito final é bom.
+
+	\item Se avaliação escrita é bom e atividade em classe é não
+		insuficiente e atividade extraclasse é não insuficiente
+		então conceito final é muito bom.
+
+	\item Se avaliação escrita é muito bom e atividade em classe
+		é insuficiente e atividade extraclasse é insuficiente
+		então conceito final é bom.
+
+	\item Se avaliação escrita é muito bom e atividade em classe
+		é não insuficiente e atividade extraclasse é
+		insuficiente então conceito final é bom.
+
+	\item Se avaliação escrita é muito bom e atividade em classe
+		é insuficiente e atividade extraclasse é não
+		insuficiente então conceito final é bom.
+
+
+	\item Se avaliação escrita é muito bom e atividade em classe
+		é não insuficiente e atividade extraclasse é não
+		insuficiente então conceito final é muito bom.
+
+	\item Se avaliação escrita é excelente e atividade em classe
+		é insuficiente e atividade extraclasse é insuficiente
+		então conceito final é muito bom.
+
+	\item Se avaliação escrita é excelente e atividade em classe
+		é não insuficiente e atividade extraclasse é não
+		insuficiente então conceito final é excelente.
+
+	\item Se avaliação escrita é excelente e atividade em classe
+		é não insuficiente e atividade extraclasse é
+		insuficiente então conceito final é muito bom.
+
+	\item Se avaliação escrita é excelente e atividade em classe
+		é insuficiente e atividade extraclasse é não
+		insuficiente então conceito final é muito bom.
+
+\end{enumerate}
+
+
 
 \section{Conclusão}
 Sabemos que a função da avaliação é auxiliar o processo de
